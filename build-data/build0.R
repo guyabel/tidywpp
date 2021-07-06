@@ -130,7 +130,8 @@ d1 <- d1 %>%
          dir = paste0("./build-data/WPP", wpp, "/", file_group, "/", VarID, "/"))
 
 
-dir_create(d1$dir)
+# https://stackoverflow.com/questions/68269482/how-to-create-two-different-csv-files-with-the-same-name-but-one-uses-a-upper-ca
+# dir_create(d1$dir)
 
 d1 %>%
   # slice(1) %>%
@@ -152,5 +153,6 @@ write_each_column <- function(x, d){
 }
 
 d1 %>%
+  # filter(file_group == "Life_Table") %>%
   # slice(373) %>%
   by_row(~write_each_column(x = .$rest, d = .$dir))
