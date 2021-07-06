@@ -6,7 +6,9 @@ d <- read_excel(path = "data-raw/un_bulk.xlsx")
 d0 <- d %>%
   rename(sub_group = 2,
          details = 8) %>%
-  fill(ind, sub_group, file1_name, file2_name, file1_url, file2_url) %>%
+  fill(ind) %>%
+  group_by(ind) %>%
+  fill(sub_group, file1_name, file2_name, file1_url, file2_url) %>%
   select(-3) %>%
   drop_na(details) %>%
   group_by(ind) %>%
@@ -29,7 +31,9 @@ d0 <- d %>%
          details2 = str_remove(string = file_name,
                                pattern = word(file_name, end = 2)),
          details2 = str_remove(string = details2,
-                               pattern = "\\s*\\([^\\)]+\\)$")) %>%
+                               pattern = "\\s*\\([^\\)]+\\)$"),
+         column_footnote = ifelse(str_detect(string = column_name, pattern = " \\*"), "not published for probabilistic projections", ""),
+         column_name = str_remove(string = column_name, pattern = " \\*")) %>%
   relocate(-contains("column")) %>%
   relocate(ind, variant)
 
@@ -45,8 +49,9 @@ d1 <- d0 %>%
   # nest(.key = "file_columns") %>%
   # ungroup()
 
-wpp_bulk <- d1
-usethis::use_data(wpp_bulk, overwrite = TRUE)
+write_csv(x = d1, file = "./data-raw/wpp_bulk.csv")
+# wpp_bulk <- d1
+# usethis::use_data(wpp_bulk, overwrite = TRUE)
 
 
 # d1$file_columns[[1]]
