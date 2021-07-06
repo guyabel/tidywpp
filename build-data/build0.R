@@ -126,7 +126,7 @@ d1 <- d1 %>%
                         select(-one_of("Location", "MidPeriod", "AgeGrpStart", "AgeGrpSpan", "Sex")) %>%
                         select(-one_of("LocID", "Time", "AgeGrp", "SexID"))
                     }),
-         dir = paste0("./build-data/WPP", wpp, "/", file, "/", VarID, "/"))
+         dir = paste0("./build-data/WPP", wpp, "/", file_group, "/", VarID, "/"))
 
 
 dir_create(d1$dir)
