@@ -69,12 +69,12 @@ d1 <- d1 %>%
 ## meta
 ##
 d1 %>%
-  select(wpp, file_group, VarID, col_name) %>%
+  select(wpp, file_group, contains("Var"), col_name) %>%
   unnest(col_name) %>%
   write_csv("./build-data/meta/indicators.csv")
 
 d1 %>%
-  select(wpp, file_group, n_row, n_col) %>%
+  select(wpp, file_group, contains("Var"), n_row, n_col) %>%
   unnest(c(n_row, n_col)) %>%
   write_csv("./build-data/meta/dim.csv")
 
@@ -106,6 +106,7 @@ d1 %>%
   select(wpp, file_group, sex) %>%
   unnest(sex) %>%
   drop_na() %>%
+  distinct() %>%
   write_csv("./build-data/meta/sex.csv")
 
 
@@ -135,15 +136,21 @@ d1 %>%
   # slice(1) %>%
   by_row(~write.csv(.$base, file = paste0(.$dir, "/base.csv"), row.names = FALSE))
 
+# x = d1$rest[373]; d = d1$dir[373]
 write_each_column <- function(x, d){
   # print(head(x[[1]]))
-  xx <- x[[1]]
-  for(i in 1:ncol(xx)){
-    colname <- names(xx)[i]
-    write.csv(xx[,i], paste0(d, "/", colname, ".csv"), row.names = FALSE)
+  x0 <- x[[1]]
+  for(i in 1:ncol(x0)){
+    x1 <- x0 %>%
+      select(i)
+    n <- paste0(d, colnames(x1), ".csv")
+    # n <- "./build-data/WPP2019/Life_Table/2/Lx.csv"
+    write_csv(x1, file = n)
+    # colname <- names(xx)[i]
+    # write.csv(xx[,i], paste0(d, colname, ".csv"), row.names = FALSE)
   }
 }
 
 d1 %>%
-  # slice(1:3) %>%
+  # slice(373) %>%
   by_row(~write_each_column(x = .$rest, d = .$dir))

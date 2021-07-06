@@ -1,4 +1,7 @@
-wpp_var <- read_csv("./build-data/meta/var.csv")
+library(tidyverse)
+wpp_var <- read_csv("./build-data/meta/var.csv") %>%
+  select(-file_group) %>%
+  distinct()
 usethis::use_data(wpp_var, overwrite = TRUE, internal = TRUE)
 
 wpp_loc <- read_csv("./build-data/meta/loc.csv")
