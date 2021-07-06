@@ -3,43 +3,51 @@
 #' @description Downloads data on demographic indicators in UN DESA WPP. Requires a working internet connection.
 #'
 #' @param indicator Character string based on the `name` column in the `wpp_indicators` data frame. Represents the variables to be downloaded.
-#' @param file_group Character string based on the `file_group` column in the `wpp_indicators` data frame . Represents the file group to download data from. Most likely to be need for obtaining different granularities of population data.
-#' @param variant Character string from based on the `variant` column in the `wpp_indicators` data frame. Note, past data is in the `"Medium"` variant only.
-#' @param wpp Integer for WPP version. Default of `2019`. All WPP back to 1998 are available.
+#' @param file_group Character string based on the `file_group` column in the `wpp_indicators` data frame . Represents the file group to download data from. Only needed for obtaining different granularities of population data.
+#' @param variant_id Numeric value(s) based on the `var_id` column in the `wpp_indicators` data frame. Note, past data is in the `"Medium" (2)` variant only.
+#' @param wpp_version Integer for WPP version. Default of `2019`. All WPP back to 1998 are available.
 #' @param clean_names Logical to indicate if column names should be cleaned
 #' @param fct_age Logical to indicate if `AgeGrp` column be converted to a factor.
 #' @param tidy_sex Logical to indicate if columns for sex specific population data should be stacked into single population column with new sex indicator column.
 #'
 #' @return A tibble with downloaded data in tidy format
+#'
+#' @details
+#'
+#'
 #' @export
 #'
 #' @examples
 get_wpp <- function(indicator = NULL,
-                    file_group = NULL,
-                    variant = "Medium",
-                    wpp = 2019,
+                    indicator_file_group = NULL,
+                    var_id = 2,
+                    wpp_version = 2019,
                     clean_names = FALSE,
                     fct_age = TRUE){
   # indicator = c("PopTotal", "SRB")
   # indicator = c("PopTotal", "PopMale", "PopFemale")
   # indicator = "PopTotal";
-  # file_group = NULL;
-  # variant = "All";
-  # wpp = 2019;
+  # indicator_file_group = NULL;
+  # variant_id = 2;
+  # wpp_version = 2019;
   # clean_names = TRUE; fct_age = TRUE;
-  if(!(variant %in% wpp_var$Variant | variant %in% wpp_var$VarID))
-    stop("variant must be either Medium or All")
+  vv <- wpp_var %>%
+    filter(wpp == wpp_version)
 
-  fg <- file_group
-  if(is.null(fg)){
+  if(!any(variant_id %in% vv$VarID))
+    stop("variant_id not avialable in wpp_version")
+
+  # work out file group for the indicator(s)
+  g <- indicator_file_group
+  if(is.null(g)){
     f <- wpp_indicators %>%
       filter(name == indicator,
-             variant == variant
-             wpp == wpp) %>%
+             var_id == variant_id,
+             wpp == wpp_version) %>%
       select(file_group, name) %>%
       distinct()
 
-    fg <- f %>%
+    g <- f %>%
       slice(1) %>%
       select(file_group) %>%
       pull()
@@ -47,36 +55,34 @@ get_wpp <- function(indicator = NULL,
     if(length(unique(f$name)) > 1)
       message(paste("Indicators from more than one file group.\n\nOnly downloading indicators in:", fg, "\n\nNeed multiple get_wpp() calls to get indicators in different file groups. See ?wpp_indicators and ?find_indicators for more information on file groups."))
 
-    g <- unique(f$file_group)
-    if(length(g) > 1){
-      message(paste0("Downloading from ", g[1], "."))
+    gg <- unique(f$file_group)
+    if(length(gg) > 1){
+      message(paste0("Downloading from ", gg[1]))
       for(i in 2:length(g)){
-        message(paste0("Also available in: ", g[i],"."))
+        message(paste0("Also available in: ", gg[i]))
       }
     }
   }
-  ff <- wpp_indicators %>%
-    filter(wpp == wpp,
-           file_group == fg) %>%
-    {if(variant == "Medium")  filter(., variant == "Medium") else .} %>%
-    distinct(file) %>%
-    pull(file)
 
-  d0 <- tibble(indicator = "base", file = ff)
-  d <-
-    tibble(indicator = f %>%
-                filter(file_group == fg) %>%
-                pull(name),
-              file = ff) %>%
+  # build url address to download from
+  d0 <- tibble(name = "base",
+               file_group = g,
+               var_id = variant_id)
+
+  d1 <- wpp_indicators %>%
+    filter(name %in% indicator,
+           var_id == variant_id,
+           wpp == wpp_version,
+           file_group == g) %>%
+    select(-contains("details"), -wpp, -variant) %>%
     bind_rows(d0, .) %>%
-    mutate(u0 = paste0("https://raw.githubusercontent.com/guyabel/tidywpp/main/build-data/WPP",
-                       wpp, "/", file, "/"),
-           u1 = paste0(u0, indicator, ".csv"),
-           i = map(.x = u1, .f = ~read_csv(file = .x, col_types = readr::cols(), guess_max = 1e1))) %>%
-    dplyr::group_by(file) %>%
+    mutate(u = paste0("https://raw.githubusercontent.com/guyabel/tidywpp/main/build-data/WPP",
+                       wpp_version, "/", file_group, "/", var_id, "/", name, ".csv")),
+           i = map(.x = u, .f = ~read_csv(file = .x, col_types = readr::cols(), guess_max = 1e1))) %>%
+    # dplyr::group_by(file_group) %>%
     dplyr::summarise(dplyr::bind_cols(i), .groups = "drop_last") %>%
-    dplyr::ungroup() %>%
-    dplyr::select(-file)
+    # dplyr::ungroup() %>%
+    dplyr::select(-name, -file_group)
 
   v <- wpp_var %>%
     filter(wpp == wpp,
