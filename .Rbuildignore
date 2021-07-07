@@ -4,4 +4,10 @@
 ^README\.Rmd$
 ^cran-comments\.md$
 ^\.github$
-^build-package$
+^build-package\.R$
+^\tests
+^tests$
+^build-data$
+^build_package$
+^build_package\.R$
+^data-raw$

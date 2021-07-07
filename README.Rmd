@@ -24,33 +24,51 @@ The goal of tidywpp is to ...
 
 ## Installation
 
-You can install the released version of tidywpp from [CRAN](https://CRAN.R-project.org) with:
+<!-- You can install the released version of tidywpp from [CRAN](https://CRAN.R-project.org) with: -->
 
-``` r
-install.packages("tidywpp")
+<!-- ``` r -->
+<!-- install.packages("tidywpp") -->
+<!-- ``` -->
+
+Install the developmental version with:
+
+```{r eval=FALSE}
+library(devtools)
+install_github("guyabel/tidywpp", ref = "main")
 ```
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+Download data based on a indicator and variant:
 
 ```{r example}
 library(tidywpp)
-## basic example code
+
+# single indicator from medium variant of latest WPP
+get_wpp(indicator = "TFR")
+
+# single indicator from multiple variants of latest WPP
+get_wpp(indicator = "TFR", variant_id = c(2, 3, 4))
+
+# multiple population indicators from single variant of latest WPP
+get_wpp(indicator = c("PopTotal", "PopMale", "PopFemale"))
+
+# as multiple granularities of population in WPP, there are multiple population indicators.
+# use indicator indicator_file_group to select version of population indicator(s)
+get_wpp(indicator = c("PopTotal", "PopMale", "PopFemale"),
+        indicator_file_group =  "TotalPopulationBySex")
+
+# tidy sex into a single column and drop id columns
+get_wpp(indicator = c("PopMale", "PopFemale"),
+        indicator_file_group =  "TotalPopulationBySex",
+        tidy_pop_sex = TRUE, drop_id_cols = TRUE)
+
+# clean column names
+get_wpp(indicator = c("SRB", "NetMigrations", "GrowthRate"),
+        clean_names = TRUE, drop_id_cols = TRUE)
+
+# old life table
+get_wpp(indicator = c("qx", "lx", "dx", "Lx", "Tx", "ex"),
+        wpp_version = 2017, drop_id_cols = TRUE)
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
-
-```{r cars}
-summary(cars)
-```
-
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this. You could also use GitHub Actions to re-render `README.Rmd` every time you push. An example workflow can be found here: <https://github.com/r-lib/actions/tree/master/examples>.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
