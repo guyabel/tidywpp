@@ -13,15 +13,16 @@ get_wpp(
   fct_age = TRUE,
   drop_id_cols = FALSE,
   tidy_pop_sex = FALSE,
+  add_regions = FALSE,
   messages = TRUE
 )
 }
 \arguments{
-\item{indicator}{Character string based on the \code{name} column in the \code{wpp_indicators} data frame. Represents the variables to be downloaded.}
+\item{indicator}{Character string based on the \code{name} column in the \link[=wpp_indicators]{wpp_indicators} data frame. Represents the variables to be downloaded.}
 
-\item{indicator_file_group}{Character string based on the \code{file_group} column in the \code{wpp_indicators} data frame . Represents the file group to download data from. Only needed for obtaining different granularities of population data.}
+\item{indicator_file_group}{Character string based on the \code{file_group} column in the \link[=wpp_indicators]{wpp_indicators} data frame . Represents the file group to download data from. Only needed for obtaining different granularities of population data.}
 
-\item{variant_id}{Numeric value(s) based on the \code{var_id} column in the \code{wpp_indicators} data frame. Note, past data is in the \code{"Medium" (2)} variant only.}
+\item{variant_id}{Numeric value(s) based on the \code{var_id} column in the \link[=wpp_indicators]{wpp_indicators} data frame. Note, past data is in the \code{"Medium" (2)} variant only.}
 
 \item{wpp_version}{Integer for WPP version. Default of \code{2019}. All WPP back to 1998 are available.}
 
@@ -33,16 +34,88 @@ get_wpp(
 
 \item{tidy_pop_sex}{Logical to indicate if columns for sex specific population data should be stacked into single population column with an accompanying new sex column.}
 
+\item{add_regions}{Logical to indicate if to add a \code{reg_name} and \code{area_name} columns for countries (where \code{LocID} is less than 900)}
+
 \item{messages}{Logical to not suppress printing of messages.}
 }
 \value{
-A tibble with downloaded data in tidy format
+A \link[tibble:tibble-package]{tibble} with downloaded data in tidy format
 }
 \description{
 Downloads data on demographic indicators in UN DESA WPP. Requires a working internet connection.
 }
 \details{
-Add in table of indicators and variants
+Indicators must use the name corresponding to the \code{name} column in in the \link[=wpp_indicators]{wpp_indicators} data frame.
+The \link[=find_indicator]{find_indicator()} function can be used to look up the indicator code and availability by variants
+There are 45 different indicators in WPP data (starting from 1998)\tabular{lll}{
+   name \tab details \tab file_group \cr
+   ASFR \tab Age-specific fertility rate (births per 1,000 women) \tab Fertility_by_Age \cr
+   Births \tab Number of births, both sexes combined (thousands) \tab Fertility_by_Age \cr
+   PASFR \tab Percentage age-specific fertility rate \tab Fertility_by_Age \cr
+   Births \tab Number of births, both sexes combined (thousands) \tab Period_Indicators \cr
+   CBR \tab Crude birth rate (births per 1,000 population) \tab Period_Indicators \cr
+   CDR \tab Crude death rate (deaths per 1,000 population) \tab Period_Indicators \cr
+   CNMR \tab Net migration rate (per 1,000 population) \tab Period_Indicators \cr
+   Deaths \tab Number of deaths, both sexes combined (thousands) \tab Period_Indicators \cr
+   DeathsFemale \tab Number of female deaths (thousands) \tab Period_Indicators \cr
+   DeathsMale \tab Number of male deaths (thousands) \tab Period_Indicators \cr
+   GrowthRate \tab Average annual rate of population change (percentage) \tab Period_Indicators \cr
+   IMR \tab Infant mortality rate, q(1), for both sexes combined (infant deaths per 1,000 live births) \tab Period_Indicators \cr
+   LEx \tab Life expectancy at birth for both sexes combined (years) \tab Period_Indicators \cr
+   LExFemale \tab Female life expectancy at birth (years) \tab Period_Indicators \cr
+   LExMale \tab Male life expectancy at birth (years) \tab Period_Indicators \cr
+   MAC \tab Female mean age of childbearing (years) \tab Period_Indicators \cr
+   NatIncr \tab Rate of natural increase (per 1,000 population) \tab Period_Indicators \cr
+   NetMigrations \tab Net number of migrants, both sexes combined (thousands) \tab Period_Indicators \cr
+   NRR \tab Net reproduction rate (surviving daughters per woman) \tab Period_Indicators \cr
+   Q5 \tab Under-five mortality, 5q0, for both sexes combined (deaths under age five per 1,000 live births) \tab Period_Indicators \cr
+   SRB \tab Sex ratio at birth (male births per female births) \tab Period_Indicators \cr
+   TFR \tab Total fertility (live births per woman) \tab Period_Indicators \cr
+   PopFemale \tab Female population in the age group (thousands) \tab PopulationByAgeSex \cr
+   PopMale \tab Male population in the age group (thousands) \tab PopulationByAgeSex \cr
+   PopTotal \tab Total population in the age group (thousands) \tab PopulationByAgeSex \cr
+   PopDensity \tab Population per square kilometre (thousands) \tab TotalPopulationBySex \cr
+   PopFemale \tab Total female population (thousands) \tab TotalPopulationBySex \cr
+   PopMale \tab Total male population (thousands) \tab TotalPopulationBySex \cr
+   PopTotal \tab Total population, both sexes (thousands) \tab TotalPopulationBySex \cr
+   ax \tab Average number of years lived (nax) between ages x and x+n by those dying in the interval \tab Life_Table \cr
+   dx \tab Number of deaths, (ndx), between ages x and x+n \tab Life_Table \cr
+   ex \tab Expectation of life (ex) at age x, i.e., average number of years lived subsequent to age x by those reaching age x \tab Life_Table \cr
+   lx \tab Number of survivors, (lx), at age (x) for 100000 births \tab Life_Table \cr
+   Lx \tab Number of person-years lived, (nLx), between ages x and x+n \tab Life_Table \cr
+   mx \tab Central death rate, nmx, for the age interval (x, x+n) \tab Life_Table \cr
+   px \tab Probability of surviving, (npx), for an individual of age x to age x+n \tab Life_Table \cr
+   qx \tab Probability of dying (nqx), for an individual between age x and x+n \tab Life_Table \cr
+   Sx \tab Survival ratio (nSx) corresponding to proportion of the life table population in age group (x, x+n) who are alive n year later \tab Life_Table \cr
+   Tx \tab Person-years lived, (Tx), above age x \tab Life_Table \cr
+   PopFemale \tab Female population for the individual age (thousands) \tab PopulationBySingleAgeSex \cr
+   PopMale \tab Male population for the individual age (thousands) \tab PopulationBySingleAgeSex \cr
+   PopTotal \tab Total population for the individual age (thousands) \tab PopulationBySingleAgeSex \cr
+   PopFemale \tab Female population in the age group (thousands) \tab PopulationByAgeSex_5x5 \cr
+   PopMale \tab Male population in the age group (thousands) \tab PopulationByAgeSex_5x5 \cr
+   PopTotal \tab Total population in the age group (thousands) \tab PopulationByAgeSex_5x5 \cr
+}
+
+
+The \code{variant_id} argument must be one or more numbers from the \code{var_id} column in the \link[=wpp_indicators]{wpp_indicators} data frame.
+Not all indicators area available in all variants. Use the \link[=find_indicator]{find_indicator()} function to check availability.
+There are 14 different variants in WPP data (starting from 1998).\tabular{rl}{
+   var_id \tab variant \cr
+   2 \tab Medium \cr
+   3 \tab High \cr
+   4 \tab Low \cr
+   5 \tab Constant fertility \cr
+   6 \tab Instant replacement \cr
+   7 \tab Zero migration \cr
+   8 \tab Constant mortality \cr
+   9 \tab No change \cr
+   10 \tab Momentum \cr
+   202 \tab Median PI (BHM median in WPP2015) \cr
+   203 \tab Upper 80 PI \cr
+   204 \tab Lower 80 PI \cr
+   206 \tab Upper 95 PI \cr
+   207 \tab Lower 95 PI \cr
+}
 }
 \examples{
 \donttest{
@@ -70,6 +143,10 @@ get_wpp(indicator = c("PopMale", "PopFemale"),
 # clean column names
 get_wpp(indicator = c("SRB", "NetMigrations", "GrowthRate"),
         clean_names = TRUE, drop_id_cols = TRUE)
+
+# add region and area columns
+get_wpp(indicator = "PopDensity", clean_names = TRUE,
+        drop_id_cols = TRUE, add_regions = TRUE)
 
 # old life table
 get_wpp(indicator = c("qx", "lx", "dx", "Lx", "Tx", "ex"),

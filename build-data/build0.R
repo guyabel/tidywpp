@@ -28,9 +28,19 @@ d1 <- d0 %>%
 d1 <- d1 %>%
   mutate(file_group = str_remove(string = file, pattern = "_Medium|_OtherVariants"),
          file_group = str_remove(string = file_group, pattern = "_\\d{4}-\\d{4}"),
-         data = map(.x = data, .f = ~remove_empty(dat = .x, which = "cols")))
+         data = map(.x = data, .f = ~remove_empty(dat = .x, which = "cols")),
+         dir = paste0("./build-data/WPP", wpp, "/", file_group, "/", VarID, "/"))
+
+# unifify file groups with seperate past and future
+d1 <- d1 %>%
+  # slice(406:408) %>%
+  group_by(dir, wpp, file_group, VarID, Variant) %>%
+  summarise(d = list(reduce(data, bind_rows)),
+            n = n())
 
 d1 <- d1 %>%
+  ungroup() %>%
+  rename(data = d) %>%
   mutate(col_name = map(.x = data, .f = ~colnames(.x)),
          n_row = map_dbl(.x = data, .f = ~nrow(.x)),
          n_col = map_dbl(.x = data, .f = ~ncol(.x)),
@@ -74,8 +84,8 @@ d1 %>%
   write_csv("./build-data/meta/indicators.csv")
 
 d1 %>%
-  select(wpp, file_group, contains("Var"), n_row, n_col) %>%
-  unnest(c(n_row, n_col)) %>%
+  select(wpp, file_group, contains("Var"), n_row, n_col, n) %>%
+  rename(n_original_files = n) %>%
   write_csv("./build-data/meta/dim.csv")
 
 d1 %>%
@@ -126,8 +136,7 @@ d1 <- d1 %>%
                       # d1$data[[1]] %>%
                         select(-one_of("Location", "MidPeriod", "AgeGrpStart", "AgeGrpSpan", "Sex")) %>%
                         select(-one_of("LocID", "Time", "AgeGrp", "SexID"))
-                    }),
-         dir = paste0("./build-data/WPP", wpp, "/", file_group, "/", VarID, "/"))
+                    }))
 
 
 # https://stackoverflow.com/questions/68269482/how-to-create-two-different-csv-files-with-the-same-name-but-one-uses-a-upper-ca

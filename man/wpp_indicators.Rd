@@ -5,7 +5,7 @@
 \alias{wpp_indicators}
 \title{WPP indicators}
 \format{
-A data frame with 2766 rows and 7 variables, including:
+A data frame with 2742 rows and 7 variables, including:
 \describe{
 \item{name}{Short name of indicator. Can be passed to \code{get_wpp()}}
 \item{details}{Brief description of indicator.}
@@ -23,6 +23,6 @@ A data frame with 2766 rows and 7 variables, including:
 wpp_indicators
 }
 \description{
-Data set containing the indicator names, details and available variants from WPP1998 onwards.
+Data set containing the indicator names, details and available variants strating from WPP1998.
 }
 \keyword{datasets}

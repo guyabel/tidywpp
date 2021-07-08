@@ -131,16 +131,6 @@ wpp,file_group,VarID,Variant,col_name
 1998,Period_Indicators,5,Constant fertility,NatIncr
 1998,Period_Indicators,5,Constant fertility,SRB
 1998,Period_Indicators,5,Constant fertility,MAC
-1998,PopulationByAgeSex_5x5,2,Medium,LocID
-1998,PopulationByAgeSex_5x5,2,Medium,Location
-1998,PopulationByAgeSex_5x5,2,Medium,Time
-1998,PopulationByAgeSex_5x5,2,Medium,MidPeriod
-1998,PopulationByAgeSex_5x5,2,Medium,AgeGrp
-1998,PopulationByAgeSex_5x5,2,Medium,AgeGrpStart
-1998,PopulationByAgeSex_5x5,2,Medium,AgeGrpSpan
-1998,PopulationByAgeSex_5x5,2,Medium,PopMale
-1998,PopulationByAgeSex_5x5,2,Medium,PopFemale
-1998,PopulationByAgeSex_5x5,2,Medium,PopTotal
 1998,PopulationByAgeSex,2,Medium,LocID
 1998,PopulationByAgeSex,2,Medium,Location
 1998,PopulationByAgeSex,2,Medium,Time
@@ -221,6 +211,16 @@ wpp,file_group,VarID,Variant,col_name
 1998,PopulationByAgeSex,9,No change,PopMale
 1998,PopulationByAgeSex,9,No change,PopFemale
 1998,PopulationByAgeSex,9,No change,PopTotal
+1998,PopulationByAgeSex_5x5,2,Medium,LocID
+1998,PopulationByAgeSex_5x5,2,Medium,Location
+1998,PopulationByAgeSex_5x5,2,Medium,Time
+1998,PopulationByAgeSex_5x5,2,Medium,MidPeriod
+1998,PopulationByAgeSex_5x5,2,Medium,AgeGrp
+1998,PopulationByAgeSex_5x5,2,Medium,AgeGrpStart
+1998,PopulationByAgeSex_5x5,2,Medium,AgeGrpSpan
+1998,PopulationByAgeSex_5x5,2,Medium,PopMale
+1998,PopulationByAgeSex_5x5,2,Medium,PopFemale
+1998,PopulationByAgeSex_5x5,2,Medium,PopTotal
 1998,TotalPopulationBySex,2,Medium,LocID
 1998,TotalPopulationBySex,2,Medium,Location
 1998,TotalPopulationBySex,2,Medium,Time
@@ -525,16 +525,6 @@ wpp,file_group,VarID,Variant,col_name
 2000,Period_Indicators,9,No change,NatIncr
 2000,Period_Indicators,9,No change,SRB
 2000,Period_Indicators,9,No change,MAC
-2000,PopulationByAgeSex_5x5,2,Medium,LocID
-2000,PopulationByAgeSex_5x5,2,Medium,Location
-2000,PopulationByAgeSex_5x5,2,Medium,Time
-2000,PopulationByAgeSex_5x5,2,Medium,MidPeriod
-2000,PopulationByAgeSex_5x5,2,Medium,AgeGrp
-2000,PopulationByAgeSex_5x5,2,Medium,AgeGrpStart
-2000,PopulationByAgeSex_5x5,2,Medium,AgeGrpSpan
-2000,PopulationByAgeSex_5x5,2,Medium,PopMale
-2000,PopulationByAgeSex_5x5,2,Medium,PopFemale
-2000,PopulationByAgeSex_5x5,2,Medium,PopTotal
 2000,PopulationByAgeSex,2,Medium,LocID
 2000,PopulationByAgeSex,2,Medium,Location
 2000,PopulationByAgeSex,2,Medium,Time
@@ -615,6 +605,16 @@ wpp,file_group,VarID,Variant,col_name
 2000,PopulationByAgeSex,9,No change,PopMale
 2000,PopulationByAgeSex,9,No change,PopFemale
 2000,PopulationByAgeSex,9,No change,PopTotal
+2000,PopulationByAgeSex_5x5,2,Medium,LocID
+2000,PopulationByAgeSex_5x5,2,Medium,Location
+2000,PopulationByAgeSex_5x5,2,Medium,Time
+2000,PopulationByAgeSex_5x5,2,Medium,MidPeriod
+2000,PopulationByAgeSex_5x5,2,Medium,AgeGrp
+2000,PopulationByAgeSex_5x5,2,Medium,AgeGrpStart
+2000,PopulationByAgeSex_5x5,2,Medium,AgeGrpSpan
+2000,PopulationByAgeSex_5x5,2,Medium,PopMale
+2000,PopulationByAgeSex_5x5,2,Medium,PopFemale
+2000,PopulationByAgeSex_5x5,2,Medium,PopTotal
 2000,TotalPopulationBySex,2,Medium,LocID
 2000,TotalPopulationBySex,2,Medium,Location
 2000,TotalPopulationBySex,2,Medium,Time
@@ -935,16 +935,6 @@ wpp,file_group,VarID,Variant,col_name
 2002,Period_Indicators,9,No change,NatIncr
 2002,Period_Indicators,9,No change,SRB
 2002,Period_Indicators,9,No change,MAC
-2002,PopulationByAgeSex_5x5,2,Medium,LocID
-2002,PopulationByAgeSex_5x5,2,Medium,Location
-2002,PopulationByAgeSex_5x5,2,Medium,Time
-2002,PopulationByAgeSex_5x5,2,Medium,MidPeriod
-2002,PopulationByAgeSex_5x5,2,Medium,AgeGrp
-2002,PopulationByAgeSex_5x5,2,Medium,AgeGrpStart
-2002,PopulationByAgeSex_5x5,2,Medium,AgeGrpSpan
-2002,PopulationByAgeSex_5x5,2,Medium,PopMale
-2002,PopulationByAgeSex_5x5,2,Medium,PopFemale
-2002,PopulationByAgeSex_5x5,2,Medium,PopTotal
 2002,PopulationByAgeSex,2,Medium,LocID
 2002,PopulationByAgeSex,2,Medium,Location
 2002,PopulationByAgeSex,2,Medium,Time
@@ -1025,6 +1015,16 @@ wpp,file_group,VarID,Variant,col_name
 2002,PopulationByAgeSex,9,No change,PopMale
 2002,PopulationByAgeSex,9,No change,PopFemale
 2002,PopulationByAgeSex,9,No change,PopTotal
+2002,PopulationByAgeSex_5x5,2,Medium,LocID
+2002,PopulationByAgeSex_5x5,2,Medium,Location
+2002,PopulationByAgeSex_5x5,2,Medium,Time
+2002,PopulationByAgeSex_5x5,2,Medium,MidPeriod
+2002,PopulationByAgeSex_5x5,2,Medium,AgeGrp
+2002,PopulationByAgeSex_5x5,2,Medium,AgeGrpStart
+2002,PopulationByAgeSex_5x5,2,Medium,AgeGrpSpan
+2002,PopulationByAgeSex_5x5,2,Medium,PopMale
+2002,PopulationByAgeSex_5x5,2,Medium,PopFemale
+2002,PopulationByAgeSex_5x5,2,Medium,PopTotal
 2002,TotalPopulationBySex,2,Medium,LocID
 2002,TotalPopulationBySex,2,Medium,Location
 2002,TotalPopulationBySex,2,Medium,Time
@@ -1364,16 +1364,6 @@ wpp,file_group,VarID,Variant,col_name
 2004,Period_Indicators,9,No change,NatIncr
 2004,Period_Indicators,9,No change,SRB
 2004,Period_Indicators,9,No change,MAC
-2004,PopulationByAgeSex_5x5,2,Medium,LocID
-2004,PopulationByAgeSex_5x5,2,Medium,Location
-2004,PopulationByAgeSex_5x5,2,Medium,Time
-2004,PopulationByAgeSex_5x5,2,Medium,MidPeriod
-2004,PopulationByAgeSex_5x5,2,Medium,AgeGrp
-2004,PopulationByAgeSex_5x5,2,Medium,AgeGrpStart
-2004,PopulationByAgeSex_5x5,2,Medium,AgeGrpSpan
-2004,PopulationByAgeSex_5x5,2,Medium,PopMale
-2004,PopulationByAgeSex_5x5,2,Medium,PopFemale
-2004,PopulationByAgeSex_5x5,2,Medium,PopTotal
 2004,PopulationByAgeSex,2,Medium,LocID
 2004,PopulationByAgeSex,2,Medium,Location
 2004,PopulationByAgeSex,2,Medium,Time
@@ -1454,16 +1444,16 @@ wpp,file_group,VarID,Variant,col_name
 2004,PopulationByAgeSex,9,No change,PopMale
 2004,PopulationByAgeSex,9,No change,PopFemale
 2004,PopulationByAgeSex,9,No change,PopTotal
-2004,PopulationBySingleAgeSex,2,Medium,LocID
-2004,PopulationBySingleAgeSex,2,Medium,Location
-2004,PopulationBySingleAgeSex,2,Medium,Time
-2004,PopulationBySingleAgeSex,2,Medium,MidPeriod
-2004,PopulationBySingleAgeSex,2,Medium,AgeGrp
-2004,PopulationBySingleAgeSex,2,Medium,AgeGrpStart
-2004,PopulationBySingleAgeSex,2,Medium,AgeGrpSpan
-2004,PopulationBySingleAgeSex,2,Medium,PopMale
-2004,PopulationBySingleAgeSex,2,Medium,PopFemale
-2004,PopulationBySingleAgeSex,2,Medium,PopTotal
+2004,PopulationByAgeSex_5x5,2,Medium,LocID
+2004,PopulationByAgeSex_5x5,2,Medium,Location
+2004,PopulationByAgeSex_5x5,2,Medium,Time
+2004,PopulationByAgeSex_5x5,2,Medium,MidPeriod
+2004,PopulationByAgeSex_5x5,2,Medium,AgeGrp
+2004,PopulationByAgeSex_5x5,2,Medium,AgeGrpStart
+2004,PopulationByAgeSex_5x5,2,Medium,AgeGrpSpan
+2004,PopulationByAgeSex_5x5,2,Medium,PopMale
+2004,PopulationByAgeSex_5x5,2,Medium,PopFemale
+2004,PopulationByAgeSex_5x5,2,Medium,PopTotal
 2004,PopulationBySingleAgeSex,2,Medium,LocID
 2004,PopulationBySingleAgeSex,2,Medium,Location
 2004,PopulationBySingleAgeSex,2,Medium,Time
@@ -1813,16 +1803,6 @@ wpp,file_group,VarID,Variant,col_name
 2006,Period_Indicators,9,No change,NatIncr
 2006,Period_Indicators,9,No change,SRB
 2006,Period_Indicators,9,No change,MAC
-2006,PopulationByAgeSex_5x5,2,Medium,LocID
-2006,PopulationByAgeSex_5x5,2,Medium,Location
-2006,PopulationByAgeSex_5x5,2,Medium,Time
-2006,PopulationByAgeSex_5x5,2,Medium,MidPeriod
-2006,PopulationByAgeSex_5x5,2,Medium,AgeGrp
-2006,PopulationByAgeSex_5x5,2,Medium,AgeGrpStart
-2006,PopulationByAgeSex_5x5,2,Medium,AgeGrpSpan
-2006,PopulationByAgeSex_5x5,2,Medium,PopMale
-2006,PopulationByAgeSex_5x5,2,Medium,PopFemale
-2006,PopulationByAgeSex_5x5,2,Medium,PopTotal
 2006,PopulationByAgeSex,2,Medium,LocID
 2006,PopulationByAgeSex,2,Medium,Location
 2006,PopulationByAgeSex,2,Medium,Time
@@ -1903,16 +1883,16 @@ wpp,file_group,VarID,Variant,col_name
 2006,PopulationByAgeSex,9,No change,PopMale
 2006,PopulationByAgeSex,9,No change,PopFemale
 2006,PopulationByAgeSex,9,No change,PopTotal
-2006,PopulationBySingleAgeSex,2,Medium,LocID
-2006,PopulationBySingleAgeSex,2,Medium,Location
-2006,PopulationBySingleAgeSex,2,Medium,Time
-2006,PopulationBySingleAgeSex,2,Medium,MidPeriod
-2006,PopulationBySingleAgeSex,2,Medium,AgeGrp
-2006,PopulationBySingleAgeSex,2,Medium,AgeGrpStart
-2006,PopulationBySingleAgeSex,2,Medium,AgeGrpSpan
-2006,PopulationBySingleAgeSex,2,Medium,PopMale
-2006,PopulationBySingleAgeSex,2,Medium,PopFemale
-2006,PopulationBySingleAgeSex,2,Medium,PopTotal
+2006,PopulationByAgeSex_5x5,2,Medium,LocID
+2006,PopulationByAgeSex_5x5,2,Medium,Location
+2006,PopulationByAgeSex_5x5,2,Medium,Time
+2006,PopulationByAgeSex_5x5,2,Medium,MidPeriod
+2006,PopulationByAgeSex_5x5,2,Medium,AgeGrp
+2006,PopulationByAgeSex_5x5,2,Medium,AgeGrpStart
+2006,PopulationByAgeSex_5x5,2,Medium,AgeGrpSpan
+2006,PopulationByAgeSex_5x5,2,Medium,PopMale
+2006,PopulationByAgeSex_5x5,2,Medium,PopFemale
+2006,PopulationByAgeSex_5x5,2,Medium,PopTotal
 2006,PopulationBySingleAgeSex,2,Medium,LocID
 2006,PopulationBySingleAgeSex,2,Medium,Location
 2006,PopulationBySingleAgeSex,2,Medium,Time
@@ -2262,16 +2242,6 @@ wpp,file_group,VarID,Variant,col_name
 2008,Period_Indicators,9,No change,NatIncr
 2008,Period_Indicators,9,No change,SRB
 2008,Period_Indicators,9,No change,MAC
-2008,PopulationByAgeSex_5x5,2,Medium,LocID
-2008,PopulationByAgeSex_5x5,2,Medium,Location
-2008,PopulationByAgeSex_5x5,2,Medium,Time
-2008,PopulationByAgeSex_5x5,2,Medium,MidPeriod
-2008,PopulationByAgeSex_5x5,2,Medium,AgeGrp
-2008,PopulationByAgeSex_5x5,2,Medium,AgeGrpStart
-2008,PopulationByAgeSex_5x5,2,Medium,AgeGrpSpan
-2008,PopulationByAgeSex_5x5,2,Medium,PopMale
-2008,PopulationByAgeSex_5x5,2,Medium,PopFemale
-2008,PopulationByAgeSex_5x5,2,Medium,PopTotal
 2008,PopulationByAgeSex,2,Medium,LocID
 2008,PopulationByAgeSex,2,Medium,Location
 2008,PopulationByAgeSex,2,Medium,Time
@@ -2352,16 +2322,16 @@ wpp,file_group,VarID,Variant,col_name
 2008,PopulationByAgeSex,9,No change,PopMale
 2008,PopulationByAgeSex,9,No change,PopFemale
 2008,PopulationByAgeSex,9,No change,PopTotal
-2008,PopulationBySingleAgeSex,2,Medium,LocID
-2008,PopulationBySingleAgeSex,2,Medium,Location
-2008,PopulationBySingleAgeSex,2,Medium,Time
-2008,PopulationBySingleAgeSex,2,Medium,MidPeriod
-2008,PopulationBySingleAgeSex,2,Medium,AgeGrp
-2008,PopulationBySingleAgeSex,2,Medium,AgeGrpStart
-2008,PopulationBySingleAgeSex,2,Medium,AgeGrpSpan
-2008,PopulationBySingleAgeSex,2,Medium,PopMale
-2008,PopulationBySingleAgeSex,2,Medium,PopFemale
-2008,PopulationBySingleAgeSex,2,Medium,PopTotal
+2008,PopulationByAgeSex_5x5,2,Medium,LocID
+2008,PopulationByAgeSex_5x5,2,Medium,Location
+2008,PopulationByAgeSex_5x5,2,Medium,Time
+2008,PopulationByAgeSex_5x5,2,Medium,MidPeriod
+2008,PopulationByAgeSex_5x5,2,Medium,AgeGrp
+2008,PopulationByAgeSex_5x5,2,Medium,AgeGrpStart
+2008,PopulationByAgeSex_5x5,2,Medium,AgeGrpSpan
+2008,PopulationByAgeSex_5x5,2,Medium,PopMale
+2008,PopulationByAgeSex_5x5,2,Medium,PopFemale
+2008,PopulationByAgeSex_5x5,2,Medium,PopTotal
 2008,PopulationBySingleAgeSex,2,Medium,LocID
 2008,PopulationBySingleAgeSex,2,Medium,Location
 2008,PopulationBySingleAgeSex,2,Medium,Time
@@ -2711,16 +2681,6 @@ wpp,file_group,VarID,Variant,col_name
 2010,Period_Indicators,9,No change,NatIncr
 2010,Period_Indicators,9,No change,SRB
 2010,Period_Indicators,9,No change,MAC
-2010,PopulationByAgeSex_5x5,2,Medium,LocID
-2010,PopulationByAgeSex_5x5,2,Medium,Location
-2010,PopulationByAgeSex_5x5,2,Medium,Time
-2010,PopulationByAgeSex_5x5,2,Medium,MidPeriod
-2010,PopulationByAgeSex_5x5,2,Medium,AgeGrp
-2010,PopulationByAgeSex_5x5,2,Medium,AgeGrpStart
-2010,PopulationByAgeSex_5x5,2,Medium,AgeGrpSpan
-2010,PopulationByAgeSex_5x5,2,Medium,PopMale
-2010,PopulationByAgeSex_5x5,2,Medium,PopFemale
-2010,PopulationByAgeSex_5x5,2,Medium,PopTotal
 2010,PopulationByAgeSex,2,Medium,LocID
 2010,PopulationByAgeSex,2,Medium,Location
 2010,PopulationByAgeSex,2,Medium,Time
@@ -2801,16 +2761,16 @@ wpp,file_group,VarID,Variant,col_name
 2010,PopulationByAgeSex,9,No change,PopMale
 2010,PopulationByAgeSex,9,No change,PopFemale
 2010,PopulationByAgeSex,9,No change,PopTotal
-2010,PopulationBySingleAgeSex,2,Medium,LocID
-2010,PopulationBySingleAgeSex,2,Medium,Location
-2010,PopulationBySingleAgeSex,2,Medium,Time
-2010,PopulationBySingleAgeSex,2,Medium,MidPeriod
-2010,PopulationBySingleAgeSex,2,Medium,AgeGrp
-2010,PopulationBySingleAgeSex,2,Medium,AgeGrpStart
-2010,PopulationBySingleAgeSex,2,Medium,AgeGrpSpan
-2010,PopulationBySingleAgeSex,2,Medium,PopMale
-2010,PopulationBySingleAgeSex,2,Medium,PopFemale
-2010,PopulationBySingleAgeSex,2,Medium,PopTotal
+2010,PopulationByAgeSex_5x5,2,Medium,LocID
+2010,PopulationByAgeSex_5x5,2,Medium,Location
+2010,PopulationByAgeSex_5x5,2,Medium,Time
+2010,PopulationByAgeSex_5x5,2,Medium,MidPeriod
+2010,PopulationByAgeSex_5x5,2,Medium,AgeGrp
+2010,PopulationByAgeSex_5x5,2,Medium,AgeGrpStart
+2010,PopulationByAgeSex_5x5,2,Medium,AgeGrpSpan
+2010,PopulationByAgeSex_5x5,2,Medium,PopMale
+2010,PopulationByAgeSex_5x5,2,Medium,PopFemale
+2010,PopulationByAgeSex_5x5,2,Medium,PopTotal
 2010,PopulationBySingleAgeSex,2,Medium,LocID
 2010,PopulationBySingleAgeSex,2,Medium,Location
 2010,PopulationBySingleAgeSex,2,Medium,Time
@@ -3160,16 +3120,6 @@ wpp,file_group,VarID,Variant,col_name
 2012,Period_Indicators,9,No change,NatIncr
 2012,Period_Indicators,9,No change,SRB
 2012,Period_Indicators,9,No change,MAC
-2012,PopulationByAgeSex_5x5,2,Medium,LocID
-2012,PopulationByAgeSex_5x5,2,Medium,Location
-2012,PopulationByAgeSex_5x5,2,Medium,Time
-2012,PopulationByAgeSex_5x5,2,Medium,MidPeriod
-2012,PopulationByAgeSex_5x5,2,Medium,AgeGrp
-2012,PopulationByAgeSex_5x5,2,Medium,AgeGrpStart
-2012,PopulationByAgeSex_5x5,2,Medium,AgeGrpSpan
-2012,PopulationByAgeSex_5x5,2,Medium,PopMale
-2012,PopulationByAgeSex_5x5,2,Medium,PopFemale
-2012,PopulationByAgeSex_5x5,2,Medium,PopTotal
 2012,PopulationByAgeSex,2,Medium,LocID
 2012,PopulationByAgeSex,2,Medium,Location
 2012,PopulationByAgeSex,2,Medium,Time
@@ -3250,16 +3200,16 @@ wpp,file_group,VarID,Variant,col_name
 2012,PopulationByAgeSex,9,No change,PopMale
 2012,PopulationByAgeSex,9,No change,PopFemale
 2012,PopulationByAgeSex,9,No change,PopTotal
-2012,PopulationBySingleAgeSex,2,Medium,LocID
-2012,PopulationBySingleAgeSex,2,Medium,Location
-2012,PopulationBySingleAgeSex,2,Medium,Time
-2012,PopulationBySingleAgeSex,2,Medium,MidPeriod
-2012,PopulationBySingleAgeSex,2,Medium,AgeGrp
-2012,PopulationBySingleAgeSex,2,Medium,AgeGrpStart
-2012,PopulationBySingleAgeSex,2,Medium,AgeGrpSpan
-2012,PopulationBySingleAgeSex,2,Medium,PopMale
-2012,PopulationBySingleAgeSex,2,Medium,PopFemale
-2012,PopulationBySingleAgeSex,2,Medium,PopTotal
+2012,PopulationByAgeSex_5x5,2,Medium,LocID
+2012,PopulationByAgeSex_5x5,2,Medium,Location
+2012,PopulationByAgeSex_5x5,2,Medium,Time
+2012,PopulationByAgeSex_5x5,2,Medium,MidPeriod
+2012,PopulationByAgeSex_5x5,2,Medium,AgeGrp
+2012,PopulationByAgeSex_5x5,2,Medium,AgeGrpStart
+2012,PopulationByAgeSex_5x5,2,Medium,AgeGrpSpan
+2012,PopulationByAgeSex_5x5,2,Medium,PopMale
+2012,PopulationByAgeSex_5x5,2,Medium,PopFemale
+2012,PopulationByAgeSex_5x5,2,Medium,PopTotal
 2012,PopulationBySingleAgeSex,2,Medium,LocID
 2012,PopulationBySingleAgeSex,2,Medium,Location
 2012,PopulationBySingleAgeSex,2,Medium,Time
@@ -3448,6 +3398,13 @@ wpp,file_group,VarID,Variant,col_name
 2015,Period_Indicators,2,Medium,NatIncr
 2015,Period_Indicators,2,Medium,SRB
 2015,Period_Indicators,2,Medium,MAC
+2015,Period_Indicators,202,BHM median,LocID
+2015,Period_Indicators,202,BHM median,Location
+2015,Period_Indicators,202,BHM median,Time
+2015,Period_Indicators,202,BHM median,MidPeriod
+2015,Period_Indicators,202,BHM median,TFR
+2015,Period_Indicators,202,BHM median,LExMale
+2015,Period_Indicators,202,BHM median,LExFemale
 2015,Period_Indicators,3,High,LocID
 2015,Period_Indicators,3,High,Location
 2015,Period_Indicators,3,High,Time
@@ -3609,23 +3566,6 @@ wpp,file_group,VarID,Variant,col_name
 2015,Period_Indicators,9,No change,NatIncr
 2015,Period_Indicators,9,No change,SRB
 2015,Period_Indicators,9,No change,MAC
-2015,Period_Indicators,202,BHM median,LocID
-2015,Period_Indicators,202,BHM median,Location
-2015,Period_Indicators,202,BHM median,Time
-2015,Period_Indicators,202,BHM median,MidPeriod
-2015,Period_Indicators,202,BHM median,TFR
-2015,Period_Indicators,202,BHM median,LExMale
-2015,Period_Indicators,202,BHM median,LExFemale
-2015,PopulationByAgeSex_5x5,2,Medium,LocID
-2015,PopulationByAgeSex_5x5,2,Medium,Location
-2015,PopulationByAgeSex_5x5,2,Medium,Time
-2015,PopulationByAgeSex_5x5,2,Medium,MidPeriod
-2015,PopulationByAgeSex_5x5,2,Medium,AgeGrp
-2015,PopulationByAgeSex_5x5,2,Medium,AgeGrpStart
-2015,PopulationByAgeSex_5x5,2,Medium,AgeGrpSpan
-2015,PopulationByAgeSex_5x5,2,Medium,PopMale
-2015,PopulationByAgeSex_5x5,2,Medium,PopFemale
-2015,PopulationByAgeSex_5x5,2,Medium,PopTotal
 2015,PopulationByAgeSex,2,Medium,LocID
 2015,PopulationByAgeSex,2,Medium,Location
 2015,PopulationByAgeSex,2,Medium,Time
@@ -3706,16 +3646,16 @@ wpp,file_group,VarID,Variant,col_name
 2015,PopulationByAgeSex,9,No change,PopMale
 2015,PopulationByAgeSex,9,No change,PopFemale
 2015,PopulationByAgeSex,9,No change,PopTotal
-2015,PopulationBySingleAgeSex,2,Medium,LocID
-2015,PopulationBySingleAgeSex,2,Medium,Location
-2015,PopulationBySingleAgeSex,2,Medium,Time
-2015,PopulationBySingleAgeSex,2,Medium,MidPeriod
-2015,PopulationBySingleAgeSex,2,Medium,AgeGrp
-2015,PopulationBySingleAgeSex,2,Medium,AgeGrpStart
-2015,PopulationBySingleAgeSex,2,Medium,AgeGrpSpan
-2015,PopulationBySingleAgeSex,2,Medium,PopMale
-2015,PopulationBySingleAgeSex,2,Medium,PopFemale
-2015,PopulationBySingleAgeSex,2,Medium,PopTotal
+2015,PopulationByAgeSex_5x5,2,Medium,LocID
+2015,PopulationByAgeSex_5x5,2,Medium,Location
+2015,PopulationByAgeSex_5x5,2,Medium,Time
+2015,PopulationByAgeSex_5x5,2,Medium,MidPeriod
+2015,PopulationByAgeSex_5x5,2,Medium,AgeGrp
+2015,PopulationByAgeSex_5x5,2,Medium,AgeGrpStart
+2015,PopulationByAgeSex_5x5,2,Medium,AgeGrpSpan
+2015,PopulationByAgeSex_5x5,2,Medium,PopMale
+2015,PopulationByAgeSex_5x5,2,Medium,PopFemale
+2015,PopulationByAgeSex_5x5,2,Medium,PopTotal
 2015,PopulationBySingleAgeSex,2,Medium,LocID
 2015,PopulationBySingleAgeSex,2,Medium,Location
 2015,PopulationBySingleAgeSex,2,Medium,Time
@@ -3782,6 +3722,16 @@ wpp,file_group,VarID,Variant,col_name
 2015,TotalPopulationBySex,9,No change,PopMale
 2015,TotalPopulationBySex,9,No change,PopFemale
 2015,TotalPopulationBySex,9,No change,PopTotal
+2017,Fertility_by_Age,10,Momentum,LocID
+2017,Fertility_by_Age,10,Momentum,Location
+2017,Fertility_by_Age,10,Momentum,Time
+2017,Fertility_by_Age,10,Momentum,MidPeriod
+2017,Fertility_by_Age,10,Momentum,AgeGrp
+2017,Fertility_by_Age,10,Momentum,AgeGrpStart
+2017,Fertility_by_Age,10,Momentum,AgeGrpSpan
+2017,Fertility_by_Age,10,Momentum,ASFR
+2017,Fertility_by_Age,10,Momentum,PASFR
+2017,Fertility_by_Age,10,Momentum,Births
 2017,Fertility_by_Age,2,Medium,LocID
 2017,Fertility_by_Age,2,Medium,Location
 2017,Fertility_by_Age,2,Medium,Time
@@ -3862,16 +3812,6 @@ wpp,file_group,VarID,Variant,col_name
 2017,Fertility_by_Age,9,No change,ASFR
 2017,Fertility_by_Age,9,No change,PASFR
 2017,Fertility_by_Age,9,No change,Births
-2017,Fertility_by_Age,10,Momentum,LocID
-2017,Fertility_by_Age,10,Momentum,Location
-2017,Fertility_by_Age,10,Momentum,Time
-2017,Fertility_by_Age,10,Momentum,MidPeriod
-2017,Fertility_by_Age,10,Momentum,AgeGrp
-2017,Fertility_by_Age,10,Momentum,AgeGrpStart
-2017,Fertility_by_Age,10,Momentum,AgeGrpSpan
-2017,Fertility_by_Age,10,Momentum,ASFR
-2017,Fertility_by_Age,10,Momentum,PASFR
-2017,Fertility_by_Age,10,Momentum,Births
 2017,Life_Table,2,Medium,LocID
 2017,Life_Table,2,Medium,Location
 2017,Life_Table,2,Medium,Time
@@ -3891,6 +3831,29 @@ wpp,file_group,VarID,Variant,col_name
 2017,Life_Table,2,Medium,Tx
 2017,Life_Table,2,Medium,ex
 2017,Life_Table,2,Medium,ax
+2017,Period_Indicators,10,Momentum,LocID
+2017,Period_Indicators,10,Momentum,Location
+2017,Period_Indicators,10,Momentum,Time
+2017,Period_Indicators,10,Momentum,MidPeriod
+2017,Period_Indicators,10,Momentum,TFR
+2017,Period_Indicators,10,Momentum,NRR
+2017,Period_Indicators,10,Momentum,CBR
+2017,Period_Indicators,10,Momentum,Births
+2017,Period_Indicators,10,Momentum,LEx
+2017,Period_Indicators,10,Momentum,LExMale
+2017,Period_Indicators,10,Momentum,LExFemale
+2017,Period_Indicators,10,Momentum,IMR
+2017,Period_Indicators,10,Momentum,Q5
+2017,Period_Indicators,10,Momentum,CDR
+2017,Period_Indicators,10,Momentum,Deaths
+2017,Period_Indicators,10,Momentum,DeathsMale
+2017,Period_Indicators,10,Momentum,DeathsFemale
+2017,Period_Indicators,10,Momentum,CNMR
+2017,Period_Indicators,10,Momentum,NetMigrations
+2017,Period_Indicators,10,Momentum,GrowthRate
+2017,Period_Indicators,10,Momentum,NatIncr
+2017,Period_Indicators,10,Momentum,SRB
+2017,Period_Indicators,10,Momentum,MAC
 2017,Period_Indicators,2,Medium,LocID
 2017,Period_Indicators,2,Medium,Location
 2017,Period_Indicators,2,Medium,Time
@@ -3914,6 +3877,41 @@ wpp,file_group,VarID,Variant,col_name
 2017,Period_Indicators,2,Medium,NatIncr
 2017,Period_Indicators,2,Medium,SRB
 2017,Period_Indicators,2,Medium,MAC
+2017,Period_Indicators,202,Median PI,LocID
+2017,Period_Indicators,202,Median PI,Location
+2017,Period_Indicators,202,Median PI,Time
+2017,Period_Indicators,202,Median PI,MidPeriod
+2017,Period_Indicators,202,Median PI,TFR
+2017,Period_Indicators,202,Median PI,LExMale
+2017,Period_Indicators,202,Median PI,LExFemale
+2017,Period_Indicators,203,Upper 80 PI,LocID
+2017,Period_Indicators,203,Upper 80 PI,Location
+2017,Period_Indicators,203,Upper 80 PI,Time
+2017,Period_Indicators,203,Upper 80 PI,MidPeriod
+2017,Period_Indicators,203,Upper 80 PI,TFR
+2017,Period_Indicators,203,Upper 80 PI,LExMale
+2017,Period_Indicators,203,Upper 80 PI,LExFemale
+2017,Period_Indicators,204,Lower 80 PI,LocID
+2017,Period_Indicators,204,Lower 80 PI,Location
+2017,Period_Indicators,204,Lower 80 PI,Time
+2017,Period_Indicators,204,Lower 80 PI,MidPeriod
+2017,Period_Indicators,204,Lower 80 PI,TFR
+2017,Period_Indicators,204,Lower 80 PI,LExMale
+2017,Period_Indicators,204,Lower 80 PI,LExFemale
+2017,Period_Indicators,206,Upper 95 PI,LocID
+2017,Period_Indicators,206,Upper 95 PI,Location
+2017,Period_Indicators,206,Upper 95 PI,Time
+2017,Period_Indicators,206,Upper 95 PI,MidPeriod
+2017,Period_Indicators,206,Upper 95 PI,TFR
+2017,Period_Indicators,206,Upper 95 PI,LExMale
+2017,Period_Indicators,206,Upper 95 PI,LExFemale
+2017,Period_Indicators,207,Lower 95 PI,LocID
+2017,Period_Indicators,207,Lower 95 PI,Location
+2017,Period_Indicators,207,Lower 95 PI,Time
+2017,Period_Indicators,207,Lower 95 PI,MidPeriod
+2017,Period_Indicators,207,Lower 95 PI,TFR
+2017,Period_Indicators,207,Lower 95 PI,LExMale
+2017,Period_Indicators,207,Lower 95 PI,LExFemale
 2017,Period_Indicators,3,High,LocID
 2017,Period_Indicators,3,High,Location
 2017,Period_Indicators,3,High,Time
@@ -4075,74 +4073,16 @@ wpp,file_group,VarID,Variant,col_name
 2017,Period_Indicators,9,No change,NatIncr
 2017,Period_Indicators,9,No change,SRB
 2017,Period_Indicators,9,No change,MAC
-2017,Period_Indicators,10,Momentum,LocID
-2017,Period_Indicators,10,Momentum,Location
-2017,Period_Indicators,10,Momentum,Time
-2017,Period_Indicators,10,Momentum,MidPeriod
-2017,Period_Indicators,10,Momentum,TFR
-2017,Period_Indicators,10,Momentum,NRR
-2017,Period_Indicators,10,Momentum,CBR
-2017,Period_Indicators,10,Momentum,Births
-2017,Period_Indicators,10,Momentum,LEx
-2017,Period_Indicators,10,Momentum,LExMale
-2017,Period_Indicators,10,Momentum,LExFemale
-2017,Period_Indicators,10,Momentum,IMR
-2017,Period_Indicators,10,Momentum,Q5
-2017,Period_Indicators,10,Momentum,CDR
-2017,Period_Indicators,10,Momentum,Deaths
-2017,Period_Indicators,10,Momentum,DeathsMale
-2017,Period_Indicators,10,Momentum,DeathsFemale
-2017,Period_Indicators,10,Momentum,CNMR
-2017,Period_Indicators,10,Momentum,NetMigrations
-2017,Period_Indicators,10,Momentum,GrowthRate
-2017,Period_Indicators,10,Momentum,NatIncr
-2017,Period_Indicators,10,Momentum,SRB
-2017,Period_Indicators,10,Momentum,MAC
-2017,Period_Indicators,202,Median PI,LocID
-2017,Period_Indicators,202,Median PI,Location
-2017,Period_Indicators,202,Median PI,Time
-2017,Period_Indicators,202,Median PI,MidPeriod
-2017,Period_Indicators,202,Median PI,TFR
-2017,Period_Indicators,202,Median PI,LExMale
-2017,Period_Indicators,202,Median PI,LExFemale
-2017,Period_Indicators,203,Upper 80 PI,LocID
-2017,Period_Indicators,203,Upper 80 PI,Location
-2017,Period_Indicators,203,Upper 80 PI,Time
-2017,Period_Indicators,203,Upper 80 PI,MidPeriod
-2017,Period_Indicators,203,Upper 80 PI,TFR
-2017,Period_Indicators,203,Upper 80 PI,LExMale
-2017,Period_Indicators,203,Upper 80 PI,LExFemale
-2017,Period_Indicators,204,Lower 80 PI,LocID
-2017,Period_Indicators,204,Lower 80 PI,Location
-2017,Period_Indicators,204,Lower 80 PI,Time
-2017,Period_Indicators,204,Lower 80 PI,MidPeriod
-2017,Period_Indicators,204,Lower 80 PI,TFR
-2017,Period_Indicators,204,Lower 80 PI,LExMale
-2017,Period_Indicators,204,Lower 80 PI,LExFemale
-2017,Period_Indicators,206,Upper 95 PI,LocID
-2017,Period_Indicators,206,Upper 95 PI,Location
-2017,Period_Indicators,206,Upper 95 PI,Time
-2017,Period_Indicators,206,Upper 95 PI,MidPeriod
-2017,Period_Indicators,206,Upper 95 PI,TFR
-2017,Period_Indicators,206,Upper 95 PI,LExMale
-2017,Period_Indicators,206,Upper 95 PI,LExFemale
-2017,Period_Indicators,207,Lower 95 PI,LocID
-2017,Period_Indicators,207,Lower 95 PI,Location
-2017,Period_Indicators,207,Lower 95 PI,Time
-2017,Period_Indicators,207,Lower 95 PI,MidPeriod
-2017,Period_Indicators,207,Lower 95 PI,TFR
-2017,Period_Indicators,207,Lower 95 PI,LExMale
-2017,Period_Indicators,207,Lower 95 PI,LExFemale
-2017,PopulationByAgeSex_5x5,2,Medium,LocID
-2017,PopulationByAgeSex_5x5,2,Medium,Location
-2017,PopulationByAgeSex_5x5,2,Medium,Time
-2017,PopulationByAgeSex_5x5,2,Medium,MidPeriod
-2017,PopulationByAgeSex_5x5,2,Medium,AgeGrp
-2017,PopulationByAgeSex_5x5,2,Medium,AgeGrpStart
-2017,PopulationByAgeSex_5x5,2,Medium,AgeGrpSpan
-2017,PopulationByAgeSex_5x5,2,Medium,PopMale
-2017,PopulationByAgeSex_5x5,2,Medium,PopFemale
-2017,PopulationByAgeSex_5x5,2,Medium,PopTotal
+2017,PopulationByAgeSex,10,Momentum,LocID
+2017,PopulationByAgeSex,10,Momentum,Location
+2017,PopulationByAgeSex,10,Momentum,Time
+2017,PopulationByAgeSex,10,Momentum,MidPeriod
+2017,PopulationByAgeSex,10,Momentum,AgeGrp
+2017,PopulationByAgeSex,10,Momentum,AgeGrpStart
+2017,PopulationByAgeSex,10,Momentum,AgeGrpSpan
+2017,PopulationByAgeSex,10,Momentum,PopMale
+2017,PopulationByAgeSex,10,Momentum,PopFemale
+2017,PopulationByAgeSex,10,Momentum,PopTotal
 2017,PopulationByAgeSex,2,Medium,LocID
 2017,PopulationByAgeSex,2,Medium,Location
 2017,PopulationByAgeSex,2,Medium,Time
@@ -4223,16 +4163,16 @@ wpp,file_group,VarID,Variant,col_name
 2017,PopulationByAgeSex,9,No change,PopMale
 2017,PopulationByAgeSex,9,No change,PopFemale
 2017,PopulationByAgeSex,9,No change,PopTotal
-2017,PopulationByAgeSex,10,Momentum,LocID
-2017,PopulationByAgeSex,10,Momentum,Location
-2017,PopulationByAgeSex,10,Momentum,Time
-2017,PopulationByAgeSex,10,Momentum,MidPeriod
-2017,PopulationByAgeSex,10,Momentum,AgeGrp
-2017,PopulationByAgeSex,10,Momentum,AgeGrpStart
-2017,PopulationByAgeSex,10,Momentum,AgeGrpSpan
-2017,PopulationByAgeSex,10,Momentum,PopMale
-2017,PopulationByAgeSex,10,Momentum,PopFemale
-2017,PopulationByAgeSex,10,Momentum,PopTotal
+2017,PopulationByAgeSex_5x5,2,Medium,LocID
+2017,PopulationByAgeSex_5x5,2,Medium,Location
+2017,PopulationByAgeSex_5x5,2,Medium,Time
+2017,PopulationByAgeSex_5x5,2,Medium,MidPeriod
+2017,PopulationByAgeSex_5x5,2,Medium,AgeGrp
+2017,PopulationByAgeSex_5x5,2,Medium,AgeGrpStart
+2017,PopulationByAgeSex_5x5,2,Medium,AgeGrpSpan
+2017,PopulationByAgeSex_5x5,2,Medium,PopMale
+2017,PopulationByAgeSex_5x5,2,Medium,PopFemale
+2017,PopulationByAgeSex_5x5,2,Medium,PopTotal
 2017,PopulationBySingleAgeSex,2,Medium,LocID
 2017,PopulationBySingleAgeSex,2,Medium,Location
 2017,PopulationBySingleAgeSex,2,Medium,Time
@@ -4243,16 +4183,13 @@ wpp,file_group,VarID,Variant,col_name
 2017,PopulationBySingleAgeSex,2,Medium,PopMale
 2017,PopulationBySingleAgeSex,2,Medium,PopFemale
 2017,PopulationBySingleAgeSex,2,Medium,PopTotal
-2017,PopulationBySingleAgeSex,2,Medium,LocID
-2017,PopulationBySingleAgeSex,2,Medium,Location
-2017,PopulationBySingleAgeSex,2,Medium,Time
-2017,PopulationBySingleAgeSex,2,Medium,MidPeriod
-2017,PopulationBySingleAgeSex,2,Medium,AgeGrp
-2017,PopulationBySingleAgeSex,2,Medium,AgeGrpStart
-2017,PopulationBySingleAgeSex,2,Medium,AgeGrpSpan
-2017,PopulationBySingleAgeSex,2,Medium,PopMale
-2017,PopulationBySingleAgeSex,2,Medium,PopFemale
-2017,PopulationBySingleAgeSex,2,Medium,PopTotal
+2017,TotalPopulationBySex,10,Momentum,LocID
+2017,TotalPopulationBySex,10,Momentum,Location
+2017,TotalPopulationBySex,10,Momentum,Time
+2017,TotalPopulationBySex,10,Momentum,MidPeriod
+2017,TotalPopulationBySex,10,Momentum,PopMale
+2017,TotalPopulationBySex,10,Momentum,PopFemale
+2017,TotalPopulationBySex,10,Momentum,PopTotal
 2017,TotalPopulationBySex,2,Medium,LocID
 2017,TotalPopulationBySex,2,Medium,Location
 2017,TotalPopulationBySex,2,Medium,Time
@@ -4260,6 +4197,31 @@ wpp,file_group,VarID,Variant,col_name
 2017,TotalPopulationBySex,2,Medium,PopMale
 2017,TotalPopulationBySex,2,Medium,PopFemale
 2017,TotalPopulationBySex,2,Medium,PopTotal
+2017,TotalPopulationBySex,202,Median PI,LocID
+2017,TotalPopulationBySex,202,Median PI,Location
+2017,TotalPopulationBySex,202,Median PI,Time
+2017,TotalPopulationBySex,202,Median PI,MidPeriod
+2017,TotalPopulationBySex,202,Median PI,PopTotal
+2017,TotalPopulationBySex,203,Upper 80 PI,LocID
+2017,TotalPopulationBySex,203,Upper 80 PI,Location
+2017,TotalPopulationBySex,203,Upper 80 PI,Time
+2017,TotalPopulationBySex,203,Upper 80 PI,MidPeriod
+2017,TotalPopulationBySex,203,Upper 80 PI,PopTotal
+2017,TotalPopulationBySex,204,Lower 80 PI,LocID
+2017,TotalPopulationBySex,204,Lower 80 PI,Location
+2017,TotalPopulationBySex,204,Lower 80 PI,Time
+2017,TotalPopulationBySex,204,Lower 80 PI,MidPeriod
+2017,TotalPopulationBySex,204,Lower 80 PI,PopTotal
+2017,TotalPopulationBySex,206,Upper 95 PI,LocID
+2017,TotalPopulationBySex,206,Upper 95 PI,Location
+2017,TotalPopulationBySex,206,Upper 95 PI,Time
+2017,TotalPopulationBySex,206,Upper 95 PI,MidPeriod
+2017,TotalPopulationBySex,206,Upper 95 PI,PopTotal
+2017,TotalPopulationBySex,207,Lower 95 PI,LocID
+2017,TotalPopulationBySex,207,Lower 95 PI,Location
+2017,TotalPopulationBySex,207,Lower 95 PI,Time
+2017,TotalPopulationBySex,207,Lower 95 PI,MidPeriod
+2017,TotalPopulationBySex,207,Lower 95 PI,PopTotal
 2017,TotalPopulationBySex,3,High,LocID
 2017,TotalPopulationBySex,3,High,Location
 2017,TotalPopulationBySex,3,High,Time
@@ -4309,38 +4271,16 @@ wpp,file_group,VarID,Variant,col_name
 2017,TotalPopulationBySex,9,No change,PopMale
 2017,TotalPopulationBySex,9,No change,PopFemale
 2017,TotalPopulationBySex,9,No change,PopTotal
-2017,TotalPopulationBySex,10,Momentum,LocID
-2017,TotalPopulationBySex,10,Momentum,Location
-2017,TotalPopulationBySex,10,Momentum,Time
-2017,TotalPopulationBySex,10,Momentum,MidPeriod
-2017,TotalPopulationBySex,10,Momentum,PopMale
-2017,TotalPopulationBySex,10,Momentum,PopFemale
-2017,TotalPopulationBySex,10,Momentum,PopTotal
-2017,TotalPopulationBySex,202,Median PI,LocID
-2017,TotalPopulationBySex,202,Median PI,Location
-2017,TotalPopulationBySex,202,Median PI,Time
-2017,TotalPopulationBySex,202,Median PI,MidPeriod
-2017,TotalPopulationBySex,202,Median PI,PopTotal
-2017,TotalPopulationBySex,203,Upper 80 PI,LocID
-2017,TotalPopulationBySex,203,Upper 80 PI,Location
-2017,TotalPopulationBySex,203,Upper 80 PI,Time
-2017,TotalPopulationBySex,203,Upper 80 PI,MidPeriod
-2017,TotalPopulationBySex,203,Upper 80 PI,PopTotal
-2017,TotalPopulationBySex,204,Lower 80 PI,LocID
-2017,TotalPopulationBySex,204,Lower 80 PI,Location
-2017,TotalPopulationBySex,204,Lower 80 PI,Time
-2017,TotalPopulationBySex,204,Lower 80 PI,MidPeriod
-2017,TotalPopulationBySex,204,Lower 80 PI,PopTotal
-2017,TotalPopulationBySex,206,Upper 95 PI,LocID
-2017,TotalPopulationBySex,206,Upper 95 PI,Location
-2017,TotalPopulationBySex,206,Upper 95 PI,Time
-2017,TotalPopulationBySex,206,Upper 95 PI,MidPeriod
-2017,TotalPopulationBySex,206,Upper 95 PI,PopTotal
-2017,TotalPopulationBySex,207,Lower 95 PI,LocID
-2017,TotalPopulationBySex,207,Lower 95 PI,Location
-2017,TotalPopulationBySex,207,Lower 95 PI,Time
-2017,TotalPopulationBySex,207,Lower 95 PI,MidPeriod
-2017,TotalPopulationBySex,207,Lower 95 PI,PopTotal
+2019,Fertility_by_Age,10,Momentum,LocID
+2019,Fertility_by_Age,10,Momentum,Location
+2019,Fertility_by_Age,10,Momentum,Time
+2019,Fertility_by_Age,10,Momentum,MidPeriod
+2019,Fertility_by_Age,10,Momentum,AgeGrp
+2019,Fertility_by_Age,10,Momentum,AgeGrpStart
+2019,Fertility_by_Age,10,Momentum,AgeGrpSpan
+2019,Fertility_by_Age,10,Momentum,ASFR
+2019,Fertility_by_Age,10,Momentum,PASFR
+2019,Fertility_by_Age,10,Momentum,Births
 2019,Fertility_by_Age,2,Medium,LocID
 2019,Fertility_by_Age,2,Medium,Location
 2019,Fertility_by_Age,2,Medium,Time
@@ -4351,6 +4291,51 @@ wpp,file_group,VarID,Variant,col_name
 2019,Fertility_by_Age,2,Medium,ASFR
 2019,Fertility_by_Age,2,Medium,PASFR
 2019,Fertility_by_Age,2,Medium,Births
+2019,Fertility_by_Age,202,Median PI,LocID
+2019,Fertility_by_Age,202,Median PI,Location
+2019,Fertility_by_Age,202,Median PI,Time
+2019,Fertility_by_Age,202,Median PI,MidPeriod
+2019,Fertility_by_Age,202,Median PI,AgeGrp
+2019,Fertility_by_Age,202,Median PI,AgeGrpStart
+2019,Fertility_by_Age,202,Median PI,AgeGrpSpan
+2019,Fertility_by_Age,202,Median PI,ASFR
+2019,Fertility_by_Age,202,Median PI,PASFR
+2019,Fertility_by_Age,203,Upper 80 PI,LocID
+2019,Fertility_by_Age,203,Upper 80 PI,Location
+2019,Fertility_by_Age,203,Upper 80 PI,Time
+2019,Fertility_by_Age,203,Upper 80 PI,MidPeriod
+2019,Fertility_by_Age,203,Upper 80 PI,AgeGrp
+2019,Fertility_by_Age,203,Upper 80 PI,AgeGrpStart
+2019,Fertility_by_Age,203,Upper 80 PI,AgeGrpSpan
+2019,Fertility_by_Age,203,Upper 80 PI,ASFR
+2019,Fertility_by_Age,203,Upper 80 PI,PASFR
+2019,Fertility_by_Age,204,Lower 80 PI,LocID
+2019,Fertility_by_Age,204,Lower 80 PI,Location
+2019,Fertility_by_Age,204,Lower 80 PI,Time
+2019,Fertility_by_Age,204,Lower 80 PI,MidPeriod
+2019,Fertility_by_Age,204,Lower 80 PI,AgeGrp
+2019,Fertility_by_Age,204,Lower 80 PI,AgeGrpStart
+2019,Fertility_by_Age,204,Lower 80 PI,AgeGrpSpan
+2019,Fertility_by_Age,204,Lower 80 PI,ASFR
+2019,Fertility_by_Age,204,Lower 80 PI,PASFR
+2019,Fertility_by_Age,206,Upper 95 PI,LocID
+2019,Fertility_by_Age,206,Upper 95 PI,Location
+2019,Fertility_by_Age,206,Upper 95 PI,Time
+2019,Fertility_by_Age,206,Upper 95 PI,MidPeriod
+2019,Fertility_by_Age,206,Upper 95 PI,AgeGrp
+2019,Fertility_by_Age,206,Upper 95 PI,AgeGrpStart
+2019,Fertility_by_Age,206,Upper 95 PI,AgeGrpSpan
+2019,Fertility_by_Age,206,Upper 95 PI,ASFR
+2019,Fertility_by_Age,206,Upper 95 PI,PASFR
+2019,Fertility_by_Age,207,Lower 95 PI,LocID
+2019,Fertility_by_Age,207,Lower 95 PI,Location
+2019,Fertility_by_Age,207,Lower 95 PI,Time
+2019,Fertility_by_Age,207,Lower 95 PI,MidPeriod
+2019,Fertility_by_Age,207,Lower 95 PI,AgeGrp
+2019,Fertility_by_Age,207,Lower 95 PI,AgeGrpStart
+2019,Fertility_by_Age,207,Lower 95 PI,AgeGrpSpan
+2019,Fertility_by_Age,207,Lower 95 PI,ASFR
+2019,Fertility_by_Age,207,Lower 95 PI,PASFR
 2019,Fertility_by_Age,3,High,LocID
 2019,Fertility_by_Age,3,High,Location
 2019,Fertility_by_Age,3,High,Time
@@ -4421,61 +4406,6 @@ wpp,file_group,VarID,Variant,col_name
 2019,Fertility_by_Age,9,No change,ASFR
 2019,Fertility_by_Age,9,No change,PASFR
 2019,Fertility_by_Age,9,No change,Births
-2019,Fertility_by_Age,10,Momentum,LocID
-2019,Fertility_by_Age,10,Momentum,Location
-2019,Fertility_by_Age,10,Momentum,Time
-2019,Fertility_by_Age,10,Momentum,MidPeriod
-2019,Fertility_by_Age,10,Momentum,AgeGrp
-2019,Fertility_by_Age,10,Momentum,AgeGrpStart
-2019,Fertility_by_Age,10,Momentum,AgeGrpSpan
-2019,Fertility_by_Age,10,Momentum,ASFR
-2019,Fertility_by_Age,10,Momentum,PASFR
-2019,Fertility_by_Age,10,Momentum,Births
-2019,Fertility_by_Age,202,Median PI,LocID
-2019,Fertility_by_Age,202,Median PI,Location
-2019,Fertility_by_Age,202,Median PI,Time
-2019,Fertility_by_Age,202,Median PI,MidPeriod
-2019,Fertility_by_Age,202,Median PI,AgeGrp
-2019,Fertility_by_Age,202,Median PI,AgeGrpStart
-2019,Fertility_by_Age,202,Median PI,AgeGrpSpan
-2019,Fertility_by_Age,202,Median PI,ASFR
-2019,Fertility_by_Age,202,Median PI,PASFR
-2019,Fertility_by_Age,203,Upper 80 PI,LocID
-2019,Fertility_by_Age,203,Upper 80 PI,Location
-2019,Fertility_by_Age,203,Upper 80 PI,Time
-2019,Fertility_by_Age,203,Upper 80 PI,MidPeriod
-2019,Fertility_by_Age,203,Upper 80 PI,AgeGrp
-2019,Fertility_by_Age,203,Upper 80 PI,AgeGrpStart
-2019,Fertility_by_Age,203,Upper 80 PI,AgeGrpSpan
-2019,Fertility_by_Age,203,Upper 80 PI,ASFR
-2019,Fertility_by_Age,203,Upper 80 PI,PASFR
-2019,Fertility_by_Age,204,Lower 80 PI,LocID
-2019,Fertility_by_Age,204,Lower 80 PI,Location
-2019,Fertility_by_Age,204,Lower 80 PI,Time
-2019,Fertility_by_Age,204,Lower 80 PI,MidPeriod
-2019,Fertility_by_Age,204,Lower 80 PI,AgeGrp
-2019,Fertility_by_Age,204,Lower 80 PI,AgeGrpStart
-2019,Fertility_by_Age,204,Lower 80 PI,AgeGrpSpan
-2019,Fertility_by_Age,204,Lower 80 PI,ASFR
-2019,Fertility_by_Age,204,Lower 80 PI,PASFR
-2019,Fertility_by_Age,206,Upper 95 PI,LocID
-2019,Fertility_by_Age,206,Upper 95 PI,Location
-2019,Fertility_by_Age,206,Upper 95 PI,Time
-2019,Fertility_by_Age,206,Upper 95 PI,MidPeriod
-2019,Fertility_by_Age,206,Upper 95 PI,AgeGrp
-2019,Fertility_by_Age,206,Upper 95 PI,AgeGrpStart
-2019,Fertility_by_Age,206,Upper 95 PI,AgeGrpSpan
-2019,Fertility_by_Age,206,Upper 95 PI,ASFR
-2019,Fertility_by_Age,206,Upper 95 PI,PASFR
-2019,Fertility_by_Age,207,Lower 95 PI,LocID
-2019,Fertility_by_Age,207,Lower 95 PI,Location
-2019,Fertility_by_Age,207,Lower 95 PI,Time
-2019,Fertility_by_Age,207,Lower 95 PI,MidPeriod
-2019,Fertility_by_Age,207,Lower 95 PI,AgeGrp
-2019,Fertility_by_Age,207,Lower 95 PI,AgeGrpStart
-2019,Fertility_by_Age,207,Lower 95 PI,AgeGrpSpan
-2019,Fertility_by_Age,207,Lower 95 PI,ASFR
-2019,Fertility_by_Age,207,Lower 95 PI,PASFR
 2019,Life_Table,2,Medium,LocID
 2019,Life_Table,2,Medium,Location
 2019,Life_Table,2,Medium,Time
@@ -4590,6 +4520,29 @@ wpp,file_group,VarID,Variant,col_name
 2019,Life_Table,207,Lower 95 PI,Tx
 2019,Life_Table,207,Lower 95 PI,ex
 2019,Life_Table,207,Lower 95 PI,ax
+2019,Period_Indicators,10,Momentum,LocID
+2019,Period_Indicators,10,Momentum,Location
+2019,Period_Indicators,10,Momentum,Time
+2019,Period_Indicators,10,Momentum,MidPeriod
+2019,Period_Indicators,10,Momentum,TFR
+2019,Period_Indicators,10,Momentum,NRR
+2019,Period_Indicators,10,Momentum,CBR
+2019,Period_Indicators,10,Momentum,Births
+2019,Period_Indicators,10,Momentum,LEx
+2019,Period_Indicators,10,Momentum,LExMale
+2019,Period_Indicators,10,Momentum,LExFemale
+2019,Period_Indicators,10,Momentum,IMR
+2019,Period_Indicators,10,Momentum,Q5
+2019,Period_Indicators,10,Momentum,CDR
+2019,Period_Indicators,10,Momentum,Deaths
+2019,Period_Indicators,10,Momentum,DeathsMale
+2019,Period_Indicators,10,Momentum,DeathsFemale
+2019,Period_Indicators,10,Momentum,CNMR
+2019,Period_Indicators,10,Momentum,NetMigrations
+2019,Period_Indicators,10,Momentum,GrowthRate
+2019,Period_Indicators,10,Momentum,NatIncr
+2019,Period_Indicators,10,Momentum,SRB
+2019,Period_Indicators,10,Momentum,MAC
 2019,Period_Indicators,2,Medium,LocID
 2019,Period_Indicators,2,Medium,Location
 2019,Period_Indicators,2,Medium,Time
@@ -4613,6 +4566,91 @@ wpp,file_group,VarID,Variant,col_name
 2019,Period_Indicators,2,Medium,NatIncr
 2019,Period_Indicators,2,Medium,SRB
 2019,Period_Indicators,2,Medium,MAC
+2019,Period_Indicators,202,Median PI,LocID
+2019,Period_Indicators,202,Median PI,Location
+2019,Period_Indicators,202,Median PI,Time
+2019,Period_Indicators,202,Median PI,MidPeriod
+2019,Period_Indicators,202,Median PI,TFR
+2019,Period_Indicators,202,Median PI,CBR
+2019,Period_Indicators,202,Median PI,Births
+2019,Period_Indicators,202,Median PI,LEx
+2019,Period_Indicators,202,Median PI,LExMale
+2019,Period_Indicators,202,Median PI,LExFemale
+2019,Period_Indicators,202,Median PI,IMR
+2019,Period_Indicators,202,Median PI,Q5
+2019,Period_Indicators,202,Median PI,CDR
+2019,Period_Indicators,202,Median PI,Deaths
+2019,Period_Indicators,202,Median PI,GrowthRate
+2019,Period_Indicators,202,Median PI,NatIncr
+2019,Period_Indicators,202,Median PI,MAC
+2019,Period_Indicators,203,Upper 80 PI,LocID
+2019,Period_Indicators,203,Upper 80 PI,Location
+2019,Period_Indicators,203,Upper 80 PI,Time
+2019,Period_Indicators,203,Upper 80 PI,MidPeriod
+2019,Period_Indicators,203,Upper 80 PI,TFR
+2019,Period_Indicators,203,Upper 80 PI,CBR
+2019,Period_Indicators,203,Upper 80 PI,Births
+2019,Period_Indicators,203,Upper 80 PI,LEx
+2019,Period_Indicators,203,Upper 80 PI,LExMale
+2019,Period_Indicators,203,Upper 80 PI,LExFemale
+2019,Period_Indicators,203,Upper 80 PI,IMR
+2019,Period_Indicators,203,Upper 80 PI,Q5
+2019,Period_Indicators,203,Upper 80 PI,CDR
+2019,Period_Indicators,203,Upper 80 PI,Deaths
+2019,Period_Indicators,203,Upper 80 PI,GrowthRate
+2019,Period_Indicators,203,Upper 80 PI,NatIncr
+2019,Period_Indicators,203,Upper 80 PI,MAC
+2019,Period_Indicators,204,Lower 80 PI,LocID
+2019,Period_Indicators,204,Lower 80 PI,Location
+2019,Period_Indicators,204,Lower 80 PI,Time
+2019,Period_Indicators,204,Lower 80 PI,MidPeriod
+2019,Period_Indicators,204,Lower 80 PI,TFR
+2019,Period_Indicators,204,Lower 80 PI,CBR
+2019,Period_Indicators,204,Lower 80 PI,Births
+2019,Period_Indicators,204,Lower 80 PI,LEx
+2019,Period_Indicators,204,Lower 80 PI,LExMale
+2019,Period_Indicators,204,Lower 80 PI,LExFemale
+2019,Period_Indicators,204,Lower 80 PI,IMR
+2019,Period_Indicators,204,Lower 80 PI,Q5
+2019,Period_Indicators,204,Lower 80 PI,CDR
+2019,Period_Indicators,204,Lower 80 PI,Deaths
+2019,Period_Indicators,204,Lower 80 PI,GrowthRate
+2019,Period_Indicators,204,Lower 80 PI,NatIncr
+2019,Period_Indicators,204,Lower 80 PI,MAC
+2019,Period_Indicators,206,Upper 95 PI,LocID
+2019,Period_Indicators,206,Upper 95 PI,Location
+2019,Period_Indicators,206,Upper 95 PI,Time
+2019,Period_Indicators,206,Upper 95 PI,MidPeriod
+2019,Period_Indicators,206,Upper 95 PI,TFR
+2019,Period_Indicators,206,Upper 95 PI,CBR
+2019,Period_Indicators,206,Upper 95 PI,Births
+2019,Period_Indicators,206,Upper 95 PI,LEx
+2019,Period_Indicators,206,Upper 95 PI,LExMale
+2019,Period_Indicators,206,Upper 95 PI,LExFemale
+2019,Period_Indicators,206,Upper 95 PI,IMR
+2019,Period_Indicators,206,Upper 95 PI,Q5
+2019,Period_Indicators,206,Upper 95 PI,CDR
+2019,Period_Indicators,206,Upper 95 PI,Deaths
+2019,Period_Indicators,206,Upper 95 PI,GrowthRate
+2019,Period_Indicators,206,Upper 95 PI,NatIncr
+2019,Period_Indicators,206,Upper 95 PI,MAC
+2019,Period_Indicators,207,Lower 95 PI,LocID
+2019,Period_Indicators,207,Lower 95 PI,Location
+2019,Period_Indicators,207,Lower 95 PI,Time
+2019,Period_Indicators,207,Lower 95 PI,MidPeriod
+2019,Period_Indicators,207,Lower 95 PI,TFR
+2019,Period_Indicators,207,Lower 95 PI,CBR
+2019,Period_Indicators,207,Lower 95 PI,Births
+2019,Period_Indicators,207,Lower 95 PI,LEx
+2019,Period_Indicators,207,Lower 95 PI,LExMale
+2019,Period_Indicators,207,Lower 95 PI,LExFemale
+2019,Period_Indicators,207,Lower 95 PI,IMR
+2019,Period_Indicators,207,Lower 95 PI,Q5
+2019,Period_Indicators,207,Lower 95 PI,CDR
+2019,Period_Indicators,207,Lower 95 PI,Deaths
+2019,Period_Indicators,207,Lower 95 PI,GrowthRate
+2019,Period_Indicators,207,Lower 95 PI,NatIncr
+2019,Period_Indicators,207,Lower 95 PI,MAC
 2019,Period_Indicators,3,High,LocID
 2019,Period_Indicators,3,High,Location
 2019,Period_Indicators,3,High,Time
@@ -4774,114 +4812,16 @@ wpp,file_group,VarID,Variant,col_name
 2019,Period_Indicators,9,No change,NatIncr
 2019,Period_Indicators,9,No change,SRB
 2019,Period_Indicators,9,No change,MAC
-2019,Period_Indicators,10,Momentum,LocID
-2019,Period_Indicators,10,Momentum,Location
-2019,Period_Indicators,10,Momentum,Time
-2019,Period_Indicators,10,Momentum,MidPeriod
-2019,Period_Indicators,10,Momentum,TFR
-2019,Period_Indicators,10,Momentum,NRR
-2019,Period_Indicators,10,Momentum,CBR
-2019,Period_Indicators,10,Momentum,Births
-2019,Period_Indicators,10,Momentum,LEx
-2019,Period_Indicators,10,Momentum,LExMale
-2019,Period_Indicators,10,Momentum,LExFemale
-2019,Period_Indicators,10,Momentum,IMR
-2019,Period_Indicators,10,Momentum,Q5
-2019,Period_Indicators,10,Momentum,CDR
-2019,Period_Indicators,10,Momentum,Deaths
-2019,Period_Indicators,10,Momentum,DeathsMale
-2019,Period_Indicators,10,Momentum,DeathsFemale
-2019,Period_Indicators,10,Momentum,CNMR
-2019,Period_Indicators,10,Momentum,NetMigrations
-2019,Period_Indicators,10,Momentum,GrowthRate
-2019,Period_Indicators,10,Momentum,NatIncr
-2019,Period_Indicators,10,Momentum,SRB
-2019,Period_Indicators,10,Momentum,MAC
-2019,Period_Indicators,202,Median PI,LocID
-2019,Period_Indicators,202,Median PI,Location
-2019,Period_Indicators,202,Median PI,Time
-2019,Period_Indicators,202,Median PI,MidPeriod
-2019,Period_Indicators,202,Median PI,TFR
-2019,Period_Indicators,202,Median PI,CBR
-2019,Period_Indicators,202,Median PI,Births
-2019,Period_Indicators,202,Median PI,LEx
-2019,Period_Indicators,202,Median PI,LExMale
-2019,Period_Indicators,202,Median PI,LExFemale
-2019,Period_Indicators,202,Median PI,IMR
-2019,Period_Indicators,202,Median PI,Q5
-2019,Period_Indicators,202,Median PI,CDR
-2019,Period_Indicators,202,Median PI,Deaths
-2019,Period_Indicators,202,Median PI,GrowthRate
-2019,Period_Indicators,202,Median PI,NatIncr
-2019,Period_Indicators,202,Median PI,MAC
-2019,Period_Indicators,203,Upper 80 PI,LocID
-2019,Period_Indicators,203,Upper 80 PI,Location
-2019,Period_Indicators,203,Upper 80 PI,Time
-2019,Period_Indicators,203,Upper 80 PI,MidPeriod
-2019,Period_Indicators,203,Upper 80 PI,TFR
-2019,Period_Indicators,203,Upper 80 PI,CBR
-2019,Period_Indicators,203,Upper 80 PI,Births
-2019,Period_Indicators,203,Upper 80 PI,LEx
-2019,Period_Indicators,203,Upper 80 PI,LExMale
-2019,Period_Indicators,203,Upper 80 PI,LExFemale
-2019,Period_Indicators,203,Upper 80 PI,IMR
-2019,Period_Indicators,203,Upper 80 PI,Q5
-2019,Period_Indicators,203,Upper 80 PI,CDR
-2019,Period_Indicators,203,Upper 80 PI,Deaths
-2019,Period_Indicators,203,Upper 80 PI,GrowthRate
-2019,Period_Indicators,203,Upper 80 PI,NatIncr
-2019,Period_Indicators,203,Upper 80 PI,MAC
-2019,Period_Indicators,204,Lower 80 PI,LocID
-2019,Period_Indicators,204,Lower 80 PI,Location
-2019,Period_Indicators,204,Lower 80 PI,Time
-2019,Period_Indicators,204,Lower 80 PI,MidPeriod
-2019,Period_Indicators,204,Lower 80 PI,TFR
-2019,Period_Indicators,204,Lower 80 PI,CBR
-2019,Period_Indicators,204,Lower 80 PI,Births
-2019,Period_Indicators,204,Lower 80 PI,LEx
-2019,Period_Indicators,204,Lower 80 PI,LExMale
-2019,Period_Indicators,204,Lower 80 PI,LExFemale
-2019,Period_Indicators,204,Lower 80 PI,IMR
-2019,Period_Indicators,204,Lower 80 PI,Q5
-2019,Period_Indicators,204,Lower 80 PI,CDR
-2019,Period_Indicators,204,Lower 80 PI,Deaths
-2019,Period_Indicators,204,Lower 80 PI,GrowthRate
-2019,Period_Indicators,204,Lower 80 PI,NatIncr
-2019,Period_Indicators,204,Lower 80 PI,MAC
-2019,Period_Indicators,206,Upper 95 PI,LocID
-2019,Period_Indicators,206,Upper 95 PI,Location
-2019,Period_Indicators,206,Upper 95 PI,Time
-2019,Period_Indicators,206,Upper 95 PI,MidPeriod
-2019,Period_Indicators,206,Upper 95 PI,TFR
-2019,Period_Indicators,206,Upper 95 PI,CBR
-2019,Period_Indicators,206,Upper 95 PI,Births
-2019,Period_Indicators,206,Upper 95 PI,LEx
-2019,Period_Indicators,206,Upper 95 PI,LExMale
-2019,Period_Indicators,206,Upper 95 PI,LExFemale
-2019,Period_Indicators,206,Upper 95 PI,IMR
-2019,Period_Indicators,206,Upper 95 PI,Q5
-2019,Period_Indicators,206,Upper 95 PI,CDR
-2019,Period_Indicators,206,Upper 95 PI,Deaths
-2019,Period_Indicators,206,Upper 95 PI,GrowthRate
-2019,Period_Indicators,206,Upper 95 PI,NatIncr
-2019,Period_Indicators,206,Upper 95 PI,MAC
-2019,Period_Indicators,207,Lower 95 PI,LocID
-2019,Period_Indicators,207,Lower 95 PI,Location
-2019,Period_Indicators,207,Lower 95 PI,Time
-2019,Period_Indicators,207,Lower 95 PI,MidPeriod
-2019,Period_Indicators,207,Lower 95 PI,TFR
-2019,Period_Indicators,207,Lower 95 PI,CBR
-2019,Period_Indicators,207,Lower 95 PI,Births
-2019,Period_Indicators,207,Lower 95 PI,LEx
-2019,Period_Indicators,207,Lower 95 PI,LExMale
-2019,Period_Indicators,207,Lower 95 PI,LExFemale
-2019,Period_Indicators,207,Lower 95 PI,IMR
-2019,Period_Indicators,207,Lower 95 PI,Q5
-2019,Period_Indicators,207,Lower 95 PI,CDR
-2019,Period_Indicators,207,Lower 95 PI,Deaths
-2019,Period_Indicators,207,Lower 95 PI,GrowthRate
-2019,Period_Indicators,207,Lower 95 PI,NatIncr
-2019,Period_Indicators,207,Lower 95 PI,MAC
+2019,PopulationByAgeSex,10,Momentum,LocID
+2019,PopulationByAgeSex,10,Momentum,Location
+2019,PopulationByAgeSex,10,Momentum,Time
+2019,PopulationByAgeSex,10,Momentum,MidPeriod
+2019,PopulationByAgeSex,10,Momentum,AgeGrp
+2019,PopulationByAgeSex,10,Momentum,AgeGrpStart
+2019,PopulationByAgeSex,10,Momentum,AgeGrpSpan
+2019,PopulationByAgeSex,10,Momentum,PopMale
+2019,PopulationByAgeSex,10,Momentum,PopFemale
+2019,PopulationByAgeSex,10,Momentum,PopTotal
 2019,PopulationByAgeSex,2,Medium,LocID
 2019,PopulationByAgeSex,2,Medium,Location
 2019,PopulationByAgeSex,2,Medium,Time
@@ -4892,6 +4832,56 @@ wpp,file_group,VarID,Variant,col_name
 2019,PopulationByAgeSex,2,Medium,PopMale
 2019,PopulationByAgeSex,2,Medium,PopFemale
 2019,PopulationByAgeSex,2,Medium,PopTotal
+2019,PopulationByAgeSex,202,Median PI,LocID
+2019,PopulationByAgeSex,202,Median PI,Location
+2019,PopulationByAgeSex,202,Median PI,Time
+2019,PopulationByAgeSex,202,Median PI,MidPeriod
+2019,PopulationByAgeSex,202,Median PI,AgeGrp
+2019,PopulationByAgeSex,202,Median PI,AgeGrpStart
+2019,PopulationByAgeSex,202,Median PI,AgeGrpSpan
+2019,PopulationByAgeSex,202,Median PI,PopMale
+2019,PopulationByAgeSex,202,Median PI,PopFemale
+2019,PopulationByAgeSex,202,Median PI,PopTotal
+2019,PopulationByAgeSex,203,Upper 80 PI,LocID
+2019,PopulationByAgeSex,203,Upper 80 PI,Location
+2019,PopulationByAgeSex,203,Upper 80 PI,Time
+2019,PopulationByAgeSex,203,Upper 80 PI,MidPeriod
+2019,PopulationByAgeSex,203,Upper 80 PI,AgeGrp
+2019,PopulationByAgeSex,203,Upper 80 PI,AgeGrpStart
+2019,PopulationByAgeSex,203,Upper 80 PI,AgeGrpSpan
+2019,PopulationByAgeSex,203,Upper 80 PI,PopMale
+2019,PopulationByAgeSex,203,Upper 80 PI,PopFemale
+2019,PopulationByAgeSex,203,Upper 80 PI,PopTotal
+2019,PopulationByAgeSex,204,Lower 80 PI,LocID
+2019,PopulationByAgeSex,204,Lower 80 PI,Location
+2019,PopulationByAgeSex,204,Lower 80 PI,Time
+2019,PopulationByAgeSex,204,Lower 80 PI,MidPeriod
+2019,PopulationByAgeSex,204,Lower 80 PI,AgeGrp
+2019,PopulationByAgeSex,204,Lower 80 PI,AgeGrpStart
+2019,PopulationByAgeSex,204,Lower 80 PI,AgeGrpSpan
+2019,PopulationByAgeSex,204,Lower 80 PI,PopMale
+2019,PopulationByAgeSex,204,Lower 80 PI,PopFemale
+2019,PopulationByAgeSex,204,Lower 80 PI,PopTotal
+2019,PopulationByAgeSex,206,Upper 95 PI,LocID
+2019,PopulationByAgeSex,206,Upper 95 PI,Location
+2019,PopulationByAgeSex,206,Upper 95 PI,Time
+2019,PopulationByAgeSex,206,Upper 95 PI,MidPeriod
+2019,PopulationByAgeSex,206,Upper 95 PI,AgeGrp
+2019,PopulationByAgeSex,206,Upper 95 PI,AgeGrpStart
+2019,PopulationByAgeSex,206,Upper 95 PI,AgeGrpSpan
+2019,PopulationByAgeSex,206,Upper 95 PI,PopMale
+2019,PopulationByAgeSex,206,Upper 95 PI,PopFemale
+2019,PopulationByAgeSex,206,Upper 95 PI,PopTotal
+2019,PopulationByAgeSex,207,Lower 95 PI,LocID
+2019,PopulationByAgeSex,207,Lower 95 PI,Location
+2019,PopulationByAgeSex,207,Lower 95 PI,Time
+2019,PopulationByAgeSex,207,Lower 95 PI,MidPeriod
+2019,PopulationByAgeSex,207,Lower 95 PI,AgeGrp
+2019,PopulationByAgeSex,207,Lower 95 PI,AgeGrpStart
+2019,PopulationByAgeSex,207,Lower 95 PI,AgeGrpSpan
+2019,PopulationByAgeSex,207,Lower 95 PI,PopMale
+2019,PopulationByAgeSex,207,Lower 95 PI,PopFemale
+2019,PopulationByAgeSex,207,Lower 95 PI,PopTotal
 2019,PopulationByAgeSex,3,High,LocID
 2019,PopulationByAgeSex,3,High,Location
 2019,PopulationByAgeSex,3,High,Time
@@ -4962,66 +4952,6 @@ wpp,file_group,VarID,Variant,col_name
 2019,PopulationByAgeSex,9,No change,PopMale
 2019,PopulationByAgeSex,9,No change,PopFemale
 2019,PopulationByAgeSex,9,No change,PopTotal
-2019,PopulationByAgeSex,10,Momentum,LocID
-2019,PopulationByAgeSex,10,Momentum,Location
-2019,PopulationByAgeSex,10,Momentum,Time
-2019,PopulationByAgeSex,10,Momentum,MidPeriod
-2019,PopulationByAgeSex,10,Momentum,AgeGrp
-2019,PopulationByAgeSex,10,Momentum,AgeGrpStart
-2019,PopulationByAgeSex,10,Momentum,AgeGrpSpan
-2019,PopulationByAgeSex,10,Momentum,PopMale
-2019,PopulationByAgeSex,10,Momentum,PopFemale
-2019,PopulationByAgeSex,10,Momentum,PopTotal
-2019,PopulationByAgeSex,202,Median PI,LocID
-2019,PopulationByAgeSex,202,Median PI,Location
-2019,PopulationByAgeSex,202,Median PI,Time
-2019,PopulationByAgeSex,202,Median PI,MidPeriod
-2019,PopulationByAgeSex,202,Median PI,AgeGrp
-2019,PopulationByAgeSex,202,Median PI,AgeGrpStart
-2019,PopulationByAgeSex,202,Median PI,AgeGrpSpan
-2019,PopulationByAgeSex,202,Median PI,PopMale
-2019,PopulationByAgeSex,202,Median PI,PopFemale
-2019,PopulationByAgeSex,202,Median PI,PopTotal
-2019,PopulationByAgeSex,203,Upper 80 PI,LocID
-2019,PopulationByAgeSex,203,Upper 80 PI,Location
-2019,PopulationByAgeSex,203,Upper 80 PI,Time
-2019,PopulationByAgeSex,203,Upper 80 PI,MidPeriod
-2019,PopulationByAgeSex,203,Upper 80 PI,AgeGrp
-2019,PopulationByAgeSex,203,Upper 80 PI,AgeGrpStart
-2019,PopulationByAgeSex,203,Upper 80 PI,AgeGrpSpan
-2019,PopulationByAgeSex,203,Upper 80 PI,PopMale
-2019,PopulationByAgeSex,203,Upper 80 PI,PopFemale
-2019,PopulationByAgeSex,203,Upper 80 PI,PopTotal
-2019,PopulationByAgeSex,204,Lower 80 PI,LocID
-2019,PopulationByAgeSex,204,Lower 80 PI,Location
-2019,PopulationByAgeSex,204,Lower 80 PI,Time
-2019,PopulationByAgeSex,204,Lower 80 PI,MidPeriod
-2019,PopulationByAgeSex,204,Lower 80 PI,AgeGrp
-2019,PopulationByAgeSex,204,Lower 80 PI,AgeGrpStart
-2019,PopulationByAgeSex,204,Lower 80 PI,AgeGrpSpan
-2019,PopulationByAgeSex,204,Lower 80 PI,PopMale
-2019,PopulationByAgeSex,204,Lower 80 PI,PopFemale
-2019,PopulationByAgeSex,204,Lower 80 PI,PopTotal
-2019,PopulationByAgeSex,206,Upper 95 PI,LocID
-2019,PopulationByAgeSex,206,Upper 95 PI,Location
-2019,PopulationByAgeSex,206,Upper 95 PI,Time
-2019,PopulationByAgeSex,206,Upper 95 PI,MidPeriod
-2019,PopulationByAgeSex,206,Upper 95 PI,AgeGrp
-2019,PopulationByAgeSex,206,Upper 95 PI,AgeGrpStart
-2019,PopulationByAgeSex,206,Upper 95 PI,AgeGrpSpan
-2019,PopulationByAgeSex,206,Upper 95 PI,PopMale
-2019,PopulationByAgeSex,206,Upper 95 PI,PopFemale
-2019,PopulationByAgeSex,206,Upper 95 PI,PopTotal
-2019,PopulationByAgeSex,207,Lower 95 PI,LocID
-2019,PopulationByAgeSex,207,Lower 95 PI,Location
-2019,PopulationByAgeSex,207,Lower 95 PI,Time
-2019,PopulationByAgeSex,207,Lower 95 PI,MidPeriod
-2019,PopulationByAgeSex,207,Lower 95 PI,AgeGrp
-2019,PopulationByAgeSex,207,Lower 95 PI,AgeGrpStart
-2019,PopulationByAgeSex,207,Lower 95 PI,AgeGrpSpan
-2019,PopulationByAgeSex,207,Lower 95 PI,PopMale
-2019,PopulationByAgeSex,207,Lower 95 PI,PopFemale
-2019,PopulationByAgeSex,207,Lower 95 PI,PopTotal
 2019,PopulationBySingleAgeSex,2,Medium,LocID
 2019,PopulationBySingleAgeSex,2,Medium,Location
 2019,PopulationBySingleAgeSex,2,Medium,Time
@@ -5032,16 +4962,14 @@ wpp,file_group,VarID,Variant,col_name
 2019,PopulationBySingleAgeSex,2,Medium,PopMale
 2019,PopulationBySingleAgeSex,2,Medium,PopFemale
 2019,PopulationBySingleAgeSex,2,Medium,PopTotal
-2019,PopulationBySingleAgeSex,2,Medium,LocID
-2019,PopulationBySingleAgeSex,2,Medium,Location
-2019,PopulationBySingleAgeSex,2,Medium,Time
-2019,PopulationBySingleAgeSex,2,Medium,MidPeriod
-2019,PopulationBySingleAgeSex,2,Medium,AgeGrp
-2019,PopulationBySingleAgeSex,2,Medium,AgeGrpStart
-2019,PopulationBySingleAgeSex,2,Medium,AgeGrpSpan
-2019,PopulationBySingleAgeSex,2,Medium,PopMale
-2019,PopulationBySingleAgeSex,2,Medium,PopFemale
-2019,PopulationBySingleAgeSex,2,Medium,PopTotal
+2019,TotalPopulationBySex,10,Momentum,LocID
+2019,TotalPopulationBySex,10,Momentum,Location
+2019,TotalPopulationBySex,10,Momentum,Time
+2019,TotalPopulationBySex,10,Momentum,MidPeriod
+2019,TotalPopulationBySex,10,Momentum,PopMale
+2019,TotalPopulationBySex,10,Momentum,PopFemale
+2019,TotalPopulationBySex,10,Momentum,PopTotal
+2019,TotalPopulationBySex,10,Momentum,PopDensity
 2019,TotalPopulationBySex,2,Medium,LocID
 2019,TotalPopulationBySex,2,Medium,Location
 2019,TotalPopulationBySex,2,Medium,Time
@@ -5050,6 +4978,46 @@ wpp,file_group,VarID,Variant,col_name
 2019,TotalPopulationBySex,2,Medium,PopFemale
 2019,TotalPopulationBySex,2,Medium,PopTotal
 2019,TotalPopulationBySex,2,Medium,PopDensity
+2019,TotalPopulationBySex,202,Median PI,LocID
+2019,TotalPopulationBySex,202,Median PI,Location
+2019,TotalPopulationBySex,202,Median PI,Time
+2019,TotalPopulationBySex,202,Median PI,MidPeriod
+2019,TotalPopulationBySex,202,Median PI,PopMale
+2019,TotalPopulationBySex,202,Median PI,PopFemale
+2019,TotalPopulationBySex,202,Median PI,PopTotal
+2019,TotalPopulationBySex,202,Median PI,PopDensity
+2019,TotalPopulationBySex,203,Upper 80 PI,LocID
+2019,TotalPopulationBySex,203,Upper 80 PI,Location
+2019,TotalPopulationBySex,203,Upper 80 PI,Time
+2019,TotalPopulationBySex,203,Upper 80 PI,MidPeriod
+2019,TotalPopulationBySex,203,Upper 80 PI,PopMale
+2019,TotalPopulationBySex,203,Upper 80 PI,PopFemale
+2019,TotalPopulationBySex,203,Upper 80 PI,PopTotal
+2019,TotalPopulationBySex,203,Upper 80 PI,PopDensity
+2019,TotalPopulationBySex,204,Lower 80 PI,LocID
+2019,TotalPopulationBySex,204,Lower 80 PI,Location
+2019,TotalPopulationBySex,204,Lower 80 PI,Time
+2019,TotalPopulationBySex,204,Lower 80 PI,MidPeriod
+2019,TotalPopulationBySex,204,Lower 80 PI,PopMale
+2019,TotalPopulationBySex,204,Lower 80 PI,PopFemale
+2019,TotalPopulationBySex,204,Lower 80 PI,PopTotal
+2019,TotalPopulationBySex,204,Lower 80 PI,PopDensity
+2019,TotalPopulationBySex,206,Upper 95 PI,LocID
+2019,TotalPopulationBySex,206,Upper 95 PI,Location
+2019,TotalPopulationBySex,206,Upper 95 PI,Time
+2019,TotalPopulationBySex,206,Upper 95 PI,MidPeriod
+2019,TotalPopulationBySex,206,Upper 95 PI,PopMale
+2019,TotalPopulationBySex,206,Upper 95 PI,PopFemale
+2019,TotalPopulationBySex,206,Upper 95 PI,PopTotal
+2019,TotalPopulationBySex,206,Upper 95 PI,PopDensity
+2019,TotalPopulationBySex,207,Lower 95 PI,LocID
+2019,TotalPopulationBySex,207,Lower 95 PI,Location
+2019,TotalPopulationBySex,207,Lower 95 PI,Time
+2019,TotalPopulationBySex,207,Lower 95 PI,MidPeriod
+2019,TotalPopulationBySex,207,Lower 95 PI,PopMale
+2019,TotalPopulationBySex,207,Lower 95 PI,PopFemale
+2019,TotalPopulationBySex,207,Lower 95 PI,PopTotal
+2019,TotalPopulationBySex,207,Lower 95 PI,PopDensity
 2019,TotalPopulationBySex,3,High,LocID
 2019,TotalPopulationBySex,3,High,Location
 2019,TotalPopulationBySex,3,High,Time
@@ -5106,51 +5074,3 @@ wpp,file_group,VarID,Variant,col_name
 2019,TotalPopulationBySex,9,No change,PopFemale
 2019,TotalPopulationBySex,9,No change,PopTotal
 2019,TotalPopulationBySex,9,No change,PopDensity
-2019,TotalPopulationBySex,10,Momentum,LocID
-2019,TotalPopulationBySex,10,Momentum,Location
-2019,TotalPopulationBySex,10,Momentum,Time
-2019,TotalPopulationBySex,10,Momentum,MidPeriod
-2019,TotalPopulationBySex,10,Momentum,PopMale
-2019,TotalPopulationBySex,10,Momentum,PopFemale
-2019,TotalPopulationBySex,10,Momentum,PopTotal
-2019,TotalPopulationBySex,10,Momentum,PopDensity
-2019,TotalPopulationBySex,202,Median PI,LocID
-2019,TotalPopulationBySex,202,Median PI,Location
-2019,TotalPopulationBySex,202,Median PI,Time
-2019,TotalPopulationBySex,202,Median PI,MidPeriod
-2019,TotalPopulationBySex,202,Median PI,PopMale
-2019,TotalPopulationBySex,202,Median PI,PopFemale
-2019,TotalPopulationBySex,202,Median PI,PopTotal
-2019,TotalPopulationBySex,202,Median PI,PopDensity
-2019,TotalPopulationBySex,203,Upper 80 PI,LocID
-2019,TotalPopulationBySex,203,Upper 80 PI,Location
-2019,TotalPopulationBySex,203,Upper 80 PI,Time
-2019,TotalPopulationBySex,203,Upper 80 PI,MidPeriod
-2019,TotalPopulationBySex,203,Upper 80 PI,PopMale
-2019,TotalPopulationBySex,203,Upper 80 PI,PopFemale
-2019,TotalPopulationBySex,203,Upper 80 PI,PopTotal
-2019,TotalPopulationBySex,203,Upper 80 PI,PopDensity
-2019,TotalPopulationBySex,204,Lower 80 PI,LocID
-2019,TotalPopulationBySex,204,Lower 80 PI,Location
-2019,TotalPopulationBySex,204,Lower 80 PI,Time
-2019,TotalPopulationBySex,204,Lower 80 PI,MidPeriod
-2019,TotalPopulationBySex,204,Lower 80 PI,PopMale
-2019,TotalPopulationBySex,204,Lower 80 PI,PopFemale
-2019,TotalPopulationBySex,204,Lower 80 PI,PopTotal
-2019,TotalPopulationBySex,204,Lower 80 PI,PopDensity
-2019,TotalPopulationBySex,206,Upper 95 PI,LocID
-2019,TotalPopulationBySex,206,Upper 95 PI,Location
-2019,TotalPopulationBySex,206,Upper 95 PI,Time
-2019,TotalPopulationBySex,206,Upper 95 PI,MidPeriod
-2019,TotalPopulationBySex,206,Upper 95 PI,PopMale
-2019,TotalPopulationBySex,206,Upper 95 PI,PopFemale
-2019,TotalPopulationBySex,206,Upper 95 PI,PopTotal
-2019,TotalPopulationBySex,206,Upper 95 PI,PopDensity
-2019,TotalPopulationBySex,207,Lower 95 PI,LocID
-2019,TotalPopulationBySex,207,Lower 95 PI,Location
-2019,TotalPopulationBySex,207,Lower 95 PI,Time
-2019,TotalPopulationBySex,207,Lower 95 PI,MidPeriod
-2019,TotalPopulationBySex,207,Lower 95 PI,PopMale
-2019,TotalPopulationBySex,207,Lower 95 PI,PopFemale
-2019,TotalPopulationBySex,207,Lower 95 PI,PopTotal
-2019,TotalPopulationBySex,207,Lower 95 PI,PopDensity

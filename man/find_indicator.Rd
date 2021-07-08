@@ -14,7 +14,7 @@ find_indicator(x, wpp_version = 2019, simple = TRUE)
 \item{simple}{Logical to give simple table without variant or file group information}
 }
 \value{
-A subset of the wpp_indicators data frame with one or more of columns matching the keyword given to \code{x}. Use the result in the \code{indicator} column to input to the \code{get_wpp} function for downloading data.
+A subset of the \link[=wpp_indicators]{wpp_indicators} data frame with one or more of columns matching the keyword given to \code{x}. Use the result in the \code{indicator} column to input to the \link[=get_wpp]{get_wpp()} function for downloading data.
 }
 \description{
 Find available indicator code names or file groups for UN DESA World Population Prospects data

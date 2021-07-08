@@ -29,6 +29,7 @@ x <- c("Location", "MidPeriod", "AgeGrpStart", "AgeGrpSpan", "Sex",
 d0 <- d %>%
   filter(!col_name %in% x) %>%
   rename(name = col_name) %>%
+  distinct() %>%
   left_join(b2)
 
 # check

@@ -20,8 +20,6 @@ knitr::opts_chunk$set(
 [![CRAN status](https://www.r-pkg.org/badges/version/tidywpp)](https://CRAN.R-project.org/package=tidywpp)
 <!-- badges: end -->
 
-The goal of tidywpp is to ...
-
 ## Installation
 
 <!-- You can install the released version of tidywpp from [CRAN](https://CRAN.R-project.org) with: -->
@@ -71,4 +69,122 @@ get_wpp(indicator = c("SRB", "NetMigrations", "GrowthRate"),
 get_wpp(indicator = c("qx", "lx", "dx", "Lx", "Tx", "ex"),
         wpp_version = 2017, drop_id_cols = TRUE)
 ```
+
+
+## indicator argument
+
+Indicators must use a character string corresponding to the `name` column in in the `wpp_indicators` data frame. The `find_indicator()` function can be used to look up the indicator code and availability by variants, for example
+
+```{r}
+find_indicator(x = "life expect")
+```
+
+There are 45 different indicators in WPP data (starting from 1998)
+
+|name          |details                                                                                                                        |file_group               |
+|:-------------|:------------------------------------------------------------------------------------------------------------------------------|:------------------------|
+|ASFR          |Age-specific fertility rate (births per 1,000 women)                                                                           |Fertility_by_Age         |
+|Births        |Number of births, both sexes combined (thousands)                                                                              |Fertility_by_Age         |
+|PASFR         |Percentage age-specific fertility rate                                                                                         |Fertility_by_Age         |
+|Births        |Number of births, both sexes combined (thousands)                                                                              |Period_Indicators        |
+|CBR           |Crude birth rate (births per 1,000 population)                                                                                 |Period_Indicators        |
+|CDR           |Crude death rate (deaths per 1,000 population)                                                                                 |Period_Indicators        |
+|CNMR          |Net migration rate (per 1,000 population)                                                                                      |Period_Indicators        |
+|Deaths        |Number of deaths, both sexes combined (thousands)                                                                              |Period_Indicators        |
+|DeathsFemale  |Number of female deaths (thousands)                                                                                            |Period_Indicators        |
+|DeathsMale    |Number of male deaths (thousands)                                                                                              |Period_Indicators        |
+|GrowthRate    |Average annual rate of population change (percentage)                                                                          |Period_Indicators        |
+|IMR           |Infant mortality rate, q(1), for both sexes combined (infant deaths per 1,000 live births)                                     |Period_Indicators        |
+|LEx           |Life expectancy at birth for both sexes combined (years)                                                                       |Period_Indicators        |
+|LExFemale     |Female life expectancy at birth (years)                                                                                        |Period_Indicators        |
+|LExMale       |Male life expectancy at birth (years)                                                                                          |Period_Indicators        |
+|MAC           |Female mean age of childbearing (years)                                                                                        |Period_Indicators        |
+|NatIncr       |Rate of natural increase (per 1,000 population)                                                                                |Period_Indicators        |
+|NetMigrations |Net number of migrants, both sexes combined (thousands)                                                                        |Period_Indicators        |
+|NRR           |Net reproduction rate (surviving daughters per woman)                                                                          |Period_Indicators        |
+|Q5            |Under-five mortality, 5q0, for both sexes combined (deaths under age five per 1,000 live births)                               |Period_Indicators        |
+|SRB           |Sex ratio at birth (male births per female births)                                                                             |Period_Indicators        |
+|TFR           |Total fertility (live births per woman)                                                                                        |Period_Indicators        |
+|PopFemale     |Female population in the age group (thousands)                                                                                 |PopulationByAgeSex       |
+|PopMale       |Male population in the age group (thousands)                                                                                   |PopulationByAgeSex       |
+|PopTotal      |Total population in the age group (thousands)                                                                                  |PopulationByAgeSex       |
+|PopDensity    |Population per square kilometre (thousands)                                                                                    |TotalPopulationBySex     |
+|PopFemale     |Total female population (thousands)                                                                                            |TotalPopulationBySex     |
+|PopMale       |Total male population (thousands)                                                                                              |TotalPopulationBySex     |
+|PopTotal      |Total population, both sexes (thousands)                                                                                       |TotalPopulationBySex     |
+|ax            |Average number of years lived (nax) between ages x and x+n by those dying in the interval                                      |Life_Table               |
+|dx            |Number of deaths, (ndx), between ages x and x+n                                                                                |Life_Table               |
+|ex            |Expectation of life (ex) at age x, i.e., average number of years lived subsequent to age x by those reaching age x             |Life_Table               |
+|lx            |Number of survivors, (lx), at age (x) for 100000 births                                                                        |Life_Table               |
+|Lx            |Number of person-years lived, (nLx), between ages x and x+n                                                                    |Life_Table               |
+|mx            |Central death rate, nmx, for the age interval (x, x+n)                                                                         |Life_Table               |
+|px            |Probability of surviving, (npx), for an individual of age x to age x+n                                                         |Life_Table               |
+|qx            |Probability of dying (nqx), for an individual between age x and x+n                                                            |Life_Table               |
+|Sx            |Survival ratio (nSx) corresponding to proportion of the life table population in age group (x, x+n) who are alive n year later |Life_Table               |
+|Tx            |Person-years lived, (Tx), above age x                                                                                          |Life_Table               |
+|PopFemale     |Female population for the individual age (thousands)                                                                           |PopulationBySingleAgeSex |
+|PopMale       |Male population for the individual age (thousands)                                                                             |PopulationBySingleAgeSex |
+|PopTotal      |Total population for the individual age (thousands)                                                                            |PopulationBySingleAgeSex |
+|PopFemale     |Female population in the age group (thousands)                                                                                 |PopulationByAgeSex_5x5   |
+|PopMale       |Male population in the age group (thousands)                                                                                   |PopulationByAgeSex_5x5   |
+|PopTotal      |Total population in the age group (thousands)                                                                                  |PopulationByAgeSex_5x5   |
+
+## variant_id argument
+
+The `variant_id` argument must be one or more numbers from the `var_id` column in the `wpp_indicators` data frame. Not all indicators are available in all variants. Use the `find_indicator()` function to check availability, setting `simple = FALSE`, for example
+
+```{r}
+find_indicator(x = "lx", simple = FALSE)
+```
+
+There are a maximum of 14 different variants in WPP data.
+
+
+| var_id|variant             |
+|------:|:-------------------|
+|      2|Medium              |
+|      3|High                |
+|      4|Low                 |
+|      5|Constant fertility  |
+|      6|Instant replacement |
+|      7|Zero migration      |
+|      8|Constant mortality  |
+|      9|No change           |
+|     10|Momentum            |
+|    202|Median PI (BHM median in WPP2015)         |
+|    203|Upper 80 PI         |
+|    204|Lower 80 PI         |
+|    206|Upper 95 PI         |
+|    207|Lower 95 PI         |
+
+## Benifits
+
+Data downloaded using tidywpp is in [tidy](https://vita.had.co.nz/papers/tidy-data.pdf) form, and hence requires none or minimal manipulations for use in common modelling or visualisation functions in R.
+
+```{r}
+d <- get_wpp(indicator = c("PopMale", "PopFemale"), 
+              indicator_file_group = "PopulationBySingleAgeSex",
+              tidy_pop_sex = TRUE)
+
+library(ggpol)
+library(gganimate)
+g <- d %>%
+  # filter(Time == 2020) %>%
+  filter(Location == "World") %>%
+  mutate(pop = ifelse(Sex == "Male", -Pop/1e3, Pop/1e3),
+         sex = fct_rev(Sex)) %>%
+  # group_by(Time) %>%
+  # mutate(pop_max = ifelse(Sex == "Male", -max(pop), max(pop))) %>%
+  ggplot(mapping = aes(x = pop, y = AgeGrp))+
+  geom_col(orientation = "y") +
+  facet_share(facets = "sex", scales = "free_x") +
+  scale_x_continuous(labels = abs) +
+  theme_bw() +
+  transition_time(time = Time) +
+  labs(x = "Population (millions)", y = "", 
+       title = 'WPP World Population Medium Variant {round(frame_time)}')
+
+```
+
+
 

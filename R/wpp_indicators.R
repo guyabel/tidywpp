@@ -1,8 +1,8 @@
 #' WPP indicators
 #'
-#' Data set containing the indicator names, details and available variants from WPP1998 onwards.
+#' Data set containing the indicator names, details and available variants strating from WPP1998.
 #'
-#' @format A data frame with 2766 rows and 7 variables, including:
+#' @format A data frame with 2742 rows and 7 variables, including:
 #' \describe{
 #'   \item{name}{Short name of indicator. Can be passed to `get_wpp()`}
 #'   \item{details}{Brief description of indicator.}
