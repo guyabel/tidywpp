@@ -205,24 +205,28 @@ get_wpp <- function(indicator = NULL,
     dplyr::bind_rows(d0, .) %>%
     dplyr::arrange(var_id)
 
-  read_with_progress <- function(f){
-    pb$tick()
-    readr::read_csv(f, col_types = readr::cols(), guess_max = 1e5)
-  }
+  name2 <- u <- i <- NULL
+
   pb <- progress::progress_bar$new(total = nrow(d1))
   pb$tick(0)
 
-  name2 <- u <- i <- NULL
   d1 <- d1 %>%
     dplyr::mutate(
       name2 = ifelse(name %in% c("Sx", "Tx", "Lx"), paste0(name, name), name),
       u = paste0("https://raw.githubusercontent.com/guyabel/tidywpp/main/build-data/WPP",
                  wpp_version, "/", file_group, "/", var_id, "/", name2, ".csv"),
-      i = purrr::map(.x = u, .f = ~readr::read_csv(file = .x, col_types = readr::cols(), guess_max = 1e1))) %>%
+      i = purrr::map(
+        .x = u,
+        .f = ~{
+          pb$tick()
+          readr::read_csv(file = .x, col_types = readr::cols(),
+                          guess_max = 1e1, progress = FALSE)
+        })) %>%
     # keep file group for later matching
     dplyr::group_by(var_id, file_group) %>%
     dplyr::summarise(dplyr::bind_cols(i), .groups = "drop_last") %>%
     dplyr::ungroup()
+
   pb$terminate()
 
   v <- wpp_var %>%
