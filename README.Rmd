@@ -169,7 +169,7 @@ d
 library(tidyverse)
 library(ggpol)
 library(gganimate)
-g <- d
+g <- d %>%
   filter(Location == "World") %>%
   mutate(pop = ifelse(Sex == "Male", -Pop/1e3, Pop/1e3),
          sex = fct_rev(Sex)) %>%
@@ -180,7 +180,7 @@ g <- d
   theme_bw() +
   transition_time(time = Time) +
   labs(x = "Population (millions)", y = "", 
-       title = 'WPP World Population Medium Variant {round(frame_time)}')
+       title = 'WPP2019 World Population Medium Variant {round(frame_time)}')
 
 animate(g, width = 15, height = 15, units = "cm", res = 200, 
         renderer = gifski_renderer(), nframes = n_distinct(d$Time))
