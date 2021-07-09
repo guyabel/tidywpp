@@ -11,8 +11,6 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 status](https://www.r-pkg.org/badges/version/tidywpp)](https://CRAN.R-project.org/package=tidywpp)
 <!-- badges: end -->
 
-The goal of tidywpp is to …
-
 ## Installation
 
 <!-- You can install the released version of tidywpp from [CRAN](https://CRAN.R-project.org) with: -->
@@ -92,8 +90,7 @@ get_wpp(indicator = c("PopTotal", "PopMale", "PopFemale"))
 
 # as multiple granularities of population in WPP, there are multiple population indicators.
 # use indicator indicator_file_group to select version of population indicator(s)
-get_wpp(indicator = c("PopTotal", "PopMale", "PopFemale"),
-        indicator_file_group =  "TotalPopulationBySex")
+get_wpp(indicator = c("PopTotal", "PopMale", "PopFemale"), indicator_file_group =  "TotalPopulationBySex")
 #> # A tibble: 72,027 x 9
 #>    LocID Location    VarID Variant  Time MidPeriod PopFemale PopMale PopTotal
 #>    <dbl> <chr>       <dbl> <chr>   <dbl>     <dbl>     <dbl>   <dbl>    <dbl>
@@ -110,9 +107,7 @@ get_wpp(indicator = c("PopTotal", "PopMale", "PopFemale"),
 #> # ... with 72,017 more rows
 
 # tidy sex into a single column and drop id columns
-get_wpp(indicator = c("PopMale", "PopFemale"),
-        indicator_file_group =  "TotalPopulationBySex",
-        tidy_pop_sex = TRUE, drop_id_cols = TRUE)
+get_wpp(indicator = c("PopMale", "PopFemale"), indicator_file_group =  "TotalPopulationBySex", tidy_pop_sex = TRUE, drop_id_cols = TRUE)
 #> # A tibble: 144,054 x 5
 #>    Location    Variant  Time Sex      Pop
 #>    <chr>       <chr>   <dbl> <chr>  <dbl>
@@ -129,8 +124,7 @@ get_wpp(indicator = c("PopMale", "PopFemale"),
 #> # ... with 144,044 more rows
 
 # clean column names
-get_wpp(indicator = c("SRB", "NetMigrations", "GrowthRate"),
-        clean_names = TRUE, drop_id_cols = TRUE)
+get_wpp(indicator = c("SRB", "NetMigrations", "GrowthRate"), clean_names = TRUE, drop_id_cols = TRUE)
 #> # A tibble: 14,940 x 6
 #>    location    variant time      growth_rate net_migrations   srb
 #>    <chr>       <chr>   <chr>           <dbl>          <dbl> <dbl>
@@ -147,8 +141,7 @@ get_wpp(indicator = c("SRB", "NetMigrations", "GrowthRate"),
 #> # ... with 14,930 more rows
 
 # old life table
-get_wpp(indicator = c("qx", "lx", "dx", "Lx", "Tx", "ex"),
-        wpp_version = 2017, drop_id_cols = TRUE)
+get_wpp(indicator = c("qx", "lx", "dx", "Lx", "Tx", "ex"), drop_id_cols = TRUE, wpp_version = 2017)
 #> # A tibble: 685,080 x 11
 #>    Location  Variant Time  AgeGrp Sex       dx    ex     lx     Lx     qx     Tx
 #>    <chr>     <chr>   <chr> <fct>  <chr>  <dbl> <dbl>  <dbl>  <dbl>  <dbl>  <dbl>
@@ -164,3 +157,162 @@ get_wpp(indicator = c("qx", "lx", "dx", "Lx", "Tx", "ex"),
 #> 10 Afghanis~ Medium  1950~ 10-14  Male   1862.  39.2 5.57e4 2.74e5 0.0335 2.18e6
 #> # ... with 685,070 more rows
 ```
+
+## indicator argument
+
+Indicators must use a character string corresponding to the `name`
+column in in the `wpp_indicators` data frame. The `find_indicator()`
+function can be used to look up the indicator code and availability by
+variants, for example
+
+``` r
+library(tidywpp)
+find_indicator(x = "life expect")
+#> # A tibble: 2 x 3
+#>   name      details                                 file_group       
+#>   <chr>     <chr>                                   <chr>            
+#> 1 LExFemale Female life expectancy at birth (years) Period_Indicators
+#> 2 LExMale   Male life expectancy at birth (years)   Period_Indicators
+```
+
+There are 45 different indicators in WPP data (starting from 1998)
+
+| name          | details                                                                                                                        | file\_group              |
+|:--------------|:-------------------------------------------------------------------------------------------------------------------------------|:-------------------------|
+| ASFR          | Age-specific fertility rate (births per 1,000 women)                                                                           | Fertility\_by\_Age       |
+| Births        | Number of births, both sexes combined (thousands)                                                                              | Fertility\_by\_Age       |
+| PASFR         | Percentage age-specific fertility rate                                                                                         | Fertility\_by\_Age       |
+| Births        | Number of births, both sexes combined (thousands)                                                                              | Period\_Indicators       |
+| CBR           | Crude birth rate (births per 1,000 population)                                                                                 | Period\_Indicators       |
+| CDR           | Crude death rate (deaths per 1,000 population)                                                                                 | Period\_Indicators       |
+| CNMR          | Net migration rate (per 1,000 population)                                                                                      | Period\_Indicators       |
+| Deaths        | Number of deaths, both sexes combined (thousands)                                                                              | Period\_Indicators       |
+| DeathsFemale  | Number of female deaths (thousands)                                                                                            | Period\_Indicators       |
+| DeathsMale    | Number of male deaths (thousands)                                                                                              | Period\_Indicators       |
+| GrowthRate    | Average annual rate of population change (percentage)                                                                          | Period\_Indicators       |
+| IMR           | Infant mortality rate, q(1), for both sexes combined (infant deaths per 1,000 live births)                                     | Period\_Indicators       |
+| LEx           | Life expectancy at birth for both sexes combined (years)                                                                       | Period\_Indicators       |
+| LExFemale     | Female life expectancy at birth (years)                                                                                        | Period\_Indicators       |
+| LExMale       | Male life expectancy at birth (years)                                                                                          | Period\_Indicators       |
+| MAC           | Female mean age of childbearing (years)                                                                                        | Period\_Indicators       |
+| NatIncr       | Rate of natural increase (per 1,000 population)                                                                                | Period\_Indicators       |
+| NetMigrations | Net number of migrants, both sexes combined (thousands)                                                                        | Period\_Indicators       |
+| NRR           | Net reproduction rate (surviving daughters per woman)                                                                          | Period\_Indicators       |
+| Q5            | Under-five mortality, 5q0, for both sexes combined (deaths under age five per 1,000 live births)                               | Period\_Indicators       |
+| SRB           | Sex ratio at birth (male births per female births)                                                                             | Period\_Indicators       |
+| TFR           | Total fertility (live births per woman)                                                                                        | Period\_Indicators       |
+| PopFemale     | Female population in the age group (thousands)                                                                                 | PopulationByAgeSex       |
+| PopMale       | Male population in the age group (thousands)                                                                                   | PopulationByAgeSex       |
+| PopTotal      | Total population in the age group (thousands)                                                                                  | PopulationByAgeSex       |
+| PopDensity    | Population per square kilometre (thousands)                                                                                    | TotalPopulationBySex     |
+| PopFemale     | Total female population (thousands)                                                                                            | TotalPopulationBySex     |
+| PopMale       | Total male population (thousands)                                                                                              | TotalPopulationBySex     |
+| PopTotal      | Total population, both sexes (thousands)                                                                                       | TotalPopulationBySex     |
+| ax            | Average number of years lived (nax) between ages x and x+n by those dying in the interval                                      | Life\_Table              |
+| dx            | Number of deaths, (ndx), between ages x and x+n                                                                                | Life\_Table              |
+| ex            | Expectation of life (ex) at age x, i.e., average number of years lived subsequent to age x by those reaching age x             | Life\_Table              |
+| lx            | Number of survivors, (lx), at age (x) for 100000 births                                                                        | Life\_Table              |
+| Lx            | Number of person-years lived, (nLx), between ages x and x+n                                                                    | Life\_Table              |
+| mx            | Central death rate, nmx, for the age interval (x, x+n)                                                                         | Life\_Table              |
+| px            | Probability of surviving, (npx), for an individual of age x to age x+n                                                         | Life\_Table              |
+| qx            | Probability of dying (nqx), for an individual between age x and x+n                                                            | Life\_Table              |
+| Sx            | Survival ratio (nSx) corresponding to proportion of the life table population in age group (x, x+n) who are alive n year later | Life\_Table              |
+| Tx            | Person-years lived, (Tx), above age x                                                                                          | Life\_Table              |
+| PopFemale     | Female population for the individual age (thousands)                                                                           | PopulationBySingleAgeSex |
+| PopMale       | Male population for the individual age (thousands)                                                                             | PopulationBySingleAgeSex |
+| PopTotal      | Total population for the individual age (thousands)                                                                            | PopulationBySingleAgeSex |
+| PopFemale     | Female population in the age group (thousands)                                                                                 | PopulationByAgeSex\_5x5  |
+| PopMale       | Male population in the age group (thousands)                                                                                   | PopulationByAgeSex\_5x5  |
+| PopTotal      | Total population in the age group (thousands)                                                                                  | PopulationByAgeSex\_5x5  |
+
+## variant\_id argument
+
+The `variant_id` argument must be one or more numbers from the `var_id`
+column in the `wpp_indicators` data frame. Not all indicators are
+available in all variants. Use the `find_indicator()` function to check
+availability, setting `simple = FALSE`, for example
+
+``` r
+library(tidywpp)
+find_indicator(x = "lx", simple = FALSE)
+#> # A tibble: 6 x 7
+#>   name  details        var_id variant  file_group file_group_details         wpp
+#>   <chr> <chr>           <dbl> <chr>    <chr>      <chr>                    <dbl>
+#> 1 lx    Number of sur~      2 Medium   Life_Table Abridged life tables by~  2019
+#> 2 lx    Number of sur~    202 Median ~ Life_Table Abridged life tables by~  2019
+#> 3 lx    Number of sur~    203 Upper 8~ Life_Table Abridged life tables by~  2019
+#> 4 lx    Number of sur~    204 Lower 8~ Life_Table Abridged life tables by~  2019
+#> 5 lx    Number of sur~    206 Upper 9~ Life_Table Abridged life tables by~  2019
+#> 6 lx    Number of sur~    207 Lower 9~ Life_Table Abridged life tables by~  2019
+```
+
+There are a maximum of 14 different variants in WPP data.
+
+| var\_id | variant                           |
+|--------:|:----------------------------------|
+|       2 | Medium                            |
+|       3 | High                              |
+|       4 | Low                               |
+|       5 | Constant fertility                |
+|       6 | Instant replacement               |
+|       7 | Zero migration                    |
+|       8 | Constant mortality                |
+|       9 | No change                         |
+|      10 | Momentum                          |
+|     202 | Median PI (BHM median in WPP2015) |
+|     203 | Upper 80 PI                       |
+|     204 | Lower 80 PI                       |
+|     206 | Upper 95 PI                       |
+|     207 | Lower 95 PI                       |
+
+## Benifits
+
+Data downloaded using tidywpp is in
+[tidy](https://vita.had.co.nz/papers/tidy-data.pdf) form, and hence
+requires none or minimal manipulations for use in popular modelling and
+visualisation functions in R.
+
+``` r
+d <- get_wpp(indicator = c("PopMale", "PopFemale"), indicator_file_group = "PopulationBySingleAgeSex",
+             tidy_pop_sex = TRUE, drop_id_cols = TRUE)
+d
+#> # A tibble: 13,512,386 x 6
+#>    Location    Variant  Time AgeGrp Sex      Pop
+#>    <chr>       <chr>   <dbl>  <dbl> <chr>  <dbl>
+#>  1 Afghanistan Medium   1950      0 Female  155.
+#>  2 Afghanistan Medium   1950      0 Male    140.
+#>  3 Afghanistan Medium   1950      1 Female  142.
+#>  4 Afghanistan Medium   1950      1 Male    132.
+#>  5 Afghanistan Medium   1950      2 Female  131.
+#>  6 Afghanistan Medium   1950      2 Male    125.
+#>  7 Afghanistan Medium   1950      3 Female  121.
+#>  8 Afghanistan Medium   1950      3 Male    119.
+#>  9 Afghanistan Medium   1950      4 Female  113.
+#> 10 Afghanistan Medium   1950      4 Male    114.
+#> # ... with 13,512,376 more rows
+```
+
+``` r
+library(tidyverse)
+library(ggpol)
+library(gganimate)
+g <- d
+  filter(Location == "World") %>%
+  mutate(pop = ifelse(Sex == "Male", -Pop/1e3, Pop/1e3),
+         sex = fct_rev(Sex)) %>%
+  ggplot(mapping = aes(x = pop, y = AgeGrp))+
+  geom_col(orientation = "y") +
+  facet_share(facets = "sex", scales = "free_x") +
+  scale_x_continuous(labels = abs) +
+  theme_bw() +
+  transition_time(time = Time) +
+  labs(x = "Population (millions)", y = "", 
+       title = 'WPP World Population Medium Variant {round(frame_time)}')
+
+animate(g, width = 15, height = 15, units = "cm", res = 200, 
+        renderer = gifski_renderer(), nframes = n_distinct(d$Time))
+
+anim_save(filename = "wpp_2019_med.gif")
+```
+
+<img src='wpp_2019_med.gif' height="600"/>

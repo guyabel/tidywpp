@@ -228,6 +228,7 @@ get_wpp <- function(indicator = NULL,
     dplyr::filter(wpp == wpp_version) %>%
     dplyr::select(dplyr::starts_with("Var"))
 
+  reg_name <- area_name <- NULL
   l <- wpp_loc %>%
     dplyr::filter(wpp == wpp_version) %>%
     dplyr::select(-wpp) %>%
