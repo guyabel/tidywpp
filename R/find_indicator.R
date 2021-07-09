@@ -21,7 +21,12 @@ find_indicator <- function(x, wpp_version = 2019, simple = TRUE){
     # across and filter any row not directly possible
     dplyr::filter_at(.vars = dplyr::vars(name, details),
                      .vars_predicate = dplyr::any_vars(
-                       stringr::str_detect(. , x)))
+                       stringr::str_detect(
+                         string = . ,
+                         pattern = stringr::regex(x, ignore_case = TRUE))
+                      )
+                     )
+
   if(simple){
     d <- d %>%
       dplyr::select(name, details, file_group) %>%

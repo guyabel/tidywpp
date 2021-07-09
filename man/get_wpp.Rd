@@ -47,11 +47,11 @@ Downloads data on demographic indicators in UN DESA WPP. Requires a working inte
 \details{
 Indicators must use the name corresponding to the \code{name} column in in the \link[=wpp_indicators]{wpp_indicators} data frame.
 The \link[=find_indicator]{find_indicator()} function can be used to look up the indicator code and availability by variants
-There are 45 different indicators in WPP data (starting from 1998)\tabular{lll}{
+There are 35 different indicators in WPP data (starting from 1998)\tabular{lll}{
    name \tab details \tab file_group \cr
    ASFR \tab Age-specific fertility rate (births per 1,000 women) \tab Fertility_by_Age \cr
+   ax \tab Average number of years lived (nax) between ages x and x+n by those dying in the interval \tab Life_Table \cr
    Births \tab Number of births, both sexes combined (thousands) \tab Fertility_by_Age \cr
-   PASFR \tab Percentage age-specific fertility rate \tab Fertility_by_Age \cr
    Births \tab Number of births, both sexes combined (thousands) \tab Period_Indicators \cr
    CBR \tab Crude birth rate (births per 1,000 population) \tab Period_Indicators \cr
    CDR \tab Crude death rate (deaths per 1,000 population) \tab Period_Indicators \cr
@@ -59,41 +59,41 @@ There are 45 different indicators in WPP data (starting from 1998)\tabular{lll}{
    Deaths \tab Number of deaths, both sexes combined (thousands) \tab Period_Indicators \cr
    DeathsFemale \tab Number of female deaths (thousands) \tab Period_Indicators \cr
    DeathsMale \tab Number of male deaths (thousands) \tab Period_Indicators \cr
+   dx \tab Number of deaths, (ndx), between ages x and x+n \tab Life_Table \cr
+   ex \tab Expectation of life (ex) at age x, i.e., average number of years lived subsequent to age x by those reaching age x \tab Life_Table \cr
    GrowthRate \tab Average annual rate of population change (percentage) \tab Period_Indicators \cr
    IMR \tab Infant mortality rate, q(1), for both sexes combined (infant deaths per 1,000 live births) \tab Period_Indicators \cr
    LEx \tab Life expectancy at birth for both sexes combined (years) \tab Period_Indicators \cr
    LExFemale \tab Female life expectancy at birth (years) \tab Period_Indicators \cr
    LExMale \tab Male life expectancy at birth (years) \tab Period_Indicators \cr
+   lx \tab Number of survivors, (lx), at age (x) for 100000 births \tab Life_Table \cr
+   Lx \tab Number of person-years lived, (nLx), between ages x and x+n \tab Life_Table \cr
    MAC \tab Female mean age of childbearing (years) \tab Period_Indicators \cr
+   mx \tab Central death rate, nmx, for the age interval (x, x+n) \tab Life_Table \cr
    NatIncr \tab Rate of natural increase (per 1,000 population) \tab Period_Indicators \cr
    NetMigrations \tab Net number of migrants, both sexes combined (thousands) \tab Period_Indicators \cr
    NRR \tab Net reproduction rate (surviving daughters per woman) \tab Period_Indicators \cr
-   Q5 \tab Under-five mortality, 5q0, for both sexes combined (deaths under age five per 1,000 live births) \tab Period_Indicators \cr
-   SRB \tab Sex ratio at birth (male births per female births) \tab Period_Indicators \cr
-   TFR \tab Total fertility (live births per woman) \tab Period_Indicators \cr
-   PopFemale \tab Female population in the age group (thousands) \tab PopulationByAgeSex \cr
-   PopMale \tab Male population in the age group (thousands) \tab PopulationByAgeSex \cr
-   PopTotal \tab Total population in the age group (thousands) \tab PopulationByAgeSex \cr
+   PASFR \tab Percentage age-specific fertility rate \tab Fertility_by_Age \cr
    PopDensity \tab Population per square kilometre (thousands) \tab TotalPopulationBySex \cr
+   PopFemale \tab Female population in the age group (thousands) \tab PopulationByAgeSex \cr
    PopFemale \tab Total female population (thousands) \tab TotalPopulationBySex \cr
-   PopMale \tab Total male population (thousands) \tab TotalPopulationBySex \cr
-   PopTotal \tab Total population, both sexes (thousands) \tab TotalPopulationBySex \cr
-   ax \tab Average number of years lived (nax) between ages x and x+n by those dying in the interval \tab Life_Table \cr
-   dx \tab Number of deaths, (ndx), between ages x and x+n \tab Life_Table \cr
-   ex \tab Expectation of life (ex) at age x, i.e., average number of years lived subsequent to age x by those reaching age x \tab Life_Table \cr
-   lx \tab Number of survivors, (lx), at age (x) for 100000 births \tab Life_Table \cr
-   Lx \tab Number of person-years lived, (nLx), between ages x and x+n \tab Life_Table \cr
-   mx \tab Central death rate, nmx, for the age interval (x, x+n) \tab Life_Table \cr
-   px \tab Probability of surviving, (npx), for an individual of age x to age x+n \tab Life_Table \cr
-   qx \tab Probability of dying (nqx), for an individual between age x and x+n \tab Life_Table \cr
-   Sx \tab Survival ratio (nSx) corresponding to proportion of the life table population in age group (x, x+n) who are alive n year later \tab Life_Table \cr
-   Tx \tab Person-years lived, (Tx), above age x \tab Life_Table \cr
    PopFemale \tab Female population for the individual age (thousands) \tab PopulationBySingleAgeSex \cr
-   PopMale \tab Male population for the individual age (thousands) \tab PopulationBySingleAgeSex \cr
-   PopTotal \tab Total population for the individual age (thousands) \tab PopulationBySingleAgeSex \cr
    PopFemale \tab Female population in the age group (thousands) \tab PopulationByAgeSex_5x5 \cr
+   PopMale \tab Male population in the age group (thousands) \tab PopulationByAgeSex \cr
+   PopMale \tab Total male population (thousands) \tab TotalPopulationBySex \cr
+   PopMale \tab Male population for the individual age (thousands) \tab PopulationBySingleAgeSex \cr
    PopMale \tab Male population in the age group (thousands) \tab PopulationByAgeSex_5x5 \cr
+   PopTotal \tab Total population in the age group (thousands) \tab PopulationByAgeSex \cr
+   PopTotal \tab Total population, both sexes (thousands) \tab TotalPopulationBySex \cr
+   PopTotal \tab Total population for the individual age (thousands) \tab PopulationBySingleAgeSex \cr
    PopTotal \tab Total population in the age group (thousands) \tab PopulationByAgeSex_5x5 \cr
+   px \tab Probability of surviving, (npx), for an individual of age x to age x+n \tab Life_Table \cr
+   Q5 \tab Under-five mortality, 5q0, for both sexes combined (deaths under age five per 1,000 live births) \tab Period_Indicators \cr
+   qx \tab Probability of dying (nqx), for an individual between age x and x+n \tab Life_Table \cr
+   SRB \tab Sex ratio at birth (male births per female births) \tab Period_Indicators \cr
+   Sx \tab Survival ratio (nSx) corresponding to proportion of the life table population in age group (x, x+n) who are alive n year later \tab Life_Table \cr
+   TFR \tab Total fertility (live births per woman) \tab Period_Indicators \cr
+   Tx \tab Person-years lived, (Tx), above age x \tab Life_Table \cr
 }
 
 

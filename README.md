@@ -168,20 +168,22 @@ variants, for example
 ``` r
 library(tidywpp)
 find_indicator(x = "life expect")
-#> # A tibble: 2 x 3
-#>   name      details                                 file_group       
-#>   <chr>     <chr>                                   <chr>            
-#> 1 LExFemale Female life expectancy at birth (years) Period_Indicators
-#> 2 LExMale   Male life expectancy at birth (years)   Period_Indicators
+#> # A tibble: 3 x 3
+#>   name      details                                             file_group      
+#>   <chr>     <chr>                                               <chr>           
+#> 1 LEx       Life expectancy at birth for both sexes combined (~ Period_Indicato~
+#> 2 LExFemale Female life expectancy at birth (years)             Period_Indicato~
+#> 3 LExMale   Male life expectancy at birth (years)               Period_Indicato~
 ```
 
-There are 45 different indicators in WPP data (starting from 1998)
+There are 35 different indicators in WPP data (starting from 1998), some
+with multiple levels of detail.
 
 | name          | details                                                                                                                        | file\_group              |
 |:--------------|:-------------------------------------------------------------------------------------------------------------------------------|:-------------------------|
 | ASFR          | Age-specific fertility rate (births per 1,000 women)                                                                           | Fertility\_by\_Age       |
+| ax            | Average number of years lived (nax) between ages x and x+n by those dying in the interval                                      | Life\_Table              |
 | Births        | Number of births, both sexes combined (thousands)                                                                              | Fertility\_by\_Age       |
-| PASFR         | Percentage age-specific fertility rate                                                                                         | Fertility\_by\_Age       |
 | Births        | Number of births, both sexes combined (thousands)                                                                              | Period\_Indicators       |
 | CBR           | Crude birth rate (births per 1,000 population)                                                                                 | Period\_Indicators       |
 | CDR           | Crude death rate (deaths per 1,000 population)                                                                                 | Period\_Indicators       |
@@ -189,41 +191,41 @@ There are 45 different indicators in WPP data (starting from 1998)
 | Deaths        | Number of deaths, both sexes combined (thousands)                                                                              | Period\_Indicators       |
 | DeathsFemale  | Number of female deaths (thousands)                                                                                            | Period\_Indicators       |
 | DeathsMale    | Number of male deaths (thousands)                                                                                              | Period\_Indicators       |
+| dx            | Number of deaths, (ndx), between ages x and x+n                                                                                | Life\_Table              |
+| ex            | Expectation of life (ex) at age x, i.e., average number of years lived subsequent to age x by those reaching age x             | Life\_Table              |
 | GrowthRate    | Average annual rate of population change (percentage)                                                                          | Period\_Indicators       |
 | IMR           | Infant mortality rate, q(1), for both sexes combined (infant deaths per 1,000 live births)                                     | Period\_Indicators       |
 | LEx           | Life expectancy at birth for both sexes combined (years)                                                                       | Period\_Indicators       |
 | LExFemale     | Female life expectancy at birth (years)                                                                                        | Period\_Indicators       |
 | LExMale       | Male life expectancy at birth (years)                                                                                          | Period\_Indicators       |
+| lx            | Number of survivors, (lx), at age (x) for 100000 births                                                                        | Life\_Table              |
+| Lx            | Number of person-years lived, (nLx), between ages x and x+n                                                                    | Life\_Table              |
 | MAC           | Female mean age of childbearing (years)                                                                                        | Period\_Indicators       |
+| mx            | Central death rate, nmx, for the age interval (x, x+n)                                                                         | Life\_Table              |
 | NatIncr       | Rate of natural increase (per 1,000 population)                                                                                | Period\_Indicators       |
 | NetMigrations | Net number of migrants, both sexes combined (thousands)                                                                        | Period\_Indicators       |
 | NRR           | Net reproduction rate (surviving daughters per woman)                                                                          | Period\_Indicators       |
-| Q5            | Under-five mortality, 5q0, for both sexes combined (deaths under age five per 1,000 live births)                               | Period\_Indicators       |
-| SRB           | Sex ratio at birth (male births per female births)                                                                             | Period\_Indicators       |
-| TFR           | Total fertility (live births per woman)                                                                                        | Period\_Indicators       |
-| PopFemale     | Female population in the age group (thousands)                                                                                 | PopulationByAgeSex       |
-| PopMale       | Male population in the age group (thousands)                                                                                   | PopulationByAgeSex       |
-| PopTotal      | Total population in the age group (thousands)                                                                                  | PopulationByAgeSex       |
+| PASFR         | Percentage age-specific fertility rate                                                                                         | Fertility\_by\_Age       |
 | PopDensity    | Population per square kilometre (thousands)                                                                                    | TotalPopulationBySex     |
+| PopFemale     | Female population in the age group (thousands)                                                                                 | PopulationByAgeSex       |
 | PopFemale     | Total female population (thousands)                                                                                            | TotalPopulationBySex     |
-| PopMale       | Total male population (thousands)                                                                                              | TotalPopulationBySex     |
-| PopTotal      | Total population, both sexes (thousands)                                                                                       | TotalPopulationBySex     |
-| ax            | Average number of years lived (nax) between ages x and x+n by those dying in the interval                                      | Life\_Table              |
-| dx            | Number of deaths, (ndx), between ages x and x+n                                                                                | Life\_Table              |
-| ex            | Expectation of life (ex) at age x, i.e., average number of years lived subsequent to age x by those reaching age x             | Life\_Table              |
-| lx            | Number of survivors, (lx), at age (x) for 100000 births                                                                        | Life\_Table              |
-| Lx            | Number of person-years lived, (nLx), between ages x and x+n                                                                    | Life\_Table              |
-| mx            | Central death rate, nmx, for the age interval (x, x+n)                                                                         | Life\_Table              |
-| px            | Probability of surviving, (npx), for an individual of age x to age x+n                                                         | Life\_Table              |
-| qx            | Probability of dying (nqx), for an individual between age x and x+n                                                            | Life\_Table              |
-| Sx            | Survival ratio (nSx) corresponding to proportion of the life table population in age group (x, x+n) who are alive n year later | Life\_Table              |
-| Tx            | Person-years lived, (Tx), above age x                                                                                          | Life\_Table              |
 | PopFemale     | Female population for the individual age (thousands)                                                                           | PopulationBySingleAgeSex |
-| PopMale       | Male population for the individual age (thousands)                                                                             | PopulationBySingleAgeSex |
-| PopTotal      | Total population for the individual age (thousands)                                                                            | PopulationBySingleAgeSex |
 | PopFemale     | Female population in the age group (thousands)                                                                                 | PopulationByAgeSex\_5x5  |
+| PopMale       | Male population in the age group (thousands)                                                                                   | PopulationByAgeSex       |
+| PopMale       | Total male population (thousands)                                                                                              | TotalPopulationBySex     |
+| PopMale       | Male population for the individual age (thousands)                                                                             | PopulationBySingleAgeSex |
 | PopMale       | Male population in the age group (thousands)                                                                                   | PopulationByAgeSex\_5x5  |
+| PopTotal      | Total population in the age group (thousands)                                                                                  | PopulationByAgeSex       |
+| PopTotal      | Total population, both sexes (thousands)                                                                                       | TotalPopulationBySex     |
+| PopTotal      | Total population for the individual age (thousands)                                                                            | PopulationBySingleAgeSex |
 | PopTotal      | Total population in the age group (thousands)                                                                                  | PopulationByAgeSex\_5x5  |
+| px            | Probability of surviving, (npx), for an individual of age x to age x+n                                                         | Life\_Table              |
+| Q5            | Under-five mortality, 5q0, for both sexes combined (deaths under age five per 1,000 live births)                               | Period\_Indicators       |
+| qx            | Probability of dying (nqx), for an individual between age x and x+n                                                            | Life\_Table              |
+| SRB           | Sex ratio at birth (male births per female births)                                                                             | Period\_Indicators       |
+| Sx            | Survival ratio (nSx) corresponding to proportion of the life table population in age group (x, x+n) who are alive n year later | Life\_Table              |
+| TFR           | Total fertility (live births per woman)                                                                                        | Period\_Indicators       |
+| Tx            | Person-years lived, (Tx), above age x                                                                                          | Life\_Table              |
 
 ## variant\_id argument
 
@@ -235,15 +237,21 @@ availability, setting `simple = FALSE`, for example
 ``` r
 library(tidywpp)
 find_indicator(x = "lx", simple = FALSE)
-#> # A tibble: 6 x 7
-#>   name  details        var_id variant  file_group file_group_details         wpp
-#>   <chr> <chr>           <dbl> <chr>    <chr>      <chr>                    <dbl>
-#> 1 lx    Number of sur~      2 Medium   Life_Table Abridged life tables by~  2019
-#> 2 lx    Number of sur~    202 Median ~ Life_Table Abridged life tables by~  2019
-#> 3 lx    Number of sur~    203 Upper 8~ Life_Table Abridged life tables by~  2019
-#> 4 lx    Number of sur~    204 Lower 8~ Life_Table Abridged life tables by~  2019
-#> 5 lx    Number of sur~    206 Upper 9~ Life_Table Abridged life tables by~  2019
-#> 6 lx    Number of sur~    207 Lower 9~ Life_Table Abridged life tables by~  2019
+#> # A tibble: 12 x 7
+#>    name  details        var_id variant  file_group file_group_details        wpp
+#>    <chr> <chr>           <dbl> <chr>    <chr>      <chr>                   <dbl>
+#>  1 lx    Number of sur~      2 Medium   Life_Table Abridged life tables b~  2019
+#>  2 Lx    Number of per~      2 Medium   Life_Table Abridged life tables b~  2019
+#>  3 lx    Number of sur~    202 Median ~ Life_Table Abridged life tables b~  2019
+#>  4 Lx    Number of per~    202 Median ~ Life_Table Abridged life tables b~  2019
+#>  5 lx    Number of sur~    203 Upper 8~ Life_Table Abridged life tables b~  2019
+#>  6 Lx    Number of per~    203 Upper 8~ Life_Table Abridged life tables b~  2019
+#>  7 lx    Number of sur~    204 Lower 8~ Life_Table Abridged life tables b~  2019
+#>  8 Lx    Number of per~    204 Lower 8~ Life_Table Abridged life tables b~  2019
+#>  9 lx    Number of sur~    206 Upper 9~ Life_Table Abridged life tables b~  2019
+#> 10 Lx    Number of per~    206 Upper 9~ Life_Table Abridged life tables b~  2019
+#> 11 lx    Number of sur~    207 Lower 9~ Life_Table Abridged life tables b~  2019
+#> 12 Lx    Number of per~    207 Lower 9~ Life_Table Abridged life tables b~  2019
 ```
 
 There are a maximum of 14 different variants in WPP data.
@@ -312,7 +320,7 @@ g <- d %>%
 animate(g, width = 15, height = 15, units = "cm", res = 200, 
         renderer = gifski_renderer(), nframes = n_distinct(d$Time))
 
-anim_save(filename = "wpp_2019_med.gif")
+anim_save(filename = "wpp2019_med.gif")
 ```
 
-<img src='wpp_2019_med.gif' height="600"/>
+<img src='wpp2019_med.gif' height="600"/>

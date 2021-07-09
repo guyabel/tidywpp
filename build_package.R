@@ -14,6 +14,7 @@ library(tidywpp)
 wpp_indicators %>%
   select(1:2, file_group) %>%
   distinct() %>%
+  arrange(name) %>%
   knitr::kable() %>%
   write_lines('temp.md')
 
