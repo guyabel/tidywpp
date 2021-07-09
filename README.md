@@ -107,7 +107,8 @@ get_wpp(indicator = c("PopTotal", "PopMale", "PopFemale"), indicator_file_group 
 #> # ... with 72,017 more rows
 
 # tidy sex into a single column and drop id columns
-get_wpp(indicator = c("PopMale", "PopFemale"), indicator_file_group =  "TotalPopulationBySex", tidy_pop_sex = TRUE, drop_id_cols = TRUE)
+get_wpp(indicator = c("PopMale", "PopFemale"), indicator_file_group =  "TotalPopulationBySex", 
+        tidy_pop_sex = TRUE, drop_id_cols = TRUE)
 #> # A tibble: 144,054 x 5
 #>    Location    Variant  Time Sex      Pop
 #>    <chr>       <chr>   <dbl> <chr>  <dbl>
