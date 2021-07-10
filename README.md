@@ -88,8 +88,8 @@ get_wpp(indicator = c("PopTotal", "PopMale", "PopFemale"))
 #> # ... with 1,404,743 more rows, and 3 more variables: PopFemale <dbl>,
 #> #   PopMale <dbl>, PopTotal <dbl>
 
-# as multiple granularities of population in WPP, there are multiple population indicators.
-# use indicator indicator_file_group to select version of population indicator(s)
+# there are multiple population indicators in the WPP with different levels of granularity
+# use indicator_file_group to select the desired version of population indicator(s)
 get_wpp(indicator = c("PopTotal", "PopMale", "PopFemale"), indicator_file_group =  "TotalPopulationBySex")
 #> # A tibble: 72,027 x 9
 #>    LocID Location    VarID Variant  Time MidPeriod PopFemale PopMale PopTotal
@@ -141,7 +141,7 @@ get_wpp(indicator = c("SRB", "NetMigrations", "GrowthRate"), clean_names = TRUE,
 #> 10 Afghanistan Medium  1995-2000       2.75           -868.  1.06
 #> # ... with 14,930 more rows
 
-# old life table
+# life table data from previous WPP
 get_wpp(indicator = c("qx", "lx", "dx", "Lx", "Tx", "ex"), drop_id_cols = TRUE, wpp_version = 2017)
 #> # A tibble: 685,080 x 11
 #>    Location  Variant Time  AgeGrp Sex       dx    ex     lx     Lx     qx     Tx
@@ -161,10 +161,10 @@ get_wpp(indicator = c("qx", "lx", "dx", "Lx", "Tx", "ex"), drop_id_cols = TRUE, 
 
 ## indicator argument
 
-Indicators must use a character string corresponding to the `name`
-column in in the `wpp_indicators` data frame. The `find_indicator()`
-function can be used to look up the indicator code and availability by
-variants, for example
+The `indicator` argument in `get_wpp()` must use a character string
+corresponding to the `name` column in in the `wpp_indicators` data
+frame. The `find_indicator()` function can be used to look up the
+indicator code and availability by variants, for example
 
 ``` r
 library(tidywpp)
@@ -230,10 +230,31 @@ with multiple levels of detail.
 
 ## variant\_id argument
 
-The `variant_id` argument must be one or more numbers from the `var_id`
-column in the `wpp_indicators` data frame. Not all indicators are
-available in all variants. Use the `find_indicator()` function to check
-availability, setting `simple = FALSE`, for example
+The `variant_id` argument in `get_wpp()` must be one or more numeric
+values from the `var_id` column in the `wpp_indicators` data frame.
+
+There are a maximum of 14 different variants in WPP data.
+
+| var\_id | variant                           |
+|--------:|:----------------------------------|
+|       2 | Medium                            |
+|       3 | High                              |
+|       4 | Low                               |
+|       5 | Constant fertility                |
+|       6 | Instant replacement               |
+|       7 | Zero migration                    |
+|       8 | Constant mortality                |
+|       9 | No change                         |
+|      10 | Momentum                          |
+|     202 | Median PI (BHM median in WPP2015) |
+|     203 | Upper 80 PI                       |
+|     204 | Lower 80 PI                       |
+|     206 | Upper 95 PI                       |
+|     207 | Lower 95 PI                       |
+
+Not all indicators are available in all variants. Use the
+`find_indicator()` function to check availability, setting
+`simple = FALSE`; for example
 
 ``` r
 library(tidywpp)
@@ -255,30 +276,11 @@ find_indicator(x = "lx", simple = FALSE)
 #> 12 Lx    Number of per~    207 Lower 9~ Life_Table Abridged life tables b~  2019
 ```
 
-There are a maximum of 14 different variants in WPP data.
-
-| var\_id | variant                           |
-|--------:|:----------------------------------|
-|       2 | Medium                            |
-|       3 | High                              |
-|       4 | Low                               |
-|       5 | Constant fertility                |
-|       6 | Instant replacement               |
-|       7 | Zero migration                    |
-|       8 | Constant mortality                |
-|       9 | No change                         |
-|      10 | Momentum                          |
-|     202 | Median PI (BHM median in WPP2015) |
-|     203 | Upper 80 PI                       |
-|     204 | Lower 80 PI                       |
-|     206 | Upper 95 PI                       |
-|     207 | Lower 95 PI                       |
-
 ## Benefits
 
 Data downloaded using tidywpp is in
-[tidy](https://vita.had.co.nz/papers/tidy-data.pdf) form, and hence
-requires none or minimal manipulations for use in popular modelling and
+[tidy](https://vita.had.co.nz/papers/tidy-data.pdf) form, and hence does
+not require any major manipulations for use in popular modelling and
 visualisation functions in R.
 
 ``` r
