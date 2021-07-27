@@ -125,31 +125,18 @@ get_wpp(indicator = "TFR")
 # single indicator from multiple variants of latest WPP
 get_wpp(indicator = "TFR", variant_id = c(2, 3, 4))
 
-# multiple population indicators from single variant of
-# latest WPP
+# multiple population indicators from single variant of latest WPP
 get_wpp(indicator = c("PopTotal", "PopMale", "PopFemale"))
 
-# as multiple granularities of population in WPP, there are
-# multiple population indicators. use indicator_file_group
-# to select version of population indicator(s)
-get_wpp(indicator = c("PopTotal", "PopMale", "PopFemale"),
-        indicator_file_group =  "TotalPopulationBySex")
+# there are multiple population indicators in the WPP with different levels of granularity
+# use indicator_file_group to select the desired version of population indicator(s)
+get_wpp(indicator = c("PopTotal", "PopMale", "PopFemale"), indicator_file_group =  "TotalPopulationBySex")
 
 # tidy sex into a single column and drop id columns
-get_wpp(indicator = c("PopMale", "PopFemale"),
-        indicator_file_group = "TotalPopulationBySex",
+get_wpp(indicator = c("PopMale", "PopFemale"), indicator_file_group =  "TotalPopulationBySex",
         tidy_pop_sex = TRUE, drop_id_cols = TRUE)
 
 # clean column names
-get_wpp(indicator = c("SRB", "NetMigrations", "GrowthRate"),
-        clean_names = TRUE, drop_id_cols = TRUE)
-
-# add region and area columns
-get_wpp(indicator = "PopDensity", clean_names = TRUE,
-        drop_id_cols = TRUE, add_regions = TRUE)
-
-# old life table
-get_wpp(indicator = c("qx", "lx", "dx", "Lx", "Tx", "ex"),
-        wpp_version = 2017, drop_id_cols = TRUE)
+get_wpp(indicator = c("SRB", "NetMigrations", "GrowthRate"), clean_names = TRUE, drop_id_cols = TRUE)
 }
 }

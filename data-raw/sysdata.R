@@ -1,11 +1,11 @@
 library(tidyverse)
-wpp_var <- read_csv("./build-data/meta/var.csv") %>%
+wpp_var <- read_csv("./data-host/meta/var.csv") %>%
   select(-file_group) %>%
   distinct()
 
 library(wpp2019)
 data("UNlocations")
-d0 <- read_csv("./build-data/meta/loc.csv")
+d0 <- read_csv("./data-host/meta/loc.csv")
 d1 <- UNlocations %>%
   select(country_code, reg_name, area_name) %>%
   as_tibble()
@@ -21,9 +21,9 @@ wpp_loc %>%
   select(-wpp) %>%
   distinct()
 
-wpp_time <- read_csv("./build-data/meta/time.csv")
-wpp_age <- read_csv("./build-data/meta/age.csv")
-wpp_sex <- read_csv("./build-data/meta/sex.csv")
+wpp_time <- read_csv("./data-host/meta/time.csv")
+wpp_age <- read_csv("./data-host/meta/age.csv")
+wpp_sex <- read_csv("./data-host/meta/sex.csv")
 
 
 usethis::use_data(wpp_var, wpp_loc, wpp_time, wpp_age, wpp_sex,

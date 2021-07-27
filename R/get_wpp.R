@@ -200,7 +200,7 @@ get_wpp <- function(indicator = NULL,
   d1 <- d1 %>%
     dplyr::mutate(
       name2 = ifelse(name %in% c("Sx", "Tx", "Lx"), paste0(name, name), name),
-      u = paste0("https://raw.githubusercontent.com/guyabel/tidywpp/main/build-data/WPP",
+      u = paste0("https://raw.githubusercontent.com/guyabel/tidywpp/main/data-host/WPP",
                  wpp_version, "/", file_group, "/", var_id, "/", name2, ".csv"),
       i = purrr::map(
         .x = u,

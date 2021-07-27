@@ -1,6 +1,6 @@
 library(tidyverse)
 
-d <- read_csv("./build-data/meta/indicators.csv")
+d <- read_csv("./data-host/meta/indicators.csv")
 b <- read_csv("./data-raw/wpp_bulk.csv")
 
 b0 <-
