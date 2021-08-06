@@ -215,13 +215,15 @@
 <p>The <code>indicator</code> argument in <code><a href="reference/get_wpp.html">get_wpp()</a></code> must use a character string corresponding to the <code>name</code> column in in the <code>wpp_indicators</code> data frame. The <code><a href="reference/find_indicator.html">find_indicator()</a></code> function can be used to look up the indicator code and availability by variants, for example</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">tidywpp</span><span class="op">)</span>
+<span class="co">#&gt; Suggested citation for WPP2019 data:</span>
+<span class="co">#&gt; United Nations, Department of Economic and Social Affairs, Population Division (2019). World Population Prospects 2019, Online Edition. Rev. 1</span>
 <span class="fu"><a href="reference/find_indicator.html">find_indicator</a></span><span class="op">(</span>x <span class="op">=</span> <span class="st">"life expect"</span><span class="op">)</span>
 <span class="co">#&gt; # A tibble: 3 x 3</span>
-<span class="co">#&gt;   name      details                                             file_group      </span>
-<span class="co">#&gt;   &lt;chr&gt;     &lt;chr&gt;                                               &lt;chr&gt;           </span>
-<span class="co">#&gt; 1 LEx       Life expectancy at birth for both sexes combined (~ Period_Indicato~</span>
-<span class="co">#&gt; 2 LExFemale Female life expectancy at birth (years)             Period_Indicato~</span>
-<span class="co">#&gt; 3 LExMale   Male life expectancy at birth (years)               Period_Indicato~</span></code></pre></div>
+<span class="co">#&gt;   name      details                                                  file_group </span>
+<span class="co">#&gt;   &lt;chr&gt;     &lt;chr&gt;                                                    &lt;chr&gt;      </span>
+<span class="co">#&gt; 1 LEx       Life expectancy at birth for both sexes combined (years) Period_Ind~</span>
+<span class="co">#&gt; 2 LExFemale Female life expectancy at birth (years)                  Period_Ind~</span>
+<span class="co">#&gt; 3 LExMale   Male life expectancy at birth (years)                    Period_Ind~</span></code></pre></div>
 <p>There are 35 different indicators in WPP data (starting from 1998), some with multiple levels of detail.</p>
 <table class="table">
 <colgroup>
@@ -618,8 +620,9 @@
   <div class="dev-status">
 <h2>Dev status</h2>
 <ul class="list-unstyled">
-<li><a href="https://lifecycle.r-lib.org/articles/stages.html#experimental"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="Lifecycle: experimental"></a></li>
 <li><a href="https://CRAN.R-project.org/package=tidywpp"><img src="https://www.r-pkg.org/badges/version/tidywpp" alt="CRAN status"></a></li>
+<li><a href="https://lifecycle.r-lib.org/articles/stages.html#experimental"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="Lifecycle: experimental"></a></li>
+<li><a href="https://github.com/guyabel/tidywpp/actions"><img src="https://github.com/guyabel/tidywpp/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a></li>
 </ul>
 </div>
 </div>

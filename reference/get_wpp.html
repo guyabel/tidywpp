@@ -254,36 +254,103 @@ There are 14 different variants in WPP data (starting from 1998).</p><table clas
     <pre class="examples"><div class='input'><span class='co'># \donttest{</span>
 <span class='co'># single indicator from medium variant of latest WPP</span>
 <span class='fu'>get_wpp</span><span class='op'>(</span>indicator <span class='op'>=</span> <span class='st'>"TFR"</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; <span class='error'>Error: Problem with `mutate()` column `i`.</span>
-#&gt; <span class='error'><span style='color: #0000BB;'>ℹ</span> `i = purrr::map(...)`.</span>
-#&gt; <span class='error'><span style='color: #BB0000;'>✖</span> there is no package called ‘vroom’</span></div><div class='input'>
+</div><div class='output co'>#&gt; <span style='color: #949494;'># A tibble: 14,940 × 7</span>
+#&gt;    LocID Location    VarID Variant Time      MidPeriod   TFR
+#&gt;    <span style='color: #949494; font-style: italic;'>&lt;dbl&gt;</span> <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>       <span style='color: #949494; font-style: italic;'>&lt;dbl&gt;</span> <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>   <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>         <span style='color: #949494; font-style: italic;'>&lt;dbl&gt;</span> <span style='color: #949494; font-style: italic;'>&lt;dbl&gt;</span>
+#&gt; <span style='color: #BCBCBC;'> 1</span>     4 Afghanistan     2 Medium  1950-1955      <span style='text-decoration: underline;'>1</span>953  7.45
+#&gt; <span style='color: #BCBCBC;'> 2</span>     4 Afghanistan     2 Medium  1955-1960      <span style='text-decoration: underline;'>1</span>958  7.45
+#&gt; <span style='color: #BCBCBC;'> 3</span>     4 Afghanistan     2 Medium  1960-1965      <span style='text-decoration: underline;'>1</span>963  7.45
+#&gt; <span style='color: #BCBCBC;'> 4</span>     4 Afghanistan     2 Medium  1965-1970      <span style='text-decoration: underline;'>1</span>968  7.45
+#&gt; <span style='color: #BCBCBC;'> 5</span>     4 Afghanistan     2 Medium  1970-1975      <span style='text-decoration: underline;'>1</span>973  7.45
+#&gt; <span style='color: #BCBCBC;'> 6</span>     4 Afghanistan     2 Medium  1975-1980      <span style='text-decoration: underline;'>1</span>978  7.45
+#&gt; <span style='color: #BCBCBC;'> 7</span>     4 Afghanistan     2 Medium  1980-1985      <span style='text-decoration: underline;'>1</span>983  7.45
+#&gt; <span style='color: #BCBCBC;'> 8</span>     4 Afghanistan     2 Medium  1985-1990      <span style='text-decoration: underline;'>1</span>988  7.47
+#&gt; <span style='color: #BCBCBC;'> 9</span>     4 Afghanistan     2 Medium  1990-1995      <span style='text-decoration: underline;'>1</span>993  7.48
+#&gt; <span style='color: #BCBCBC;'>10</span>     4 Afghanistan     2 Medium  1995-2000      <span style='text-decoration: underline;'>1</span>998  7.65
+#&gt; <span style='color: #949494;'># … with 14,930 more rows</span></div><div class='input'>
 <span class='co'># single indicator from multiple variants of latest WPP</span>
 <span class='fu'>get_wpp</span><span class='op'>(</span>indicator <span class='op'>=</span> <span class='st'>"TFR"</span>, variant_id <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>2</span>, <span class='fl'>3</span>, <span class='fl'>4</span><span class='op'>)</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; <span class='error'>Error: Problem with `mutate()` column `i`.</span>
-#&gt; <span class='error'><span style='color: #0000BB;'>ℹ</span> `i = purrr::map(...)`.</span>
-#&gt; <span class='error'><span style='color: #BB0000;'>✖</span> there is no package called ‘vroom’</span></div><div class='input'>
+</div><div class='output co'>#&gt; <span style='color: #949494;'># A tibble: 24,060 × 7</span>
+#&gt;    LocID Location    VarID Variant Time      MidPeriod   TFR
+#&gt;    <span style='color: #949494; font-style: italic;'>&lt;dbl&gt;</span> <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>       <span style='color: #949494; font-style: italic;'>&lt;dbl&gt;</span> <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>   <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>         <span style='color: #949494; font-style: italic;'>&lt;dbl&gt;</span> <span style='color: #949494; font-style: italic;'>&lt;dbl&gt;</span>
+#&gt; <span style='color: #BCBCBC;'> 1</span>     4 Afghanistan     2 Medium  1950-1955      <span style='text-decoration: underline;'>1</span>953  7.45
+#&gt; <span style='color: #BCBCBC;'> 2</span>     4 Afghanistan     2 Medium  1955-1960      <span style='text-decoration: underline;'>1</span>958  7.45
+#&gt; <span style='color: #BCBCBC;'> 3</span>     4 Afghanistan     2 Medium  1960-1965      <span style='text-decoration: underline;'>1</span>963  7.45
+#&gt; <span style='color: #BCBCBC;'> 4</span>     4 Afghanistan     2 Medium  1965-1970      <span style='text-decoration: underline;'>1</span>968  7.45
+#&gt; <span style='color: #BCBCBC;'> 5</span>     4 Afghanistan     2 Medium  1970-1975      <span style='text-decoration: underline;'>1</span>973  7.45
+#&gt; <span style='color: #BCBCBC;'> 6</span>     4 Afghanistan     2 Medium  1975-1980      <span style='text-decoration: underline;'>1</span>978  7.45
+#&gt; <span style='color: #BCBCBC;'> 7</span>     4 Afghanistan     2 Medium  1980-1985      <span style='text-decoration: underline;'>1</span>983  7.45
+#&gt; <span style='color: #BCBCBC;'> 8</span>     4 Afghanistan     2 Medium  1985-1990      <span style='text-decoration: underline;'>1</span>988  7.47
+#&gt; <span style='color: #BCBCBC;'> 9</span>     4 Afghanistan     2 Medium  1990-1995      <span style='text-decoration: underline;'>1</span>993  7.48
+#&gt; <span style='color: #BCBCBC;'>10</span>     4 Afghanistan     2 Medium  1995-2000      <span style='text-decoration: underline;'>1</span>998  7.65
+#&gt; <span style='color: #949494;'># … with 24,050 more rows</span></div><div class='input'>
 <span class='co'># multiple population indicators from single variant of latest WPP</span>
 <span class='fu'>get_wpp</span><span class='op'>(</span>indicator <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"PopTotal"</span>, <span class='st'>"PopMale"</span>, <span class='st'>"PopFemale"</span><span class='op'>)</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; <span class='message'>Downloading from PopulationByAgeSex</span></div><div class='output co'>#&gt; <span class='message'>Also available in: TotalPopulationBySex</span></div><div class='output co'>#&gt; <span class='message'>Also available in: PopulationBySingleAgeSex</span></div><div class='output co'>#&gt; <span class='message'>Use indicator_file_group to get alternative measures</span></div><div class='output co'>#&gt; <span class='error'>Error: Problem with `mutate()` column `i`.</span>
-#&gt; <span class='error'><span style='color: #0000BB;'>ℹ</span> `i = purrr::map(...)`.</span>
-#&gt; <span class='error'><span style='color: #BB0000;'>✖</span> there is no package called ‘vroom’</span></div><div class='input'>
+</div><div class='output co'>#&gt; <span class='message'>Downloading from PopulationByAgeSex</span></div><div class='output co'>#&gt; <span class='message'>Also available in: TotalPopulationBySex</span></div><div class='output co'>#&gt; <span class='message'>Also available in: PopulationBySingleAgeSex</span></div><div class='output co'>#&gt; <span class='message'>Use indicator_file_group to get alternative measures</span></div><div class='output co'>#&gt; <span style='color: #949494;'># A tibble: 1,404,753 × 12</span>
+#&gt;    LocID Location    VarID Variant  Time MidPeriod AgeGrp AgeGrpStart AgeGrpSpan
+#&gt;    <span style='color: #949494; font-style: italic;'>&lt;dbl&gt;</span> <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>       <span style='color: #949494; font-style: italic;'>&lt;dbl&gt;</span> <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>   <span style='color: #949494; font-style: italic;'>&lt;dbl&gt;</span>     <span style='color: #949494; font-style: italic;'>&lt;dbl&gt;</span> <span style='color: #949494; font-style: italic;'>&lt;fct&gt;</span>        <span style='color: #949494; font-style: italic;'>&lt;dbl&gt;</span>      <span style='color: #949494; font-style: italic;'>&lt;dbl&gt;</span>
+#&gt; <span style='color: #BCBCBC;'> 1</span>     4 Afghanistan     2 Medium   <span style='text-decoration: underline;'>1</span>950     <span style='text-decoration: underline;'>1</span>950. 0-4              0          5
+#&gt; <span style='color: #BCBCBC;'> 2</span>     4 Afghanistan     2 Medium   <span style='text-decoration: underline;'>1</span>950     <span style='text-decoration: underline;'>1</span>950. 5-9              5          5
+#&gt; <span style='color: #BCBCBC;'> 3</span>     4 Afghanistan     2 Medium   <span style='text-decoration: underline;'>1</span>950     <span style='text-decoration: underline;'>1</span>950. 10-14           10          5
+#&gt; <span style='color: #BCBCBC;'> 4</span>     4 Afghanistan     2 Medium   <span style='text-decoration: underline;'>1</span>950     <span style='text-decoration: underline;'>1</span>950. 15-19           15          5
+#&gt; <span style='color: #BCBCBC;'> 5</span>     4 Afghanistan     2 Medium   <span style='text-decoration: underline;'>1</span>950     <span style='text-decoration: underline;'>1</span>950. 20-24           20          5
+#&gt; <span style='color: #BCBCBC;'> 6</span>     4 Afghanistan     2 Medium   <span style='text-decoration: underline;'>1</span>950     <span style='text-decoration: underline;'>1</span>950. 25-29           25          5
+#&gt; <span style='color: #BCBCBC;'> 7</span>     4 Afghanistan     2 Medium   <span style='text-decoration: underline;'>1</span>950     <span style='text-decoration: underline;'>1</span>950. 30-34           30          5
+#&gt; <span style='color: #BCBCBC;'> 8</span>     4 Afghanistan     2 Medium   <span style='text-decoration: underline;'>1</span>950     <span style='text-decoration: underline;'>1</span>950. 35-39           35          5
+#&gt; <span style='color: #BCBCBC;'> 9</span>     4 Afghanistan     2 Medium   <span style='text-decoration: underline;'>1</span>950     <span style='text-decoration: underline;'>1</span>950. 40-44           40          5
+#&gt; <span style='color: #BCBCBC;'>10</span>     4 Afghanistan     2 Medium   <span style='text-decoration: underline;'>1</span>950     <span style='text-decoration: underline;'>1</span>950. 45-49           45          5
+#&gt; <span style='color: #949494;'># … with 1,404,743 more rows, and 3 more variables: PopFemale &lt;dbl&gt;,</span>
+#&gt; <span style='color: #949494;'>#   PopMale &lt;dbl&gt;, PopTotal &lt;dbl&gt;</span></div><div class='input'>
 <span class='co'># there are multiple population indicators in the WPP with different levels of granularity</span>
 <span class='co'># use indicator_file_group to select the desired version of population indicator(s)</span>
 <span class='fu'>get_wpp</span><span class='op'>(</span>indicator <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"PopTotal"</span>, <span class='st'>"PopMale"</span>, <span class='st'>"PopFemale"</span><span class='op'>)</span>, indicator_file_group <span class='op'>=</span>  <span class='st'>"TotalPopulationBySex"</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; <span class='error'>Error: Problem with `mutate()` column `i`.</span>
-#&gt; <span class='error'><span style='color: #0000BB;'>ℹ</span> `i = purrr::map(...)`.</span>
-#&gt; <span class='error'><span style='color: #BB0000;'>✖</span> there is no package called ‘vroom’</span></div><div class='input'>
+</div><div class='output co'>#&gt; <span style='color: #949494;'># A tibble: 72,027 × 9</span>
+#&gt;    LocID Location    VarID Variant  Time MidPeriod PopFemale PopMale PopTotal
+#&gt;    <span style='color: #949494; font-style: italic;'>&lt;dbl&gt;</span> <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>       <span style='color: #949494; font-style: italic;'>&lt;dbl&gt;</span> <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>   <span style='color: #949494; font-style: italic;'>&lt;dbl&gt;</span>     <span style='color: #949494; font-style: italic;'>&lt;dbl&gt;</span>     <span style='color: #949494; font-style: italic;'>&lt;dbl&gt;</span>   <span style='color: #949494; font-style: italic;'>&lt;dbl&gt;</span>    <span style='color: #949494; font-style: italic;'>&lt;dbl&gt;</span>
+#&gt; <span style='color: #BCBCBC;'> 1</span>     4 Afghanistan     2 Medium   <span style='text-decoration: underline;'>1</span>950     <span style='text-decoration: underline;'>1</span>950.     <span style='text-decoration: underline;'>3</span>653.   <span style='text-decoration: underline;'>4</span>099.    <span style='text-decoration: underline;'>7</span>752.
+#&gt; <span style='color: #BCBCBC;'> 2</span>     4 Afghanistan     2 Medium   <span style='text-decoration: underline;'>1</span>951     <span style='text-decoration: underline;'>1</span>952.     <span style='text-decoration: underline;'>3</span>705.   <span style='text-decoration: underline;'>4</span>135.    <span style='text-decoration: underline;'>7</span>840.
+#&gt; <span style='color: #BCBCBC;'> 3</span>     4 Afghanistan     2 Medium   <span style='text-decoration: underline;'>1</span>952     <span style='text-decoration: underline;'>1</span>952.     <span style='text-decoration: underline;'>3</span>762.   <span style='text-decoration: underline;'>4</span>174.    <span style='text-decoration: underline;'>7</span>936.
+#&gt; <span style='color: #BCBCBC;'> 4</span>     4 Afghanistan     2 Medium   <span style='text-decoration: underline;'>1</span>953     <span style='text-decoration: underline;'>1</span>954.     <span style='text-decoration: underline;'>3</span>821.   <span style='text-decoration: underline;'>4</span>218.    <span style='text-decoration: underline;'>8</span>040.
+#&gt; <span style='color: #BCBCBC;'> 5</span>     4 Afghanistan     2 Medium   <span style='text-decoration: underline;'>1</span>954     <span style='text-decoration: underline;'>1</span>954.     <span style='text-decoration: underline;'>3</span>885.   <span style='text-decoration: underline;'>4</span>266.    <span style='text-decoration: underline;'>8</span>151.
+#&gt; <span style='color: #BCBCBC;'> 6</span>     4 Afghanistan     2 Medium   <span style='text-decoration: underline;'>1</span>955     <span style='text-decoration: underline;'>1</span>956.     <span style='text-decoration: underline;'>3</span>952.   <span style='text-decoration: underline;'>4</span>319.    <span style='text-decoration: underline;'>8</span>271.
+#&gt; <span style='color: #BCBCBC;'> 7</span>     4 Afghanistan     2 Medium   <span style='text-decoration: underline;'>1</span>956     <span style='text-decoration: underline;'>1</span>956.     <span style='text-decoration: underline;'>4</span>023.   <span style='text-decoration: underline;'>4</span>376.    <span style='text-decoration: underline;'>8</span>399.
+#&gt; <span style='color: #BCBCBC;'> 8</span>     4 Afghanistan     2 Medium   <span style='text-decoration: underline;'>1</span>957     <span style='text-decoration: underline;'>1</span>958.     <span style='text-decoration: underline;'>4</span>098    <span style='text-decoration: underline;'>4</span>437.    <span style='text-decoration: underline;'>8</span>535.
+#&gt; <span style='color: #BCBCBC;'> 9</span>     4 Afghanistan     2 Medium   <span style='text-decoration: underline;'>1</span>958     <span style='text-decoration: underline;'>1</span>958.     <span style='text-decoration: underline;'>4</span>177.   <span style='text-decoration: underline;'>4</span>503.    <span style='text-decoration: underline;'>8</span>680.
+#&gt; <span style='color: #BCBCBC;'>10</span>     4 Afghanistan     2 Medium   <span style='text-decoration: underline;'>1</span>959     <span style='text-decoration: underline;'>1</span>960.     <span style='text-decoration: underline;'>4</span>260.   <span style='text-decoration: underline;'>4</span>574.    <span style='text-decoration: underline;'>8</span>834.
+#&gt; <span style='color: #949494;'># … with 72,017 more rows</span></div><div class='input'>
 <span class='co'># tidy sex into a single column and drop id columns</span>
 <span class='fu'>get_wpp</span><span class='op'>(</span>indicator <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"PopMale"</span>, <span class='st'>"PopFemale"</span><span class='op'>)</span>, indicator_file_group <span class='op'>=</span>  <span class='st'>"TotalPopulationBySex"</span>,
         tidy_pop_sex <span class='op'>=</span> <span class='cn'>TRUE</span>, drop_id_cols <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; <span class='error'>Error: Problem with `mutate()` column `i`.</span>
-#&gt; <span class='error'><span style='color: #0000BB;'>ℹ</span> `i = purrr::map(...)`.</span>
-#&gt; <span class='error'><span style='color: #BB0000;'>✖</span> there is no package called ‘vroom’</span></div><div class='input'>
+</div><div class='output co'>#&gt; <span style='color: #949494;'># A tibble: 144,054 × 5</span>
+#&gt;    Location    Variant  Time Sex      Pop
+#&gt;    <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>       <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>   <span style='color: #949494; font-style: italic;'>&lt;dbl&gt;</span> <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>  <span style='color: #949494; font-style: italic;'>&lt;dbl&gt;</span>
+#&gt; <span style='color: #BCBCBC;'> 1</span> Afghanistan Medium   <span style='text-decoration: underline;'>1</span>950 Female <span style='text-decoration: underline;'>3</span>653.
+#&gt; <span style='color: #BCBCBC;'> 2</span> Afghanistan Medium   <span style='text-decoration: underline;'>1</span>950 Male   <span style='text-decoration: underline;'>4</span>099.
+#&gt; <span style='color: #BCBCBC;'> 3</span> Afghanistan Medium   <span style='text-decoration: underline;'>1</span>951 Female <span style='text-decoration: underline;'>3</span>705.
+#&gt; <span style='color: #BCBCBC;'> 4</span> Afghanistan Medium   <span style='text-decoration: underline;'>1</span>951 Male   <span style='text-decoration: underline;'>4</span>135.
+#&gt; <span style='color: #BCBCBC;'> 5</span> Afghanistan Medium   <span style='text-decoration: underline;'>1</span>952 Female <span style='text-decoration: underline;'>3</span>762.
+#&gt; <span style='color: #BCBCBC;'> 6</span> Afghanistan Medium   <span style='text-decoration: underline;'>1</span>952 Male   <span style='text-decoration: underline;'>4</span>174.
+#&gt; <span style='color: #BCBCBC;'> 7</span> Afghanistan Medium   <span style='text-decoration: underline;'>1</span>953 Female <span style='text-decoration: underline;'>3</span>821.
+#&gt; <span style='color: #BCBCBC;'> 8</span> Afghanistan Medium   <span style='text-decoration: underline;'>1</span>953 Male   <span style='text-decoration: underline;'>4</span>218.
+#&gt; <span style='color: #BCBCBC;'> 9</span> Afghanistan Medium   <span style='text-decoration: underline;'>1</span>954 Female <span style='text-decoration: underline;'>3</span>885.
+#&gt; <span style='color: #BCBCBC;'>10</span> Afghanistan Medium   <span style='text-decoration: underline;'>1</span>954 Male   <span style='text-decoration: underline;'>4</span>266.
+#&gt; <span style='color: #949494;'># … with 144,044 more rows</span></div><div class='input'>
 <span class='co'># clean column names</span>
 <span class='fu'>get_wpp</span><span class='op'>(</span>indicator <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"SRB"</span>, <span class='st'>"NetMigrations"</span>, <span class='st'>"GrowthRate"</span><span class='op'>)</span>, clean_names <span class='op'>=</span> <span class='cn'>TRUE</span>, drop_id_cols <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; <span class='error'>Error: Problem with `mutate()` column `i`.</span>
-#&gt; <span class='error'><span style='color: #0000BB;'>ℹ</span> `i = purrr::map(...)`.</span>
-#&gt; <span class='error'><span style='color: #BB0000;'>✖</span> there is no package called ‘vroom’</span></div><div class='input'><span class='co'># }</span>
+</div><div class='output co'>#&gt; <span style='color: #949494;'># A tibble: 14,940 × 6</span>
+#&gt;    location    variant time      growth_rate net_migrations   srb
+#&gt;    <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>       <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>   <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>           <span style='color: #949494; font-style: italic;'>&lt;dbl&gt;</span>          <span style='color: #949494; font-style: italic;'>&lt;dbl&gt;</span> <span style='color: #949494; font-style: italic;'>&lt;dbl&gt;</span>
+#&gt; <span style='color: #BCBCBC;'> 1</span> Afghanistan Medium  1950-1955       1.30            -<span style='color: #BB0000;'>20</span>   1.06
+#&gt; <span style='color: #BCBCBC;'> 2</span> Afghanistan Medium  1955-1960       1.68            -<span style='color: #BB0000;'>20</span>   1.06
+#&gt; <span style='color: #BCBCBC;'> 3</span> Afghanistan Medium  1960-1965       2.03            -<span style='color: #BB0000;'>20</span>   1.06
+#&gt; <span style='color: #BCBCBC;'> 4</span> Afghanistan Medium  1965-1970       2.31            -<span style='color: #BB0000;'>20</span>   1.06
+#&gt; <span style='color: #BCBCBC;'> 5</span> Afghanistan Medium  1970-1975       2.54            -<span style='color: #BB0000;'>20</span>   1.06
+#&gt; <span style='color: #BCBCBC;'> 6</span> Afghanistan Medium  1975-1980       1.02          -<span style='color: #BB0000; text-decoration: underline;'>1</span><span style='color: #BB0000;'>154.</span>  1.06
+#&gt; <span style='color: #BCBCBC;'> 7</span> Afghanistan Medium  1980-1985      -<span style='color: #BB0000;'>2.24</span>          -<span style='color: #BB0000; text-decoration: underline;'>3</span><span style='color: #BB0000;'>345.</span>  1.06
+#&gt; <span style='color: #BCBCBC;'> 8</span> Afghanistan Medium  1985-1990       0.779         -<span style='color: #BB0000; text-decoration: underline;'>1</span><span style='color: #BB0000;'>525.</span>  1.06
+#&gt; <span style='color: #BCBCBC;'> 9</span> Afghanistan Medium  1990-1995       7.56           <span style='text-decoration: underline;'>3</span>076.  1.06
+#&gt; <span style='color: #BCBCBC;'>10</span> Afghanistan Medium  1995-2000       2.75           -<span style='color: #BB0000;'>868.</span>  1.06
+#&gt; <span style='color: #949494;'># … with 14,930 more rows</span></div><div class='input'><span class='co'># }</span>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
