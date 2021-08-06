@@ -5,7 +5,8 @@ usethis::use_pipe()
 usethis::use_tibble()
 usethis::use_build_ignore(c("tests", "data-host", "build_package.R", "data-raw"))
 
-roxygen2::roxygenise()
+roxygen2::roxygenise(clean = TRUE)
+devtools::check(run_dont_test = FALSE)
 
 usethis::use_spell_check()
 usethis::use_release_issue()

@@ -5,10 +5,11 @@
 
 <!-- badges: start -->
 
-[![Lifecycle:
-experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/tidywpp)](https://CRAN.R-project.org/package=tidywpp)
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![R-CMD-check](https://github.com/guyabel/tidywpp/workflows/R-CMD-check/badge.svg)](https://github.com/guyabel/tidywpp/actions)
 <!-- badges: end -->
 
 ## Installation
@@ -168,13 +169,15 @@ indicator code and availability by variants, for example
 
 ``` r
 library(tidywpp)
+#> Suggested citation for WPP2019 data:
+#> United Nations, Department of Economic and Social Affairs, Population Division (2019). World Population Prospects 2019, Online Edition. Rev. 1
 find_indicator(x = "life expect")
 #> # A tibble: 3 x 3
-#>   name      details                                             file_group      
-#>   <chr>     <chr>                                               <chr>           
-#> 1 LEx       Life expectancy at birth for both sexes combined (~ Period_Indicato~
-#> 2 LExFemale Female life expectancy at birth (years)             Period_Indicato~
-#> 3 LExMale   Male life expectancy at birth (years)               Period_Indicato~
+#>   name      details                                                  file_group 
+#>   <chr>     <chr>                                                    <chr>      
+#> 1 LEx       Life expectancy at birth for both sexes combined (years) Period_Ind~
+#> 2 LExFemale Female life expectancy at birth (years)                  Period_Ind~
+#> 3 LExMale   Male life expectancy at birth (years)                    Period_Ind~
 ```
 
 There are 35 different indicators in WPP data (starting from 1998), some
