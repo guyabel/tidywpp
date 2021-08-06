@@ -14,6 +14,13 @@ usethis::use_package()
 usethis::use_tidy_thanks()
 
 
+usethis::use_github_action_check_standard()
+usethis::use_github_action("pkgdown")
+usethis::use_github_actions_badge()
+
+
+
+
 library(tidyverse)
 library(tidywpp)
 wpp_indicators %>%
