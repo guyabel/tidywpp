@@ -215,8 +215,7 @@
 <p>The <code>indicator</code> argument in <code><a href="reference/get_wpp.html">get_wpp()</a></code> must use a character string corresponding to the <code>name</code> column in in the <code>wpp_indicators</code> data frame. The <code><a href="reference/find_indicator.html">find_indicator()</a></code> function can be used to look up the indicator code and availability by variants, for example</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">tidywpp</span><span class="op">)</span>
-<span class="co">#&gt; Suggested citation for WPP2019 data:</span>
-<span class="co">#&gt; United Nations, Department of Economic and Social Affairs, Population Division (2019). World Population Prospects 2019, Online Edition. Rev. 1</span>
+<span class="co">#&gt; Suggested citation for WPP2019 data: United Nations, Department of Economic and Social Affairs, Population Division (2019). World Population Prospects 2019, Online Edition. Rev. 1</span>
 <span class="fu"><a href="reference/find_indicator.html">find_indicator</a></span><span class="op">(</span>x <span class="op">=</span> <span class="st">"life expect"</span><span class="op">)</span>
 <span class="co">#&gt; # A tibble: 3 x 3</span>
 <span class="co">#&gt;   name      details                                                  file_group </span>
@@ -598,6 +597,11 @@
 
 <span class="fu">anim_save</span><span class="op">(</span>filename <span class="op">=</span> <span class="st">"wpp2019_med.gif"</span><span class="op">)</span></code></pre></div>
 <p><img src="wpp2019_med.gif" height="600"></p>
+</div>
+<div id="disclaimer" class="section level2">
+<h2 class="hasAnchor">
+<a href="#disclaimer" class="anchor"></a>Disclaimer</h2>
+<p>This package is in no way officially related to, or endorsed by, UN DESA.</p>
 </div>
 </div>
   </div>
