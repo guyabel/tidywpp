@@ -169,8 +169,7 @@ indicator code and availability by variants, for example
 
 ``` r
 library(tidywpp)
-#> Suggested citation for WPP2019 data:
-#> United Nations, Department of Economic and Social Affairs, Population Division (2019). World Population Prospects 2019, Online Edition. Rev. 1
+#> Suggested citation for WPP2019 data: United Nations, Department of Economic and Social Affairs, Population Division (2019). World Population Prospects 2019, Online Edition. Rev. 1
 find_indicator(x = "life expect")
 #> # A tibble: 3 x 3
 #>   name      details                                                  file_group 
@@ -330,3 +329,8 @@ anim_save(filename = "wpp2019_med.gif")
 ```
 
 <img src='wpp2019_med.gif' height="600"/>
+
+## Disclaimer
+
+This package is in no way officially related to, or endorsed by, UN
+DESA.

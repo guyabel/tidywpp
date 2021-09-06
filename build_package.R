@@ -20,6 +20,8 @@ usethis::use_github_action("pkgdown")
 usethis::use_github_actions_badge()
 
 
+cranlogs::cranlogs_badge(package_name = "tidywpp", summary = "grand-total")
+
 
 
 library(tidyverse)

@@ -197,3 +197,9 @@ anim_save(filename = "wpp2019_med.gif")
 
 <img src='wpp2019_med.gif' height="600"/>
 
+
+
+## Disclaimer
+
+This package is in no way officially related to, or endorsed by, UN DESA.
+
