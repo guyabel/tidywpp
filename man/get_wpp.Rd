@@ -7,6 +7,9 @@
 get_wpp(
   indicator = NULL,
   indicator_file_group = NULL,
+  pop_age = c("total", "single", "five"),
+  pop_sex = c("total", "both", "male", "female", "all"),
+  pop_freq = c("annual", "five"),
   variant_id = 2,
   wpp_version = 2019,
   clean_names = FALSE,
@@ -14,13 +17,20 @@ get_wpp(
   drop_id_cols = FALSE,
   tidy_pop_sex = FALSE,
   add_regions = FALSE,
-  messages = TRUE
+  messages = TRUE,
+  local = FALSE
 )
 }
 \arguments{
-\item{indicator}{Character string based on the \code{name} column in the \link[=wpp_indicators]{wpp_indicators} data frame. Represents the variables to be downloaded.}
+\item{indicator}{Character string based on the \code{name} column in the \link[=wpp_indicators]{wpp_indicators} data frame or \code{pop}. Represents the variables to be downloaded.}
 
 \item{indicator_file_group}{Character string based on the \code{file_group} column in the \link[=wpp_indicators]{wpp_indicators} data frame . Represents the file group to download data from. Only needed for obtaining different granularities of population data.}
+
+\item{pop_age}{Character string for population age groups if \code{indicator} is set to \code{pop}. Defaults to no age groups \code{total}, but can be set to \code{single} or \code{five}.}
+
+\item{pop_sex}{Character string for population sexes if \code{indicator}is set to \code{pop}. Defaults to no sex \code{total}, but can be set to \code{male}, \code{female}, \code{both} or \code{all}.}
+
+\item{pop_freq}{Character string for frequency of population data if \code{indicator} is set to \code{pop}. Defaults to \code{annual}, but in a some (exceptional cases) cases can be set to \code{five}.}
 
 \item{variant_id}{Numeric value(s) based on the \code{var_id} column in the \link[=wpp_indicators]{wpp_indicators} data frame. Note, past data is in the \code{"Medium" (2)} variant only.}
 
@@ -37,6 +47,8 @@ get_wpp(
 \item{add_regions}{Logical to indicate if to add a \code{reg_name} and \code{area_name} columns for countries (where \code{LocID} is less than 900)}
 
 \item{messages}{Logical to not suppress printing of messages.}
+
+\item{local}{Logical to load data from data-host folder for use in development where Github access is blocked/slow (in China). \code{FALSE} by default.}
 }
 \value{
 A \link[tibble:tibble-package]{tibble} with downloaded data in tidy format
@@ -125,16 +137,26 @@ get_wpp(indicator = "TFR")
 # single indicator from multiple variants of latest WPP
 get_wpp(indicator = "TFR", variant_id = c(2, 3, 4))
 
-# multiple population indicators from single variant of latest WPP
-get_wpp(indicator = c("PopTotal", "PopMale", "PopFemale"))
+# as there are multiple population indicators in the WPP with different levels of granularity
+# you can set indicator = "pop" and use the pop_sex, pop_age and pop_freq to get desired data
+# from the appropriate indicator_file_group...
 
-# there are multiple population indicators in the WPP with different levels of granularity
-# use indicator_file_group to select the desired version of population indicator(s)
-get_wpp(indicator = c("PopTotal", "PopMale", "PopFemale"), indicator_file_group =  "TotalPopulationBySex")
+# when using indicator = "pop" get_wpp() defaults to annual total population (summed over age and sex)
+get_wpp(indicator = "pop")
+
+# use pop_sex to get specific sexes (or both or all)
+get_wpp(indicator = "pop", pop_sex = "male")
+
+# use pop_age to specify age groups
+get_wpp(indicator = "pop", pop_sex = "both", pop_age = "five")
 
 # tidy sex into a single column and drop id columns
-get_wpp(indicator = c("PopMale", "PopFemale"), indicator_file_group =  "TotalPopulationBySex",
+get_wpp(indicator = "pop", pop_sex = "both", pop_age = "five",
         tidy_pop_sex = TRUE, drop_id_cols = TRUE)
+
+# alternatively use indicator_file_group to select the desired version of population indicator(s)
+get_wpp(indicator = c("PopTotal", "PopMale", "PopFemale"), indicator_file_group =  "TotalPopulationBySex")
+
 
 # clean column names
 get_wpp(indicator = c("SRB", "NetMigrations", "GrowthRate"), clean_names = TRUE, drop_id_cols = TRUE)

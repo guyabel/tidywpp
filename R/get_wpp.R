@@ -2,8 +2,10 @@
 #'
 #' @description Downloads data on demographic indicators in UN DESA WPP. Requires a working internet connection.
 #'
-#' @param indicator Character string based on the `name` column in the [wpp_indicators][tidywpp::wpp_indicators] data frame. Represents the variables to be downloaded.
-#' @param indicator_file_group Character string based on the `file_group` column in the [wpp_indicators][tidywpp::wpp_indicators] data frame . Represents the file group to download data from. Only needed for obtaining different granularities of population data.
+#' @param indicator Character string based on the `name` column in the [wpp_indicators][tidywpp::wpp_indicators] data frame or `pop`. Represents the variables to be downloaded.
+#' @param pop_age Character string for population age groups if `indicator` is set to `pop`. Defaults to no age groups `total`, but can be set to `single` or `five`.
+#' @param pop_sex Character string for population sexes if `indicator`is set to `pop`. Defaults to no sex `total`, but can be set to `male`, `female`, `both` or `all`.
+#' @param pop_freq Character string for frequency of population data if `indicator` is set to `pop`. Defaults to `annual`, but in a some (exceptional cases) cases can be set to `five`.
 #' @param variant_id Numeric value(s) based on the `var_id` column in the [wpp_indicators][tidywpp::wpp_indicators] data frame. Note, past data is in the `"Medium" (2)` variant only.
 #' @param wpp_version Integer for WPP version. Default of `2019`. All WPP back to 1998 are available.
 #' @param clean_names Logical to indicate if column names should be cleaned
@@ -12,6 +14,8 @@
 #' @param tidy_pop_sex Logical to indicate if columns for sex specific population data should be stacked into single population column with an accompanying new sex column.
 #' @param add_regions Logical to indicate if to add a `reg_name` and `area_name` columns for countries (where `LocID` is less than 900)
 #' @param messages Logical to not suppress printing of messages.
+#' @param local Logical to load data from data-host folder for use in development where Github access is blocked/slow (in China). `FALSE` by default.
+#' @param indicator_file_group Character string based on the `file_group` column in the [wpp_indicators][tidywpp::wpp_indicators] data frame . Represents the file group to download data from. Only needed for obtaining different granularities of population data.
 #'
 #' @md
 #' @return A [tibble][tibble::tibble-package] with downloaded data in tidy format
@@ -100,22 +104,35 @@
 #' # single indicator from multiple variants of latest WPP
 #' get_wpp(indicator = "TFR", variant_id = c(2, 3, 4))
 #'
-#' # multiple population indicators from single variant of latest WPP
-#' get_wpp(indicator = c("PopTotal", "PopMale", "PopFemale"))
+#' # as there are multiple population indicators in the WPP with different levels of granularity
+#' # you can set indicator = "pop" and use the pop_sex, pop_age and pop_freq to get desired data
+#' # from the appropriate indicator_file_group...
 #'
-#' # there are multiple population indicators in the WPP with different levels of granularity
-#' # use indicator_file_group to select the desired version of population indicator(s)
-#' get_wpp(indicator = c("PopTotal", "PopMale", "PopFemale"), indicator_file_group =  "TotalPopulationBySex")
+#' # when using indicator = "pop" get_wpp() defaults to annual total population (summed over age and sex)
+#' get_wpp(indicator = "pop")
+#'
+#' # use pop_sex to get specific sexes (or both or all)
+#' get_wpp(indicator = "pop", pop_sex = "male")
+#'
+#' # use pop_age to specify age groups
+#' get_wpp(indicator = "pop", pop_sex = "both", pop_age = "five")
 #'
 #' # tidy sex into a single column and drop id columns
-#' get_wpp(indicator = c("PopMale", "PopFemale"), indicator_file_group =  "TotalPopulationBySex",
+#' get_wpp(indicator = "pop", pop_sex = "both", pop_age = "five",
 #'         tidy_pop_sex = TRUE, drop_id_cols = TRUE)
+#'
+#' # alternatively use indicator_file_group to select the desired version of population indicator(s)
+#' get_wpp(indicator = c("PopTotal", "PopMale", "PopFemale"), indicator_file_group =  "TotalPopulationBySex")
+#'
 #'
 #' # clean column names
 #' get_wpp(indicator = c("SRB", "NetMigrations", "GrowthRate"), clean_names = TRUE, drop_id_cols = TRUE)
 #' }
 get_wpp <- function(indicator = NULL,
                     indicator_file_group = NULL,
+                    pop_age = c("total", "single", "five"),
+                    pop_sex = c("total", "both", "male", "female", "all"),
+                    pop_freq = c("annual", "five"),
                     variant_id = 2,
                     wpp_version = 2019,
                     clean_names = FALSE,
@@ -123,13 +140,16 @@ get_wpp <- function(indicator = NULL,
                     drop_id_cols = FALSE,
                     tidy_pop_sex = FALSE,
                     add_regions = FALSE,
-                    messages = TRUE
+                    messages = TRUE,
+                    local = FALSE
                     ){
   # indicator = c("PopTotal", "SRB")
+  # indicator = c("GrowthRate", "IMR")
   # indicator = c("PopTotal", "PopMale", "PopFemale")
   # indicator = "PopTotal";
   # indicator = c("PopMale", "PopFemale"); indicator_file_group = "PopulationBySingleAgeSex"
   # indicator_file_group = NULL;
+  # indicator = "pop"; age = "total"; sex = "total"
   # variant_id = 2;
   # wpp_version = 2019;
   # clean_names = TRUE; fct_age = TRUE;
@@ -143,7 +163,32 @@ get_wpp <- function(indicator = NULL,
   if(!any(variant_id  %in% vv$VarID))
     stop("variant_id not avialable in wpp_version")
 
-  ii <- indicator[!indicator %in% tidywpp::wpp_indicators$name]
+  if(any(indicator == "pop")){
+    pop_age <- match.arg(pop_age)
+    pop_sex <- match.arg(pop_sex)
+    pop_freq <- match.arg(pop_freq)
+    if(pop_sex == "total")
+      indicator <- c(indicator, "PopTotal")
+    if(pop_sex == "both")
+      indicator <- c(indicator, "PopMale", "PopFemale")
+    if(pop_sex == "male")
+      indicator <- c(indicator, "PopMale")
+    if(pop_sex == "female")
+      indicator <- c(indicator, "PopFemale")
+    if(pop_sex == "all")
+      indicator <- c(indicator, "PopTotal", "PopMale", "PopFemale")
+    if(pop_age == "total")
+      indicator_file_group <- "TotalPopulationBySex"
+    if(pop_age == "single")
+      indicator_file_group <- "PopulationBySingleAgeSex"
+    if(pop_age == "five")
+      indicator_file_group <- "PopulationByAgeSex"
+    if(pop_freq == "five")
+      indicator_file_group <- "PopulationByAgeSex_5x5"
+    indicator <- indicator[!indicator == "pop"]
+  }
+
+  ii <- indicator[!indicator %in% wpp_indicators$name]
   if(length(ii) > 0)
     message(paste0("Ignoring ", ii, ". Indicator name not in wpp_indicators"))
 
@@ -174,6 +219,15 @@ get_wpp <- function(indicator = NULL,
       message("Use indicator_file_group to get alternative measures")
     }
   }
+  # # see if data is available
+  # aa <- tidywpp::wpp_indicators %>%
+  #   dplyr::filter(name %in% indicator,
+  #                 var_id %in% variant_id,
+  #                 wpp == wpp_version,
+  #                 file_group %in% g)
+  # if(nrow(aa) == 0)
+  #   stop("You are looking for an indicator that does not exist within the file group")
+
 
   # build url address to download from
   name <- file_group <- var_id <- NULL
@@ -197,10 +251,14 @@ get_wpp <- function(indicator = NULL,
   pb <- progress::progress_bar$new(total = nrow(d1))
   pb$tick(0)
 
+  location <- "https://raw.githubusercontent.com/guyabel/tidywpp/main/data-host/WPP"
+  if(local)
+    location <- "./data-host/WPP"
+
   d1 <- d1 %>%
     dplyr::mutate(
       name2 = ifelse(name %in% c("Sx", "Tx", "Lx"), paste0(name, name), name),
-      u = paste0("https://raw.githubusercontent.com/guyabel/tidywpp/main/data-host/WPP",
+      u = paste0(location,
                  wpp_version, "/", file_group, "/", var_id, "/", name2, ".csv"),
       i = purrr::map(
         .x = u,
