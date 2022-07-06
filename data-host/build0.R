@@ -1,3 +1,11 @@
+##
+## build0 - convert and separate files in CSV zips for WPP1998 to WPP2019
+##          into format for downloading simultaneously
+## build1 - convert single character indicator file names into two characters
+## build2 - convert and separate files in CSV zips for WPP2022
+##          into format for downloading - too big files to do all at once
+##
+
 library(fs)
 library(tidyverse)
 library(janitor)
@@ -81,43 +89,43 @@ d1 <- d1 %>%
 d1 %>%
   select(wpp, file_group, contains("Var"), col_name) %>%
   unnest(col_name) %>%
-  write_csv("./data-host/meta/indicators.csv")
+  write_csv("./data-host/meta/wpp0/indicators.csv")
 
 d1 %>%
   select(wpp, file_group, contains("Var"), n_row, n_col, n) %>%
   rename(n_original_files = n) %>%
-  write_csv("./data-host/meta/dim.csv")
+  write_csv("./data-host/meta/wpp0/dim.csv")
 
 d1 %>%
   select(wpp, file_group, contains("Var")) %>%
   distinct() %>%
-  write_csv("./data-host/meta/var.csv")
+  write_csv("./data-host/meta/wpp0/var.csv")
 
 d1 %>%
   select(wpp, loc) %>%
   unnest(loc) %>%
   distinct() %>%
-  write_csv("./data-host/meta/loc.csv")
+  write_csv("./data-host/meta/wpp0/loc.csv")
 
 d1 %>%
   select(wpp, file_group, time) %>%
   unnest(time) %>%
   distinct() %>%
-  write_csv("./data-host/meta/time.csv")
+  write_csv("./data-host/meta/wpp0/time.csv")
 
 d1 %>%
   select(wpp, file_group, age) %>%
   unnest(age) %>%
   drop_na() %>%
   distinct() %>%
-  write_csv("./data-host/meta/age.csv")
+  write_csv("./data-host/meta/wpp0/age.csv")
 
 d1 %>%
   select(wpp, file_group, sex) %>%
   unnest(sex) %>%
   drop_na() %>%
   distinct() %>%
-  write_csv("./data-host/meta/sex.csv")
+  write_csv("./data-host/meta/wpp0/sex.csv")
 
 
 

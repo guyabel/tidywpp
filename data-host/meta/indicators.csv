@@ -5074,3 +5074,2137 @@ wpp,file_group,VarID,Variant,col_name
 2019,TotalPopulationBySex,9,No change,PopFemale
 2019,TotalPopulationBySex,9,No change,PopTotal
 2019,TotalPopulationBySex,9,No change,PopDensity
+2022,Demographic_Indicators,10,Momentum,SortOrder
+2022,Demographic_Indicators,10,Momentum,LocID
+2022,Demographic_Indicators,10,Momentum,Notes
+2022,Demographic_Indicators,10,Momentum,ISO3_code
+2022,Demographic_Indicators,10,Momentum,ISO2_code
+2022,Demographic_Indicators,10,Momentum,SDMX_code
+2022,Demographic_Indicators,10,Momentum,LocTypeID
+2022,Demographic_Indicators,10,Momentum,LocTypeName
+2022,Demographic_Indicators,10,Momentum,ParentID
+2022,Demographic_Indicators,10,Momentum,Location
+2022,Demographic_Indicators,10,Momentum,Time
+2022,Demographic_Indicators,10,Momentum,TPopulation1Jan
+2022,Demographic_Indicators,10,Momentum,TPopulation1July
+2022,Demographic_Indicators,10,Momentum,TPopulationMale1July
+2022,Demographic_Indicators,10,Momentum,TPopulationFemale1July
+2022,Demographic_Indicators,10,Momentum,PopDensity
+2022,Demographic_Indicators,10,Momentum,PopSexRatio
+2022,Demographic_Indicators,10,Momentum,MedianAgePop
+2022,Demographic_Indicators,10,Momentum,NatChange
+2022,Demographic_Indicators,10,Momentum,NatChangeRT
+2022,Demographic_Indicators,10,Momentum,PopChange
+2022,Demographic_Indicators,10,Momentum,PopGrowthRate
+2022,Demographic_Indicators,10,Momentum,DoublingTime
+2022,Demographic_Indicators,10,Momentum,Births
+2022,Demographic_Indicators,10,Momentum,Births1519
+2022,Demographic_Indicators,10,Momentum,CBR
+2022,Demographic_Indicators,10,Momentum,TFR
+2022,Demographic_Indicators,10,Momentum,NNR
+2022,Demographic_Indicators,10,Momentum,MAC
+2022,Demographic_Indicators,10,Momentum,SRB
+2022,Demographic_Indicators,10,Momentum,Deaths
+2022,Demographic_Indicators,10,Momentum,DeathsMale
+2022,Demographic_Indicators,10,Momentum,DeathsFemale
+2022,Demographic_Indicators,10,Momentum,CDR
+2022,Demographic_Indicators,10,Momentum,LEx
+2022,Demographic_Indicators,10,Momentum,LExMale
+2022,Demographic_Indicators,10,Momentum,LExFemale
+2022,Demographic_Indicators,10,Momentum,LE15
+2022,Demographic_Indicators,10,Momentum,LE15Male
+2022,Demographic_Indicators,10,Momentum,LE15Female
+2022,Demographic_Indicators,10,Momentum,LE65
+2022,Demographic_Indicators,10,Momentum,LE65Male
+2022,Demographic_Indicators,10,Momentum,LE65Female
+2022,Demographic_Indicators,10,Momentum,LE80
+2022,Demographic_Indicators,10,Momentum,LE80Male
+2022,Demographic_Indicators,10,Momentum,LE80Female
+2022,Demographic_Indicators,10,Momentum,InfantDeaths
+2022,Demographic_Indicators,10,Momentum,IMR
+2022,Demographic_Indicators,10,Momentum,LBsurvivingAge1
+2022,Demographic_Indicators,10,Momentum,Under5Deaths
+2022,Demographic_Indicators,10,Momentum,Q5
+2022,Demographic_Indicators,10,Momentum,Q0040
+2022,Demographic_Indicators,10,Momentum,Q0040Male
+2022,Demographic_Indicators,10,Momentum,Q0040Female
+2022,Demographic_Indicators,10,Momentum,Q0060
+2022,Demographic_Indicators,10,Momentum,Q0060Male
+2022,Demographic_Indicators,10,Momentum,Q0060Female
+2022,Demographic_Indicators,10,Momentum,Q1550
+2022,Demographic_Indicators,10,Momentum,Q1550Male
+2022,Demographic_Indicators,10,Momentum,Q1550Female
+2022,Demographic_Indicators,10,Momentum,Q1560
+2022,Demographic_Indicators,10,Momentum,Q1560Male
+2022,Demographic_Indicators,10,Momentum,Q1560Female
+2022,Demographic_Indicators,10,Momentum,NetMigrations
+2022,Demographic_Indicators,10,Momentum,CNMR
+2022,Demographic_Indicators,16,Instant replacement zero migration,SortOrder
+2022,Demographic_Indicators,16,Instant replacement zero migration,LocID
+2022,Demographic_Indicators,16,Instant replacement zero migration,Notes
+2022,Demographic_Indicators,16,Instant replacement zero migration,ISO3_code
+2022,Demographic_Indicators,16,Instant replacement zero migration,ISO2_code
+2022,Demographic_Indicators,16,Instant replacement zero migration,SDMX_code
+2022,Demographic_Indicators,16,Instant replacement zero migration,LocTypeID
+2022,Demographic_Indicators,16,Instant replacement zero migration,LocTypeName
+2022,Demographic_Indicators,16,Instant replacement zero migration,ParentID
+2022,Demographic_Indicators,16,Instant replacement zero migration,Location
+2022,Demographic_Indicators,16,Instant replacement zero migration,Time
+2022,Demographic_Indicators,16,Instant replacement zero migration,TPopulation1Jan
+2022,Demographic_Indicators,16,Instant replacement zero migration,TPopulation1July
+2022,Demographic_Indicators,16,Instant replacement zero migration,TPopulationMale1July
+2022,Demographic_Indicators,16,Instant replacement zero migration,TPopulationFemale1July
+2022,Demographic_Indicators,16,Instant replacement zero migration,PopDensity
+2022,Demographic_Indicators,16,Instant replacement zero migration,PopSexRatio
+2022,Demographic_Indicators,16,Instant replacement zero migration,MedianAgePop
+2022,Demographic_Indicators,16,Instant replacement zero migration,NatChange
+2022,Demographic_Indicators,16,Instant replacement zero migration,NatChangeRT
+2022,Demographic_Indicators,16,Instant replacement zero migration,PopChange
+2022,Demographic_Indicators,16,Instant replacement zero migration,PopGrowthRate
+2022,Demographic_Indicators,16,Instant replacement zero migration,DoublingTime
+2022,Demographic_Indicators,16,Instant replacement zero migration,Births
+2022,Demographic_Indicators,16,Instant replacement zero migration,Births1519
+2022,Demographic_Indicators,16,Instant replacement zero migration,CBR
+2022,Demographic_Indicators,16,Instant replacement zero migration,TFR
+2022,Demographic_Indicators,16,Instant replacement zero migration,NNR
+2022,Demographic_Indicators,16,Instant replacement zero migration,MAC
+2022,Demographic_Indicators,16,Instant replacement zero migration,SRB
+2022,Demographic_Indicators,16,Instant replacement zero migration,Deaths
+2022,Demographic_Indicators,16,Instant replacement zero migration,DeathsMale
+2022,Demographic_Indicators,16,Instant replacement zero migration,DeathsFemale
+2022,Demographic_Indicators,16,Instant replacement zero migration,CDR
+2022,Demographic_Indicators,16,Instant replacement zero migration,LEx
+2022,Demographic_Indicators,16,Instant replacement zero migration,LExMale
+2022,Demographic_Indicators,16,Instant replacement zero migration,LExFemale
+2022,Demographic_Indicators,16,Instant replacement zero migration,LE15
+2022,Demographic_Indicators,16,Instant replacement zero migration,LE15Male
+2022,Demographic_Indicators,16,Instant replacement zero migration,LE15Female
+2022,Demographic_Indicators,16,Instant replacement zero migration,LE65
+2022,Demographic_Indicators,16,Instant replacement zero migration,LE65Male
+2022,Demographic_Indicators,16,Instant replacement zero migration,LE65Female
+2022,Demographic_Indicators,16,Instant replacement zero migration,LE80
+2022,Demographic_Indicators,16,Instant replacement zero migration,LE80Male
+2022,Demographic_Indicators,16,Instant replacement zero migration,LE80Female
+2022,Demographic_Indicators,16,Instant replacement zero migration,InfantDeaths
+2022,Demographic_Indicators,16,Instant replacement zero migration,IMR
+2022,Demographic_Indicators,16,Instant replacement zero migration,LBsurvivingAge1
+2022,Demographic_Indicators,16,Instant replacement zero migration,Under5Deaths
+2022,Demographic_Indicators,16,Instant replacement zero migration,Q5
+2022,Demographic_Indicators,16,Instant replacement zero migration,Q0040
+2022,Demographic_Indicators,16,Instant replacement zero migration,Q0040Male
+2022,Demographic_Indicators,16,Instant replacement zero migration,Q0040Female
+2022,Demographic_Indicators,16,Instant replacement zero migration,Q0060
+2022,Demographic_Indicators,16,Instant replacement zero migration,Q0060Male
+2022,Demographic_Indicators,16,Instant replacement zero migration,Q0060Female
+2022,Demographic_Indicators,16,Instant replacement zero migration,Q1550
+2022,Demographic_Indicators,16,Instant replacement zero migration,Q1550Male
+2022,Demographic_Indicators,16,Instant replacement zero migration,Q1550Female
+2022,Demographic_Indicators,16,Instant replacement zero migration,Q1560
+2022,Demographic_Indicators,16,Instant replacement zero migration,Q1560Male
+2022,Demographic_Indicators,16,Instant replacement zero migration,Q1560Female
+2022,Demographic_Indicators,16,Instant replacement zero migration,NetMigrations
+2022,Demographic_Indicators,16,Instant replacement zero migration,CNMR
+2022,Demographic_Indicators,2,Medium,SortOrder
+2022,Demographic_Indicators,2,Medium,LocID
+2022,Demographic_Indicators,2,Medium,Notes
+2022,Demographic_Indicators,2,Medium,ISO3_code
+2022,Demographic_Indicators,2,Medium,ISO2_code
+2022,Demographic_Indicators,2,Medium,SDMX_code
+2022,Demographic_Indicators,2,Medium,LocTypeID
+2022,Demographic_Indicators,2,Medium,LocTypeName
+2022,Demographic_Indicators,2,Medium,ParentID
+2022,Demographic_Indicators,2,Medium,Location
+2022,Demographic_Indicators,2,Medium,Time
+2022,Demographic_Indicators,2,Medium,TPopulation1Jan
+2022,Demographic_Indicators,2,Medium,TPopulation1July
+2022,Demographic_Indicators,2,Medium,TPopulationMale1July
+2022,Demographic_Indicators,2,Medium,TPopulationFemale1July
+2022,Demographic_Indicators,2,Medium,PopDensity
+2022,Demographic_Indicators,2,Medium,PopSexRatio
+2022,Demographic_Indicators,2,Medium,MedianAgePop
+2022,Demographic_Indicators,2,Medium,NatChange
+2022,Demographic_Indicators,2,Medium,NatChangeRT
+2022,Demographic_Indicators,2,Medium,PopChange
+2022,Demographic_Indicators,2,Medium,PopGrowthRate
+2022,Demographic_Indicators,2,Medium,DoublingTime
+2022,Demographic_Indicators,2,Medium,Births
+2022,Demographic_Indicators,2,Medium,Births1519
+2022,Demographic_Indicators,2,Medium,CBR
+2022,Demographic_Indicators,2,Medium,TFR
+2022,Demographic_Indicators,2,Medium,NNR
+2022,Demographic_Indicators,2,Medium,MAC
+2022,Demographic_Indicators,2,Medium,SRB
+2022,Demographic_Indicators,2,Medium,Deaths
+2022,Demographic_Indicators,2,Medium,DeathsMale
+2022,Demographic_Indicators,2,Medium,DeathsFemale
+2022,Demographic_Indicators,2,Medium,CDR
+2022,Demographic_Indicators,2,Medium,LEx
+2022,Demographic_Indicators,2,Medium,LExMale
+2022,Demographic_Indicators,2,Medium,LExFemale
+2022,Demographic_Indicators,2,Medium,LE15
+2022,Demographic_Indicators,2,Medium,LE15Male
+2022,Demographic_Indicators,2,Medium,LE15Female
+2022,Demographic_Indicators,2,Medium,LE65
+2022,Demographic_Indicators,2,Medium,LE65Male
+2022,Demographic_Indicators,2,Medium,LE65Female
+2022,Demographic_Indicators,2,Medium,LE80
+2022,Demographic_Indicators,2,Medium,LE80Male
+2022,Demographic_Indicators,2,Medium,LE80Female
+2022,Demographic_Indicators,2,Medium,InfantDeaths
+2022,Demographic_Indicators,2,Medium,IMR
+2022,Demographic_Indicators,2,Medium,LBsurvivingAge1
+2022,Demographic_Indicators,2,Medium,Under5Deaths
+2022,Demographic_Indicators,2,Medium,Q5
+2022,Demographic_Indicators,2,Medium,Q0040
+2022,Demographic_Indicators,2,Medium,Q0040Male
+2022,Demographic_Indicators,2,Medium,Q0040Female
+2022,Demographic_Indicators,2,Medium,Q0060
+2022,Demographic_Indicators,2,Medium,Q0060Male
+2022,Demographic_Indicators,2,Medium,Q0060Female
+2022,Demographic_Indicators,2,Medium,Q1550
+2022,Demographic_Indicators,2,Medium,Q1550Male
+2022,Demographic_Indicators,2,Medium,Q1550Female
+2022,Demographic_Indicators,2,Medium,Q1560
+2022,Demographic_Indicators,2,Medium,Q1560Male
+2022,Demographic_Indicators,2,Medium,Q1560Female
+2022,Demographic_Indicators,2,Medium,NetMigrations
+2022,Demographic_Indicators,2,Medium,CNMR
+2022,Demographic_Indicators,3,High,SortOrder
+2022,Demographic_Indicators,3,High,LocID
+2022,Demographic_Indicators,3,High,Notes
+2022,Demographic_Indicators,3,High,ISO3_code
+2022,Demographic_Indicators,3,High,ISO2_code
+2022,Demographic_Indicators,3,High,SDMX_code
+2022,Demographic_Indicators,3,High,LocTypeID
+2022,Demographic_Indicators,3,High,LocTypeName
+2022,Demographic_Indicators,3,High,ParentID
+2022,Demographic_Indicators,3,High,Location
+2022,Demographic_Indicators,3,High,Time
+2022,Demographic_Indicators,3,High,TPopulation1Jan
+2022,Demographic_Indicators,3,High,TPopulation1July
+2022,Demographic_Indicators,3,High,TPopulationMale1July
+2022,Demographic_Indicators,3,High,TPopulationFemale1July
+2022,Demographic_Indicators,3,High,PopDensity
+2022,Demographic_Indicators,3,High,PopSexRatio
+2022,Demographic_Indicators,3,High,MedianAgePop
+2022,Demographic_Indicators,3,High,NatChange
+2022,Demographic_Indicators,3,High,NatChangeRT
+2022,Demographic_Indicators,3,High,PopChange
+2022,Demographic_Indicators,3,High,PopGrowthRate
+2022,Demographic_Indicators,3,High,DoublingTime
+2022,Demographic_Indicators,3,High,Births
+2022,Demographic_Indicators,3,High,Births1519
+2022,Demographic_Indicators,3,High,CBR
+2022,Demographic_Indicators,3,High,TFR
+2022,Demographic_Indicators,3,High,NNR
+2022,Demographic_Indicators,3,High,MAC
+2022,Demographic_Indicators,3,High,SRB
+2022,Demographic_Indicators,3,High,Deaths
+2022,Demographic_Indicators,3,High,DeathsMale
+2022,Demographic_Indicators,3,High,DeathsFemale
+2022,Demographic_Indicators,3,High,CDR
+2022,Demographic_Indicators,3,High,LEx
+2022,Demographic_Indicators,3,High,LExMale
+2022,Demographic_Indicators,3,High,LExFemale
+2022,Demographic_Indicators,3,High,LE15
+2022,Demographic_Indicators,3,High,LE15Male
+2022,Demographic_Indicators,3,High,LE15Female
+2022,Demographic_Indicators,3,High,LE65
+2022,Demographic_Indicators,3,High,LE65Male
+2022,Demographic_Indicators,3,High,LE65Female
+2022,Demographic_Indicators,3,High,LE80
+2022,Demographic_Indicators,3,High,LE80Male
+2022,Demographic_Indicators,3,High,LE80Female
+2022,Demographic_Indicators,3,High,InfantDeaths
+2022,Demographic_Indicators,3,High,IMR
+2022,Demographic_Indicators,3,High,LBsurvivingAge1
+2022,Demographic_Indicators,3,High,Under5Deaths
+2022,Demographic_Indicators,3,High,Q5
+2022,Demographic_Indicators,3,High,Q0040
+2022,Demographic_Indicators,3,High,Q0040Male
+2022,Demographic_Indicators,3,High,Q0040Female
+2022,Demographic_Indicators,3,High,Q0060
+2022,Demographic_Indicators,3,High,Q0060Male
+2022,Demographic_Indicators,3,High,Q0060Female
+2022,Demographic_Indicators,3,High,Q1550
+2022,Demographic_Indicators,3,High,Q1550Male
+2022,Demographic_Indicators,3,High,Q1550Female
+2022,Demographic_Indicators,3,High,Q1560
+2022,Demographic_Indicators,3,High,Q1560Male
+2022,Demographic_Indicators,3,High,Q1560Female
+2022,Demographic_Indicators,3,High,NetMigrations
+2022,Demographic_Indicators,3,High,CNMR
+2022,Demographic_Indicators,4,Low,SortOrder
+2022,Demographic_Indicators,4,Low,LocID
+2022,Demographic_Indicators,4,Low,Notes
+2022,Demographic_Indicators,4,Low,ISO3_code
+2022,Demographic_Indicators,4,Low,ISO2_code
+2022,Demographic_Indicators,4,Low,SDMX_code
+2022,Demographic_Indicators,4,Low,LocTypeID
+2022,Demographic_Indicators,4,Low,LocTypeName
+2022,Demographic_Indicators,4,Low,ParentID
+2022,Demographic_Indicators,4,Low,Location
+2022,Demographic_Indicators,4,Low,Time
+2022,Demographic_Indicators,4,Low,TPopulation1Jan
+2022,Demographic_Indicators,4,Low,TPopulation1July
+2022,Demographic_Indicators,4,Low,TPopulationMale1July
+2022,Demographic_Indicators,4,Low,TPopulationFemale1July
+2022,Demographic_Indicators,4,Low,PopDensity
+2022,Demographic_Indicators,4,Low,PopSexRatio
+2022,Demographic_Indicators,4,Low,MedianAgePop
+2022,Demographic_Indicators,4,Low,NatChange
+2022,Demographic_Indicators,4,Low,NatChangeRT
+2022,Demographic_Indicators,4,Low,PopChange
+2022,Demographic_Indicators,4,Low,PopGrowthRate
+2022,Demographic_Indicators,4,Low,DoublingTime
+2022,Demographic_Indicators,4,Low,Births
+2022,Demographic_Indicators,4,Low,Births1519
+2022,Demographic_Indicators,4,Low,CBR
+2022,Demographic_Indicators,4,Low,TFR
+2022,Demographic_Indicators,4,Low,NNR
+2022,Demographic_Indicators,4,Low,MAC
+2022,Demographic_Indicators,4,Low,SRB
+2022,Demographic_Indicators,4,Low,Deaths
+2022,Demographic_Indicators,4,Low,DeathsMale
+2022,Demographic_Indicators,4,Low,DeathsFemale
+2022,Demographic_Indicators,4,Low,CDR
+2022,Demographic_Indicators,4,Low,LEx
+2022,Demographic_Indicators,4,Low,LExMale
+2022,Demographic_Indicators,4,Low,LExFemale
+2022,Demographic_Indicators,4,Low,LE15
+2022,Demographic_Indicators,4,Low,LE15Male
+2022,Demographic_Indicators,4,Low,LE15Female
+2022,Demographic_Indicators,4,Low,LE65
+2022,Demographic_Indicators,4,Low,LE65Male
+2022,Demographic_Indicators,4,Low,LE65Female
+2022,Demographic_Indicators,4,Low,LE80
+2022,Demographic_Indicators,4,Low,LE80Male
+2022,Demographic_Indicators,4,Low,LE80Female
+2022,Demographic_Indicators,4,Low,InfantDeaths
+2022,Demographic_Indicators,4,Low,IMR
+2022,Demographic_Indicators,4,Low,LBsurvivingAge1
+2022,Demographic_Indicators,4,Low,Under5Deaths
+2022,Demographic_Indicators,4,Low,Q5
+2022,Demographic_Indicators,4,Low,Q0040
+2022,Demographic_Indicators,4,Low,Q0040Male
+2022,Demographic_Indicators,4,Low,Q0040Female
+2022,Demographic_Indicators,4,Low,Q0060
+2022,Demographic_Indicators,4,Low,Q0060Male
+2022,Demographic_Indicators,4,Low,Q0060Female
+2022,Demographic_Indicators,4,Low,Q1550
+2022,Demographic_Indicators,4,Low,Q1550Male
+2022,Demographic_Indicators,4,Low,Q1550Female
+2022,Demographic_Indicators,4,Low,Q1560
+2022,Demographic_Indicators,4,Low,Q1560Male
+2022,Demographic_Indicators,4,Low,Q1560Female
+2022,Demographic_Indicators,4,Low,NetMigrations
+2022,Demographic_Indicators,4,Low,CNMR
+2022,Demographic_Indicators,5,Constant fertility,SortOrder
+2022,Demographic_Indicators,5,Constant fertility,LocID
+2022,Demographic_Indicators,5,Constant fertility,Notes
+2022,Demographic_Indicators,5,Constant fertility,ISO3_code
+2022,Demographic_Indicators,5,Constant fertility,ISO2_code
+2022,Demographic_Indicators,5,Constant fertility,SDMX_code
+2022,Demographic_Indicators,5,Constant fertility,LocTypeID
+2022,Demographic_Indicators,5,Constant fertility,LocTypeName
+2022,Demographic_Indicators,5,Constant fertility,ParentID
+2022,Demographic_Indicators,5,Constant fertility,Location
+2022,Demographic_Indicators,5,Constant fertility,Time
+2022,Demographic_Indicators,5,Constant fertility,TPopulation1Jan
+2022,Demographic_Indicators,5,Constant fertility,TPopulation1July
+2022,Demographic_Indicators,5,Constant fertility,TPopulationMale1July
+2022,Demographic_Indicators,5,Constant fertility,TPopulationFemale1July
+2022,Demographic_Indicators,5,Constant fertility,PopDensity
+2022,Demographic_Indicators,5,Constant fertility,PopSexRatio
+2022,Demographic_Indicators,5,Constant fertility,MedianAgePop
+2022,Demographic_Indicators,5,Constant fertility,NatChange
+2022,Demographic_Indicators,5,Constant fertility,NatChangeRT
+2022,Demographic_Indicators,5,Constant fertility,PopChange
+2022,Demographic_Indicators,5,Constant fertility,PopGrowthRate
+2022,Demographic_Indicators,5,Constant fertility,DoublingTime
+2022,Demographic_Indicators,5,Constant fertility,Births
+2022,Demographic_Indicators,5,Constant fertility,Births1519
+2022,Demographic_Indicators,5,Constant fertility,CBR
+2022,Demographic_Indicators,5,Constant fertility,TFR
+2022,Demographic_Indicators,5,Constant fertility,NNR
+2022,Demographic_Indicators,5,Constant fertility,MAC
+2022,Demographic_Indicators,5,Constant fertility,SRB
+2022,Demographic_Indicators,5,Constant fertility,Deaths
+2022,Demographic_Indicators,5,Constant fertility,DeathsMale
+2022,Demographic_Indicators,5,Constant fertility,DeathsFemale
+2022,Demographic_Indicators,5,Constant fertility,CDR
+2022,Demographic_Indicators,5,Constant fertility,LEx
+2022,Demographic_Indicators,5,Constant fertility,LExMale
+2022,Demographic_Indicators,5,Constant fertility,LExFemale
+2022,Demographic_Indicators,5,Constant fertility,LE15
+2022,Demographic_Indicators,5,Constant fertility,LE15Male
+2022,Demographic_Indicators,5,Constant fertility,LE15Female
+2022,Demographic_Indicators,5,Constant fertility,LE65
+2022,Demographic_Indicators,5,Constant fertility,LE65Male
+2022,Demographic_Indicators,5,Constant fertility,LE65Female
+2022,Demographic_Indicators,5,Constant fertility,LE80
+2022,Demographic_Indicators,5,Constant fertility,LE80Male
+2022,Demographic_Indicators,5,Constant fertility,LE80Female
+2022,Demographic_Indicators,5,Constant fertility,InfantDeaths
+2022,Demographic_Indicators,5,Constant fertility,IMR
+2022,Demographic_Indicators,5,Constant fertility,LBsurvivingAge1
+2022,Demographic_Indicators,5,Constant fertility,Under5Deaths
+2022,Demographic_Indicators,5,Constant fertility,Q5
+2022,Demographic_Indicators,5,Constant fertility,Q0040
+2022,Demographic_Indicators,5,Constant fertility,Q0040Male
+2022,Demographic_Indicators,5,Constant fertility,Q0040Female
+2022,Demographic_Indicators,5,Constant fertility,Q0060
+2022,Demographic_Indicators,5,Constant fertility,Q0060Male
+2022,Demographic_Indicators,5,Constant fertility,Q0060Female
+2022,Demographic_Indicators,5,Constant fertility,Q1550
+2022,Demographic_Indicators,5,Constant fertility,Q1550Male
+2022,Demographic_Indicators,5,Constant fertility,Q1550Female
+2022,Demographic_Indicators,5,Constant fertility,Q1560
+2022,Demographic_Indicators,5,Constant fertility,Q1560Male
+2022,Demographic_Indicators,5,Constant fertility,Q1560Female
+2022,Demographic_Indicators,5,Constant fertility,NetMigrations
+2022,Demographic_Indicators,5,Constant fertility,CNMR
+2022,Demographic_Indicators,6,Instant replacement,SortOrder
+2022,Demographic_Indicators,6,Instant replacement,LocID
+2022,Demographic_Indicators,6,Instant replacement,Notes
+2022,Demographic_Indicators,6,Instant replacement,ISO3_code
+2022,Demographic_Indicators,6,Instant replacement,ISO2_code
+2022,Demographic_Indicators,6,Instant replacement,SDMX_code
+2022,Demographic_Indicators,6,Instant replacement,LocTypeID
+2022,Demographic_Indicators,6,Instant replacement,LocTypeName
+2022,Demographic_Indicators,6,Instant replacement,ParentID
+2022,Demographic_Indicators,6,Instant replacement,Location
+2022,Demographic_Indicators,6,Instant replacement,Time
+2022,Demographic_Indicators,6,Instant replacement,TPopulation1Jan
+2022,Demographic_Indicators,6,Instant replacement,TPopulation1July
+2022,Demographic_Indicators,6,Instant replacement,TPopulationMale1July
+2022,Demographic_Indicators,6,Instant replacement,TPopulationFemale1July
+2022,Demographic_Indicators,6,Instant replacement,PopDensity
+2022,Demographic_Indicators,6,Instant replacement,PopSexRatio
+2022,Demographic_Indicators,6,Instant replacement,MedianAgePop
+2022,Demographic_Indicators,6,Instant replacement,NatChange
+2022,Demographic_Indicators,6,Instant replacement,NatChangeRT
+2022,Demographic_Indicators,6,Instant replacement,PopChange
+2022,Demographic_Indicators,6,Instant replacement,PopGrowthRate
+2022,Demographic_Indicators,6,Instant replacement,DoublingTime
+2022,Demographic_Indicators,6,Instant replacement,Births
+2022,Demographic_Indicators,6,Instant replacement,Births1519
+2022,Demographic_Indicators,6,Instant replacement,CBR
+2022,Demographic_Indicators,6,Instant replacement,TFR
+2022,Demographic_Indicators,6,Instant replacement,NNR
+2022,Demographic_Indicators,6,Instant replacement,MAC
+2022,Demographic_Indicators,6,Instant replacement,SRB
+2022,Demographic_Indicators,6,Instant replacement,Deaths
+2022,Demographic_Indicators,6,Instant replacement,DeathsMale
+2022,Demographic_Indicators,6,Instant replacement,DeathsFemale
+2022,Demographic_Indicators,6,Instant replacement,CDR
+2022,Demographic_Indicators,6,Instant replacement,LEx
+2022,Demographic_Indicators,6,Instant replacement,LExMale
+2022,Demographic_Indicators,6,Instant replacement,LExFemale
+2022,Demographic_Indicators,6,Instant replacement,LE15
+2022,Demographic_Indicators,6,Instant replacement,LE15Male
+2022,Demographic_Indicators,6,Instant replacement,LE15Female
+2022,Demographic_Indicators,6,Instant replacement,LE65
+2022,Demographic_Indicators,6,Instant replacement,LE65Male
+2022,Demographic_Indicators,6,Instant replacement,LE65Female
+2022,Demographic_Indicators,6,Instant replacement,LE80
+2022,Demographic_Indicators,6,Instant replacement,LE80Male
+2022,Demographic_Indicators,6,Instant replacement,LE80Female
+2022,Demographic_Indicators,6,Instant replacement,InfantDeaths
+2022,Demographic_Indicators,6,Instant replacement,IMR
+2022,Demographic_Indicators,6,Instant replacement,LBsurvivingAge1
+2022,Demographic_Indicators,6,Instant replacement,Under5Deaths
+2022,Demographic_Indicators,6,Instant replacement,Q5
+2022,Demographic_Indicators,6,Instant replacement,Q0040
+2022,Demographic_Indicators,6,Instant replacement,Q0040Male
+2022,Demographic_Indicators,6,Instant replacement,Q0040Female
+2022,Demographic_Indicators,6,Instant replacement,Q0060
+2022,Demographic_Indicators,6,Instant replacement,Q0060Male
+2022,Demographic_Indicators,6,Instant replacement,Q0060Female
+2022,Demographic_Indicators,6,Instant replacement,Q1550
+2022,Demographic_Indicators,6,Instant replacement,Q1550Male
+2022,Demographic_Indicators,6,Instant replacement,Q1550Female
+2022,Demographic_Indicators,6,Instant replacement,Q1560
+2022,Demographic_Indicators,6,Instant replacement,Q1560Male
+2022,Demographic_Indicators,6,Instant replacement,Q1560Female
+2022,Demographic_Indicators,6,Instant replacement,NetMigrations
+2022,Demographic_Indicators,6,Instant replacement,CNMR
+2022,Demographic_Indicators,7,Zero migration,SortOrder
+2022,Demographic_Indicators,7,Zero migration,LocID
+2022,Demographic_Indicators,7,Zero migration,Notes
+2022,Demographic_Indicators,7,Zero migration,ISO3_code
+2022,Demographic_Indicators,7,Zero migration,ISO2_code
+2022,Demographic_Indicators,7,Zero migration,SDMX_code
+2022,Demographic_Indicators,7,Zero migration,LocTypeID
+2022,Demographic_Indicators,7,Zero migration,LocTypeName
+2022,Demographic_Indicators,7,Zero migration,ParentID
+2022,Demographic_Indicators,7,Zero migration,Location
+2022,Demographic_Indicators,7,Zero migration,Time
+2022,Demographic_Indicators,7,Zero migration,TPopulation1Jan
+2022,Demographic_Indicators,7,Zero migration,TPopulation1July
+2022,Demographic_Indicators,7,Zero migration,TPopulationMale1July
+2022,Demographic_Indicators,7,Zero migration,TPopulationFemale1July
+2022,Demographic_Indicators,7,Zero migration,PopDensity
+2022,Demographic_Indicators,7,Zero migration,PopSexRatio
+2022,Demographic_Indicators,7,Zero migration,MedianAgePop
+2022,Demographic_Indicators,7,Zero migration,NatChange
+2022,Demographic_Indicators,7,Zero migration,NatChangeRT
+2022,Demographic_Indicators,7,Zero migration,PopChange
+2022,Demographic_Indicators,7,Zero migration,PopGrowthRate
+2022,Demographic_Indicators,7,Zero migration,DoublingTime
+2022,Demographic_Indicators,7,Zero migration,Births
+2022,Demographic_Indicators,7,Zero migration,Births1519
+2022,Demographic_Indicators,7,Zero migration,CBR
+2022,Demographic_Indicators,7,Zero migration,TFR
+2022,Demographic_Indicators,7,Zero migration,NNR
+2022,Demographic_Indicators,7,Zero migration,MAC
+2022,Demographic_Indicators,7,Zero migration,SRB
+2022,Demographic_Indicators,7,Zero migration,Deaths
+2022,Demographic_Indicators,7,Zero migration,DeathsMale
+2022,Demographic_Indicators,7,Zero migration,DeathsFemale
+2022,Demographic_Indicators,7,Zero migration,CDR
+2022,Demographic_Indicators,7,Zero migration,LEx
+2022,Demographic_Indicators,7,Zero migration,LExMale
+2022,Demographic_Indicators,7,Zero migration,LExFemale
+2022,Demographic_Indicators,7,Zero migration,LE15
+2022,Demographic_Indicators,7,Zero migration,LE15Male
+2022,Demographic_Indicators,7,Zero migration,LE15Female
+2022,Demographic_Indicators,7,Zero migration,LE65
+2022,Demographic_Indicators,7,Zero migration,LE65Male
+2022,Demographic_Indicators,7,Zero migration,LE65Female
+2022,Demographic_Indicators,7,Zero migration,LE80
+2022,Demographic_Indicators,7,Zero migration,LE80Male
+2022,Demographic_Indicators,7,Zero migration,LE80Female
+2022,Demographic_Indicators,7,Zero migration,InfantDeaths
+2022,Demographic_Indicators,7,Zero migration,IMR
+2022,Demographic_Indicators,7,Zero migration,LBsurvivingAge1
+2022,Demographic_Indicators,7,Zero migration,Under5Deaths
+2022,Demographic_Indicators,7,Zero migration,Q5
+2022,Demographic_Indicators,7,Zero migration,Q0040
+2022,Demographic_Indicators,7,Zero migration,Q0040Male
+2022,Demographic_Indicators,7,Zero migration,Q0040Female
+2022,Demographic_Indicators,7,Zero migration,Q0060
+2022,Demographic_Indicators,7,Zero migration,Q0060Male
+2022,Demographic_Indicators,7,Zero migration,Q0060Female
+2022,Demographic_Indicators,7,Zero migration,Q1550
+2022,Demographic_Indicators,7,Zero migration,Q1550Male
+2022,Demographic_Indicators,7,Zero migration,Q1550Female
+2022,Demographic_Indicators,7,Zero migration,Q1560
+2022,Demographic_Indicators,7,Zero migration,Q1560Male
+2022,Demographic_Indicators,7,Zero migration,Q1560Female
+2022,Demographic_Indicators,7,Zero migration,NetMigrations
+2022,Demographic_Indicators,7,Zero migration,CNMR
+2022,Demographic_Indicators,8,Constant mortality,SortOrder
+2022,Demographic_Indicators,8,Constant mortality,LocID
+2022,Demographic_Indicators,8,Constant mortality,Notes
+2022,Demographic_Indicators,8,Constant mortality,ISO3_code
+2022,Demographic_Indicators,8,Constant mortality,ISO2_code
+2022,Demographic_Indicators,8,Constant mortality,SDMX_code
+2022,Demographic_Indicators,8,Constant mortality,LocTypeID
+2022,Demographic_Indicators,8,Constant mortality,LocTypeName
+2022,Demographic_Indicators,8,Constant mortality,ParentID
+2022,Demographic_Indicators,8,Constant mortality,Location
+2022,Demographic_Indicators,8,Constant mortality,Time
+2022,Demographic_Indicators,8,Constant mortality,TPopulation1Jan
+2022,Demographic_Indicators,8,Constant mortality,TPopulation1July
+2022,Demographic_Indicators,8,Constant mortality,TPopulationMale1July
+2022,Demographic_Indicators,8,Constant mortality,TPopulationFemale1July
+2022,Demographic_Indicators,8,Constant mortality,PopDensity
+2022,Demographic_Indicators,8,Constant mortality,PopSexRatio
+2022,Demographic_Indicators,8,Constant mortality,MedianAgePop
+2022,Demographic_Indicators,8,Constant mortality,NatChange
+2022,Demographic_Indicators,8,Constant mortality,NatChangeRT
+2022,Demographic_Indicators,8,Constant mortality,PopChange
+2022,Demographic_Indicators,8,Constant mortality,PopGrowthRate
+2022,Demographic_Indicators,8,Constant mortality,DoublingTime
+2022,Demographic_Indicators,8,Constant mortality,Births
+2022,Demographic_Indicators,8,Constant mortality,Births1519
+2022,Demographic_Indicators,8,Constant mortality,CBR
+2022,Demographic_Indicators,8,Constant mortality,TFR
+2022,Demographic_Indicators,8,Constant mortality,NNR
+2022,Demographic_Indicators,8,Constant mortality,MAC
+2022,Demographic_Indicators,8,Constant mortality,SRB
+2022,Demographic_Indicators,8,Constant mortality,Deaths
+2022,Demographic_Indicators,8,Constant mortality,DeathsMale
+2022,Demographic_Indicators,8,Constant mortality,DeathsFemale
+2022,Demographic_Indicators,8,Constant mortality,CDR
+2022,Demographic_Indicators,8,Constant mortality,LEx
+2022,Demographic_Indicators,8,Constant mortality,LExMale
+2022,Demographic_Indicators,8,Constant mortality,LExFemale
+2022,Demographic_Indicators,8,Constant mortality,LE15
+2022,Demographic_Indicators,8,Constant mortality,LE15Male
+2022,Demographic_Indicators,8,Constant mortality,LE15Female
+2022,Demographic_Indicators,8,Constant mortality,LE65
+2022,Demographic_Indicators,8,Constant mortality,LE65Male
+2022,Demographic_Indicators,8,Constant mortality,LE65Female
+2022,Demographic_Indicators,8,Constant mortality,LE80
+2022,Demographic_Indicators,8,Constant mortality,LE80Male
+2022,Demographic_Indicators,8,Constant mortality,LE80Female
+2022,Demographic_Indicators,8,Constant mortality,InfantDeaths
+2022,Demographic_Indicators,8,Constant mortality,IMR
+2022,Demographic_Indicators,8,Constant mortality,LBsurvivingAge1
+2022,Demographic_Indicators,8,Constant mortality,Under5Deaths
+2022,Demographic_Indicators,8,Constant mortality,Q5
+2022,Demographic_Indicators,8,Constant mortality,Q0040
+2022,Demographic_Indicators,8,Constant mortality,Q0040Male
+2022,Demographic_Indicators,8,Constant mortality,Q0040Female
+2022,Demographic_Indicators,8,Constant mortality,Q0060
+2022,Demographic_Indicators,8,Constant mortality,Q0060Male
+2022,Demographic_Indicators,8,Constant mortality,Q0060Female
+2022,Demographic_Indicators,8,Constant mortality,Q1550
+2022,Demographic_Indicators,8,Constant mortality,Q1550Male
+2022,Demographic_Indicators,8,Constant mortality,Q1550Female
+2022,Demographic_Indicators,8,Constant mortality,Q1560
+2022,Demographic_Indicators,8,Constant mortality,Q1560Male
+2022,Demographic_Indicators,8,Constant mortality,Q1560Female
+2022,Demographic_Indicators,8,Constant mortality,NetMigrations
+2022,Demographic_Indicators,8,Constant mortality,CNMR
+2022,Demographic_Indicators,9,No change,SortOrder
+2022,Demographic_Indicators,9,No change,LocID
+2022,Demographic_Indicators,9,No change,Notes
+2022,Demographic_Indicators,9,No change,ISO3_code
+2022,Demographic_Indicators,9,No change,ISO2_code
+2022,Demographic_Indicators,9,No change,SDMX_code
+2022,Demographic_Indicators,9,No change,LocTypeID
+2022,Demographic_Indicators,9,No change,LocTypeName
+2022,Demographic_Indicators,9,No change,ParentID
+2022,Demographic_Indicators,9,No change,Location
+2022,Demographic_Indicators,9,No change,Time
+2022,Demographic_Indicators,9,No change,TPopulation1Jan
+2022,Demographic_Indicators,9,No change,TPopulation1July
+2022,Demographic_Indicators,9,No change,TPopulationMale1July
+2022,Demographic_Indicators,9,No change,TPopulationFemale1July
+2022,Demographic_Indicators,9,No change,PopDensity
+2022,Demographic_Indicators,9,No change,PopSexRatio
+2022,Demographic_Indicators,9,No change,MedianAgePop
+2022,Demographic_Indicators,9,No change,NatChange
+2022,Demographic_Indicators,9,No change,NatChangeRT
+2022,Demographic_Indicators,9,No change,PopChange
+2022,Demographic_Indicators,9,No change,PopGrowthRate
+2022,Demographic_Indicators,9,No change,DoublingTime
+2022,Demographic_Indicators,9,No change,Births
+2022,Demographic_Indicators,9,No change,Births1519
+2022,Demographic_Indicators,9,No change,CBR
+2022,Demographic_Indicators,9,No change,TFR
+2022,Demographic_Indicators,9,No change,NNR
+2022,Demographic_Indicators,9,No change,MAC
+2022,Demographic_Indicators,9,No change,SRB
+2022,Demographic_Indicators,9,No change,Deaths
+2022,Demographic_Indicators,9,No change,DeathsMale
+2022,Demographic_Indicators,9,No change,DeathsFemale
+2022,Demographic_Indicators,9,No change,CDR
+2022,Demographic_Indicators,9,No change,LEx
+2022,Demographic_Indicators,9,No change,LExMale
+2022,Demographic_Indicators,9,No change,LExFemale
+2022,Demographic_Indicators,9,No change,LE15
+2022,Demographic_Indicators,9,No change,LE15Male
+2022,Demographic_Indicators,9,No change,LE15Female
+2022,Demographic_Indicators,9,No change,LE65
+2022,Demographic_Indicators,9,No change,LE65Male
+2022,Demographic_Indicators,9,No change,LE65Female
+2022,Demographic_Indicators,9,No change,LE80
+2022,Demographic_Indicators,9,No change,LE80Male
+2022,Demographic_Indicators,9,No change,LE80Female
+2022,Demographic_Indicators,9,No change,InfantDeaths
+2022,Demographic_Indicators,9,No change,IMR
+2022,Demographic_Indicators,9,No change,LBsurvivingAge1
+2022,Demographic_Indicators,9,No change,Under5Deaths
+2022,Demographic_Indicators,9,No change,Q5
+2022,Demographic_Indicators,9,No change,Q0040
+2022,Demographic_Indicators,9,No change,Q0040Male
+2022,Demographic_Indicators,9,No change,Q0040Female
+2022,Demographic_Indicators,9,No change,Q0060
+2022,Demographic_Indicators,9,No change,Q0060Male
+2022,Demographic_Indicators,9,No change,Q0060Female
+2022,Demographic_Indicators,9,No change,Q1550
+2022,Demographic_Indicators,9,No change,Q1550Male
+2022,Demographic_Indicators,9,No change,Q1550Female
+2022,Demographic_Indicators,9,No change,Q1560
+2022,Demographic_Indicators,9,No change,Q1560Male
+2022,Demographic_Indicators,9,No change,Q1560Female
+2022,Demographic_Indicators,9,No change,NetMigrations
+2022,Demographic_Indicators,9,No change,CNMR
+2022,Fertility_by_Age1,10,Momentum,SortOrder
+2022,Fertility_by_Age1,10,Momentum,LocID
+2022,Fertility_by_Age1,10,Momentum,Notes
+2022,Fertility_by_Age1,10,Momentum,ISO3_code
+2022,Fertility_by_Age1,10,Momentum,ISO2_code
+2022,Fertility_by_Age1,10,Momentum,SDMX_code
+2022,Fertility_by_Age1,10,Momentum,LocTypeID
+2022,Fertility_by_Age1,10,Momentum,LocTypeName
+2022,Fertility_by_Age1,10,Momentum,ParentID
+2022,Fertility_by_Age1,10,Momentum,Location
+2022,Fertility_by_Age1,10,Momentum,Time
+2022,Fertility_by_Age1,10,Momentum,MidPeriod
+2022,Fertility_by_Age1,10,Momentum,AgeGrp
+2022,Fertility_by_Age1,10,Momentum,AgeGrpStart
+2022,Fertility_by_Age1,10,Momentum,AgeGrpSpan
+2022,Fertility_by_Age1,10,Momentum,ASFR
+2022,Fertility_by_Age1,10,Momentum,PASFR
+2022,Fertility_by_Age1,10,Momentum,Births
+2022,Fertility_by_Age1,2,Medium,SortOrder
+2022,Fertility_by_Age1,2,Medium,LocID
+2022,Fertility_by_Age1,2,Medium,Notes
+2022,Fertility_by_Age1,2,Medium,ISO3_code
+2022,Fertility_by_Age1,2,Medium,ISO2_code
+2022,Fertility_by_Age1,2,Medium,SDMX_code
+2022,Fertility_by_Age1,2,Medium,LocTypeID
+2022,Fertility_by_Age1,2,Medium,LocTypeName
+2022,Fertility_by_Age1,2,Medium,ParentID
+2022,Fertility_by_Age1,2,Medium,Location
+2022,Fertility_by_Age1,2,Medium,Time
+2022,Fertility_by_Age1,2,Medium,MidPeriod
+2022,Fertility_by_Age1,2,Medium,AgeGrp
+2022,Fertility_by_Age1,2,Medium,AgeGrpStart
+2022,Fertility_by_Age1,2,Medium,AgeGrpSpan
+2022,Fertility_by_Age1,2,Medium,ASFR
+2022,Fertility_by_Age1,2,Medium,PASFR
+2022,Fertility_by_Age1,2,Medium,Births
+2022,Fertility_by_Age1,3,High,SortOrder
+2022,Fertility_by_Age1,3,High,LocID
+2022,Fertility_by_Age1,3,High,Notes
+2022,Fertility_by_Age1,3,High,ISO3_code
+2022,Fertility_by_Age1,3,High,ISO2_code
+2022,Fertility_by_Age1,3,High,SDMX_code
+2022,Fertility_by_Age1,3,High,LocTypeID
+2022,Fertility_by_Age1,3,High,LocTypeName
+2022,Fertility_by_Age1,3,High,ParentID
+2022,Fertility_by_Age1,3,High,Location
+2022,Fertility_by_Age1,3,High,Time
+2022,Fertility_by_Age1,3,High,MidPeriod
+2022,Fertility_by_Age1,3,High,AgeGrp
+2022,Fertility_by_Age1,3,High,AgeGrpStart
+2022,Fertility_by_Age1,3,High,AgeGrpSpan
+2022,Fertility_by_Age1,3,High,ASFR
+2022,Fertility_by_Age1,3,High,PASFR
+2022,Fertility_by_Age1,3,High,Births
+2022,Fertility_by_Age1,4,Low,SortOrder
+2022,Fertility_by_Age1,4,Low,LocID
+2022,Fertility_by_Age1,4,Low,Notes
+2022,Fertility_by_Age1,4,Low,ISO3_code
+2022,Fertility_by_Age1,4,Low,ISO2_code
+2022,Fertility_by_Age1,4,Low,SDMX_code
+2022,Fertility_by_Age1,4,Low,LocTypeID
+2022,Fertility_by_Age1,4,Low,LocTypeName
+2022,Fertility_by_Age1,4,Low,ParentID
+2022,Fertility_by_Age1,4,Low,Location
+2022,Fertility_by_Age1,4,Low,Time
+2022,Fertility_by_Age1,4,Low,MidPeriod
+2022,Fertility_by_Age1,4,Low,AgeGrp
+2022,Fertility_by_Age1,4,Low,AgeGrpStart
+2022,Fertility_by_Age1,4,Low,AgeGrpSpan
+2022,Fertility_by_Age1,4,Low,ASFR
+2022,Fertility_by_Age1,4,Low,PASFR
+2022,Fertility_by_Age1,4,Low,Births
+2022,Fertility_by_Age1,5,Constant fertility,SortOrder
+2022,Fertility_by_Age1,5,Constant fertility,LocID
+2022,Fertility_by_Age1,5,Constant fertility,Notes
+2022,Fertility_by_Age1,5,Constant fertility,ISO3_code
+2022,Fertility_by_Age1,5,Constant fertility,ISO2_code
+2022,Fertility_by_Age1,5,Constant fertility,SDMX_code
+2022,Fertility_by_Age1,5,Constant fertility,LocTypeID
+2022,Fertility_by_Age1,5,Constant fertility,LocTypeName
+2022,Fertility_by_Age1,5,Constant fertility,ParentID
+2022,Fertility_by_Age1,5,Constant fertility,Location
+2022,Fertility_by_Age1,5,Constant fertility,Time
+2022,Fertility_by_Age1,5,Constant fertility,MidPeriod
+2022,Fertility_by_Age1,5,Constant fertility,AgeGrp
+2022,Fertility_by_Age1,5,Constant fertility,AgeGrpStart
+2022,Fertility_by_Age1,5,Constant fertility,AgeGrpSpan
+2022,Fertility_by_Age1,5,Constant fertility,ASFR
+2022,Fertility_by_Age1,5,Constant fertility,PASFR
+2022,Fertility_by_Age1,5,Constant fertility,Births
+2022,Fertility_by_Age1,6,Instant replacement,SortOrder
+2022,Fertility_by_Age1,6,Instant replacement,LocID
+2022,Fertility_by_Age1,6,Instant replacement,Notes
+2022,Fertility_by_Age1,6,Instant replacement,ISO3_code
+2022,Fertility_by_Age1,6,Instant replacement,ISO2_code
+2022,Fertility_by_Age1,6,Instant replacement,SDMX_code
+2022,Fertility_by_Age1,6,Instant replacement,LocTypeID
+2022,Fertility_by_Age1,6,Instant replacement,LocTypeName
+2022,Fertility_by_Age1,6,Instant replacement,ParentID
+2022,Fertility_by_Age1,6,Instant replacement,Location
+2022,Fertility_by_Age1,6,Instant replacement,Time
+2022,Fertility_by_Age1,6,Instant replacement,MidPeriod
+2022,Fertility_by_Age1,6,Instant replacement,AgeGrp
+2022,Fertility_by_Age1,6,Instant replacement,AgeGrpStart
+2022,Fertility_by_Age1,6,Instant replacement,AgeGrpSpan
+2022,Fertility_by_Age1,6,Instant replacement,ASFR
+2022,Fertility_by_Age1,6,Instant replacement,PASFR
+2022,Fertility_by_Age1,6,Instant replacement,Births
+2022,Fertility_by_Age1,7,Zero migration,SortOrder
+2022,Fertility_by_Age1,7,Zero migration,LocID
+2022,Fertility_by_Age1,7,Zero migration,Notes
+2022,Fertility_by_Age1,7,Zero migration,ISO3_code
+2022,Fertility_by_Age1,7,Zero migration,ISO2_code
+2022,Fertility_by_Age1,7,Zero migration,SDMX_code
+2022,Fertility_by_Age1,7,Zero migration,LocTypeID
+2022,Fertility_by_Age1,7,Zero migration,LocTypeName
+2022,Fertility_by_Age1,7,Zero migration,ParentID
+2022,Fertility_by_Age1,7,Zero migration,Location
+2022,Fertility_by_Age1,7,Zero migration,Time
+2022,Fertility_by_Age1,7,Zero migration,MidPeriod
+2022,Fertility_by_Age1,7,Zero migration,AgeGrp
+2022,Fertility_by_Age1,7,Zero migration,AgeGrpStart
+2022,Fertility_by_Age1,7,Zero migration,AgeGrpSpan
+2022,Fertility_by_Age1,7,Zero migration,ASFR
+2022,Fertility_by_Age1,7,Zero migration,PASFR
+2022,Fertility_by_Age1,7,Zero migration,Births
+2022,Fertility_by_Age1,8,Constant mortality,SortOrder
+2022,Fertility_by_Age1,8,Constant mortality,LocID
+2022,Fertility_by_Age1,8,Constant mortality,Notes
+2022,Fertility_by_Age1,8,Constant mortality,ISO3_code
+2022,Fertility_by_Age1,8,Constant mortality,ISO2_code
+2022,Fertility_by_Age1,8,Constant mortality,SDMX_code
+2022,Fertility_by_Age1,8,Constant mortality,LocTypeID
+2022,Fertility_by_Age1,8,Constant mortality,LocTypeName
+2022,Fertility_by_Age1,8,Constant mortality,ParentID
+2022,Fertility_by_Age1,8,Constant mortality,Location
+2022,Fertility_by_Age1,8,Constant mortality,Time
+2022,Fertility_by_Age1,8,Constant mortality,MidPeriod
+2022,Fertility_by_Age1,8,Constant mortality,AgeGrp
+2022,Fertility_by_Age1,8,Constant mortality,AgeGrpStart
+2022,Fertility_by_Age1,8,Constant mortality,AgeGrpSpan
+2022,Fertility_by_Age1,8,Constant mortality,ASFR
+2022,Fertility_by_Age1,8,Constant mortality,PASFR
+2022,Fertility_by_Age1,8,Constant mortality,Births
+2022,Fertility_by_Age1,9,No change,SortOrder
+2022,Fertility_by_Age1,9,No change,LocID
+2022,Fertility_by_Age1,9,No change,Notes
+2022,Fertility_by_Age1,9,No change,ISO3_code
+2022,Fertility_by_Age1,9,No change,ISO2_code
+2022,Fertility_by_Age1,9,No change,SDMX_code
+2022,Fertility_by_Age1,9,No change,LocTypeID
+2022,Fertility_by_Age1,9,No change,LocTypeName
+2022,Fertility_by_Age1,9,No change,ParentID
+2022,Fertility_by_Age1,9,No change,Location
+2022,Fertility_by_Age1,9,No change,Time
+2022,Fertility_by_Age1,9,No change,MidPeriod
+2022,Fertility_by_Age1,9,No change,AgeGrp
+2022,Fertility_by_Age1,9,No change,AgeGrpStart
+2022,Fertility_by_Age1,9,No change,AgeGrpSpan
+2022,Fertility_by_Age1,9,No change,ASFR
+2022,Fertility_by_Age1,9,No change,PASFR
+2022,Fertility_by_Age1,9,No change,Births
+2022,Fertility_by_Age5,10,Momentum,SortOrder
+2022,Fertility_by_Age5,10,Momentum,LocID
+2022,Fertility_by_Age5,10,Momentum,Notes
+2022,Fertility_by_Age5,10,Momentum,ISO3_code
+2022,Fertility_by_Age5,10,Momentum,ISO2_code
+2022,Fertility_by_Age5,10,Momentum,SDMX_code
+2022,Fertility_by_Age5,10,Momentum,LocTypeID
+2022,Fertility_by_Age5,10,Momentum,LocTypeName
+2022,Fertility_by_Age5,10,Momentum,ParentID
+2022,Fertility_by_Age5,10,Momentum,Location
+2022,Fertility_by_Age5,10,Momentum,Time
+2022,Fertility_by_Age5,10,Momentum,MidPeriod
+2022,Fertility_by_Age5,10,Momentum,AgeGrp
+2022,Fertility_by_Age5,10,Momentum,AgeGrpStart
+2022,Fertility_by_Age5,10,Momentum,AgeGrpSpan
+2022,Fertility_by_Age5,10,Momentum,ASFR
+2022,Fertility_by_Age5,10,Momentum,PASFR
+2022,Fertility_by_Age5,10,Momentum,Births
+2022,Fertility_by_Age5,2,Medium,SortOrder
+2022,Fertility_by_Age5,2,Medium,LocID
+2022,Fertility_by_Age5,2,Medium,Notes
+2022,Fertility_by_Age5,2,Medium,ISO3_code
+2022,Fertility_by_Age5,2,Medium,ISO2_code
+2022,Fertility_by_Age5,2,Medium,SDMX_code
+2022,Fertility_by_Age5,2,Medium,LocTypeID
+2022,Fertility_by_Age5,2,Medium,LocTypeName
+2022,Fertility_by_Age5,2,Medium,ParentID
+2022,Fertility_by_Age5,2,Medium,Location
+2022,Fertility_by_Age5,2,Medium,Time
+2022,Fertility_by_Age5,2,Medium,MidPeriod
+2022,Fertility_by_Age5,2,Medium,AgeGrp
+2022,Fertility_by_Age5,2,Medium,AgeGrpStart
+2022,Fertility_by_Age5,2,Medium,AgeGrpSpan
+2022,Fertility_by_Age5,2,Medium,ASFR
+2022,Fertility_by_Age5,2,Medium,PASFR
+2022,Fertility_by_Age5,2,Medium,Births
+2022,Fertility_by_Age5,3,High,SortOrder
+2022,Fertility_by_Age5,3,High,LocID
+2022,Fertility_by_Age5,3,High,Notes
+2022,Fertility_by_Age5,3,High,ISO3_code
+2022,Fertility_by_Age5,3,High,ISO2_code
+2022,Fertility_by_Age5,3,High,SDMX_code
+2022,Fertility_by_Age5,3,High,LocTypeID
+2022,Fertility_by_Age5,3,High,LocTypeName
+2022,Fertility_by_Age5,3,High,ParentID
+2022,Fertility_by_Age5,3,High,Location
+2022,Fertility_by_Age5,3,High,Time
+2022,Fertility_by_Age5,3,High,MidPeriod
+2022,Fertility_by_Age5,3,High,AgeGrp
+2022,Fertility_by_Age5,3,High,AgeGrpStart
+2022,Fertility_by_Age5,3,High,AgeGrpSpan
+2022,Fertility_by_Age5,3,High,ASFR
+2022,Fertility_by_Age5,3,High,PASFR
+2022,Fertility_by_Age5,3,High,Births
+2022,Fertility_by_Age5,4,Low,SortOrder
+2022,Fertility_by_Age5,4,Low,LocID
+2022,Fertility_by_Age5,4,Low,Notes
+2022,Fertility_by_Age5,4,Low,ISO3_code
+2022,Fertility_by_Age5,4,Low,ISO2_code
+2022,Fertility_by_Age5,4,Low,SDMX_code
+2022,Fertility_by_Age5,4,Low,LocTypeID
+2022,Fertility_by_Age5,4,Low,LocTypeName
+2022,Fertility_by_Age5,4,Low,ParentID
+2022,Fertility_by_Age5,4,Low,Location
+2022,Fertility_by_Age5,4,Low,Time
+2022,Fertility_by_Age5,4,Low,MidPeriod
+2022,Fertility_by_Age5,4,Low,AgeGrp
+2022,Fertility_by_Age5,4,Low,AgeGrpStart
+2022,Fertility_by_Age5,4,Low,AgeGrpSpan
+2022,Fertility_by_Age5,4,Low,ASFR
+2022,Fertility_by_Age5,4,Low,PASFR
+2022,Fertility_by_Age5,4,Low,Births
+2022,Fertility_by_Age5,5,Constant fertility,SortOrder
+2022,Fertility_by_Age5,5,Constant fertility,LocID
+2022,Fertility_by_Age5,5,Constant fertility,Notes
+2022,Fertility_by_Age5,5,Constant fertility,ISO3_code
+2022,Fertility_by_Age5,5,Constant fertility,ISO2_code
+2022,Fertility_by_Age5,5,Constant fertility,SDMX_code
+2022,Fertility_by_Age5,5,Constant fertility,LocTypeID
+2022,Fertility_by_Age5,5,Constant fertility,LocTypeName
+2022,Fertility_by_Age5,5,Constant fertility,ParentID
+2022,Fertility_by_Age5,5,Constant fertility,Location
+2022,Fertility_by_Age5,5,Constant fertility,Time
+2022,Fertility_by_Age5,5,Constant fertility,MidPeriod
+2022,Fertility_by_Age5,5,Constant fertility,AgeGrp
+2022,Fertility_by_Age5,5,Constant fertility,AgeGrpStart
+2022,Fertility_by_Age5,5,Constant fertility,AgeGrpSpan
+2022,Fertility_by_Age5,5,Constant fertility,ASFR
+2022,Fertility_by_Age5,5,Constant fertility,PASFR
+2022,Fertility_by_Age5,5,Constant fertility,Births
+2022,Fertility_by_Age5,6,Instant replacement,SortOrder
+2022,Fertility_by_Age5,6,Instant replacement,LocID
+2022,Fertility_by_Age5,6,Instant replacement,Notes
+2022,Fertility_by_Age5,6,Instant replacement,ISO3_code
+2022,Fertility_by_Age5,6,Instant replacement,ISO2_code
+2022,Fertility_by_Age5,6,Instant replacement,SDMX_code
+2022,Fertility_by_Age5,6,Instant replacement,LocTypeID
+2022,Fertility_by_Age5,6,Instant replacement,LocTypeName
+2022,Fertility_by_Age5,6,Instant replacement,ParentID
+2022,Fertility_by_Age5,6,Instant replacement,Location
+2022,Fertility_by_Age5,6,Instant replacement,Time
+2022,Fertility_by_Age5,6,Instant replacement,MidPeriod
+2022,Fertility_by_Age5,6,Instant replacement,AgeGrp
+2022,Fertility_by_Age5,6,Instant replacement,AgeGrpStart
+2022,Fertility_by_Age5,6,Instant replacement,AgeGrpSpan
+2022,Fertility_by_Age5,6,Instant replacement,ASFR
+2022,Fertility_by_Age5,6,Instant replacement,PASFR
+2022,Fertility_by_Age5,6,Instant replacement,Births
+2022,Fertility_by_Age5,7,Zero migration,SortOrder
+2022,Fertility_by_Age5,7,Zero migration,LocID
+2022,Fertility_by_Age5,7,Zero migration,Notes
+2022,Fertility_by_Age5,7,Zero migration,ISO3_code
+2022,Fertility_by_Age5,7,Zero migration,ISO2_code
+2022,Fertility_by_Age5,7,Zero migration,SDMX_code
+2022,Fertility_by_Age5,7,Zero migration,LocTypeID
+2022,Fertility_by_Age5,7,Zero migration,LocTypeName
+2022,Fertility_by_Age5,7,Zero migration,ParentID
+2022,Fertility_by_Age5,7,Zero migration,Location
+2022,Fertility_by_Age5,7,Zero migration,Time
+2022,Fertility_by_Age5,7,Zero migration,MidPeriod
+2022,Fertility_by_Age5,7,Zero migration,AgeGrp
+2022,Fertility_by_Age5,7,Zero migration,AgeGrpStart
+2022,Fertility_by_Age5,7,Zero migration,AgeGrpSpan
+2022,Fertility_by_Age5,7,Zero migration,ASFR
+2022,Fertility_by_Age5,7,Zero migration,PASFR
+2022,Fertility_by_Age5,7,Zero migration,Births
+2022,Fertility_by_Age5,8,Constant mortality,SortOrder
+2022,Fertility_by_Age5,8,Constant mortality,LocID
+2022,Fertility_by_Age5,8,Constant mortality,Notes
+2022,Fertility_by_Age5,8,Constant mortality,ISO3_code
+2022,Fertility_by_Age5,8,Constant mortality,ISO2_code
+2022,Fertility_by_Age5,8,Constant mortality,SDMX_code
+2022,Fertility_by_Age5,8,Constant mortality,LocTypeID
+2022,Fertility_by_Age5,8,Constant mortality,LocTypeName
+2022,Fertility_by_Age5,8,Constant mortality,ParentID
+2022,Fertility_by_Age5,8,Constant mortality,Location
+2022,Fertility_by_Age5,8,Constant mortality,Time
+2022,Fertility_by_Age5,8,Constant mortality,MidPeriod
+2022,Fertility_by_Age5,8,Constant mortality,AgeGrp
+2022,Fertility_by_Age5,8,Constant mortality,AgeGrpStart
+2022,Fertility_by_Age5,8,Constant mortality,AgeGrpSpan
+2022,Fertility_by_Age5,8,Constant mortality,ASFR
+2022,Fertility_by_Age5,8,Constant mortality,PASFR
+2022,Fertility_by_Age5,8,Constant mortality,Births
+2022,Fertility_by_Age5,9,No change,SortOrder
+2022,Fertility_by_Age5,9,No change,LocID
+2022,Fertility_by_Age5,9,No change,Notes
+2022,Fertility_by_Age5,9,No change,ISO3_code
+2022,Fertility_by_Age5,9,No change,ISO2_code
+2022,Fertility_by_Age5,9,No change,SDMX_code
+2022,Fertility_by_Age5,9,No change,LocTypeID
+2022,Fertility_by_Age5,9,No change,LocTypeName
+2022,Fertility_by_Age5,9,No change,ParentID
+2022,Fertility_by_Age5,9,No change,Location
+2022,Fertility_by_Age5,9,No change,Time
+2022,Fertility_by_Age5,9,No change,MidPeriod
+2022,Fertility_by_Age5,9,No change,AgeGrp
+2022,Fertility_by_Age5,9,No change,AgeGrpStart
+2022,Fertility_by_Age5,9,No change,AgeGrpSpan
+2022,Fertility_by_Age5,9,No change,ASFR
+2022,Fertility_by_Age5,9,No change,PASFR
+2022,Fertility_by_Age5,9,No change,Births
+2022,Life_Table_Abridged,2,Medium,SortOrder
+2022,Life_Table_Abridged,2,Medium,LocID
+2022,Life_Table_Abridged,2,Medium,Notes
+2022,Life_Table_Abridged,2,Medium,ISO3_code
+2022,Life_Table_Abridged,2,Medium,ISO2_code
+2022,Life_Table_Abridged,2,Medium,SDMX_code
+2022,Life_Table_Abridged,2,Medium,LocTypeID
+2022,Life_Table_Abridged,2,Medium,LocTypeName
+2022,Life_Table_Abridged,2,Medium,ParentID
+2022,Life_Table_Abridged,2,Medium,Location
+2022,Life_Table_Abridged,2,Medium,Time
+2022,Life_Table_Abridged,2,Medium,MidPeriod
+2022,Life_Table_Abridged,2,Medium,SexID
+2022,Life_Table_Abridged,2,Medium,Sex
+2022,Life_Table_Abridged,2,Medium,AgeGrp
+2022,Life_Table_Abridged,2,Medium,AgeGrpStart
+2022,Life_Table_Abridged,2,Medium,AgeGrpSpan
+2022,Life_Table_Abridged,2,Medium,mx
+2022,Life_Table_Abridged,2,Medium,qx
+2022,Life_Table_Abridged,2,Medium,px
+2022,Life_Table_Abridged,2,Medium,lx
+2022,Life_Table_Abridged,2,Medium,dx
+2022,Life_Table_Abridged,2,Medium,Lx
+2022,Life_Table_Abridged,2,Medium,Sx
+2022,Life_Table_Abridged,2,Medium,Tx
+2022,Life_Table_Abridged,2,Medium,ex
+2022,Life_Table_Abridged,2,Medium,ax
+2022,Life_Table_Complete,2,Medium,SortOrder
+2022,Life_Table_Complete,2,Medium,LocID
+2022,Life_Table_Complete,2,Medium,Notes
+2022,Life_Table_Complete,2,Medium,ISO3_code
+2022,Life_Table_Complete,2,Medium,ISO2_code
+2022,Life_Table_Complete,2,Medium,SDMX_code
+2022,Life_Table_Complete,2,Medium,LocTypeID
+2022,Life_Table_Complete,2,Medium,LocTypeName
+2022,Life_Table_Complete,2,Medium,ParentID
+2022,Life_Table_Complete,2,Medium,Location
+2022,Life_Table_Complete,2,Medium,Time
+2022,Life_Table_Complete,2,Medium,MidPeriod
+2022,Life_Table_Complete,2,Medium,SexID
+2022,Life_Table_Complete,2,Medium,Sex
+2022,Life_Table_Complete,2,Medium,AgeGrp
+2022,Life_Table_Complete,2,Medium,AgeGrpStart
+2022,Life_Table_Complete,2,Medium,AgeGrpSpan
+2022,Life_Table_Complete,2,Medium,mx
+2022,Life_Table_Complete,2,Medium,qx
+2022,Life_Table_Complete,2,Medium,px
+2022,Life_Table_Complete,2,Medium,lx
+2022,Life_Table_Complete,2,Medium,dx
+2022,Life_Table_Complete,2,Medium,Lx
+2022,Life_Table_Complete,2,Medium,Sx
+2022,Life_Table_Complete,2,Medium,Tx
+2022,Life_Table_Complete,2,Medium,ex
+2022,Life_Table_Complete,2,Medium,ax
+2022,Population1JanuaryByAge5GroupSex,10,Momentum,SortOrder
+2022,Population1JanuaryByAge5GroupSex,10,Momentum,LocID
+2022,Population1JanuaryByAge5GroupSex,10,Momentum,Notes
+2022,Population1JanuaryByAge5GroupSex,10,Momentum,ISO3_code
+2022,Population1JanuaryByAge5GroupSex,10,Momentum,ISO2_code
+2022,Population1JanuaryByAge5GroupSex,10,Momentum,SDMX_code
+2022,Population1JanuaryByAge5GroupSex,10,Momentum,LocTypeID
+2022,Population1JanuaryByAge5GroupSex,10,Momentum,LocTypeName
+2022,Population1JanuaryByAge5GroupSex,10,Momentum,ParentID
+2022,Population1JanuaryByAge5GroupSex,10,Momentum,Location
+2022,Population1JanuaryByAge5GroupSex,10,Momentum,Time
+2022,Population1JanuaryByAge5GroupSex,10,Momentum,MidPeriod
+2022,Population1JanuaryByAge5GroupSex,10,Momentum,AgeGrp
+2022,Population1JanuaryByAge5GroupSex,10,Momentum,AgeGrpStart
+2022,Population1JanuaryByAge5GroupSex,10,Momentum,AgeGrpSpan
+2022,Population1JanuaryByAge5GroupSex,10,Momentum,PopMale
+2022,Population1JanuaryByAge5GroupSex,10,Momentum,PopFemale
+2022,Population1JanuaryByAge5GroupSex,10,Momentum,PopTotal
+2022,Population1JanuaryByAge5GroupSex,2,Medium,SortOrder
+2022,Population1JanuaryByAge5GroupSex,2,Medium,LocID
+2022,Population1JanuaryByAge5GroupSex,2,Medium,Notes
+2022,Population1JanuaryByAge5GroupSex,2,Medium,ISO3_code
+2022,Population1JanuaryByAge5GroupSex,2,Medium,ISO2_code
+2022,Population1JanuaryByAge5GroupSex,2,Medium,SDMX_code
+2022,Population1JanuaryByAge5GroupSex,2,Medium,LocTypeID
+2022,Population1JanuaryByAge5GroupSex,2,Medium,LocTypeName
+2022,Population1JanuaryByAge5GroupSex,2,Medium,ParentID
+2022,Population1JanuaryByAge5GroupSex,2,Medium,Location
+2022,Population1JanuaryByAge5GroupSex,2,Medium,Time
+2022,Population1JanuaryByAge5GroupSex,2,Medium,MidPeriod
+2022,Population1JanuaryByAge5GroupSex,2,Medium,AgeGrp
+2022,Population1JanuaryByAge5GroupSex,2,Medium,AgeGrpStart
+2022,Population1JanuaryByAge5GroupSex,2,Medium,AgeGrpSpan
+2022,Population1JanuaryByAge5GroupSex,2,Medium,PopMale
+2022,Population1JanuaryByAge5GroupSex,2,Medium,PopFemale
+2022,Population1JanuaryByAge5GroupSex,2,Medium,PopTotal
+2022,Population1JanuaryByAge5GroupSex,3,High,SortOrder
+2022,Population1JanuaryByAge5GroupSex,3,High,LocID
+2022,Population1JanuaryByAge5GroupSex,3,High,Notes
+2022,Population1JanuaryByAge5GroupSex,3,High,ISO3_code
+2022,Population1JanuaryByAge5GroupSex,3,High,ISO2_code
+2022,Population1JanuaryByAge5GroupSex,3,High,SDMX_code
+2022,Population1JanuaryByAge5GroupSex,3,High,LocTypeID
+2022,Population1JanuaryByAge5GroupSex,3,High,LocTypeName
+2022,Population1JanuaryByAge5GroupSex,3,High,ParentID
+2022,Population1JanuaryByAge5GroupSex,3,High,Location
+2022,Population1JanuaryByAge5GroupSex,3,High,Time
+2022,Population1JanuaryByAge5GroupSex,3,High,MidPeriod
+2022,Population1JanuaryByAge5GroupSex,3,High,AgeGrp
+2022,Population1JanuaryByAge5GroupSex,3,High,AgeGrpStart
+2022,Population1JanuaryByAge5GroupSex,3,High,AgeGrpSpan
+2022,Population1JanuaryByAge5GroupSex,3,High,PopMale
+2022,Population1JanuaryByAge5GroupSex,3,High,PopFemale
+2022,Population1JanuaryByAge5GroupSex,3,High,PopTotal
+2022,Population1JanuaryByAge5GroupSex,4,Low,SortOrder
+2022,Population1JanuaryByAge5GroupSex,4,Low,LocID
+2022,Population1JanuaryByAge5GroupSex,4,Low,Notes
+2022,Population1JanuaryByAge5GroupSex,4,Low,ISO3_code
+2022,Population1JanuaryByAge5GroupSex,4,Low,ISO2_code
+2022,Population1JanuaryByAge5GroupSex,4,Low,SDMX_code
+2022,Population1JanuaryByAge5GroupSex,4,Low,LocTypeID
+2022,Population1JanuaryByAge5GroupSex,4,Low,LocTypeName
+2022,Population1JanuaryByAge5GroupSex,4,Low,ParentID
+2022,Population1JanuaryByAge5GroupSex,4,Low,Location
+2022,Population1JanuaryByAge5GroupSex,4,Low,Time
+2022,Population1JanuaryByAge5GroupSex,4,Low,MidPeriod
+2022,Population1JanuaryByAge5GroupSex,4,Low,AgeGrp
+2022,Population1JanuaryByAge5GroupSex,4,Low,AgeGrpStart
+2022,Population1JanuaryByAge5GroupSex,4,Low,AgeGrpSpan
+2022,Population1JanuaryByAge5GroupSex,4,Low,PopMale
+2022,Population1JanuaryByAge5GroupSex,4,Low,PopFemale
+2022,Population1JanuaryByAge5GroupSex,4,Low,PopTotal
+2022,Population1JanuaryByAge5GroupSex,5,Constant fertility,SortOrder
+2022,Population1JanuaryByAge5GroupSex,5,Constant fertility,LocID
+2022,Population1JanuaryByAge5GroupSex,5,Constant fertility,Notes
+2022,Population1JanuaryByAge5GroupSex,5,Constant fertility,ISO3_code
+2022,Population1JanuaryByAge5GroupSex,5,Constant fertility,ISO2_code
+2022,Population1JanuaryByAge5GroupSex,5,Constant fertility,SDMX_code
+2022,Population1JanuaryByAge5GroupSex,5,Constant fertility,LocTypeID
+2022,Population1JanuaryByAge5GroupSex,5,Constant fertility,LocTypeName
+2022,Population1JanuaryByAge5GroupSex,5,Constant fertility,ParentID
+2022,Population1JanuaryByAge5GroupSex,5,Constant fertility,Location
+2022,Population1JanuaryByAge5GroupSex,5,Constant fertility,Time
+2022,Population1JanuaryByAge5GroupSex,5,Constant fertility,MidPeriod
+2022,Population1JanuaryByAge5GroupSex,5,Constant fertility,AgeGrp
+2022,Population1JanuaryByAge5GroupSex,5,Constant fertility,AgeGrpStart
+2022,Population1JanuaryByAge5GroupSex,5,Constant fertility,AgeGrpSpan
+2022,Population1JanuaryByAge5GroupSex,5,Constant fertility,PopMale
+2022,Population1JanuaryByAge5GroupSex,5,Constant fertility,PopFemale
+2022,Population1JanuaryByAge5GroupSex,5,Constant fertility,PopTotal
+2022,Population1JanuaryByAge5GroupSex,6,Instant replacement,SortOrder
+2022,Population1JanuaryByAge5GroupSex,6,Instant replacement,LocID
+2022,Population1JanuaryByAge5GroupSex,6,Instant replacement,Notes
+2022,Population1JanuaryByAge5GroupSex,6,Instant replacement,ISO3_code
+2022,Population1JanuaryByAge5GroupSex,6,Instant replacement,ISO2_code
+2022,Population1JanuaryByAge5GroupSex,6,Instant replacement,SDMX_code
+2022,Population1JanuaryByAge5GroupSex,6,Instant replacement,LocTypeID
+2022,Population1JanuaryByAge5GroupSex,6,Instant replacement,LocTypeName
+2022,Population1JanuaryByAge5GroupSex,6,Instant replacement,ParentID
+2022,Population1JanuaryByAge5GroupSex,6,Instant replacement,Location
+2022,Population1JanuaryByAge5GroupSex,6,Instant replacement,Time
+2022,Population1JanuaryByAge5GroupSex,6,Instant replacement,MidPeriod
+2022,Population1JanuaryByAge5GroupSex,6,Instant replacement,AgeGrp
+2022,Population1JanuaryByAge5GroupSex,6,Instant replacement,AgeGrpStart
+2022,Population1JanuaryByAge5GroupSex,6,Instant replacement,AgeGrpSpan
+2022,Population1JanuaryByAge5GroupSex,6,Instant replacement,PopMale
+2022,Population1JanuaryByAge5GroupSex,6,Instant replacement,PopFemale
+2022,Population1JanuaryByAge5GroupSex,6,Instant replacement,PopTotal
+2022,Population1JanuaryByAge5GroupSex,7,Zero migration,SortOrder
+2022,Population1JanuaryByAge5GroupSex,7,Zero migration,LocID
+2022,Population1JanuaryByAge5GroupSex,7,Zero migration,Notes
+2022,Population1JanuaryByAge5GroupSex,7,Zero migration,ISO3_code
+2022,Population1JanuaryByAge5GroupSex,7,Zero migration,ISO2_code
+2022,Population1JanuaryByAge5GroupSex,7,Zero migration,SDMX_code
+2022,Population1JanuaryByAge5GroupSex,7,Zero migration,LocTypeID
+2022,Population1JanuaryByAge5GroupSex,7,Zero migration,LocTypeName
+2022,Population1JanuaryByAge5GroupSex,7,Zero migration,ParentID
+2022,Population1JanuaryByAge5GroupSex,7,Zero migration,Location
+2022,Population1JanuaryByAge5GroupSex,7,Zero migration,Time
+2022,Population1JanuaryByAge5GroupSex,7,Zero migration,MidPeriod
+2022,Population1JanuaryByAge5GroupSex,7,Zero migration,AgeGrp
+2022,Population1JanuaryByAge5GroupSex,7,Zero migration,AgeGrpStart
+2022,Population1JanuaryByAge5GroupSex,7,Zero migration,AgeGrpSpan
+2022,Population1JanuaryByAge5GroupSex,7,Zero migration,PopMale
+2022,Population1JanuaryByAge5GroupSex,7,Zero migration,PopFemale
+2022,Population1JanuaryByAge5GroupSex,7,Zero migration,PopTotal
+2022,Population1JanuaryByAge5GroupSex,8,Constant mortality,SortOrder
+2022,Population1JanuaryByAge5GroupSex,8,Constant mortality,LocID
+2022,Population1JanuaryByAge5GroupSex,8,Constant mortality,Notes
+2022,Population1JanuaryByAge5GroupSex,8,Constant mortality,ISO3_code
+2022,Population1JanuaryByAge5GroupSex,8,Constant mortality,ISO2_code
+2022,Population1JanuaryByAge5GroupSex,8,Constant mortality,SDMX_code
+2022,Population1JanuaryByAge5GroupSex,8,Constant mortality,LocTypeID
+2022,Population1JanuaryByAge5GroupSex,8,Constant mortality,LocTypeName
+2022,Population1JanuaryByAge5GroupSex,8,Constant mortality,ParentID
+2022,Population1JanuaryByAge5GroupSex,8,Constant mortality,Location
+2022,Population1JanuaryByAge5GroupSex,8,Constant mortality,Time
+2022,Population1JanuaryByAge5GroupSex,8,Constant mortality,MidPeriod
+2022,Population1JanuaryByAge5GroupSex,8,Constant mortality,AgeGrp
+2022,Population1JanuaryByAge5GroupSex,8,Constant mortality,AgeGrpStart
+2022,Population1JanuaryByAge5GroupSex,8,Constant mortality,AgeGrpSpan
+2022,Population1JanuaryByAge5GroupSex,8,Constant mortality,PopMale
+2022,Population1JanuaryByAge5GroupSex,8,Constant mortality,PopFemale
+2022,Population1JanuaryByAge5GroupSex,8,Constant mortality,PopTotal
+2022,Population1JanuaryByAge5GroupSex,9,No change,SortOrder
+2022,Population1JanuaryByAge5GroupSex,9,No change,LocID
+2022,Population1JanuaryByAge5GroupSex,9,No change,Notes
+2022,Population1JanuaryByAge5GroupSex,9,No change,ISO3_code
+2022,Population1JanuaryByAge5GroupSex,9,No change,ISO2_code
+2022,Population1JanuaryByAge5GroupSex,9,No change,SDMX_code
+2022,Population1JanuaryByAge5GroupSex,9,No change,LocTypeID
+2022,Population1JanuaryByAge5GroupSex,9,No change,LocTypeName
+2022,Population1JanuaryByAge5GroupSex,9,No change,ParentID
+2022,Population1JanuaryByAge5GroupSex,9,No change,Location
+2022,Population1JanuaryByAge5GroupSex,9,No change,Time
+2022,Population1JanuaryByAge5GroupSex,9,No change,MidPeriod
+2022,Population1JanuaryByAge5GroupSex,9,No change,AgeGrp
+2022,Population1JanuaryByAge5GroupSex,9,No change,AgeGrpStart
+2022,Population1JanuaryByAge5GroupSex,9,No change,AgeGrpSpan
+2022,Population1JanuaryByAge5GroupSex,9,No change,PopMale
+2022,Population1JanuaryByAge5GroupSex,9,No change,PopFemale
+2022,Population1JanuaryByAge5GroupSex,9,No change,PopTotal
+2022,Population1JanuaryBySingleAgeSex,2,Medium,SortOrder
+2022,Population1JanuaryBySingleAgeSex,2,Medium,LocID
+2022,Population1JanuaryBySingleAgeSex,2,Medium,Notes
+2022,Population1JanuaryBySingleAgeSex,2,Medium,ISO3_code
+2022,Population1JanuaryBySingleAgeSex,2,Medium,ISO2_code
+2022,Population1JanuaryBySingleAgeSex,2,Medium,SDMX_code
+2022,Population1JanuaryBySingleAgeSex,2,Medium,LocTypeID
+2022,Population1JanuaryBySingleAgeSex,2,Medium,LocTypeName
+2022,Population1JanuaryBySingleAgeSex,2,Medium,ParentID
+2022,Population1JanuaryBySingleAgeSex,2,Medium,Location
+2022,Population1JanuaryBySingleAgeSex,2,Medium,Time
+2022,Population1JanuaryBySingleAgeSex,2,Medium,MidPeriod
+2022,Population1JanuaryBySingleAgeSex,2,Medium,AgeGrp
+2022,Population1JanuaryBySingleAgeSex,2,Medium,AgeGrpStart
+2022,Population1JanuaryBySingleAgeSex,2,Medium,AgeGrpSpan
+2022,Population1JanuaryBySingleAgeSex,2,Medium,PopMale
+2022,Population1JanuaryBySingleAgeSex,2,Medium,PopFemale
+2022,Population1JanuaryBySingleAgeSex,2,Medium,PopTotal
+2022,PopulationByAge5GroupSex,10,Momentum,SortOrder
+2022,PopulationByAge5GroupSex,10,Momentum,LocID
+2022,PopulationByAge5GroupSex,10,Momentum,Notes
+2022,PopulationByAge5GroupSex,10,Momentum,ISO3_code
+2022,PopulationByAge5GroupSex,10,Momentum,ISO2_code
+2022,PopulationByAge5GroupSex,10,Momentum,SDMX_code
+2022,PopulationByAge5GroupSex,10,Momentum,LocTypeID
+2022,PopulationByAge5GroupSex,10,Momentum,LocTypeName
+2022,PopulationByAge5GroupSex,10,Momentum,ParentID
+2022,PopulationByAge5GroupSex,10,Momentum,Location
+2022,PopulationByAge5GroupSex,10,Momentum,Time
+2022,PopulationByAge5GroupSex,10,Momentum,MidPeriod
+2022,PopulationByAge5GroupSex,10,Momentum,AgeGrp
+2022,PopulationByAge5GroupSex,10,Momentum,AgeGrpStart
+2022,PopulationByAge5GroupSex,10,Momentum,AgeGrpSpan
+2022,PopulationByAge5GroupSex,10,Momentum,PopMale
+2022,PopulationByAge5GroupSex,10,Momentum,PopFemale
+2022,PopulationByAge5GroupSex,10,Momentum,PopTotal
+2022,PopulationByAge5GroupSex,2,Medium,SortOrder
+2022,PopulationByAge5GroupSex,2,Medium,LocID
+2022,PopulationByAge5GroupSex,2,Medium,Notes
+2022,PopulationByAge5GroupSex,2,Medium,ISO3_code
+2022,PopulationByAge5GroupSex,2,Medium,ISO2_code
+2022,PopulationByAge5GroupSex,2,Medium,SDMX_code
+2022,PopulationByAge5GroupSex,2,Medium,LocTypeID
+2022,PopulationByAge5GroupSex,2,Medium,LocTypeName
+2022,PopulationByAge5GroupSex,2,Medium,ParentID
+2022,PopulationByAge5GroupSex,2,Medium,Location
+2022,PopulationByAge5GroupSex,2,Medium,Time
+2022,PopulationByAge5GroupSex,2,Medium,MidPeriod
+2022,PopulationByAge5GroupSex,2,Medium,AgeGrp
+2022,PopulationByAge5GroupSex,2,Medium,AgeGrpStart
+2022,PopulationByAge5GroupSex,2,Medium,AgeGrpSpan
+2022,PopulationByAge5GroupSex,2,Medium,PopMale
+2022,PopulationByAge5GroupSex,2,Medium,PopFemale
+2022,PopulationByAge5GroupSex,2,Medium,PopTotal
+2022,PopulationByAge5GroupSex,3,High,SortOrder
+2022,PopulationByAge5GroupSex,3,High,LocID
+2022,PopulationByAge5GroupSex,3,High,Notes
+2022,PopulationByAge5GroupSex,3,High,ISO3_code
+2022,PopulationByAge5GroupSex,3,High,ISO2_code
+2022,PopulationByAge5GroupSex,3,High,SDMX_code
+2022,PopulationByAge5GroupSex,3,High,LocTypeID
+2022,PopulationByAge5GroupSex,3,High,LocTypeName
+2022,PopulationByAge5GroupSex,3,High,ParentID
+2022,PopulationByAge5GroupSex,3,High,Location
+2022,PopulationByAge5GroupSex,3,High,Time
+2022,PopulationByAge5GroupSex,3,High,MidPeriod
+2022,PopulationByAge5GroupSex,3,High,AgeGrp
+2022,PopulationByAge5GroupSex,3,High,AgeGrpStart
+2022,PopulationByAge5GroupSex,3,High,AgeGrpSpan
+2022,PopulationByAge5GroupSex,3,High,PopMale
+2022,PopulationByAge5GroupSex,3,High,PopFemale
+2022,PopulationByAge5GroupSex,3,High,PopTotal
+2022,PopulationByAge5GroupSex,4,Low,SortOrder
+2022,PopulationByAge5GroupSex,4,Low,LocID
+2022,PopulationByAge5GroupSex,4,Low,Notes
+2022,PopulationByAge5GroupSex,4,Low,ISO3_code
+2022,PopulationByAge5GroupSex,4,Low,ISO2_code
+2022,PopulationByAge5GroupSex,4,Low,SDMX_code
+2022,PopulationByAge5GroupSex,4,Low,LocTypeID
+2022,PopulationByAge5GroupSex,4,Low,LocTypeName
+2022,PopulationByAge5GroupSex,4,Low,ParentID
+2022,PopulationByAge5GroupSex,4,Low,Location
+2022,PopulationByAge5GroupSex,4,Low,Time
+2022,PopulationByAge5GroupSex,4,Low,MidPeriod
+2022,PopulationByAge5GroupSex,4,Low,AgeGrp
+2022,PopulationByAge5GroupSex,4,Low,AgeGrpStart
+2022,PopulationByAge5GroupSex,4,Low,AgeGrpSpan
+2022,PopulationByAge5GroupSex,4,Low,PopMale
+2022,PopulationByAge5GroupSex,4,Low,PopFemale
+2022,PopulationByAge5GroupSex,4,Low,PopTotal
+2022,PopulationByAge5GroupSex,5,Constant fertility,SortOrder
+2022,PopulationByAge5GroupSex,5,Constant fertility,LocID
+2022,PopulationByAge5GroupSex,5,Constant fertility,Notes
+2022,PopulationByAge5GroupSex,5,Constant fertility,ISO3_code
+2022,PopulationByAge5GroupSex,5,Constant fertility,ISO2_code
+2022,PopulationByAge5GroupSex,5,Constant fertility,SDMX_code
+2022,PopulationByAge5GroupSex,5,Constant fertility,LocTypeID
+2022,PopulationByAge5GroupSex,5,Constant fertility,LocTypeName
+2022,PopulationByAge5GroupSex,5,Constant fertility,ParentID
+2022,PopulationByAge5GroupSex,5,Constant fertility,Location
+2022,PopulationByAge5GroupSex,5,Constant fertility,Time
+2022,PopulationByAge5GroupSex,5,Constant fertility,MidPeriod
+2022,PopulationByAge5GroupSex,5,Constant fertility,AgeGrp
+2022,PopulationByAge5GroupSex,5,Constant fertility,AgeGrpStart
+2022,PopulationByAge5GroupSex,5,Constant fertility,AgeGrpSpan
+2022,PopulationByAge5GroupSex,5,Constant fertility,PopMale
+2022,PopulationByAge5GroupSex,5,Constant fertility,PopFemale
+2022,PopulationByAge5GroupSex,5,Constant fertility,PopTotal
+2022,PopulationByAge5GroupSex,6,Instant replacement,SortOrder
+2022,PopulationByAge5GroupSex,6,Instant replacement,LocID
+2022,PopulationByAge5GroupSex,6,Instant replacement,Notes
+2022,PopulationByAge5GroupSex,6,Instant replacement,ISO3_code
+2022,PopulationByAge5GroupSex,6,Instant replacement,ISO2_code
+2022,PopulationByAge5GroupSex,6,Instant replacement,SDMX_code
+2022,PopulationByAge5GroupSex,6,Instant replacement,LocTypeID
+2022,PopulationByAge5GroupSex,6,Instant replacement,LocTypeName
+2022,PopulationByAge5GroupSex,6,Instant replacement,ParentID
+2022,PopulationByAge5GroupSex,6,Instant replacement,Location
+2022,PopulationByAge5GroupSex,6,Instant replacement,Time
+2022,PopulationByAge5GroupSex,6,Instant replacement,MidPeriod
+2022,PopulationByAge5GroupSex,6,Instant replacement,AgeGrp
+2022,PopulationByAge5GroupSex,6,Instant replacement,AgeGrpStart
+2022,PopulationByAge5GroupSex,6,Instant replacement,AgeGrpSpan
+2022,PopulationByAge5GroupSex,6,Instant replacement,PopMale
+2022,PopulationByAge5GroupSex,6,Instant replacement,PopFemale
+2022,PopulationByAge5GroupSex,6,Instant replacement,PopTotal
+2022,PopulationByAge5GroupSex,7,Zero migration,SortOrder
+2022,PopulationByAge5GroupSex,7,Zero migration,LocID
+2022,PopulationByAge5GroupSex,7,Zero migration,Notes
+2022,PopulationByAge5GroupSex,7,Zero migration,ISO3_code
+2022,PopulationByAge5GroupSex,7,Zero migration,ISO2_code
+2022,PopulationByAge5GroupSex,7,Zero migration,SDMX_code
+2022,PopulationByAge5GroupSex,7,Zero migration,LocTypeID
+2022,PopulationByAge5GroupSex,7,Zero migration,LocTypeName
+2022,PopulationByAge5GroupSex,7,Zero migration,ParentID
+2022,PopulationByAge5GroupSex,7,Zero migration,Location
+2022,PopulationByAge5GroupSex,7,Zero migration,Time
+2022,PopulationByAge5GroupSex,7,Zero migration,MidPeriod
+2022,PopulationByAge5GroupSex,7,Zero migration,AgeGrp
+2022,PopulationByAge5GroupSex,7,Zero migration,AgeGrpStart
+2022,PopulationByAge5GroupSex,7,Zero migration,AgeGrpSpan
+2022,PopulationByAge5GroupSex,7,Zero migration,PopMale
+2022,PopulationByAge5GroupSex,7,Zero migration,PopFemale
+2022,PopulationByAge5GroupSex,7,Zero migration,PopTotal
+2022,PopulationByAge5GroupSex,8,Constant mortality,SortOrder
+2022,PopulationByAge5GroupSex,8,Constant mortality,LocID
+2022,PopulationByAge5GroupSex,8,Constant mortality,Notes
+2022,PopulationByAge5GroupSex,8,Constant mortality,ISO3_code
+2022,PopulationByAge5GroupSex,8,Constant mortality,ISO2_code
+2022,PopulationByAge5GroupSex,8,Constant mortality,SDMX_code
+2022,PopulationByAge5GroupSex,8,Constant mortality,LocTypeID
+2022,PopulationByAge5GroupSex,8,Constant mortality,LocTypeName
+2022,PopulationByAge5GroupSex,8,Constant mortality,ParentID
+2022,PopulationByAge5GroupSex,8,Constant mortality,Location
+2022,PopulationByAge5GroupSex,8,Constant mortality,Time
+2022,PopulationByAge5GroupSex,8,Constant mortality,MidPeriod
+2022,PopulationByAge5GroupSex,8,Constant mortality,AgeGrp
+2022,PopulationByAge5GroupSex,8,Constant mortality,AgeGrpStart
+2022,PopulationByAge5GroupSex,8,Constant mortality,AgeGrpSpan
+2022,PopulationByAge5GroupSex,8,Constant mortality,PopMale
+2022,PopulationByAge5GroupSex,8,Constant mortality,PopFemale
+2022,PopulationByAge5GroupSex,8,Constant mortality,PopTotal
+2022,PopulationByAge5GroupSex,9,No change,SortOrder
+2022,PopulationByAge5GroupSex,9,No change,LocID
+2022,PopulationByAge5GroupSex,9,No change,Notes
+2022,PopulationByAge5GroupSex,9,No change,ISO3_code
+2022,PopulationByAge5GroupSex,9,No change,ISO2_code
+2022,PopulationByAge5GroupSex,9,No change,SDMX_code
+2022,PopulationByAge5GroupSex,9,No change,LocTypeID
+2022,PopulationByAge5GroupSex,9,No change,LocTypeName
+2022,PopulationByAge5GroupSex,9,No change,ParentID
+2022,PopulationByAge5GroupSex,9,No change,Location
+2022,PopulationByAge5GroupSex,9,No change,Time
+2022,PopulationByAge5GroupSex,9,No change,MidPeriod
+2022,PopulationByAge5GroupSex,9,No change,AgeGrp
+2022,PopulationByAge5GroupSex,9,No change,AgeGrpStart
+2022,PopulationByAge5GroupSex,9,No change,AgeGrpSpan
+2022,PopulationByAge5GroupSex,9,No change,PopMale
+2022,PopulationByAge5GroupSex,9,No change,PopFemale
+2022,PopulationByAge5GroupSex,9,No change,PopTotal
+2022,PopulationByAge5GroupSex_Percentage,10,Momentum,SortOrder
+2022,PopulationByAge5GroupSex_Percentage,10,Momentum,LocID
+2022,PopulationByAge5GroupSex_Percentage,10,Momentum,Notes
+2022,PopulationByAge5GroupSex_Percentage,10,Momentum,ISO3_code
+2022,PopulationByAge5GroupSex_Percentage,10,Momentum,ISO2_code
+2022,PopulationByAge5GroupSex_Percentage,10,Momentum,SDMX_code
+2022,PopulationByAge5GroupSex_Percentage,10,Momentum,LocTypeID
+2022,PopulationByAge5GroupSex_Percentage,10,Momentum,LocTypeName
+2022,PopulationByAge5GroupSex_Percentage,10,Momentum,ParentID
+2022,PopulationByAge5GroupSex_Percentage,10,Momentum,Location
+2022,PopulationByAge5GroupSex_Percentage,10,Momentum,Time
+2022,PopulationByAge5GroupSex_Percentage,10,Momentum,MidPeriod
+2022,PopulationByAge5GroupSex_Percentage,10,Momentum,AgeGrp
+2022,PopulationByAge5GroupSex_Percentage,10,Momentum,AgeGrpStart
+2022,PopulationByAge5GroupSex_Percentage,10,Momentum,AgeGrpSpan
+2022,PopulationByAge5GroupSex_Percentage,10,Momentum,PopMale
+2022,PopulationByAge5GroupSex_Percentage,10,Momentum,PopFemale
+2022,PopulationByAge5GroupSex_Percentage,10,Momentum,PopTotal
+2022,PopulationByAge5GroupSex_Percentage,2,Medium,SortOrder
+2022,PopulationByAge5GroupSex_Percentage,2,Medium,LocID
+2022,PopulationByAge5GroupSex_Percentage,2,Medium,Notes
+2022,PopulationByAge5GroupSex_Percentage,2,Medium,ISO3_code
+2022,PopulationByAge5GroupSex_Percentage,2,Medium,ISO2_code
+2022,PopulationByAge5GroupSex_Percentage,2,Medium,SDMX_code
+2022,PopulationByAge5GroupSex_Percentage,2,Medium,LocTypeID
+2022,PopulationByAge5GroupSex_Percentage,2,Medium,LocTypeName
+2022,PopulationByAge5GroupSex_Percentage,2,Medium,ParentID
+2022,PopulationByAge5GroupSex_Percentage,2,Medium,Location
+2022,PopulationByAge5GroupSex_Percentage,2,Medium,Time
+2022,PopulationByAge5GroupSex_Percentage,2,Medium,MidPeriod
+2022,PopulationByAge5GroupSex_Percentage,2,Medium,AgeGrp
+2022,PopulationByAge5GroupSex_Percentage,2,Medium,AgeGrpStart
+2022,PopulationByAge5GroupSex_Percentage,2,Medium,AgeGrpSpan
+2022,PopulationByAge5GroupSex_Percentage,2,Medium,PopMale
+2022,PopulationByAge5GroupSex_Percentage,2,Medium,PopFemale
+2022,PopulationByAge5GroupSex_Percentage,2,Medium,PopTotal
+2022,PopulationByAge5GroupSex_Percentage,3,High,SortOrder
+2022,PopulationByAge5GroupSex_Percentage,3,High,LocID
+2022,PopulationByAge5GroupSex_Percentage,3,High,Notes
+2022,PopulationByAge5GroupSex_Percentage,3,High,ISO3_code
+2022,PopulationByAge5GroupSex_Percentage,3,High,ISO2_code
+2022,PopulationByAge5GroupSex_Percentage,3,High,SDMX_code
+2022,PopulationByAge5GroupSex_Percentage,3,High,LocTypeID
+2022,PopulationByAge5GroupSex_Percentage,3,High,LocTypeName
+2022,PopulationByAge5GroupSex_Percentage,3,High,ParentID
+2022,PopulationByAge5GroupSex_Percentage,3,High,Location
+2022,PopulationByAge5GroupSex_Percentage,3,High,Time
+2022,PopulationByAge5GroupSex_Percentage,3,High,MidPeriod
+2022,PopulationByAge5GroupSex_Percentage,3,High,AgeGrp
+2022,PopulationByAge5GroupSex_Percentage,3,High,AgeGrpStart
+2022,PopulationByAge5GroupSex_Percentage,3,High,AgeGrpSpan
+2022,PopulationByAge5GroupSex_Percentage,3,High,PopMale
+2022,PopulationByAge5GroupSex_Percentage,3,High,PopFemale
+2022,PopulationByAge5GroupSex_Percentage,3,High,PopTotal
+2022,PopulationByAge5GroupSex_Percentage,4,Low,SortOrder
+2022,PopulationByAge5GroupSex_Percentage,4,Low,LocID
+2022,PopulationByAge5GroupSex_Percentage,4,Low,Notes
+2022,PopulationByAge5GroupSex_Percentage,4,Low,ISO3_code
+2022,PopulationByAge5GroupSex_Percentage,4,Low,ISO2_code
+2022,PopulationByAge5GroupSex_Percentage,4,Low,SDMX_code
+2022,PopulationByAge5GroupSex_Percentage,4,Low,LocTypeID
+2022,PopulationByAge5GroupSex_Percentage,4,Low,LocTypeName
+2022,PopulationByAge5GroupSex_Percentage,4,Low,ParentID
+2022,PopulationByAge5GroupSex_Percentage,4,Low,Location
+2022,PopulationByAge5GroupSex_Percentage,4,Low,Time
+2022,PopulationByAge5GroupSex_Percentage,4,Low,MidPeriod
+2022,PopulationByAge5GroupSex_Percentage,4,Low,AgeGrp
+2022,PopulationByAge5GroupSex_Percentage,4,Low,AgeGrpStart
+2022,PopulationByAge5GroupSex_Percentage,4,Low,AgeGrpSpan
+2022,PopulationByAge5GroupSex_Percentage,4,Low,PopMale
+2022,PopulationByAge5GroupSex_Percentage,4,Low,PopFemale
+2022,PopulationByAge5GroupSex_Percentage,4,Low,PopTotal
+2022,PopulationByAge5GroupSex_Percentage,5,Constant fertility,SortOrder
+2022,PopulationByAge5GroupSex_Percentage,5,Constant fertility,LocID
+2022,PopulationByAge5GroupSex_Percentage,5,Constant fertility,Notes
+2022,PopulationByAge5GroupSex_Percentage,5,Constant fertility,ISO3_code
+2022,PopulationByAge5GroupSex_Percentage,5,Constant fertility,ISO2_code
+2022,PopulationByAge5GroupSex_Percentage,5,Constant fertility,SDMX_code
+2022,PopulationByAge5GroupSex_Percentage,5,Constant fertility,LocTypeID
+2022,PopulationByAge5GroupSex_Percentage,5,Constant fertility,LocTypeName
+2022,PopulationByAge5GroupSex_Percentage,5,Constant fertility,ParentID
+2022,PopulationByAge5GroupSex_Percentage,5,Constant fertility,Location
+2022,PopulationByAge5GroupSex_Percentage,5,Constant fertility,Time
+2022,PopulationByAge5GroupSex_Percentage,5,Constant fertility,MidPeriod
+2022,PopulationByAge5GroupSex_Percentage,5,Constant fertility,AgeGrp
+2022,PopulationByAge5GroupSex_Percentage,5,Constant fertility,AgeGrpStart
+2022,PopulationByAge5GroupSex_Percentage,5,Constant fertility,AgeGrpSpan
+2022,PopulationByAge5GroupSex_Percentage,5,Constant fertility,PopMale
+2022,PopulationByAge5GroupSex_Percentage,5,Constant fertility,PopFemale
+2022,PopulationByAge5GroupSex_Percentage,5,Constant fertility,PopTotal
+2022,PopulationByAge5GroupSex_Percentage,6,Instant replacement,SortOrder
+2022,PopulationByAge5GroupSex_Percentage,6,Instant replacement,LocID
+2022,PopulationByAge5GroupSex_Percentage,6,Instant replacement,Notes
+2022,PopulationByAge5GroupSex_Percentage,6,Instant replacement,ISO3_code
+2022,PopulationByAge5GroupSex_Percentage,6,Instant replacement,ISO2_code
+2022,PopulationByAge5GroupSex_Percentage,6,Instant replacement,SDMX_code
+2022,PopulationByAge5GroupSex_Percentage,6,Instant replacement,LocTypeID
+2022,PopulationByAge5GroupSex_Percentage,6,Instant replacement,LocTypeName
+2022,PopulationByAge5GroupSex_Percentage,6,Instant replacement,ParentID
+2022,PopulationByAge5GroupSex_Percentage,6,Instant replacement,Location
+2022,PopulationByAge5GroupSex_Percentage,6,Instant replacement,Time
+2022,PopulationByAge5GroupSex_Percentage,6,Instant replacement,MidPeriod
+2022,PopulationByAge5GroupSex_Percentage,6,Instant replacement,AgeGrp
+2022,PopulationByAge5GroupSex_Percentage,6,Instant replacement,AgeGrpStart
+2022,PopulationByAge5GroupSex_Percentage,6,Instant replacement,AgeGrpSpan
+2022,PopulationByAge5GroupSex_Percentage,6,Instant replacement,PopMale
+2022,PopulationByAge5GroupSex_Percentage,6,Instant replacement,PopFemale
+2022,PopulationByAge5GroupSex_Percentage,6,Instant replacement,PopTotal
+2022,PopulationByAge5GroupSex_Percentage,7,Zero migration,SortOrder
+2022,PopulationByAge5GroupSex_Percentage,7,Zero migration,LocID
+2022,PopulationByAge5GroupSex_Percentage,7,Zero migration,Notes
+2022,PopulationByAge5GroupSex_Percentage,7,Zero migration,ISO3_code
+2022,PopulationByAge5GroupSex_Percentage,7,Zero migration,ISO2_code
+2022,PopulationByAge5GroupSex_Percentage,7,Zero migration,SDMX_code
+2022,PopulationByAge5GroupSex_Percentage,7,Zero migration,LocTypeID
+2022,PopulationByAge5GroupSex_Percentage,7,Zero migration,LocTypeName
+2022,PopulationByAge5GroupSex_Percentage,7,Zero migration,ParentID
+2022,PopulationByAge5GroupSex_Percentage,7,Zero migration,Location
+2022,PopulationByAge5GroupSex_Percentage,7,Zero migration,Time
+2022,PopulationByAge5GroupSex_Percentage,7,Zero migration,MidPeriod
+2022,PopulationByAge5GroupSex_Percentage,7,Zero migration,AgeGrp
+2022,PopulationByAge5GroupSex_Percentage,7,Zero migration,AgeGrpStart
+2022,PopulationByAge5GroupSex_Percentage,7,Zero migration,AgeGrpSpan
+2022,PopulationByAge5GroupSex_Percentage,7,Zero migration,PopMale
+2022,PopulationByAge5GroupSex_Percentage,7,Zero migration,PopFemale
+2022,PopulationByAge5GroupSex_Percentage,7,Zero migration,PopTotal
+2022,PopulationByAge5GroupSex_Percentage,8,Constant mortality,SortOrder
+2022,PopulationByAge5GroupSex_Percentage,8,Constant mortality,LocID
+2022,PopulationByAge5GroupSex_Percentage,8,Constant mortality,Notes
+2022,PopulationByAge5GroupSex_Percentage,8,Constant mortality,ISO3_code
+2022,PopulationByAge5GroupSex_Percentage,8,Constant mortality,ISO2_code
+2022,PopulationByAge5GroupSex_Percentage,8,Constant mortality,SDMX_code
+2022,PopulationByAge5GroupSex_Percentage,8,Constant mortality,LocTypeID
+2022,PopulationByAge5GroupSex_Percentage,8,Constant mortality,LocTypeName
+2022,PopulationByAge5GroupSex_Percentage,8,Constant mortality,ParentID
+2022,PopulationByAge5GroupSex_Percentage,8,Constant mortality,Location
+2022,PopulationByAge5GroupSex_Percentage,8,Constant mortality,Time
+2022,PopulationByAge5GroupSex_Percentage,8,Constant mortality,MidPeriod
+2022,PopulationByAge5GroupSex_Percentage,8,Constant mortality,AgeGrp
+2022,PopulationByAge5GroupSex_Percentage,8,Constant mortality,AgeGrpStart
+2022,PopulationByAge5GroupSex_Percentage,8,Constant mortality,AgeGrpSpan
+2022,PopulationByAge5GroupSex_Percentage,8,Constant mortality,PopMale
+2022,PopulationByAge5GroupSex_Percentage,8,Constant mortality,PopFemale
+2022,PopulationByAge5GroupSex_Percentage,8,Constant mortality,PopTotal
+2022,PopulationByAge5GroupSex_Percentage,9,No change,SortOrder
+2022,PopulationByAge5GroupSex_Percentage,9,No change,LocID
+2022,PopulationByAge5GroupSex_Percentage,9,No change,Notes
+2022,PopulationByAge5GroupSex_Percentage,9,No change,ISO3_code
+2022,PopulationByAge5GroupSex_Percentage,9,No change,ISO2_code
+2022,PopulationByAge5GroupSex_Percentage,9,No change,SDMX_code
+2022,PopulationByAge5GroupSex_Percentage,9,No change,LocTypeID
+2022,PopulationByAge5GroupSex_Percentage,9,No change,LocTypeName
+2022,PopulationByAge5GroupSex_Percentage,9,No change,ParentID
+2022,PopulationByAge5GroupSex_Percentage,9,No change,Location
+2022,PopulationByAge5GroupSex_Percentage,9,No change,Time
+2022,PopulationByAge5GroupSex_Percentage,9,No change,MidPeriod
+2022,PopulationByAge5GroupSex_Percentage,9,No change,AgeGrp
+2022,PopulationByAge5GroupSex_Percentage,9,No change,AgeGrpStart
+2022,PopulationByAge5GroupSex_Percentage,9,No change,AgeGrpSpan
+2022,PopulationByAge5GroupSex_Percentage,9,No change,PopMale
+2022,PopulationByAge5GroupSex_Percentage,9,No change,PopFemale
+2022,PopulationByAge5GroupSex_Percentage,9,No change,PopTotal
+2022,PopulationBySingleAgeSex,10,Momentum,SortOrder
+2022,PopulationBySingleAgeSex,10,Momentum,LocID
+2022,PopulationBySingleAgeSex,10,Momentum,Notes
+2022,PopulationBySingleAgeSex,10,Momentum,ISO3_code
+2022,PopulationBySingleAgeSex,10,Momentum,ISO2_code
+2022,PopulationBySingleAgeSex,10,Momentum,SDMX_code
+2022,PopulationBySingleAgeSex,10,Momentum,LocTypeID
+2022,PopulationBySingleAgeSex,10,Momentum,LocTypeName
+2022,PopulationBySingleAgeSex,10,Momentum,ParentID
+2022,PopulationBySingleAgeSex,10,Momentum,Location
+2022,PopulationBySingleAgeSex,10,Momentum,Time
+2022,PopulationBySingleAgeSex,10,Momentum,MidPeriod
+2022,PopulationBySingleAgeSex,10,Momentum,AgeGrp
+2022,PopulationBySingleAgeSex,10,Momentum,AgeGrpStart
+2022,PopulationBySingleAgeSex,10,Momentum,AgeGrpSpan
+2022,PopulationBySingleAgeSex,10,Momentum,PopMale
+2022,PopulationBySingleAgeSex,10,Momentum,PopFemale
+2022,PopulationBySingleAgeSex,10,Momentum,PopTotal
+2022,PopulationBySingleAgeSex,16,Instant replacement zero migration,SortOrder
+2022,PopulationBySingleAgeSex,16,Instant replacement zero migration,LocID
+2022,PopulationBySingleAgeSex,16,Instant replacement zero migration,Notes
+2022,PopulationBySingleAgeSex,16,Instant replacement zero migration,ISO3_code
+2022,PopulationBySingleAgeSex,16,Instant replacement zero migration,ISO2_code
+2022,PopulationBySingleAgeSex,16,Instant replacement zero migration,SDMX_code
+2022,PopulationBySingleAgeSex,16,Instant replacement zero migration,LocTypeID
+2022,PopulationBySingleAgeSex,16,Instant replacement zero migration,LocTypeName
+2022,PopulationBySingleAgeSex,16,Instant replacement zero migration,ParentID
+2022,PopulationBySingleAgeSex,16,Instant replacement zero migration,Location
+2022,PopulationBySingleAgeSex,16,Instant replacement zero migration,Time
+2022,PopulationBySingleAgeSex,16,Instant replacement zero migration,MidPeriod
+2022,PopulationBySingleAgeSex,16,Instant replacement zero migration,AgeGrp
+2022,PopulationBySingleAgeSex,16,Instant replacement zero migration,AgeGrpStart
+2022,PopulationBySingleAgeSex,16,Instant replacement zero migration,AgeGrpSpan
+2022,PopulationBySingleAgeSex,16,Instant replacement zero migration,PopMale
+2022,PopulationBySingleAgeSex,16,Instant replacement zero migration,PopFemale
+2022,PopulationBySingleAgeSex,16,Instant replacement zero migration,PopTotal
+2022,PopulationBySingleAgeSex,2,Medium,SortOrder
+2022,PopulationBySingleAgeSex,2,Medium,LocID
+2022,PopulationBySingleAgeSex,2,Medium,Notes
+2022,PopulationBySingleAgeSex,2,Medium,ISO3_code
+2022,PopulationBySingleAgeSex,2,Medium,ISO2_code
+2022,PopulationBySingleAgeSex,2,Medium,SDMX_code
+2022,PopulationBySingleAgeSex,2,Medium,LocTypeID
+2022,PopulationBySingleAgeSex,2,Medium,LocTypeName
+2022,PopulationBySingleAgeSex,2,Medium,ParentID
+2022,PopulationBySingleAgeSex,2,Medium,Location
+2022,PopulationBySingleAgeSex,2,Medium,Time
+2022,PopulationBySingleAgeSex,2,Medium,MidPeriod
+2022,PopulationBySingleAgeSex,2,Medium,AgeGrp
+2022,PopulationBySingleAgeSex,2,Medium,AgeGrpStart
+2022,PopulationBySingleAgeSex,2,Medium,AgeGrpSpan
+2022,PopulationBySingleAgeSex,2,Medium,PopMale
+2022,PopulationBySingleAgeSex,2,Medium,PopFemale
+2022,PopulationBySingleAgeSex,2,Medium,PopTotal
+2022,PopulationBySingleAgeSex,3,High,SortOrder
+2022,PopulationBySingleAgeSex,3,High,LocID
+2022,PopulationBySingleAgeSex,3,High,Notes
+2022,PopulationBySingleAgeSex,3,High,ISO3_code
+2022,PopulationBySingleAgeSex,3,High,ISO2_code
+2022,PopulationBySingleAgeSex,3,High,SDMX_code
+2022,PopulationBySingleAgeSex,3,High,LocTypeID
+2022,PopulationBySingleAgeSex,3,High,LocTypeName
+2022,PopulationBySingleAgeSex,3,High,ParentID
+2022,PopulationBySingleAgeSex,3,High,Location
+2022,PopulationBySingleAgeSex,3,High,Time
+2022,PopulationBySingleAgeSex,3,High,MidPeriod
+2022,PopulationBySingleAgeSex,3,High,AgeGrp
+2022,PopulationBySingleAgeSex,3,High,AgeGrpStart
+2022,PopulationBySingleAgeSex,3,High,AgeGrpSpan
+2022,PopulationBySingleAgeSex,3,High,PopMale
+2022,PopulationBySingleAgeSex,3,High,PopFemale
+2022,PopulationBySingleAgeSex,3,High,PopTotal
+2022,PopulationBySingleAgeSex,4,Low,SortOrder
+2022,PopulationBySingleAgeSex,4,Low,LocID
+2022,PopulationBySingleAgeSex,4,Low,Notes
+2022,PopulationBySingleAgeSex,4,Low,ISO3_code
+2022,PopulationBySingleAgeSex,4,Low,ISO2_code
+2022,PopulationBySingleAgeSex,4,Low,SDMX_code
+2022,PopulationBySingleAgeSex,4,Low,LocTypeID
+2022,PopulationBySingleAgeSex,4,Low,LocTypeName
+2022,PopulationBySingleAgeSex,4,Low,ParentID
+2022,PopulationBySingleAgeSex,4,Low,Location
+2022,PopulationBySingleAgeSex,4,Low,Time
+2022,PopulationBySingleAgeSex,4,Low,MidPeriod
+2022,PopulationBySingleAgeSex,4,Low,AgeGrp
+2022,PopulationBySingleAgeSex,4,Low,AgeGrpStart
+2022,PopulationBySingleAgeSex,4,Low,AgeGrpSpan
+2022,PopulationBySingleAgeSex,4,Low,PopMale
+2022,PopulationBySingleAgeSex,4,Low,PopFemale
+2022,PopulationBySingleAgeSex,4,Low,PopTotal
+2022,PopulationBySingleAgeSex,5,Constant fertility,SortOrder
+2022,PopulationBySingleAgeSex,5,Constant fertility,LocID
+2022,PopulationBySingleAgeSex,5,Constant fertility,Notes
+2022,PopulationBySingleAgeSex,5,Constant fertility,ISO3_code
+2022,PopulationBySingleAgeSex,5,Constant fertility,ISO2_code
+2022,PopulationBySingleAgeSex,5,Constant fertility,SDMX_code
+2022,PopulationBySingleAgeSex,5,Constant fertility,LocTypeID
+2022,PopulationBySingleAgeSex,5,Constant fertility,LocTypeName
+2022,PopulationBySingleAgeSex,5,Constant fertility,ParentID
+2022,PopulationBySingleAgeSex,5,Constant fertility,Location
+2022,PopulationBySingleAgeSex,5,Constant fertility,Time
+2022,PopulationBySingleAgeSex,5,Constant fertility,MidPeriod
+2022,PopulationBySingleAgeSex,5,Constant fertility,AgeGrp
+2022,PopulationBySingleAgeSex,5,Constant fertility,AgeGrpStart
+2022,PopulationBySingleAgeSex,5,Constant fertility,AgeGrpSpan
+2022,PopulationBySingleAgeSex,5,Constant fertility,PopMale
+2022,PopulationBySingleAgeSex,5,Constant fertility,PopFemale
+2022,PopulationBySingleAgeSex,5,Constant fertility,PopTotal
+2022,PopulationBySingleAgeSex,6,Instant replacement,SortOrder
+2022,PopulationBySingleAgeSex,6,Instant replacement,LocID
+2022,PopulationBySingleAgeSex,6,Instant replacement,Notes
+2022,PopulationBySingleAgeSex,6,Instant replacement,ISO3_code
+2022,PopulationBySingleAgeSex,6,Instant replacement,ISO2_code
+2022,PopulationBySingleAgeSex,6,Instant replacement,SDMX_code
+2022,PopulationBySingleAgeSex,6,Instant replacement,LocTypeID
+2022,PopulationBySingleAgeSex,6,Instant replacement,LocTypeName
+2022,PopulationBySingleAgeSex,6,Instant replacement,ParentID
+2022,PopulationBySingleAgeSex,6,Instant replacement,Location
+2022,PopulationBySingleAgeSex,6,Instant replacement,Time
+2022,PopulationBySingleAgeSex,6,Instant replacement,MidPeriod
+2022,PopulationBySingleAgeSex,6,Instant replacement,AgeGrp
+2022,PopulationBySingleAgeSex,6,Instant replacement,AgeGrpStart
+2022,PopulationBySingleAgeSex,6,Instant replacement,AgeGrpSpan
+2022,PopulationBySingleAgeSex,6,Instant replacement,PopMale
+2022,PopulationBySingleAgeSex,6,Instant replacement,PopFemale
+2022,PopulationBySingleAgeSex,6,Instant replacement,PopTotal
+2022,PopulationBySingleAgeSex,7,Zero migration,SortOrder
+2022,PopulationBySingleAgeSex,7,Zero migration,LocID
+2022,PopulationBySingleAgeSex,7,Zero migration,Notes
+2022,PopulationBySingleAgeSex,7,Zero migration,ISO3_code
+2022,PopulationBySingleAgeSex,7,Zero migration,ISO2_code
+2022,PopulationBySingleAgeSex,7,Zero migration,SDMX_code
+2022,PopulationBySingleAgeSex,7,Zero migration,LocTypeID
+2022,PopulationBySingleAgeSex,7,Zero migration,LocTypeName
+2022,PopulationBySingleAgeSex,7,Zero migration,ParentID
+2022,PopulationBySingleAgeSex,7,Zero migration,Location
+2022,PopulationBySingleAgeSex,7,Zero migration,Time
+2022,PopulationBySingleAgeSex,7,Zero migration,MidPeriod
+2022,PopulationBySingleAgeSex,7,Zero migration,AgeGrp
+2022,PopulationBySingleAgeSex,7,Zero migration,AgeGrpStart
+2022,PopulationBySingleAgeSex,7,Zero migration,AgeGrpSpan
+2022,PopulationBySingleAgeSex,7,Zero migration,PopMale
+2022,PopulationBySingleAgeSex,7,Zero migration,PopFemale
+2022,PopulationBySingleAgeSex,7,Zero migration,PopTotal
+2022,PopulationBySingleAgeSex,8,Constant mortality,SortOrder
+2022,PopulationBySingleAgeSex,8,Constant mortality,LocID
+2022,PopulationBySingleAgeSex,8,Constant mortality,Notes
+2022,PopulationBySingleAgeSex,8,Constant mortality,ISO3_code
+2022,PopulationBySingleAgeSex,8,Constant mortality,ISO2_code
+2022,PopulationBySingleAgeSex,8,Constant mortality,SDMX_code
+2022,PopulationBySingleAgeSex,8,Constant mortality,LocTypeID
+2022,PopulationBySingleAgeSex,8,Constant mortality,LocTypeName
+2022,PopulationBySingleAgeSex,8,Constant mortality,ParentID
+2022,PopulationBySingleAgeSex,8,Constant mortality,Location
+2022,PopulationBySingleAgeSex,8,Constant mortality,Time
+2022,PopulationBySingleAgeSex,8,Constant mortality,MidPeriod
+2022,PopulationBySingleAgeSex,8,Constant mortality,AgeGrp
+2022,PopulationBySingleAgeSex,8,Constant mortality,AgeGrpStart
+2022,PopulationBySingleAgeSex,8,Constant mortality,AgeGrpSpan
+2022,PopulationBySingleAgeSex,8,Constant mortality,PopMale
+2022,PopulationBySingleAgeSex,8,Constant mortality,PopFemale
+2022,PopulationBySingleAgeSex,8,Constant mortality,PopTotal
+2022,PopulationBySingleAgeSex,9,No change,SortOrder
+2022,PopulationBySingleAgeSex,9,No change,LocID
+2022,PopulationBySingleAgeSex,9,No change,Notes
+2022,PopulationBySingleAgeSex,9,No change,ISO3_code
+2022,PopulationBySingleAgeSex,9,No change,ISO2_code
+2022,PopulationBySingleAgeSex,9,No change,SDMX_code
+2022,PopulationBySingleAgeSex,9,No change,LocTypeID
+2022,PopulationBySingleAgeSex,9,No change,LocTypeName
+2022,PopulationBySingleAgeSex,9,No change,ParentID
+2022,PopulationBySingleAgeSex,9,No change,Location
+2022,PopulationBySingleAgeSex,9,No change,Time
+2022,PopulationBySingleAgeSex,9,No change,MidPeriod
+2022,PopulationBySingleAgeSex,9,No change,AgeGrp
+2022,PopulationBySingleAgeSex,9,No change,AgeGrpStart
+2022,PopulationBySingleAgeSex,9,No change,AgeGrpSpan
+2022,PopulationBySingleAgeSex,9,No change,PopMale
+2022,PopulationBySingleAgeSex,9,No change,PopFemale
+2022,PopulationBySingleAgeSex,9,No change,PopTotal
+2022,PopulationBySingleAgeSex_Percentage,2,Medium,SortOrder
+2022,PopulationBySingleAgeSex_Percentage,2,Medium,LocID
+2022,PopulationBySingleAgeSex_Percentage,2,Medium,Notes
+2022,PopulationBySingleAgeSex_Percentage,2,Medium,ISO3_code
+2022,PopulationBySingleAgeSex_Percentage,2,Medium,ISO2_code
+2022,PopulationBySingleAgeSex_Percentage,2,Medium,SDMX_code
+2022,PopulationBySingleAgeSex_Percentage,2,Medium,LocTypeID
+2022,PopulationBySingleAgeSex_Percentage,2,Medium,LocTypeName
+2022,PopulationBySingleAgeSex_Percentage,2,Medium,ParentID
+2022,PopulationBySingleAgeSex_Percentage,2,Medium,Location
+2022,PopulationBySingleAgeSex_Percentage,2,Medium,Time
+2022,PopulationBySingleAgeSex_Percentage,2,Medium,MidPeriod
+2022,PopulationBySingleAgeSex_Percentage,2,Medium,AgeGrp
+2022,PopulationBySingleAgeSex_Percentage,2,Medium,AgeGrpStart
+2022,PopulationBySingleAgeSex_Percentage,2,Medium,AgeGrpSpan
+2022,PopulationBySingleAgeSex_Percentage,2,Medium,PopMale
+2022,PopulationBySingleAgeSex_Percentage,2,Medium,PopFemale
+2022,PopulationBySingleAgeSex_Percentage,2,Medium,PopTotal
+2022,PopulationExposureByAge5GroupSex,10,Momentum,SortOrder
+2022,PopulationExposureByAge5GroupSex,10,Momentum,LocID
+2022,PopulationExposureByAge5GroupSex,10,Momentum,Notes
+2022,PopulationExposureByAge5GroupSex,10,Momentum,ISO3_code
+2022,PopulationExposureByAge5GroupSex,10,Momentum,ISO2_code
+2022,PopulationExposureByAge5GroupSex,10,Momentum,SDMX_code
+2022,PopulationExposureByAge5GroupSex,10,Momentum,LocTypeID
+2022,PopulationExposureByAge5GroupSex,10,Momentum,LocTypeName
+2022,PopulationExposureByAge5GroupSex,10,Momentum,ParentID
+2022,PopulationExposureByAge5GroupSex,10,Momentum,Location
+2022,PopulationExposureByAge5GroupSex,10,Momentum,Time
+2022,PopulationExposureByAge5GroupSex,10,Momentum,MidPeriod
+2022,PopulationExposureByAge5GroupSex,10,Momentum,AgeGrp
+2022,PopulationExposureByAge5GroupSex,10,Momentum,AgeGrpStart
+2022,PopulationExposureByAge5GroupSex,10,Momentum,AgeGrpSpan
+2022,PopulationExposureByAge5GroupSex,10,Momentum,PopMale
+2022,PopulationExposureByAge5GroupSex,10,Momentum,PopFemale
+2022,PopulationExposureByAge5GroupSex,10,Momentum,PopTotal
+2022,PopulationExposureByAge5GroupSex,2,Medium,SortOrder
+2022,PopulationExposureByAge5GroupSex,2,Medium,LocID
+2022,PopulationExposureByAge5GroupSex,2,Medium,Notes
+2022,PopulationExposureByAge5GroupSex,2,Medium,ISO3_code
+2022,PopulationExposureByAge5GroupSex,2,Medium,ISO2_code
+2022,PopulationExposureByAge5GroupSex,2,Medium,SDMX_code
+2022,PopulationExposureByAge5GroupSex,2,Medium,LocTypeID
+2022,PopulationExposureByAge5GroupSex,2,Medium,LocTypeName
+2022,PopulationExposureByAge5GroupSex,2,Medium,ParentID
+2022,PopulationExposureByAge5GroupSex,2,Medium,Location
+2022,PopulationExposureByAge5GroupSex,2,Medium,Time
+2022,PopulationExposureByAge5GroupSex,2,Medium,MidPeriod
+2022,PopulationExposureByAge5GroupSex,2,Medium,AgeGrp
+2022,PopulationExposureByAge5GroupSex,2,Medium,AgeGrpStart
+2022,PopulationExposureByAge5GroupSex,2,Medium,AgeGrpSpan
+2022,PopulationExposureByAge5GroupSex,2,Medium,PopMale
+2022,PopulationExposureByAge5GroupSex,2,Medium,PopFemale
+2022,PopulationExposureByAge5GroupSex,2,Medium,PopTotal
+2022,PopulationExposureByAge5GroupSex,3,High,SortOrder
+2022,PopulationExposureByAge5GroupSex,3,High,LocID
+2022,PopulationExposureByAge5GroupSex,3,High,Notes
+2022,PopulationExposureByAge5GroupSex,3,High,ISO3_code
+2022,PopulationExposureByAge5GroupSex,3,High,ISO2_code
+2022,PopulationExposureByAge5GroupSex,3,High,SDMX_code
+2022,PopulationExposureByAge5GroupSex,3,High,LocTypeID
+2022,PopulationExposureByAge5GroupSex,3,High,LocTypeName
+2022,PopulationExposureByAge5GroupSex,3,High,ParentID
+2022,PopulationExposureByAge5GroupSex,3,High,Location
+2022,PopulationExposureByAge5GroupSex,3,High,Time
+2022,PopulationExposureByAge5GroupSex,3,High,MidPeriod
+2022,PopulationExposureByAge5GroupSex,3,High,AgeGrp
+2022,PopulationExposureByAge5GroupSex,3,High,AgeGrpStart
+2022,PopulationExposureByAge5GroupSex,3,High,AgeGrpSpan
+2022,PopulationExposureByAge5GroupSex,3,High,PopMale
+2022,PopulationExposureByAge5GroupSex,3,High,PopFemale
+2022,PopulationExposureByAge5GroupSex,3,High,PopTotal
+2022,PopulationExposureByAge5GroupSex,4,Low,SortOrder
+2022,PopulationExposureByAge5GroupSex,4,Low,LocID
+2022,PopulationExposureByAge5GroupSex,4,Low,Notes
+2022,PopulationExposureByAge5GroupSex,4,Low,ISO3_code
+2022,PopulationExposureByAge5GroupSex,4,Low,ISO2_code
+2022,PopulationExposureByAge5GroupSex,4,Low,SDMX_code
+2022,PopulationExposureByAge5GroupSex,4,Low,LocTypeID
+2022,PopulationExposureByAge5GroupSex,4,Low,LocTypeName
+2022,PopulationExposureByAge5GroupSex,4,Low,ParentID
+2022,PopulationExposureByAge5GroupSex,4,Low,Location
+2022,PopulationExposureByAge5GroupSex,4,Low,Time
+2022,PopulationExposureByAge5GroupSex,4,Low,MidPeriod
+2022,PopulationExposureByAge5GroupSex,4,Low,AgeGrp
+2022,PopulationExposureByAge5GroupSex,4,Low,AgeGrpStart
+2022,PopulationExposureByAge5GroupSex,4,Low,AgeGrpSpan
+2022,PopulationExposureByAge5GroupSex,4,Low,PopMale
+2022,PopulationExposureByAge5GroupSex,4,Low,PopFemale
+2022,PopulationExposureByAge5GroupSex,4,Low,PopTotal
+2022,PopulationExposureByAge5GroupSex,5,Constant fertility,SortOrder
+2022,PopulationExposureByAge5GroupSex,5,Constant fertility,LocID
+2022,PopulationExposureByAge5GroupSex,5,Constant fertility,Notes
+2022,PopulationExposureByAge5GroupSex,5,Constant fertility,ISO3_code
+2022,PopulationExposureByAge5GroupSex,5,Constant fertility,ISO2_code
+2022,PopulationExposureByAge5GroupSex,5,Constant fertility,SDMX_code
+2022,PopulationExposureByAge5GroupSex,5,Constant fertility,LocTypeID
+2022,PopulationExposureByAge5GroupSex,5,Constant fertility,LocTypeName
+2022,PopulationExposureByAge5GroupSex,5,Constant fertility,ParentID
+2022,PopulationExposureByAge5GroupSex,5,Constant fertility,Location
+2022,PopulationExposureByAge5GroupSex,5,Constant fertility,Time
+2022,PopulationExposureByAge5GroupSex,5,Constant fertility,MidPeriod
+2022,PopulationExposureByAge5GroupSex,5,Constant fertility,AgeGrp
+2022,PopulationExposureByAge5GroupSex,5,Constant fertility,AgeGrpStart
+2022,PopulationExposureByAge5GroupSex,5,Constant fertility,AgeGrpSpan
+2022,PopulationExposureByAge5GroupSex,5,Constant fertility,PopMale
+2022,PopulationExposureByAge5GroupSex,5,Constant fertility,PopFemale
+2022,PopulationExposureByAge5GroupSex,5,Constant fertility,PopTotal
+2022,PopulationExposureByAge5GroupSex,6,Instant replacement,SortOrder
+2022,PopulationExposureByAge5GroupSex,6,Instant replacement,LocID
+2022,PopulationExposureByAge5GroupSex,6,Instant replacement,Notes
+2022,PopulationExposureByAge5GroupSex,6,Instant replacement,ISO3_code
+2022,PopulationExposureByAge5GroupSex,6,Instant replacement,ISO2_code
+2022,PopulationExposureByAge5GroupSex,6,Instant replacement,SDMX_code
+2022,PopulationExposureByAge5GroupSex,6,Instant replacement,LocTypeID
+2022,PopulationExposureByAge5GroupSex,6,Instant replacement,LocTypeName
+2022,PopulationExposureByAge5GroupSex,6,Instant replacement,ParentID
+2022,PopulationExposureByAge5GroupSex,6,Instant replacement,Location
+2022,PopulationExposureByAge5GroupSex,6,Instant replacement,Time
+2022,PopulationExposureByAge5GroupSex,6,Instant replacement,MidPeriod
+2022,PopulationExposureByAge5GroupSex,6,Instant replacement,AgeGrp
+2022,PopulationExposureByAge5GroupSex,6,Instant replacement,AgeGrpStart
+2022,PopulationExposureByAge5GroupSex,6,Instant replacement,AgeGrpSpan
+2022,PopulationExposureByAge5GroupSex,6,Instant replacement,PopMale
+2022,PopulationExposureByAge5GroupSex,6,Instant replacement,PopFemale
+2022,PopulationExposureByAge5GroupSex,6,Instant replacement,PopTotal
+2022,PopulationExposureByAge5GroupSex,7,Zero migration,SortOrder
+2022,PopulationExposureByAge5GroupSex,7,Zero migration,LocID
+2022,PopulationExposureByAge5GroupSex,7,Zero migration,Notes
+2022,PopulationExposureByAge5GroupSex,7,Zero migration,ISO3_code
+2022,PopulationExposureByAge5GroupSex,7,Zero migration,ISO2_code
+2022,PopulationExposureByAge5GroupSex,7,Zero migration,SDMX_code
+2022,PopulationExposureByAge5GroupSex,7,Zero migration,LocTypeID
+2022,PopulationExposureByAge5GroupSex,7,Zero migration,LocTypeName
+2022,PopulationExposureByAge5GroupSex,7,Zero migration,ParentID
+2022,PopulationExposureByAge5GroupSex,7,Zero migration,Location
+2022,PopulationExposureByAge5GroupSex,7,Zero migration,Time
+2022,PopulationExposureByAge5GroupSex,7,Zero migration,MidPeriod
+2022,PopulationExposureByAge5GroupSex,7,Zero migration,AgeGrp
+2022,PopulationExposureByAge5GroupSex,7,Zero migration,AgeGrpStart
+2022,PopulationExposureByAge5GroupSex,7,Zero migration,AgeGrpSpan
+2022,PopulationExposureByAge5GroupSex,7,Zero migration,PopMale
+2022,PopulationExposureByAge5GroupSex,7,Zero migration,PopFemale
+2022,PopulationExposureByAge5GroupSex,7,Zero migration,PopTotal
+2022,PopulationExposureByAge5GroupSex,8,Constant mortality,SortOrder
+2022,PopulationExposureByAge5GroupSex,8,Constant mortality,LocID
+2022,PopulationExposureByAge5GroupSex,8,Constant mortality,Notes
+2022,PopulationExposureByAge5GroupSex,8,Constant mortality,ISO3_code
+2022,PopulationExposureByAge5GroupSex,8,Constant mortality,ISO2_code
+2022,PopulationExposureByAge5GroupSex,8,Constant mortality,SDMX_code
+2022,PopulationExposureByAge5GroupSex,8,Constant mortality,LocTypeID
+2022,PopulationExposureByAge5GroupSex,8,Constant mortality,LocTypeName
+2022,PopulationExposureByAge5GroupSex,8,Constant mortality,ParentID
+2022,PopulationExposureByAge5GroupSex,8,Constant mortality,Location
+2022,PopulationExposureByAge5GroupSex,8,Constant mortality,Time
+2022,PopulationExposureByAge5GroupSex,8,Constant mortality,MidPeriod
+2022,PopulationExposureByAge5GroupSex,8,Constant mortality,AgeGrp
+2022,PopulationExposureByAge5GroupSex,8,Constant mortality,AgeGrpStart
+2022,PopulationExposureByAge5GroupSex,8,Constant mortality,AgeGrpSpan
+2022,PopulationExposureByAge5GroupSex,8,Constant mortality,PopMale
+2022,PopulationExposureByAge5GroupSex,8,Constant mortality,PopFemale
+2022,PopulationExposureByAge5GroupSex,8,Constant mortality,PopTotal
+2022,PopulationExposureByAge5GroupSex,9,No change,SortOrder
+2022,PopulationExposureByAge5GroupSex,9,No change,LocID
+2022,PopulationExposureByAge5GroupSex,9,No change,Notes
+2022,PopulationExposureByAge5GroupSex,9,No change,ISO3_code
+2022,PopulationExposureByAge5GroupSex,9,No change,ISO2_code
+2022,PopulationExposureByAge5GroupSex,9,No change,SDMX_code
+2022,PopulationExposureByAge5GroupSex,9,No change,LocTypeID
+2022,PopulationExposureByAge5GroupSex,9,No change,LocTypeName
+2022,PopulationExposureByAge5GroupSex,9,No change,ParentID
+2022,PopulationExposureByAge5GroupSex,9,No change,Location
+2022,PopulationExposureByAge5GroupSex,9,No change,Time
+2022,PopulationExposureByAge5GroupSex,9,No change,MidPeriod
+2022,PopulationExposureByAge5GroupSex,9,No change,AgeGrp
+2022,PopulationExposureByAge5GroupSex,9,No change,AgeGrpStart
+2022,PopulationExposureByAge5GroupSex,9,No change,AgeGrpSpan
+2022,PopulationExposureByAge5GroupSex,9,No change,PopMale
+2022,PopulationExposureByAge5GroupSex,9,No change,PopFemale
+2022,PopulationExposureByAge5GroupSex,9,No change,PopTotal
+2022,PopulationExposureBySingleAgeSex,2,Medium,SortOrder
+2022,PopulationExposureBySingleAgeSex,2,Medium,LocID
+2022,PopulationExposureBySingleAgeSex,2,Medium,Notes
+2022,PopulationExposureBySingleAgeSex,2,Medium,ISO3_code
+2022,PopulationExposureBySingleAgeSex,2,Medium,ISO2_code
+2022,PopulationExposureBySingleAgeSex,2,Medium,SDMX_code
+2022,PopulationExposureBySingleAgeSex,2,Medium,LocTypeID
+2022,PopulationExposureBySingleAgeSex,2,Medium,LocTypeName
+2022,PopulationExposureBySingleAgeSex,2,Medium,ParentID
+2022,PopulationExposureBySingleAgeSex,2,Medium,Location
+2022,PopulationExposureBySingleAgeSex,2,Medium,Time
+2022,PopulationExposureBySingleAgeSex,2,Medium,MidPeriod
+2022,PopulationExposureBySingleAgeSex,2,Medium,AgeGrp
+2022,PopulationExposureBySingleAgeSex,2,Medium,AgeGrpStart
+2022,PopulationExposureBySingleAgeSex,2,Medium,AgeGrpSpan
+2022,PopulationExposureBySingleAgeSex,2,Medium,PopMale
+2022,PopulationExposureBySingleAgeSex,2,Medium,PopFemale
+2022,PopulationExposureBySingleAgeSex,2,Medium,PopTotal
+2022,TotalPopulationBySex,10,Momentum,SortOrder
+2022,TotalPopulationBySex,10,Momentum,LocID
+2022,TotalPopulationBySex,10,Momentum,Notes
+2022,TotalPopulationBySex,10,Momentum,ISO3_code
+2022,TotalPopulationBySex,10,Momentum,ISO2_code
+2022,TotalPopulationBySex,10,Momentum,SDMX_code
+2022,TotalPopulationBySex,10,Momentum,LocTypeID
+2022,TotalPopulationBySex,10,Momentum,LocTypeName
+2022,TotalPopulationBySex,10,Momentum,ParentID
+2022,TotalPopulationBySex,10,Momentum,Location
+2022,TotalPopulationBySex,10,Momentum,Time
+2022,TotalPopulationBySex,10,Momentum,MidPeriod
+2022,TotalPopulationBySex,10,Momentum,PopMale
+2022,TotalPopulationBySex,10,Momentum,PopFemale
+2022,TotalPopulationBySex,10,Momentum,PopTotal
+2022,TotalPopulationBySex,10,Momentum,PopDensity
+2022,TotalPopulationBySex,2,Medium,SortOrder
+2022,TotalPopulationBySex,2,Medium,LocID
+2022,TotalPopulationBySex,2,Medium,Notes
+2022,TotalPopulationBySex,2,Medium,ISO3_code
+2022,TotalPopulationBySex,2,Medium,ISO2_code
+2022,TotalPopulationBySex,2,Medium,SDMX_code
+2022,TotalPopulationBySex,2,Medium,LocTypeID
+2022,TotalPopulationBySex,2,Medium,LocTypeName
+2022,TotalPopulationBySex,2,Medium,ParentID
+2022,TotalPopulationBySex,2,Medium,Location
+2022,TotalPopulationBySex,2,Medium,Time
+2022,TotalPopulationBySex,2,Medium,MidPeriod
+2022,TotalPopulationBySex,2,Medium,PopMale
+2022,TotalPopulationBySex,2,Medium,PopFemale
+2022,TotalPopulationBySex,2,Medium,PopTotal
+2022,TotalPopulationBySex,2,Medium,PopDensity
+2022,TotalPopulationBySex,202,Median PI,SortOrder
+2022,TotalPopulationBySex,202,Median PI,LocID
+2022,TotalPopulationBySex,202,Median PI,Notes
+2022,TotalPopulationBySex,202,Median PI,ISO3_code
+2022,TotalPopulationBySex,202,Median PI,ISO2_code
+2022,TotalPopulationBySex,202,Median PI,SDMX_code
+2022,TotalPopulationBySex,202,Median PI,LocTypeID
+2022,TotalPopulationBySex,202,Median PI,LocTypeName
+2022,TotalPopulationBySex,202,Median PI,ParentID
+2022,TotalPopulationBySex,202,Median PI,Location
+2022,TotalPopulationBySex,202,Median PI,Time
+2022,TotalPopulationBySex,202,Median PI,MidPeriod
+2022,TotalPopulationBySex,202,Median PI,PopMale
+2022,TotalPopulationBySex,202,Median PI,PopFemale
+2022,TotalPopulationBySex,202,Median PI,PopTotal
+2022,TotalPopulationBySex,202,Median PI,PopDensity
+2022,TotalPopulationBySex,203,Upper 80 PI,SortOrder
+2022,TotalPopulationBySex,203,Upper 80 PI,LocID
+2022,TotalPopulationBySex,203,Upper 80 PI,Notes
+2022,TotalPopulationBySex,203,Upper 80 PI,ISO3_code
+2022,TotalPopulationBySex,203,Upper 80 PI,ISO2_code
+2022,TotalPopulationBySex,203,Upper 80 PI,SDMX_code
+2022,TotalPopulationBySex,203,Upper 80 PI,LocTypeID
+2022,TotalPopulationBySex,203,Upper 80 PI,LocTypeName
+2022,TotalPopulationBySex,203,Upper 80 PI,ParentID
+2022,TotalPopulationBySex,203,Upper 80 PI,Location
+2022,TotalPopulationBySex,203,Upper 80 PI,Time
+2022,TotalPopulationBySex,203,Upper 80 PI,MidPeriod
+2022,TotalPopulationBySex,203,Upper 80 PI,PopMale
+2022,TotalPopulationBySex,203,Upper 80 PI,PopFemale
+2022,TotalPopulationBySex,203,Upper 80 PI,PopTotal
+2022,TotalPopulationBySex,203,Upper 80 PI,PopDensity
+2022,TotalPopulationBySex,204,Lower 80 PI,SortOrder
+2022,TotalPopulationBySex,204,Lower 80 PI,LocID
+2022,TotalPopulationBySex,204,Lower 80 PI,Notes
+2022,TotalPopulationBySex,204,Lower 80 PI,ISO3_code
+2022,TotalPopulationBySex,204,Lower 80 PI,ISO2_code
+2022,TotalPopulationBySex,204,Lower 80 PI,SDMX_code
+2022,TotalPopulationBySex,204,Lower 80 PI,LocTypeID
+2022,TotalPopulationBySex,204,Lower 80 PI,LocTypeName
+2022,TotalPopulationBySex,204,Lower 80 PI,ParentID
+2022,TotalPopulationBySex,204,Lower 80 PI,Location
+2022,TotalPopulationBySex,204,Lower 80 PI,Time
+2022,TotalPopulationBySex,204,Lower 80 PI,MidPeriod
+2022,TotalPopulationBySex,204,Lower 80 PI,PopMale
+2022,TotalPopulationBySex,204,Lower 80 PI,PopFemale
+2022,TotalPopulationBySex,204,Lower 80 PI,PopTotal
+2022,TotalPopulationBySex,204,Lower 80 PI,PopDensity
+2022,TotalPopulationBySex,206,Upper 95 PI,SortOrder
+2022,TotalPopulationBySex,206,Upper 95 PI,LocID
+2022,TotalPopulationBySex,206,Upper 95 PI,Notes
+2022,TotalPopulationBySex,206,Upper 95 PI,ISO3_code
+2022,TotalPopulationBySex,206,Upper 95 PI,ISO2_code
+2022,TotalPopulationBySex,206,Upper 95 PI,SDMX_code
+2022,TotalPopulationBySex,206,Upper 95 PI,LocTypeID
+2022,TotalPopulationBySex,206,Upper 95 PI,LocTypeName
+2022,TotalPopulationBySex,206,Upper 95 PI,ParentID
+2022,TotalPopulationBySex,206,Upper 95 PI,Location
+2022,TotalPopulationBySex,206,Upper 95 PI,Time
+2022,TotalPopulationBySex,206,Upper 95 PI,MidPeriod
+2022,TotalPopulationBySex,206,Upper 95 PI,PopMale
+2022,TotalPopulationBySex,206,Upper 95 PI,PopFemale
+2022,TotalPopulationBySex,206,Upper 95 PI,PopTotal
+2022,TotalPopulationBySex,206,Upper 95 PI,PopDensity
+2022,TotalPopulationBySex,207,Lower 95 PI,SortOrder
+2022,TotalPopulationBySex,207,Lower 95 PI,LocID
+2022,TotalPopulationBySex,207,Lower 95 PI,Notes
+2022,TotalPopulationBySex,207,Lower 95 PI,ISO3_code
+2022,TotalPopulationBySex,207,Lower 95 PI,ISO2_code
+2022,TotalPopulationBySex,207,Lower 95 PI,SDMX_code
+2022,TotalPopulationBySex,207,Lower 95 PI,LocTypeID
+2022,TotalPopulationBySex,207,Lower 95 PI,LocTypeName
+2022,TotalPopulationBySex,207,Lower 95 PI,ParentID
+2022,TotalPopulationBySex,207,Lower 95 PI,Location
+2022,TotalPopulationBySex,207,Lower 95 PI,Time
+2022,TotalPopulationBySex,207,Lower 95 PI,MidPeriod
+2022,TotalPopulationBySex,207,Lower 95 PI,PopMale
+2022,TotalPopulationBySex,207,Lower 95 PI,PopFemale
+2022,TotalPopulationBySex,207,Lower 95 PI,PopTotal
+2022,TotalPopulationBySex,207,Lower 95 PI,PopDensity
+2022,TotalPopulationBySex,3,High,SortOrder
+2022,TotalPopulationBySex,3,High,LocID
+2022,TotalPopulationBySex,3,High,Notes
+2022,TotalPopulationBySex,3,High,ISO3_code
+2022,TotalPopulationBySex,3,High,ISO2_code
+2022,TotalPopulationBySex,3,High,SDMX_code
+2022,TotalPopulationBySex,3,High,LocTypeID
+2022,TotalPopulationBySex,3,High,LocTypeName
+2022,TotalPopulationBySex,3,High,ParentID
+2022,TotalPopulationBySex,3,High,Location
+2022,TotalPopulationBySex,3,High,Time
+2022,TotalPopulationBySex,3,High,MidPeriod
+2022,TotalPopulationBySex,3,High,PopMale
+2022,TotalPopulationBySex,3,High,PopFemale
+2022,TotalPopulationBySex,3,High,PopTotal
+2022,TotalPopulationBySex,3,High,PopDensity
+2022,TotalPopulationBySex,4,Low,SortOrder
+2022,TotalPopulationBySex,4,Low,LocID
+2022,TotalPopulationBySex,4,Low,Notes
+2022,TotalPopulationBySex,4,Low,ISO3_code
+2022,TotalPopulationBySex,4,Low,ISO2_code
+2022,TotalPopulationBySex,4,Low,SDMX_code
+2022,TotalPopulationBySex,4,Low,LocTypeID
+2022,TotalPopulationBySex,4,Low,LocTypeName
+2022,TotalPopulationBySex,4,Low,ParentID
+2022,TotalPopulationBySex,4,Low,Location
+2022,TotalPopulationBySex,4,Low,Time
+2022,TotalPopulationBySex,4,Low,MidPeriod
+2022,TotalPopulationBySex,4,Low,PopMale
+2022,TotalPopulationBySex,4,Low,PopFemale
+2022,TotalPopulationBySex,4,Low,PopTotal
+2022,TotalPopulationBySex,4,Low,PopDensity
+2022,TotalPopulationBySex,5,Constant fertility,SortOrder
+2022,TotalPopulationBySex,5,Constant fertility,LocID
+2022,TotalPopulationBySex,5,Constant fertility,Notes
+2022,TotalPopulationBySex,5,Constant fertility,ISO3_code
+2022,TotalPopulationBySex,5,Constant fertility,ISO2_code
+2022,TotalPopulationBySex,5,Constant fertility,SDMX_code
+2022,TotalPopulationBySex,5,Constant fertility,LocTypeID
+2022,TotalPopulationBySex,5,Constant fertility,LocTypeName
+2022,TotalPopulationBySex,5,Constant fertility,ParentID
+2022,TotalPopulationBySex,5,Constant fertility,Location
+2022,TotalPopulationBySex,5,Constant fertility,Time
+2022,TotalPopulationBySex,5,Constant fertility,MidPeriod
+2022,TotalPopulationBySex,5,Constant fertility,PopMale
+2022,TotalPopulationBySex,5,Constant fertility,PopFemale
+2022,TotalPopulationBySex,5,Constant fertility,PopTotal
+2022,TotalPopulationBySex,5,Constant fertility,PopDensity
+2022,TotalPopulationBySex,6,Instant replacement,SortOrder
+2022,TotalPopulationBySex,6,Instant replacement,LocID
+2022,TotalPopulationBySex,6,Instant replacement,Notes
+2022,TotalPopulationBySex,6,Instant replacement,ISO3_code
+2022,TotalPopulationBySex,6,Instant replacement,ISO2_code
+2022,TotalPopulationBySex,6,Instant replacement,SDMX_code
+2022,TotalPopulationBySex,6,Instant replacement,LocTypeID
+2022,TotalPopulationBySex,6,Instant replacement,LocTypeName
+2022,TotalPopulationBySex,6,Instant replacement,ParentID
+2022,TotalPopulationBySex,6,Instant replacement,Location
+2022,TotalPopulationBySex,6,Instant replacement,Time
+2022,TotalPopulationBySex,6,Instant replacement,MidPeriod
+2022,TotalPopulationBySex,6,Instant replacement,PopMale
+2022,TotalPopulationBySex,6,Instant replacement,PopFemale
+2022,TotalPopulationBySex,6,Instant replacement,PopTotal
+2022,TotalPopulationBySex,6,Instant replacement,PopDensity
+2022,TotalPopulationBySex,7,Zero migration,SortOrder
+2022,TotalPopulationBySex,7,Zero migration,LocID
+2022,TotalPopulationBySex,7,Zero migration,Notes
+2022,TotalPopulationBySex,7,Zero migration,ISO3_code
+2022,TotalPopulationBySex,7,Zero migration,ISO2_code
+2022,TotalPopulationBySex,7,Zero migration,SDMX_code
+2022,TotalPopulationBySex,7,Zero migration,LocTypeID
+2022,TotalPopulationBySex,7,Zero migration,LocTypeName
+2022,TotalPopulationBySex,7,Zero migration,ParentID
+2022,TotalPopulationBySex,7,Zero migration,Location
+2022,TotalPopulationBySex,7,Zero migration,Time
+2022,TotalPopulationBySex,7,Zero migration,MidPeriod
+2022,TotalPopulationBySex,7,Zero migration,PopMale
+2022,TotalPopulationBySex,7,Zero migration,PopFemale
+2022,TotalPopulationBySex,7,Zero migration,PopTotal
+2022,TotalPopulationBySex,7,Zero migration,PopDensity
+2022,TotalPopulationBySex,8,Constant mortality,SortOrder
+2022,TotalPopulationBySex,8,Constant mortality,LocID
+2022,TotalPopulationBySex,8,Constant mortality,Notes
+2022,TotalPopulationBySex,8,Constant mortality,ISO3_code
+2022,TotalPopulationBySex,8,Constant mortality,ISO2_code
+2022,TotalPopulationBySex,8,Constant mortality,SDMX_code
+2022,TotalPopulationBySex,8,Constant mortality,LocTypeID
+2022,TotalPopulationBySex,8,Constant mortality,LocTypeName
+2022,TotalPopulationBySex,8,Constant mortality,ParentID
+2022,TotalPopulationBySex,8,Constant mortality,Location
+2022,TotalPopulationBySex,8,Constant mortality,Time
+2022,TotalPopulationBySex,8,Constant mortality,MidPeriod
+2022,TotalPopulationBySex,8,Constant mortality,PopMale
+2022,TotalPopulationBySex,8,Constant mortality,PopFemale
+2022,TotalPopulationBySex,8,Constant mortality,PopTotal
+2022,TotalPopulationBySex,8,Constant mortality,PopDensity
+2022,TotalPopulationBySex,9,No change,SortOrder
+2022,TotalPopulationBySex,9,No change,LocID
+2022,TotalPopulationBySex,9,No change,Notes
+2022,TotalPopulationBySex,9,No change,ISO3_code
+2022,TotalPopulationBySex,9,No change,ISO2_code
+2022,TotalPopulationBySex,9,No change,SDMX_code
+2022,TotalPopulationBySex,9,No change,LocTypeID
+2022,TotalPopulationBySex,9,No change,LocTypeName
+2022,TotalPopulationBySex,9,No change,ParentID
+2022,TotalPopulationBySex,9,No change,Location
+2022,TotalPopulationBySex,9,No change,Time
+2022,TotalPopulationBySex,9,No change,MidPeriod
+2022,TotalPopulationBySex,9,No change,PopMale
+2022,TotalPopulationBySex,9,No change,PopFemale
+2022,TotalPopulationBySex,9,No change,PopTotal
+2022,TotalPopulationBySex,9,No change,PopDensity

@@ -413,3 +413,96 @@ wpp,file_group,VarID,Variant
 2019,TotalPopulationBySex,7,Zero migration
 2019,TotalPopulationBySex,8,Constant mortality
 2019,TotalPopulationBySex,9,No change
+2022,Demographic_Indicators,10,Momentum
+2022,Demographic_Indicators,16,Instant replacement zero migration
+2022,Demographic_Indicators,2,Medium
+2022,Demographic_Indicators,3,High
+2022,Demographic_Indicators,4,Low
+2022,Demographic_Indicators,5,Constant fertility
+2022,Demographic_Indicators,6,Instant replacement
+2022,Demographic_Indicators,7,Zero migration
+2022,Demographic_Indicators,8,Constant mortality
+2022,Demographic_Indicators,9,No change
+2022,Fertility_by_Age1,10,Momentum
+2022,Fertility_by_Age1,2,Medium
+2022,Fertility_by_Age1,3,High
+2022,Fertility_by_Age1,4,Low
+2022,Fertility_by_Age1,5,Constant fertility
+2022,Fertility_by_Age1,6,Instant replacement
+2022,Fertility_by_Age1,7,Zero migration
+2022,Fertility_by_Age1,8,Constant mortality
+2022,Fertility_by_Age1,9,No change
+2022,Fertility_by_Age5,10,Momentum
+2022,Fertility_by_Age5,2,Medium
+2022,Fertility_by_Age5,3,High
+2022,Fertility_by_Age5,4,Low
+2022,Fertility_by_Age5,5,Constant fertility
+2022,Fertility_by_Age5,6,Instant replacement
+2022,Fertility_by_Age5,7,Zero migration
+2022,Fertility_by_Age5,8,Constant mortality
+2022,Fertility_by_Age5,9,No change
+2022,Life_Table_Abridged,2,Medium
+2022,Life_Table_Complete,2,Medium
+2022,Population1JanuaryByAge5GroupSex,10,Momentum
+2022,Population1JanuaryByAge5GroupSex,2,Medium
+2022,Population1JanuaryByAge5GroupSex,3,High
+2022,Population1JanuaryByAge5GroupSex,4,Low
+2022,Population1JanuaryByAge5GroupSex,5,Constant fertility
+2022,Population1JanuaryByAge5GroupSex,6,Instant replacement
+2022,Population1JanuaryByAge5GroupSex,7,Zero migration
+2022,Population1JanuaryByAge5GroupSex,8,Constant mortality
+2022,Population1JanuaryByAge5GroupSex,9,No change
+2022,Population1JanuaryBySingleAgeSex,2,Medium
+2022,PopulationByAge5GroupSex,10,Momentum
+2022,PopulationByAge5GroupSex,2,Medium
+2022,PopulationByAge5GroupSex,3,High
+2022,PopulationByAge5GroupSex,4,Low
+2022,PopulationByAge5GroupSex,5,Constant fertility
+2022,PopulationByAge5GroupSex,6,Instant replacement
+2022,PopulationByAge5GroupSex,7,Zero migration
+2022,PopulationByAge5GroupSex,8,Constant mortality
+2022,PopulationByAge5GroupSex,9,No change
+2022,PopulationByAge5GroupSex_Percentage,10,Momentum
+2022,PopulationByAge5GroupSex_Percentage,2,Medium
+2022,PopulationByAge5GroupSex_Percentage,3,High
+2022,PopulationByAge5GroupSex_Percentage,4,Low
+2022,PopulationByAge5GroupSex_Percentage,5,Constant fertility
+2022,PopulationByAge5GroupSex_Percentage,6,Instant replacement
+2022,PopulationByAge5GroupSex_Percentage,7,Zero migration
+2022,PopulationByAge5GroupSex_Percentage,8,Constant mortality
+2022,PopulationByAge5GroupSex_Percentage,9,No change
+2022,PopulationBySingleAgeSex,10,Momentum
+2022,PopulationBySingleAgeSex,16,Instant replacement zero migration
+2022,PopulationBySingleAgeSex,2,Medium
+2022,PopulationBySingleAgeSex,3,High
+2022,PopulationBySingleAgeSex,4,Low
+2022,PopulationBySingleAgeSex,5,Constant fertility
+2022,PopulationBySingleAgeSex,6,Instant replacement
+2022,PopulationBySingleAgeSex,7,Zero migration
+2022,PopulationBySingleAgeSex,8,Constant mortality
+2022,PopulationBySingleAgeSex,9,No change
+2022,PopulationBySingleAgeSex_Percentage,2,Medium
+2022,PopulationExposureByAge5GroupSex,10,Momentum
+2022,PopulationExposureByAge5GroupSex,2,Medium
+2022,PopulationExposureByAge5GroupSex,3,High
+2022,PopulationExposureByAge5GroupSex,4,Low
+2022,PopulationExposureByAge5GroupSex,5,Constant fertility
+2022,PopulationExposureByAge5GroupSex,6,Instant replacement
+2022,PopulationExposureByAge5GroupSex,7,Zero migration
+2022,PopulationExposureByAge5GroupSex,8,Constant mortality
+2022,PopulationExposureByAge5GroupSex,9,No change
+2022,PopulationExposureBySingleAgeSex,2,Medium
+2022,TotalPopulationBySex,10,Momentum
+2022,TotalPopulationBySex,2,Medium
+2022,TotalPopulationBySex,202,Median PI
+2022,TotalPopulationBySex,203,Upper 80 PI
+2022,TotalPopulationBySex,204,Lower 80 PI
+2022,TotalPopulationBySex,206,Upper 95 PI
+2022,TotalPopulationBySex,207,Lower 95 PI
+2022,TotalPopulationBySex,3,High
+2022,TotalPopulationBySex,4,Low
+2022,TotalPopulationBySex,5,Constant fertility
+2022,TotalPopulationBySex,6,Instant replacement
+2022,TotalPopulationBySex,7,Zero migration
+2022,TotalPopulationBySex,8,Constant mortality
+2022,TotalPopulationBySex,9,No change

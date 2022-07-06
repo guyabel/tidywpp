@@ -5,7 +5,8 @@
 #' @param indicator Character string based on the `name` column in the [wpp_indicators][tidywpp::wpp_indicators] data frame or `pop`. Represents the variables to be downloaded.
 #' @param pop_age Character string for population age groups if `indicator` is set to `pop`. Defaults to no age groups `total`, but can be set to `single` or `five`.
 #' @param pop_sex Character string for population sexes if `indicator`is set to `pop`. Defaults to no sex `total`, but can be set to `male`, `female`, `both` or `all`.
-#' @param pop_freq Character string for frequency of population data if `indicator` is set to `pop`. Defaults to `annual`, but in a some (exceptional cases) cases can be set to `five`.
+#' @param pop_freq Character string for frequency of population data if `indicator` is set to `pop`. Defaults to `annual`, but in a some (exceptional cases) can be set to `five`.
+#' @param pop_date Character string for frequency of population data if `indicator` is set to `pop`. Defaults to `jul1` (July 1st), but for WPP2022 can be set to `jan1` for population at begining of year or `jan1-dec31` for exposure population.
 #' @param variant_id Numeric value(s) based on the `var_id` column in the [wpp_indicators][tidywpp::wpp_indicators] data frame. Note, past data is in the `"Medium" (2)` variant only.
 #' @param wpp_version Integer for WPP version. Default of `2019`. All WPP back to 1998 are available.
 #' @param clean_names Logical to indicate if column names should be cleaned
@@ -133,8 +134,9 @@ get_wpp <- function(indicator = NULL,
                     pop_age = c("total", "single", "five"),
                     pop_sex = c("total", "both", "male", "female", "all"),
                     pop_freq = c("annual", "five"),
+                    pop_date = c("jul1", "jan1", "jan1-dec31"),
                     variant_id = 2,
-                    wpp_version = 2019,
+                    wpp_version = 2022,
                     clean_names = FALSE,
                     fct_age = TRUE,
                     drop_id_cols = FALSE,
@@ -167,6 +169,7 @@ get_wpp <- function(indicator = NULL,
     pop_age <- match.arg(pop_age)
     pop_sex <- match.arg(pop_sex)
     pop_freq <- match.arg(pop_freq)
+    pop_date <- match.arg(pop_date)
     if(pop_sex == "total")
       indicator <- c(indicator, "PopTotal")
     if(pop_sex == "both")
@@ -185,6 +188,15 @@ get_wpp <- function(indicator = NULL,
       indicator_file_group <- "PopulationByAgeSex"
     if(pop_freq == "five")
       indicator_file_group <- "PopulationByAgeSex_5x5"
+    if(pop_date == "1jan" & pop_age == "five")
+      indicator_file_group <- "Population1JanuaryByAge5GroupSex"
+    if(pop_date == "1jan" & pop_age == "single")
+      indicator_file_group <- "Population1JanuaryBySingleAgeSex"
+    if(pop_date == "1jan-31dec" & pop_age == "five")
+      indicator_file_group <- "PopulationExposureByAge5GroupSex"
+    if(pop_date == "1jan-31dec" & pop_age == "single")
+      indicator_file_group <- "PopulationExposureBySingleAgeSex"
+
     indicator <- indicator[!indicator == "pop"]
   }
 
@@ -199,24 +211,24 @@ get_wpp <- function(indicator = NULL,
       dplyr::filter(name %in% indicator,
                     var_id %in% variant_id,
                     wpp == wpp_version) %>%
-      dplyr::select(file_group, name) %>%
+      dplyr::select(file_group0, name) %>%
       dplyr::distinct()
 
     g <- f %>%
       dplyr::slice(1) %>%
-      dplyr::select(file_group) %>%
+      dplyr::select(file_group0) %>%
       dplyr::pull()
 
     # if(length(unique(f$file_group)) > 1)
     #   message(paste("Indicators from more than one file group.\n\nOnly downloading indicators in:", g, "\n\nNeed multiple get_wpp() calls to get indicators in different file groups. See ?wpp_indicators and ?find_indicators for more information on file groups."))
 
-    gg <- unique(f$file_group)
+    gg <- unique(f$file_group0)
     if(length(gg) > 1 & messages){
       message(paste0("Downloading from ", gg[1]))
       for(i in 2:length(gg)){
         message(paste0("Also available in: ", gg[i]))
       }
-      message("Use indicator_file_group to get alternative measures")
+      message("Use indicator_file_group argument to get alternative measures")
     }
   }
   # # see if data is available
@@ -241,7 +253,7 @@ get_wpp <- function(indicator = NULL,
     dplyr::filter(name %in% indicator,
                   var_id %in% variant_id,
                   wpp == wpp_version,
-                  file_group == g) %>%
+                  file_group0 == g) %>%
     dplyr::select(-dplyr::contains("details"), -variant, -wpp) %>%
     dplyr::bind_rows(d0, .) %>%
     dplyr::arrange(var_id)

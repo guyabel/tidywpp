@@ -1,0 +1,287 @@
+wpp,LocID,LocTypeID,LocTypeName,Location
+2022,900,1,World,World
+2022,1834,12,SDG region,Sub-Saharan Africa
+2022,1833,12,SDG region,Northern Africa and Western Asia
+2022,1831,12,SDG region,Central and Southern Asia
+2022,1832,12,SDG region,Eastern and South-Eastern Asia
+2022,1830,12,SDG region,Latin America and the Caribbean
+2022,1835,12,SDG region,Oceania (excluding Australia and New Zealand)
+2022,1836,12,SDG region,Australia/New Zealand
+2022,1829,12,SDG region,Europe and Northern America
+2022,901,5,Development group,More developed regions
+2022,902,5,Development group,Less developed regions
+2022,941,5,Development group,Least developed countries
+2022,934,5,Development group,"Less developed regions, excluding least developed countries"
+2022,948,5,Development group,"Less developed regions, excluding China"
+2022,1636,5,Development group,Land-locked Developing Countries (LLDC)
+2022,1637,5,Development group,Small Island Developing States (SIDS)
+2022,1503,13,Income group,High-income countries
+2022,1517,13,Income group,Middle-income countries
+2022,1502,13,Income group,Upper-middle-income countries
+2022,1501,13,Income group,Lower-middle-income countries
+2022,1500,13,Income group,Low-income countries
+2022,1518,13,Income group,No income group available
+2022,903,2,Geographic region,Africa
+2022,910,3,Subregion,Eastern Africa
+2022,108,4,Country/Area,Burundi
+2022,174,4,Country/Area,Comoros
+2022,262,4,Country/Area,Djibouti
+2022,232,4,Country/Area,Eritrea
+2022,231,4,Country/Area,Ethiopia
+2022,404,4,Country/Area,Kenya
+2022,450,4,Country/Area,Madagascar
+2022,454,4,Country/Area,Malawi
+2022,480,4,Country/Area,Mauritius
+2022,175,4,Country/Area,Mayotte
+2022,508,4,Country/Area,Mozambique
+2022,638,4,Country/Area,Réunion
+2022,646,4,Country/Area,Rwanda
+2022,690,4,Country/Area,Seychelles
+2022,706,4,Country/Area,Somalia
+2022,728,4,Country/Area,South Sudan
+2022,800,4,Country/Area,Uganda
+2022,834,4,Country/Area,United Republic of Tanzania
+2022,894,4,Country/Area,Zambia
+2022,716,4,Country/Area,Zimbabwe
+2022,911,3,Subregion,Middle Africa
+2022,24,4,Country/Area,Angola
+2022,120,4,Country/Area,Cameroon
+2022,140,4,Country/Area,Central African Republic
+2022,148,4,Country/Area,Chad
+2022,178,4,Country/Area,Congo
+2022,180,4,Country/Area,Democratic Republic of the Congo
+2022,226,4,Country/Area,Equatorial Guinea
+2022,266,4,Country/Area,Gabon
+2022,678,4,Country/Area,Sao Tome and Principe
+2022,912,3,Subregion,Northern Africa
+2022,12,4,Country/Area,Algeria
+2022,818,4,Country/Area,Egypt
+2022,434,4,Country/Area,Libya
+2022,504,4,Country/Area,Morocco
+2022,729,4,Country/Area,Sudan
+2022,788,4,Country/Area,Tunisia
+2022,732,4,Country/Area,Western Sahara
+2022,913,3,Subregion,Southern Africa
+2022,72,4,Country/Area,Botswana
+2022,748,4,Country/Area,Eswatini
+2022,426,4,Country/Area,Lesotho
+2022,516,4,Country/Area,Namibia
+2022,710,4,Country/Area,South Africa
+2022,914,3,Subregion,Western Africa
+2022,204,4,Country/Area,Benin
+2022,854,4,Country/Area,Burkina Faso
+2022,132,4,Country/Area,Cabo Verde
+2022,384,4,Country/Area,Côte d'Ivoire
+2022,270,4,Country/Area,Gambia
+2022,288,4,Country/Area,Ghana
+2022,324,4,Country/Area,Guinea
+2022,624,4,Country/Area,Guinea-Bissau
+2022,430,4,Country/Area,Liberia
+2022,466,4,Country/Area,Mali
+2022,478,4,Country/Area,Mauritania
+2022,562,4,Country/Area,Niger
+2022,566,4,Country/Area,Nigeria
+2022,654,4,Country/Area,Saint Helena
+2022,686,4,Country/Area,Senegal
+2022,694,4,Country/Area,Sierra Leone
+2022,768,4,Country/Area,Togo
+2022,935,2,Geographic region,Asia
+2022,5500,3,Subregion,Central Asia
+2022,398,4,Country/Area,Kazakhstan
+2022,417,4,Country/Area,Kyrgyzstan
+2022,762,4,Country/Area,Tajikistan
+2022,795,4,Country/Area,Turkmenistan
+2022,860,4,Country/Area,Uzbekistan
+2022,906,3,Subregion,Eastern Asia
+2022,156,4,Country/Area,China
+2022,344,4,Country/Area,"China, Hong Kong SAR"
+2022,446,4,Country/Area,"China, Macao SAR"
+2022,158,4,Country/Area,"China, Taiwan Province of China"
+2022,408,4,Country/Area,Dem. People's Republic of Korea
+2022,392,4,Country/Area,Japan
+2022,496,4,Country/Area,Mongolia
+2022,410,4,Country/Area,Republic of Korea
+2022,5501,3,Subregion,Southern Asia
+2022,4,4,Country/Area,Afghanistan
+2022,50,4,Country/Area,Bangladesh
+2022,64,4,Country/Area,Bhutan
+2022,356,4,Country/Area,India
+2022,364,4,Country/Area,Iran (Islamic Republic of)
+2022,462,4,Country/Area,Maldives
+2022,524,4,Country/Area,Nepal
+2022,586,4,Country/Area,Pakistan
+2022,144,4,Country/Area,Sri Lanka
+2022,920,3,Subregion,South-Eastern Asia
+2022,96,4,Country/Area,Brunei Darussalam
+2022,116,4,Country/Area,Cambodia
+2022,360,4,Country/Area,Indonesia
+2022,418,4,Country/Area,Lao People's Democratic Republic
+2022,458,4,Country/Area,Malaysia
+2022,104,4,Country/Area,Myanmar
+2022,608,4,Country/Area,Philippines
+2022,702,4,Country/Area,Singapore
+2022,764,4,Country/Area,Thailand
+2022,626,4,Country/Area,Timor-Leste
+2022,704,4,Country/Area,Viet Nam
+2022,922,3,Subregion,Western Asia
+2022,51,4,Country/Area,Armenia
+2022,31,4,Country/Area,Azerbaijan
+2022,48,4,Country/Area,Bahrain
+2022,196,4,Country/Area,Cyprus
+2022,268,4,Country/Area,Georgia
+2022,368,4,Country/Area,Iraq
+2022,376,4,Country/Area,Israel
+2022,400,4,Country/Area,Jordan
+2022,414,4,Country/Area,Kuwait
+2022,422,4,Country/Area,Lebanon
+2022,512,4,Country/Area,Oman
+2022,634,4,Country/Area,Qatar
+2022,682,4,Country/Area,Saudi Arabia
+2022,275,4,Country/Area,State of Palestine
+2022,760,4,Country/Area,Syrian Arab Republic
+2022,792,4,Country/Area,Türkiye
+2022,784,4,Country/Area,United Arab Emirates
+2022,887,4,Country/Area,Yemen
+2022,908,2,Geographic region,Europe
+2022,923,3,Subregion,Eastern Europe
+2022,112,4,Country/Area,Belarus
+2022,100,4,Country/Area,Bulgaria
+2022,203,4,Country/Area,Czechia
+2022,348,4,Country/Area,Hungary
+2022,616,4,Country/Area,Poland
+2022,498,4,Country/Area,Republic of Moldova
+2022,642,4,Country/Area,Romania
+2022,643,4,Country/Area,Russian Federation
+2022,703,4,Country/Area,Slovakia
+2022,804,4,Country/Area,Ukraine
+2022,924,3,Subregion,Northern Europe
+2022,208,4,Country/Area,Denmark
+2022,233,4,Country/Area,Estonia
+2022,234,4,Country/Area,Faroe Islands
+2022,246,4,Country/Area,Finland
+2022,831,4,Country/Area,Guernsey
+2022,352,4,Country/Area,Iceland
+2022,372,4,Country/Area,Ireland
+2022,833,4,Country/Area,Isle of Man
+2022,832,4,Country/Area,Jersey
+2022,428,4,Country/Area,Latvia
+2022,440,4,Country/Area,Lithuania
+2022,578,4,Country/Area,Norway
+2022,752,4,Country/Area,Sweden
+2022,826,4,Country/Area,United Kingdom
+2022,925,3,Subregion,Southern Europe
+2022,8,4,Country/Area,Albania
+2022,20,4,Country/Area,Andorra
+2022,70,4,Country/Area,Bosnia and Herzegovina
+2022,191,4,Country/Area,Croatia
+2022,292,4,Country/Area,Gibraltar
+2022,300,4,Country/Area,Greece
+2022,336,4,Country/Area,Holy See
+2022,380,4,Country/Area,Italy
+2022,412,4,Country/Area,Kosovo (under UNSC res. 1244)
+2022,470,4,Country/Area,Malta
+2022,499,4,Country/Area,Montenegro
+2022,807,4,Country/Area,North Macedonia
+2022,620,4,Country/Area,Portugal
+2022,674,4,Country/Area,San Marino
+2022,688,4,Country/Area,Serbia
+2022,705,4,Country/Area,Slovenia
+2022,724,4,Country/Area,Spain
+2022,926,3,Subregion,Western Europe
+2022,40,4,Country/Area,Austria
+2022,56,4,Country/Area,Belgium
+2022,250,4,Country/Area,France
+2022,276,4,Country/Area,Germany
+2022,438,4,Country/Area,Liechtenstein
+2022,442,4,Country/Area,Luxembourg
+2022,492,4,Country/Area,Monaco
+2022,528,4,Country/Area,Netherlands
+2022,756,4,Country/Area,Switzerland
+2022,904,2,Geographic region,Latin America and the Caribbean
+2022,915,3,Subregion,Caribbean
+2022,660,4,Country/Area,Anguilla
+2022,28,4,Country/Area,Antigua and Barbuda
+2022,533,4,Country/Area,Aruba
+2022,44,4,Country/Area,Bahamas
+2022,52,4,Country/Area,Barbados
+2022,535,4,Country/Area,"Bonaire, Sint Eustatius and Saba"
+2022,92,4,Country/Area,British Virgin Islands
+2022,136,4,Country/Area,Cayman Islands
+2022,192,4,Country/Area,Cuba
+2022,531,4,Country/Area,Curaçao
+2022,212,4,Country/Area,Dominica
+2022,214,4,Country/Area,Dominican Republic
+2022,308,4,Country/Area,Grenada
+2022,312,4,Country/Area,Guadeloupe
+2022,332,4,Country/Area,Haiti
+2022,388,4,Country/Area,Jamaica
+2022,474,4,Country/Area,Martinique
+2022,500,4,Country/Area,Montserrat
+2022,630,4,Country/Area,Puerto Rico
+2022,652,4,Country/Area,Saint Barthélemy
+2022,659,4,Country/Area,Saint Kitts and Nevis
+2022,662,4,Country/Area,Saint Lucia
+2022,663,4,Country/Area,Saint Martin (French part)
+2022,670,4,Country/Area,Saint Vincent and the Grenadines
+2022,534,4,Country/Area,Sint Maarten (Dutch part)
+2022,780,4,Country/Area,Trinidad and Tobago
+2022,796,4,Country/Area,Turks and Caicos Islands
+2022,850,4,Country/Area,United States Virgin Islands
+2022,916,3,Subregion,Central America
+2022,84,4,Country/Area,Belize
+2022,188,4,Country/Area,Costa Rica
+2022,222,4,Country/Area,El Salvador
+2022,320,4,Country/Area,Guatemala
+2022,340,4,Country/Area,Honduras
+2022,484,4,Country/Area,Mexico
+2022,558,4,Country/Area,Nicaragua
+2022,591,4,Country/Area,Panama
+2022,931,3,Subregion,South America
+2022,32,4,Country/Area,Argentina
+2022,68,4,Country/Area,Bolivia (Plurinational State of)
+2022,76,4,Country/Area,Brazil
+2022,152,4,Country/Area,Chile
+2022,170,4,Country/Area,Colombia
+2022,218,4,Country/Area,Ecuador
+2022,238,4,Country/Area,Falkland Islands (Malvinas)
+2022,254,4,Country/Area,French Guiana
+2022,328,4,Country/Area,Guyana
+2022,600,4,Country/Area,Paraguay
+2022,604,4,Country/Area,Peru
+2022,740,4,Country/Area,Suriname
+2022,858,4,Country/Area,Uruguay
+2022,862,4,Country/Area,Venezuela (Bolivarian Republic of)
+2022,905,2,Geographic region,Northern America
+2022,60,4,Country/Area,Bermuda
+2022,124,4,Country/Area,Canada
+2022,304,4,Country/Area,Greenland
+2022,666,4,Country/Area,Saint Pierre and Miquelon
+2022,840,4,Country/Area,United States of America
+2022,909,2,Geographic region,Oceania
+2022,927,3,Subregion,Australia/New Zealand
+2022,36,4,Country/Area,Australia
+2022,554,4,Country/Area,New Zealand
+2022,928,3,Subregion,Melanesia
+2022,242,4,Country/Area,Fiji
+2022,540,4,Country/Area,New Caledonia
+2022,598,4,Country/Area,Papua New Guinea
+2022,90,4,Country/Area,Solomon Islands
+2022,548,4,Country/Area,Vanuatu
+2022,954,3,Subregion,Micronesia
+2022,316,4,Country/Area,Guam
+2022,296,4,Country/Area,Kiribati
+2022,584,4,Country/Area,Marshall Islands
+2022,583,4,Country/Area,Micronesia (Fed. States of)
+2022,520,4,Country/Area,Nauru
+2022,580,4,Country/Area,Northern Mariana Islands
+2022,585,4,Country/Area,Palau
+2022,957,3,Subregion,Polynesia
+2022,16,4,Country/Area,American Samoa
+2022,184,4,Country/Area,Cook Islands
+2022,258,4,Country/Area,French Polynesia
+2022,570,4,Country/Area,Niue
+2022,882,4,Country/Area,Samoa
+2022,772,4,Country/Area,Tokelau
+2022,776,4,Country/Area,Tonga
+2022,798,4,Country/Area,Tuvalu
+2022,876,4,Country/Area,Wallis and Futuna Islands
