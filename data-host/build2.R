@@ -236,3 +236,25 @@ for(i in c("age", "dim", "indicators", "loc", "time", "sex", "var")){
     unnest() %>%
     write_csv(paste0("./data-host/meta/",i,".csv"))
 }
+
+
+##
+## delete empty directories (had copied and pastes directories variants to set up)
+##
+# d <-
+dir_info(path = "./data-host/", recurse = TRUE) %>%
+  mutate(s = as.numeric(size),
+         p = as.character(path),
+         p = str_remove(string = p, pattern = "\\.\\.")) %>%
+  separate(col = p, into = c("d0", "d1", "d2", "d3", "d4", "d5"), remove = FALSE,
+           extra = "merge", fill = "right", sep = "\\/")  %>%
+  as_tibble() %>%
+  select(-(3:4)) %>%
+  filter(str_detect(string = p , pattern = "meta", negate = TRUE)) %>%
+  group_by(d2, d3, d4) %>%
+  mutate(n = n()) %>%
+  filter(n == 1,
+         !is.na(d4)) %>%
+  pull(path) %>%
+  dir_delete()
+

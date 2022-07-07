@@ -6,6 +6,7 @@ usethis::use_tibble()
 usethis::use_build_ignore(c("tests", "data-host", "build_package.R", "data-raw"))
 
 roxygen2::roxygenise(clean = TRUE)
+
 devtools::check(run_dont_test = FALSE)
 
 usethis::use_spell_check()
@@ -27,15 +28,16 @@ cranlogs::cranlogs_badge(package_name = "tidywpp", summary = "grand-total")
 library(tidyverse)
 library(tidywpp)
 wpp_indicators %>%
-  select(1:2, file_group) %>%
-  distinct() %>%
-  arrange(name) %>%
+  group_by_at(c(7, 1:3, 8)) %>%
+  summarise(wpp = paste(unique(wpp), collapse = ", ")) %>%
+  arrange(topic, name) %>%
   knitr::kable() %>%
   write_lines('temp.md')
 
 wpp_indicators %>%
   select(contains("var")) %>%
   distinct() %>%
+  arrange(var_id) %>%
   knitr::kable() %>%
   write_lines('temp.md')
 

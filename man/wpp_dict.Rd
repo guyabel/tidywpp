@@ -5,13 +5,13 @@
 \alias{wpp_dict}
 \title{Dictionary for WPP area and regions}
 \format{
-An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 288 rows and 7 columns.
+An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 242 rows and 6 columns.
 }
 \usage{
 wpp_dict
 }
 \description{
-Data set containing the country names, codes, region and area names.
+Data set containing the country names, codes, region and area names. Includes former countries used in WPP back to WPP1998.
 }
 \details{
 Intended for use as a custom dictionary with the countrycode package, where the existing UN region and area codes do not match those used by UN DESA in the WPP, see \url{https://github.com/vincentarelbundock/countrycode/issues/253}

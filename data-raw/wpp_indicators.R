@@ -21,6 +21,7 @@ n1 <- b0 %>%
   separate(col = indicator_name, sep = "\\(", into = c("indicator_name", "unit")) %>%
   mutate(
     indicator_name = ifelse(indicator == "life_table", paste0(indicator_name, "(", unit), indicator_name),
+    indicator_name = ifelse(str_detect(indicator, "pop"), NA, indicator_name),
     unit = ifelse(indicator == "life_table", NA, str_sub(string = unit, end = -2)),
     unit = case_when(
       name == "PASFR" ~ "percentage",
@@ -39,7 +40,8 @@ n1 <- b0 %>%
       TRUE ~ "Population"
     )
   ) %>%
-  select(-indicator)
+  select(-indicator) %>%
+  distinct()
 
 n2 <- n0 %>%
   bind_rows(n1)
@@ -60,8 +62,27 @@ d0 <- d %>%
     file_group0 == "Life_Table" ~ "Life_Table_Abridged",
     file_group0 == "Fertility_by_Age" ~ "Fertility_by_Age5",
     file_group0 == "PopulationByAgeSex" ~ "PopulationByAge5GroupSex",
+    file_group0 == "Period_Indicators" ~ "Demographic_Indicators",
     TRUE ~ file_group0
+  )) %>%
+  mutate(indicator_name = case_when(
+    name == "PopTotal" & file_group == "TotalPopulationBySex" ~
+      "Total population, both sexes",
+    name == "PopMale" & file_group == "TotalPopulationBySex" ~
+      "Total male population",
+    name == "PopFemale" & file_group == "TotalPopulationBySex" ~
+      "Total female population",
+    name %in% c("PopTotal", "PopMale", "PopFemale") &
+      str_detect(file_group, "5") ~
+      paste(str_sub(name, start = 4), "population in the age group"),
+    name %in% c("PopTotal", "PopMale", "PopFemale") ~
+      paste(str_sub(name, start = 4), "population for the individual age"),
+    TRUE ~ indicator_name
   ))
+
+# d0 %>%
+#   filter(name %in% c("PopTotal", "PopMale", "PopFemale")) %>%
+#   distinct(file_group)
 
 # taken from table in csv download page
 b3 <- d0 %>%
@@ -69,13 +90,13 @@ b3 <- d0 %>%
   mutate(
     file_group_details =
       c("Fertility indicators, by 5-year age, annualy and 5-year periods",
-        "Several indicators in 5-year periods",
+        "Demographic Indicators",
+        # "Several indicators in 5-year periods",
         "Population on 01 July by 5-year age groups, annualy",
         "Population on 01 July by 5-year age groups, every 5 years",
         "Total population on 01 July by sex, annually",
         "Abridged life tables by sex and both sexes combined providing a set of values showing the mortality experience of a hypothetical group of infants born at the same time and subject throughout their lifetime to the specific mortality rates of a given period",
         "Population on 01 July interpolated by single age and single year",
-        "Demographic Indicators",
         "Fertility indicators, by single age, annualy",
         "Single age life tables up to age 100",
         "Population on 01 January, by 5-year age groups",
@@ -91,7 +112,10 @@ table(d0$file_group, d0$wpp)
 wpp_indicators <- d0 %>%
   rename(details = indicator_name) %>%
   relocate(name, details, unit, var_id, variant, wpp, topic, file_group, file_group0) %>%
-  left_join(b3)
+  left_join(b3) %>%
+  rename(file = file_group,
+         file0 = file_group0,
+         file_details = file_group_details)
 
 usethis::use_data(wpp_indicators, overwrite = TRUE)
 

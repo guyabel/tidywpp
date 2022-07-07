@@ -1,14 +1,11 @@
 Package: tidywpp
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
-Authors@R: 
-    person(given = "First",
-           family = "Last",
-           role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: MIT + file LICENSE
+Title: Download UN DESA World Population Prospects data into R
+Version: 0.0.0.9100
+Authors@R: c(person(c("Guy", "J."), "Abel", role = c("aut", "cre"),
+                    email = "g.j.abel@gmail.com",
+                    comment = c(ORCID = "0000-0002-4893-5687")))
+Maintainer: Guy J. Abel <g.j.abel@gmail.com>
+License: GPL-3
 Suggests: 
     roxygen2,
     spelling,

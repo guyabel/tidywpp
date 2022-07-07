@@ -6,31 +6,35 @@
 \usage{
 get_wpp(
   indicator = NULL,
-  indicator_file_group = NULL,
+  indicator_file = NULL,
   pop_age = c("total", "single", "five"),
   pop_sex = c("total", "both", "male", "female", "all"),
   pop_freq = c("annual", "five"),
+  pop_date = c("jul1", "jan1", "jan1-dec31"),
   variant_id = 2,
-  wpp_version = 2019,
+  wpp_version = 2022,
   clean_names = FALSE,
   fct_age = TRUE,
   drop_id_cols = FALSE,
   tidy_pop_sex = FALSE,
   add_regions = FALSE,
+  add_iso = FALSE,
   messages = TRUE,
-  local = FALSE
+  server = c("github", "local")
 )
 }
 \arguments{
 \item{indicator}{Character string based on the \code{name} column in the \link[=wpp_indicators]{wpp_indicators} data frame or \code{pop}. Represents the variables to be downloaded.}
 
-\item{indicator_file_group}{Character string based on the \code{file_group} column in the \link[=wpp_indicators]{wpp_indicators} data frame . Represents the file group to download data from. Only needed for obtaining different granularities of population data.}
+\item{indicator_file}{Character string based on the \code{file} column in the \link[=wpp_indicators]{wpp_indicators} data frame . Represents the file group to download data from. Needed for obtaining indicators that are available with different levels of granularities (such as \code{Births} in overall population or \code{Births} by mothers age group).}
 
 \item{pop_age}{Character string for population age groups if \code{indicator} is set to \code{pop}. Defaults to no age groups \code{total}, but can be set to \code{single} or \code{five}.}
 
 \item{pop_sex}{Character string for population sexes if \code{indicator}is set to \code{pop}. Defaults to no sex \code{total}, but can be set to \code{male}, \code{female}, \code{both} or \code{all}.}
 
-\item{pop_freq}{Character string for frequency of population data if \code{indicator} is set to \code{pop}. Defaults to \code{annual}, but in a some (exceptional cases) cases can be set to \code{five}.}
+\item{pop_freq}{Character string for frequency of population data if \code{indicator} is set to \code{pop}. Defaults to \code{annual}, but in a some (exceptional cases) can be set to \code{five}.}
+
+\item{pop_date}{Character string for frequency of population data if \code{indicator} is set to \code{pop}. Defaults to \code{jul1} (July 1st), but for WPP2022 can be set to \code{jan1} for population at beginning of year or \code{jan1-dec31} for exposure population.}
 
 \item{variant_id}{Numeric value(s) based on the \code{var_id} column in the \link[=wpp_indicators]{wpp_indicators} data frame. Note, past data is in the \code{"Medium" (2)} variant only.}
 
@@ -48,7 +52,13 @@ get_wpp(
 
 \item{messages}{Logical to not suppress printing of messages.}
 
-\item{local}{Logical to load data from data-host folder for use in development where Github access is blocked/slow (in China). \code{FALSE} by default.}
+\item{server}{Character string for location to download data from. Default of \code{github}.}
+
+\item{add_iso_codes}{Logical to indicate if to add a \code{iso3} and \code{iso2} columns for ISO 3 and 2 letter country codes (where \code{LocID} is less than 900)}
+
+\item{fertility_age}{Character string for age groups if \code{indicator} is set to \code{ASFR}, \code{PASFR} or \code{Births}. Defaults to \code{five} year age groups, but can be set to \code{single} for WPP2022.}
+
+\item{life_table_age}{Character string for age groups if \code{indicator} is from life table. Defaults to \code{abridged} for five year age groups, but can be set to \code{complete} for single years for WPP2022.}
 }
 \value{
 A \link[tibble:tibble-package]{tibble} with downloaded data in tidy format
@@ -59,53 +69,122 @@ Downloads data on demographic indicators in UN DESA WPP. Requires a working inte
 \details{
 Indicators must use the name corresponding to the \code{name} column in in the \link[=wpp_indicators]{wpp_indicators} data frame.
 The \link[=find_indicator]{find_indicator()} function can be used to look up the indicator code and availability by variants
-There are 35 different indicators in WPP data (starting from 1998)\tabular{lll}{
-   name \tab details \tab file_group \cr
-   ASFR \tab Age-specific fertility rate (births per 1,000 women) \tab Fertility_by_Age \cr
-   ax \tab Average number of years lived (nax) between ages x and x+n by those dying in the interval \tab Life_Table \cr
-   Births \tab Number of births, both sexes combined (thousands) \tab Fertility_by_Age \cr
-   Births \tab Number of births, both sexes combined (thousands) \tab Period_Indicators \cr
-   CBR \tab Crude birth rate (births per 1,000 population) \tab Period_Indicators \cr
-   CDR \tab Crude death rate (deaths per 1,000 population) \tab Period_Indicators \cr
-   CNMR \tab Net migration rate (per 1,000 population) \tab Period_Indicators \cr
-   Deaths \tab Number of deaths, both sexes combined (thousands) \tab Period_Indicators \cr
-   DeathsFemale \tab Number of female deaths (thousands) \tab Period_Indicators \cr
-   DeathsMale \tab Number of male deaths (thousands) \tab Period_Indicators \cr
-   dx \tab Number of deaths, (ndx), between ages x and x+n \tab Life_Table \cr
-   ex \tab Expectation of life (ex) at age x, i.e., average number of years lived subsequent to age x by those reaching age x \tab Life_Table \cr
-   GrowthRate \tab Average annual rate of population change (percentage) \tab Period_Indicators \cr
-   IMR \tab Infant mortality rate, q(1), for both sexes combined (infant deaths per 1,000 live births) \tab Period_Indicators \cr
-   LEx \tab Life expectancy at birth for both sexes combined (years) \tab Period_Indicators \cr
-   LExFemale \tab Female life expectancy at birth (years) \tab Period_Indicators \cr
-   LExMale \tab Male life expectancy at birth (years) \tab Period_Indicators \cr
-   lx \tab Number of survivors, (lx), at age (x) for 100000 births \tab Life_Table \cr
-   Lx \tab Number of person-years lived, (nLx), between ages x and x+n \tab Life_Table \cr
-   MAC \tab Female mean age of childbearing (years) \tab Period_Indicators \cr
-   mx \tab Central death rate, nmx, for the age interval (x, x+n) \tab Life_Table \cr
-   NatIncr \tab Rate of natural increase (per 1,000 population) \tab Period_Indicators \cr
-   NetMigrations \tab Net number of migrants, both sexes combined (thousands) \tab Period_Indicators \cr
-   NRR \tab Net reproduction rate (surviving daughters per woman) \tab Period_Indicators \cr
-   PASFR \tab Percentage age-specific fertility rate \tab Fertility_by_Age \cr
-   PopDensity \tab Population per square kilometre (thousands) \tab TotalPopulationBySex \cr
-   PopFemale \tab Female population in the age group (thousands) \tab PopulationByAgeSex \cr
-   PopFemale \tab Total female population (thousands) \tab TotalPopulationBySex \cr
-   PopFemale \tab Female population for the individual age (thousands) \tab PopulationBySingleAgeSex \cr
-   PopFemale \tab Female population in the age group (thousands) \tab PopulationByAgeSex_5x5 \cr
-   PopMale \tab Male population in the age group (thousands) \tab PopulationByAgeSex \cr
-   PopMale \tab Total male population (thousands) \tab TotalPopulationBySex \cr
-   PopMale \tab Male population for the individual age (thousands) \tab PopulationBySingleAgeSex \cr
-   PopMale \tab Male population in the age group (thousands) \tab PopulationByAgeSex_5x5 \cr
-   PopTotal \tab Total population in the age group (thousands) \tab PopulationByAgeSex \cr
-   PopTotal \tab Total population, both sexes (thousands) \tab TotalPopulationBySex \cr
-   PopTotal \tab Total population for the individual age (thousands) \tab PopulationBySingleAgeSex \cr
-   PopTotal \tab Total population in the age group (thousands) \tab PopulationByAgeSex_5x5 \cr
-   px \tab Probability of surviving, (npx), for an individual of age x to age x+n \tab Life_Table \cr
-   Q5 \tab Under-five mortality, 5q0, for both sexes combined (deaths under age five per 1,000 live births) \tab Period_Indicators \cr
-   qx \tab Probability of dying (nqx), for an individual between age x and x+n \tab Life_Table \cr
-   SRB \tab Sex ratio at birth (male births per female births) \tab Period_Indicators \cr
-   Sx \tab Survival ratio (nSx) corresponding to proportion of the life table population in age group (x, x+n) who are alive n year later \tab Life_Table \cr
-   TFR \tab Total fertility (live births per woman) \tab Period_Indicators \cr
-   Tx \tab Person-years lived, (Tx), above age x \tab Life_Table \cr
+There are 114 different indicators in WPP data (starting from 1998)\tabular{llllll}{
+   topic \tab name \tab details \tab unit \tab file \tab wpp \cr
+   Fertility \tab ASFR \tab Age-specific fertility rate \tab births per 1,000 women \tab Fertility_by_Age1 \tab 2022 \cr
+   Fertility \tab ASFR \tab Age-specific fertility rate \tab births per 1,000 women \tab Fertility_by_Age5 \tab 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019, 2022 \cr
+   Fertility \tab Births \tab Births \tab thousands \tab Demographic_Indicators \tab 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019, 2022 \cr
+   Fertility \tab Births \tab Births \tab thousands \tab Fertility_by_Age1 \tab 2022 \cr
+   Fertility \tab Births \tab Births \tab thousands \tab Fertility_by_Age5 \tab 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019, 2022 \cr
+   Fertility \tab Births1519 \tab Births by women aged 15 to 19 \tab thousands \tab Demographic_Indicators \tab 2022 \cr
+   Fertility \tab CBR \tab Crude Birth Rate \tab births per 1,000 population \tab Demographic_Indicators \tab 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019, 2022 \cr
+   Fertility \tab MAC \tab Mean Age Childbearing \tab years \tab Demographic_Indicators \tab 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019, 2022 \cr
+   Fertility \tab NNR \tab Net Reproduction Rate \tab surviving daughters per woman \tab Demographic_Indicators \tab 2022 \cr
+   Fertility \tab NRR \tab Net reproduction rate \tab surviving daughters per woman \tab Demographic_Indicators \tab 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019 \cr
+   Fertility \tab PASFR \tab Percentage age-specific fertility rate \tab percentage \tab Fertility_by_Age1 \tab 2022 \cr
+   Fertility \tab PASFR \tab Percentage age-specific fertility rate \tab percentage \tab Fertility_by_Age5 \tab 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019, 2022 \cr
+   Fertility \tab SRB \tab Sex Ratio at Birth \tab males per 100 female births \tab Demographic_Indicators \tab 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019, 2022 \cr
+   Fertility \tab TFR \tab Total Fertility Rate \tab live births per woman \tab Demographic_Indicators \tab 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019, 2022 \cr
+   Migration \tab CNMR \tab Net Migration Rate \tab per 1,000 population \tab Demographic_Indicators \tab 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019, 2022 \cr
+   Migration \tab NetMigrations \tab Net Number of Migrants \tab thousands \tab Demographic_Indicators \tab 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019, 2022 \cr
+   Mortality \tab ax \tab Average number of years lived (nax) between ages x and x+n by those dying in the interval \tab years \tab Life_Table_Abridged \tab 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019, 2022 \cr
+   Mortality \tab ax \tab Average number of years lived (nax) between ages x and x+n by those dying in the interval \tab years \tab Life_Table_Complete \tab 2022 \cr
+   Mortality \tab CDR \tab Crude Death Rate \tab deaths per 1,000 population \tab Demographic_Indicators \tab 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019, 2022 \cr
+   Mortality \tab Deaths \tab Total Deaths \tab thousands \tab Demographic_Indicators \tab 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019, 2022 \cr
+   Mortality \tab DeathsFemale \tab Female Deaths \tab thousands \tab Demographic_Indicators \tab 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019, 2022 \cr
+   Mortality \tab DeathsMale \tab Male Deaths \tab thousands \tab Demographic_Indicators \tab 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019, 2022 \cr
+   Mortality \tab dx \tab Number of deaths, (ndx), between ages x and x+n \tab hypothetical cohort persons \tab Life_Table_Abridged \tab 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019, 2022 \cr
+   Mortality \tab dx \tab Number of deaths, (ndx), between ages x and x+n \tab hypothetical cohort persons \tab Life_Table_Complete \tab 2022 \cr
+   Mortality \tab ex \tab Expectation of life (ex) at age x, i.e., average number of years lived subsequent to age x by those reaching age x \tab years \tab Life_Table_Abridged \tab 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019, 2022 \cr
+   Mortality \tab ex \tab Expectation of life (ex) at age x, i.e., average number of years lived subsequent to age x by those reaching age x \tab years \tab Life_Table_Complete \tab 2022 \cr
+   Mortality \tab IMR \tab Infant Mortality Rate \tab infant deaths per 1,000 live births \tab Demographic_Indicators \tab 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019, 2022 \cr
+   Mortality \tab InfantDeaths \tab Infant Deaths, under age 1 \tab thousands \tab Demographic_Indicators \tab 2022 \cr
+   Mortality \tab LBsurvivingAge1 \tab Live births Surviving to Age 1 \tab thousands \tab Demographic_Indicators \tab 2022 \cr
+   Mortality \tab LE15 \tab Life Expectancy at Age 15, both sexes \tab years \tab Demographic_Indicators \tab 2022 \cr
+   Mortality \tab LE15Female \tab Female Life Expectancy at Age 15 \tab years \tab Demographic_Indicators \tab 2022 \cr
+   Mortality \tab LE15Male \tab Male Life Expectancy at Age 15 \tab years \tab Demographic_Indicators \tab 2022 \cr
+   Mortality \tab LE65 \tab Life Expectancy at Age 65, both sexes \tab years \tab Demographic_Indicators \tab 2022 \cr
+   Mortality \tab LE65Female \tab Female Life Expectancy at Age 65 \tab years \tab Demographic_Indicators \tab 2022 \cr
+   Mortality \tab LE65Male \tab Male Life Expectancy at Age 65 \tab years \tab Demographic_Indicators \tab 2022 \cr
+   Mortality \tab LE80 \tab Life Expectancy at Age 80, both sexes \tab years \tab Demographic_Indicators \tab 2022 \cr
+   Mortality \tab LE80Female \tab Female Life Expectancy at Age 80 \tab years \tab Demographic_Indicators \tab 2022 \cr
+   Mortality \tab LE80Male \tab Male Life Expectancy at Age 80 \tab years \tab Demographic_Indicators \tab 2022 \cr
+   Mortality \tab LEx \tab Life Expectancy at Birth, both sexes \tab years \tab Demographic_Indicators \tab 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019, 2022 \cr
+   Mortality \tab LExFemale \tab Female Life Expectancy at Birth \tab years \tab Demographic_Indicators \tab 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019, 2022 \cr
+   Mortality \tab LExMale \tab Male Life Expectancy at Birth \tab years \tab Demographic_Indicators \tab 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019, 2022 \cr
+   Mortality \tab lx \tab Number of survivors, (lx), at age \tab hypothetical cohort persons \tab Life_Table_Abridged \tab 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019, 2022 \cr
+   Mortality \tab lx \tab Number of survivors, (lx), at age \tab hypothetical cohort persons \tab Life_Table_Complete \tab 2022 \cr
+   Mortality \tab Lx \tab Number of person-years lived, (nLx), between ages x and x+n \tab years \tab Life_Table_Abridged \tab 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019, 2022 \cr
+   Mortality \tab Lx \tab Number of person-years lived, (nLx), between ages x and x+n \tab years \tab Life_Table_Complete \tab 2022 \cr
+   Mortality \tab mx \tab Central death rate, nmx, for the age interval (x, x+n) \tab rate \tab Life_Table_Abridged \tab 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019, 2022 \cr
+   Mortality \tab mx \tab Central death rate, nmx, for the age interval (x, x+n) \tab rate \tab Life_Table_Complete \tab 2022 \cr
+   Mortality \tab px \tab Probability of surviving, (npx), for an individual of age x to age x+n \tab probability \tab Life_Table_Abridged \tab 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019, 2022 \cr
+   Mortality \tab px \tab Probability of surviving, (npx), for an individual of age x to age x+n \tab probability \tab Life_Table_Complete \tab 2022 \cr
+   Mortality \tab Q0040 \tab Mortality before Age 40, both sexes \tab deaths under age 40 per 1,000 live births \tab Demographic_Indicators \tab 2022 \cr
+   Mortality \tab Q0040Female \tab Female mortality before Age 40 \tab deaths under age 40 per 1,000 female live births \tab Demographic_Indicators \tab 2022 \cr
+   Mortality \tab Q0040Male \tab Male mortality before Age 40 \tab deaths under age 40 per 1,000 male live births \tab Demographic_Indicators \tab 2022 \cr
+   Mortality \tab Q0060 \tab Mortality before Age 60, both sexes \tab deaths under age 60 per 1,000 live births \tab Demographic_Indicators \tab 2022 \cr
+   Mortality \tab Q0060Female \tab Female mortality before Age 60 \tab deaths under age 60 per 1,000 female live births \tab Demographic_Indicators \tab 2022 \cr
+   Mortality \tab Q0060Male \tab Male mortality before Age 60 \tab deaths under age 60 per 1,000 male live births \tab Demographic_Indicators \tab 2022 \cr
+   Mortality \tab Q1550 \tab Mortality between Age 15 and 50, both sexes \tab deaths under age 50 per 1,000 alive at age 15 \tab Demographic_Indicators \tab 2022 \cr
+   Mortality \tab Q1550Female \tab Female mortality between Age 15 and 50 \tab deaths under age 50 per 1,000 females alive at age 15 \tab Demographic_Indicators \tab 2022 \cr
+   Mortality \tab Q1550Male \tab Male mortality between Age 15 and 50 \tab deaths under age 50 per 1,000 males alive at age 15 \tab Demographic_Indicators \tab 2022 \cr
+   Mortality \tab Q1560 \tab Mortality between Age 15 and 60, both sexes \tab deaths under age 60 per 1,000 alive at age 15 \tab Demographic_Indicators \tab 2022 \cr
+   Mortality \tab Q1560Female \tab Female mortality between Age 15 and 60 \tab deaths under age 60 per 1,000 females alive at age 15 \tab Demographic_Indicators \tab 2022 \cr
+   Mortality \tab Q1560Male \tab Male mortality between Age 15 and 60 \tab deaths under age 60 per 1,000 males alive at age 15 \tab Demographic_Indicators \tab 2022 \cr
+   Mortality \tab Q5 \tab Under-five Mortality Rate \tab deaths under age 5 per 1,000 live births \tab Demographic_Indicators \tab 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019, 2022 \cr
+   Mortality \tab qx \tab Probability of dying (nqx), for an individual between age x and x+n \tab probability \tab Life_Table_Abridged \tab 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019, 2022 \cr
+   Mortality \tab qx \tab Probability of dying (nqx), for an individual between age x and x+n \tab probability \tab Life_Table_Complete \tab 2022 \cr
+   Mortality \tab Sx \tab Survival ratio (nSx) corresponding to proportion of the life table population in age group \tab proportion \tab Life_Table_Abridged \tab 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019, 2022 \cr
+   Mortality \tab Sx \tab Survival ratio (nSx) corresponding to proportion of the life table population in age group \tab proportion \tab Life_Table_Complete \tab 2022 \cr
+   Mortality \tab Tx \tab Person-years lived, (Tx), above age x \tab years \tab Life_Table_Abridged \tab 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019, 2022 \cr
+   Mortality \tab Tx \tab Person-years lived, (Tx), above age x \tab years \tab Life_Table_Complete \tab 2022 \cr
+   Mortality \tab Under5Deaths \tab Deaths under age 5 \tab thousands \tab Demographic_Indicators \tab 2022 \cr
+   Population \tab DoublingTime \tab Population Annual Doubling Time \tab years \tab Demographic_Indicators \tab 2022 \cr
+   Population \tab GrowthRate \tab Average annual rate of population change \tab percentage \tab Demographic_Indicators \tab 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019 \cr
+   Population \tab MedianAgePop \tab Median Age, as of 1 July \tab years \tab Demographic_Indicators \tab 2022 \cr
+   Population \tab NatChange \tab Natural Change, Births minus Deaths \tab thousands \tab Demographic_Indicators \tab 2022 \cr
+   Population \tab NatChangeRT \tab Rate of Natural Change \tab per 1,000 population \tab Demographic_Indicators \tab 2022 \cr
+   Population \tab NatIncr \tab Rate of natural increase \tab per 1,000 population \tab Demographic_Indicators \tab 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019 \cr
+   Population \tab PopChange \tab Population Change \tab thousands \tab Demographic_Indicators \tab 2022 \cr
+   Population \tab PopDensity \tab Population Density, as of 1 July \tab persons per square km \tab Demographic_Indicators \tab 2022 \cr
+   Population \tab PopDensity \tab Population Density, as of 1 July \tab persons per square km \tab TotalPopulationBySex \tab 2019, 2022 \cr
+   Population \tab PopFemale \tab Female population for the individual age \tab percentage \tab PopulationBySingleAgeSex_Percentage \tab 2022 \cr
+   Population \tab PopFemale \tab Female population for the individual age \tab thousands \tab Population1JanuaryBySingleAgeSex \tab 2022 \cr
+   Population \tab PopFemale \tab Female population for the individual age \tab thousands \tab PopulationBySingleAgeSex \tab 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019, 2022 \cr
+   Population \tab PopFemale \tab Female population for the individual age \tab thousands \tab PopulationExposureBySingleAgeSex \tab 2022 \cr
+   Population \tab PopFemale \tab Female population in the age group \tab percentage \tab PopulationByAge5GroupSex_Percentage \tab 2022 \cr
+   Population \tab PopFemale \tab Female population in the age group \tab thousands \tab Population1JanuaryByAge5GroupSex \tab 2022 \cr
+   Population \tab PopFemale \tab Female population in the age group \tab thousands \tab PopulationByAge5GroupSex \tab 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019, 2022 \cr
+   Population \tab PopFemale \tab Female population in the age group \tab thousands \tab PopulationByAgeSex_5x5 \tab 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2015, 2017 \cr
+   Population \tab PopFemale \tab Female population in the age group \tab thousands \tab PopulationExposureByAge5GroupSex \tab 2022 \cr
+   Population \tab PopFemale \tab Total female population \tab thousands \tab TotalPopulationBySex \tab 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019, 2022 \cr
+   Population \tab PopGrowthRate \tab Population Growth Rate \tab percentage \tab Demographic_Indicators \tab 2022 \cr
+   Population \tab PopMale \tab Male population for the individual age \tab percentage \tab PopulationBySingleAgeSex_Percentage \tab 2022 \cr
+   Population \tab PopMale \tab Male population for the individual age \tab thousands \tab Population1JanuaryBySingleAgeSex \tab 2022 \cr
+   Population \tab PopMale \tab Male population for the individual age \tab thousands \tab PopulationBySingleAgeSex \tab 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019, 2022 \cr
+   Population \tab PopMale \tab Male population for the individual age \tab thousands \tab PopulationExposureBySingleAgeSex \tab 2022 \cr
+   Population \tab PopMale \tab Male population in the age group \tab percentage \tab PopulationByAge5GroupSex_Percentage \tab 2022 \cr
+   Population \tab PopMale \tab Male population in the age group \tab thousands \tab Population1JanuaryByAge5GroupSex \tab 2022 \cr
+   Population \tab PopMale \tab Male population in the age group \tab thousands \tab PopulationByAge5GroupSex \tab 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019, 2022 \cr
+   Population \tab PopMale \tab Male population in the age group \tab thousands \tab PopulationByAgeSex_5x5 \tab 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2015, 2017 \cr
+   Population \tab PopMale \tab Male population in the age group \tab thousands \tab PopulationExposureByAge5GroupSex \tab 2022 \cr
+   Population \tab PopMale \tab Total male population \tab thousands \tab TotalPopulationBySex \tab 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019, 2022 \cr
+   Population \tab PopSexRatio \tab Population Sex Ratio, as of 1 July \tab males per 100 females \tab Demographic_Indicators \tab 2022 \cr
+   Population \tab PopTotal \tab Total population for the individual age \tab percentage \tab PopulationBySingleAgeSex_Percentage \tab 2022 \cr
+   Population \tab PopTotal \tab Total population for the individual age \tab thousands \tab Population1JanuaryBySingleAgeSex \tab 2022 \cr
+   Population \tab PopTotal \tab Total population for the individual age \tab thousands \tab PopulationBySingleAgeSex \tab 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019, 2022 \cr
+   Population \tab PopTotal \tab Total population for the individual age \tab thousands \tab PopulationExposureBySingleAgeSex \tab 2022 \cr
+   Population \tab PopTotal \tab Total population in the age group \tab percentage \tab PopulationByAge5GroupSex_Percentage \tab 2022 \cr
+   Population \tab PopTotal \tab Total population in the age group \tab thousands \tab Population1JanuaryByAge5GroupSex \tab 2022 \cr
+   Population \tab PopTotal \tab Total population in the age group \tab thousands \tab PopulationByAge5GroupSex \tab 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019, 2022 \cr
+   Population \tab PopTotal \tab Total population in the age group \tab thousands \tab PopulationByAgeSex_5x5 \tab 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2015, 2017 \cr
+   Population \tab PopTotal \tab Total population in the age group \tab thousands \tab PopulationExposureByAge5GroupSex \tab 2022 \cr
+   Population \tab PopTotal \tab Total population, both sexes \tab thousands \tab TotalPopulationBySex \tab 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2015, 2017, 2019, 2022 \cr
+   Population \tab TPopulation1Jan \tab Total Population, as of 1 January \tab thousands \tab Demographic_Indicators \tab 2022 \cr
+   Population \tab TPopulation1July \tab Total Population, as of 1 July \tab thousands \tab Demographic_Indicators \tab 2022 \cr
+   Population \tab TPopulationFemale1July \tab Female Population, as of 1 July \tab thousands \tab Demographic_Indicators \tab 2022 \cr
+   Population \tab TPopulationMale1July \tab Male Population, as of 1 July \tab thousands \tab Demographic_Indicators \tab 2022 \cr
 }
 
 
@@ -122,6 +201,7 @@ There are 14 different variants in WPP data (starting from 1998).\tabular{rl}{
    8 \tab Constant mortality \cr
    9 \tab No change \cr
    10 \tab Momentum \cr
+   16 \tab Instant replacement zero migration \cr
    202 \tab Median PI (BHM median in WPP2015) \cr
    203 \tab Upper 80 PI \cr
    204 \tab Lower 80 PI \cr
@@ -137,9 +217,18 @@ get_wpp(indicator = "TFR")
 # single indicator from multiple variants of latest WPP
 get_wpp(indicator = "TFR", variant_id = c(2, 3, 4))
 
-# as there are multiple population indicators in the WPP with different levels of granularity
-# you can set indicator = "pop" and use the pop_sex, pop_age and pop_freq to get desired data
-# from the appropriate indicator_file_group...
+# some indicators appear in multiple file groups, for example Births
+# represents total number of births in the country in the
+# Demographic_Indicators file (chosen by default)
+get_wpp(indicator = "Births")
+
+# specify indicator_file to get number of births by mothers 5-year age group
+get_wpp(indicator = c("Births", "ASFR"), indicator_file = "Fertility_by_Age5", drop_id_cols = TRUE)
+
+# PopTotal, PopMale and PopFemale indicators are in many WPP files with
+# with a wide range granularity. Set indicator = "pop" and use the pop_sex,
+# pop_age, pop_freq and pop_date to get desired data from the appropriate
+# indicator_file...
 
 # when using indicator = "pop" get_wpp() defaults to annual total population (summed over age and sex)
 get_wpp(indicator = "pop")
@@ -150,15 +239,17 @@ get_wpp(indicator = "pop", pop_sex = "male")
 # use pop_age to specify age groups
 get_wpp(indicator = "pop", pop_sex = "both", pop_age = "five")
 
+# use pop_date to specify populations at start of year (rather than mid-year)
+get_wpp(indicator = "pop", pop_sex = "female", pop_age = "five", pop_date = "jan1")
+
 # tidy sex into a single column and drop id columns
 get_wpp(indicator = "pop", pop_sex = "both", pop_age = "five",
         tidy_pop_sex = TRUE, drop_id_cols = TRUE)
 
-# alternatively use indicator_file_group to select the desired version of population indicator(s)
-get_wpp(indicator = c("PopTotal", "PopMale", "PopFemale"), indicator_file_group =  "TotalPopulationBySex")
-
+# alternatively use indicator_file to select the desired version of population indicator(s)
+get_wpp(indicator = c("PopTotal", "PopMale", "PopFemale"), indicator_file =  "TotalPopulationBySex")
 
 # clean column names
-get_wpp(indicator = c("SRB", "NetMigrations", "GrowthRate"), clean_names = TRUE, drop_id_cols = TRUE)
+get_wpp(indicator = c("SRB", "NetMigrations", "PopGrowthRate"), clean_names = TRUE, drop_id_cols = TRUE)
 }
 }
