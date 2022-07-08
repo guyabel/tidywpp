@@ -2,4 +2,6 @@ wpp,file_group,SexID,Sex
 2022,Life_Table_Abridged,1,Male
 2022,Life_Table_Abridged,2,Female
 2022,Life_Table_Abridged,3,Total
+2022,Life_Table_Complete,3,Total
 2022,Life_Table_Complete,2,Female
+2022,Life_Table_Complete,1,Male

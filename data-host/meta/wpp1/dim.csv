@@ -1,7 +1,7 @@
 wpp,file_group,VarID,Variant,n_row,n_col,n_original_files
 2022,Demographic_Indicators,10,Momentum,22880,65,1
 2022,Demographic_Indicators,16,Instant replacement zero migration,22880,65,1
-2022,Demographic_Indicators,2,Medium,43472,65,1
+2022,Demographic_Indicators,2,Medium,43472,65,2
 2022,Demographic_Indicators,3,High,22880,65,1
 2022,Demographic_Indicators,4,Low,22880,65,1
 2022,Demographic_Indicators,5,Constant fertility,22880,65,1
@@ -27,8 +27,8 @@ wpp,file_group,VarID,Variant,n_row,n_col,n_original_files
 2022,Fertility_by_Age5,7,Zero migration,202635,18,1
 2022,Fertility_by_Age5,8,Constant mortality,202635,18,1
 2022,Fertility_by_Age5,9,No change,202635,18,1
-2022,Life_Table_Abridged,2,Medium,1467180,27,1
-2022,Life_Table_Complete,2,Medium,2245230,27,1
+2022,Life_Table_Abridged,2,Medium,2821500,27,2
+2022,Life_Table_Complete,2,Medium,12953250,27,6
 2022,Population1JanuaryByAge5GroupSex,10,Momentum,478800,18,1
 2022,Population1JanuaryByAge5GroupSex,2,Medium,909720,18,1
 2022,Population1JanuaryByAge5GroupSex,3,High,478800,18,1
@@ -38,7 +38,7 @@ wpp,file_group,VarID,Variant,n_row,n_col,n_original_files
 2022,Population1JanuaryByAge5GroupSex,7,Zero migration,478800,18,1
 2022,Population1JanuaryByAge5GroupSex,8,Constant mortality,478800,18,1
 2022,Population1JanuaryByAge5GroupSex,9,No change,478800,18,1
-2022,Population1JanuaryBySingleAgeSex,2,Medium,2302800,18,1
+2022,Population1JanuaryBySingleAgeSex,2,Medium,4375320,18,2
 2022,PopulationByAge5GroupSex,10,Momentum,472815,18,1
 2022,PopulationByAge5GroupSex,2,Medium,903735,18,1
 2022,PopulationByAge5GroupSex,3,High,472815,18,1
@@ -59,7 +59,7 @@ wpp,file_group,VarID,Variant,n_row,n_col,n_original_files
 2022,PopulationByAge5GroupSex_Percentage,9,No change,472815,18,1
 2022,PopulationBySingleAgeSex,10,Momentum,2274015,18,1
 2022,PopulationBySingleAgeSex,16,Instant replacement zero migration,2274015,18,1
-2022,PopulationBySingleAgeSex,2,Medium,2274015,18,1
+2022,PopulationBySingleAgeSex,2,Medium,4346535,18,2
 2022,PopulationBySingleAgeSex,3,High,2274015,18,1
 2022,PopulationBySingleAgeSex,4,Low,2274015,18,1
 2022,PopulationBySingleAgeSex,5,Constant fertility,2274015,18,1
@@ -67,7 +67,7 @@ wpp,file_group,VarID,Variant,n_row,n_col,n_original_files
 2022,PopulationBySingleAgeSex,7,Zero migration,2274015,18,1
 2022,PopulationBySingleAgeSex,8,Constant mortality,2274015,18,1
 2022,PopulationBySingleAgeSex,9,No change,2274015,18,1
-2022,PopulationBySingleAgeSex_Percentage,2,Medium,2274015,18,1
+2022,PopulationBySingleAgeSex_Percentage,2,Medium,4346535,18,2
 2022,PopulationExposureByAge5GroupSex,10,Momentum,472815,18,1
 2022,PopulationExposureByAge5GroupSex,2,Medium,903735,18,1
 2022,PopulationExposureByAge5GroupSex,3,High,472815,18,1
@@ -77,7 +77,7 @@ wpp,file_group,VarID,Variant,n_row,n_col,n_original_files
 2022,PopulationExposureByAge5GroupSex,7,Zero migration,472815,18,1
 2022,PopulationExposureByAge5GroupSex,8,Constant mortality,472815,18,1
 2022,PopulationExposureByAge5GroupSex,9,No change,472815,18,1
-2022,PopulationExposureBySingleAgeSex,2,Medium,2274015,18,1
+2022,PopulationExposureBySingleAgeSex,2,Medium,4346535,18,2
 2022,TotalPopulationBySex,10,Momentum,22594,16,1
 2022,TotalPopulationBySex,2,Medium,43186,16,1
 2022,TotalPopulationBySex,202,Median PI,22594,16,1
