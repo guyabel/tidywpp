@@ -1,415 +1,415 @@
-wpp,file_group,VarID,Variant,n_row,n_col,n_original_files
-1998,Fertility_by_Age,2,Medium,17892,10,1
-1998,Fertility_by_Age,3,High,16401,10,1
-1998,Fertility_by_Age,4,Low,16401,10,1
-1998,Fertility_by_Age,5,Constant fertility,16401,10,1
-1998,Period_Indicators,2,Medium,5160,23,1
-1998,Period_Indicators,3,High,2343,23,1
-1998,Period_Indicators,4,Low,2343,23,1
-1998,Period_Indicators,5,Constant fertility,2343,23,1
-1998,PopulationByAgeSex,2,Medium,447300,10,1
-1998,PopulationByAgeSex,3,High,49203,10,1
-1998,PopulationByAgeSex,4,Low,49203,10,1
-1998,PopulationByAgeSex,5,Constant fertility,49203,10,1
-1998,PopulationByAgeSex,6,Instant replacement,4473,10,1
-1998,PopulationByAgeSex,7,Zero migration,4473,10,1
-1998,PopulationByAgeSex,8,Constant mortality,4473,10,1
-1998,PopulationByAgeSex,9,No change,4473,10,1
-1998,PopulationByAgeSex_5x5,2,Medium,89460,10,1
-1998,TotalPopulationBySex,2,Medium,25700,5,1
-1998,TotalPopulationBySex,3,High,14135,5,1
-1998,TotalPopulationBySex,4,Low,14135,5,1
-1998,TotalPopulationBySex,5,Constant fertility,14135,5,1
-1998,TotalPopulationBySex,6,Instant replacement,257,5,1
-1998,TotalPopulationBySex,7,Zero migration,257,5,1
-1998,TotalPopulationBySex,8,Constant mortality,257,5,1
-1998,TotalPopulationBySex,9,No change,257,5,1
-2000,Fertility_by_Age,2,Medium,18228,10,1
-2000,Fertility_by_Age,3,High,15190,10,1
-2000,Fertility_by_Age,4,Low,15190,10,1
-2000,Fertility_by_Age,5,Constant fertility,15190,10,1
-2000,Fertility_by_Age,6,Instant replacement,15190,10,1
-2000,Fertility_by_Age,7,Zero migration,15190,10,1
-2000,Fertility_by_Age,8,Constant mortality,15190,10,1
-2000,Fertility_by_Age,9,No change,15190,10,1
-2000,Period_Indicators,2,Medium,5160,23,1
-2000,Period_Indicators,3,High,2580,23,1
-2000,Period_Indicators,4,Low,2580,23,1
-2000,Period_Indicators,5,Constant fertility,2580,23,1
-2000,Period_Indicators,6,Instant replacement,2211,23,1
-2000,Period_Indicators,7,Zero migration,2211,23,1
-2000,Period_Indicators,8,Constant mortality,2211,23,1
-2000,Period_Indicators,9,No change,2211,23,1
-2000,PopulationByAgeSex,2,Medium,455700,10,1
-2000,PopulationByAgeSex,3,High,45570,10,1
-2000,PopulationByAgeSex,4,Low,45570,10,1
-2000,PopulationByAgeSex,5,Constant fertility,45570,10,1
-2000,PopulationByAgeSex,6,Instant replacement,45570,10,1
-2000,PopulationByAgeSex,7,Zero migration,45570,10,1
-2000,PopulationByAgeSex,8,Constant mortality,45570,10,1
-2000,PopulationByAgeSex,9,No change,45570,10,1
-2000,PopulationByAgeSex_5x5,2,Medium,91140,10,1
-2000,TotalPopulationBySex,2,Medium,25800,7,1
-2000,TotalPopulationBySex,3,High,12900,7,1
-2000,TotalPopulationBySex,4,Low,12900,7,1
-2000,TotalPopulationBySex,5,Constant fertility,12900,7,1
-2000,TotalPopulationBySex,6,Instant replacement,12900,7,1
-2000,TotalPopulationBySex,7,Zero migration,12900,7,1
-2000,TotalPopulationBySex,8,Constant mortality,12900,7,1
-2000,TotalPopulationBySex,9,No change,12900,7,1
-2002,Fertility_by_Age,2,Medium,18648,10,1
-2002,Fertility_by_Age,3,High,15540,10,1
-2002,Fertility_by_Age,4,Low,15540,10,1
-2002,Fertility_by_Age,5,Constant fertility,15540,10,1
-2002,Fertility_by_Age,6,Instant replacement,15540,10,1
-2002,Fertility_by_Age,7,Zero migration,15540,10,1
-2002,Fertility_by_Age,8,Constant mortality,15540,10,1
-2002,Fertility_by_Age,9,No change,15540,10,1
-2002,Period_Indicators,2,Medium,5160,23,1
-2002,Period_Indicators,3,High,2580,23,1
-2002,Period_Indicators,4,Low,2580,23,1
-2002,Period_Indicators,5,Constant fertility,2580,23,1
-2002,Period_Indicators,6,Instant replacement,2580,23,1
-2002,Period_Indicators,7,Zero migration,2580,23,1
-2002,Period_Indicators,8,Constant mortality,2580,23,1
-2002,Period_Indicators,9,No change,2580,23,1
-2002,PopulationByAgeSex,2,Medium,420690,10,1
-2002,PopulationByAgeSex,3,High,46620,10,1
-2002,PopulationByAgeSex,4,Low,46620,10,1
-2002,PopulationByAgeSex,5,Constant fertility,46620,10,1
-2002,PopulationByAgeSex,6,Instant replacement,46620,10,1
-2002,PopulationByAgeSex,7,Zero migration,46620,10,1
-2002,PopulationByAgeSex,8,Constant mortality,46620,10,1
-2002,PopulationByAgeSex,9,No change,46620,10,1
-2002,PopulationByAgeSex_5x5,2,Medium,83250,10,1
-2002,TotalPopulationBySex,2,Medium,25800,7,1
-2002,TotalPopulationBySex,3,High,12900,7,1
-2002,TotalPopulationBySex,4,Low,12900,7,1
-2002,TotalPopulationBySex,5,Constant fertility,12900,7,1
-2002,TotalPopulationBySex,6,Instant replacement,12900,7,1
-2002,TotalPopulationBySex,7,Zero migration,12900,7,1
-2002,TotalPopulationBySex,8,Constant mortality,12900,7,1
-2002,TotalPopulationBySex,9,No change,12900,7,1
-2004,Fertility_by_Age,2,Medium,18900,10,1
-2004,Fertility_by_Age,3,High,14175,10,1
-2004,Fertility_by_Age,4,Low,14175,10,1
-2004,Fertility_by_Age,5,Constant fertility,14175,10,1
-2004,Fertility_by_Age,6,Instant replacement,14175,10,1
-2004,Fertility_by_Age,7,Zero migration,14175,10,1
-2004,Fertility_by_Age,8,Constant mortality,14175,10,1
-2004,Fertility_by_Age,9,No change,14175,10,1
-2004,Life_Table,2,Medium,178200,19,1
-2004,Period_Indicators,2,Medium,5220,23,1
-2004,Period_Indicators,3,High,2349,23,1
-2004,Period_Indicators,4,Low,2349,23,1
-2004,Period_Indicators,5,Constant fertility,2349,23,1
-2004,Period_Indicators,6,Instant replacement,2349,23,1
-2004,Period_Indicators,7,Zero migration,2349,23,1
-2004,Period_Indicators,8,Constant mortality,2349,23,1
-2004,Period_Indicators,9,No change,2349,23,1
-2004,PopulationByAgeSex,2,Medium,472500,10,1
-2004,PopulationByAgeSex,3,High,42525,10,1
-2004,PopulationByAgeSex,4,Low,42525,10,1
-2004,PopulationByAgeSex,5,Constant fertility,42525,10,1
-2004,PopulationByAgeSex,6,Instant replacement,42525,10,1
-2004,PopulationByAgeSex,7,Zero migration,42525,10,1
-2004,PopulationByAgeSex,8,Constant mortality,42525,10,1
-2004,PopulationByAgeSex,9,No change,42525,10,1
-2004,PopulationByAgeSex_5x5,2,Medium,94500,10,1
-2004,PopulationBySingleAgeSex,2,Medium,2272500,10,2
-2004,TotalPopulationBySex,2,Medium,26100,7,1
-2004,TotalPopulationBySex,3,High,11745,7,1
-2004,TotalPopulationBySex,4,Low,11745,7,1
-2004,TotalPopulationBySex,5,Constant fertility,11745,7,1
-2004,TotalPopulationBySex,6,Instant replacement,11745,7,1
-2004,TotalPopulationBySex,7,Zero migration,11745,7,1
-2004,TotalPopulationBySex,8,Constant mortality,11745,7,1
-2004,TotalPopulationBySex,9,No change,11745,7,1
-2006,Fertility_by_Age,2,Medium,19152,10,1
-2006,Fertility_by_Age,3,High,14364,10,1
-2006,Fertility_by_Age,4,Low,14364,10,1
-2006,Fertility_by_Age,5,Constant fertility,14364,10,1
-2006,Fertility_by_Age,6,Instant replacement,14364,10,1
-2006,Fertility_by_Age,7,Zero migration,14364,10,1
-2006,Fertility_by_Age,8,Constant mortality,14364,10,1
-2006,Fertility_by_Age,9,No change,14364,10,1
-2006,Life_Table,2,Medium,180576,19,1
-2006,Period_Indicators,2,Medium,5240,23,1
-2006,Period_Indicators,3,High,2358,23,1
-2006,Period_Indicators,4,Low,2358,23,1
-2006,Period_Indicators,5,Constant fertility,2358,23,1
-2006,Period_Indicators,6,Instant replacement,2358,23,1
-2006,Period_Indicators,7,Zero migration,2358,23,1
-2006,Period_Indicators,8,Constant mortality,2358,23,1
-2006,Period_Indicators,9,No change,2358,23,1
-2006,PopulationByAgeSex,2,Medium,478800,10,1
-2006,PopulationByAgeSex,3,High,43092,10,1
-2006,PopulationByAgeSex,4,Low,43092,10,1
-2006,PopulationByAgeSex,5,Constant fertility,43092,10,1
-2006,PopulationByAgeSex,6,Instant replacement,43092,10,1
-2006,PopulationByAgeSex,7,Zero migration,43092,10,1
-2006,PopulationByAgeSex,8,Constant mortality,43092,10,1
-2006,PopulationByAgeSex,9,No change,43092,10,1
-2006,PopulationByAgeSex_5x5,2,Medium,95760,10,1
-2006,PopulationBySingleAgeSex,2,Medium,2302800,10,2
-2006,TotalPopulationBySex,2,Medium,26200,7,1
-2006,TotalPopulationBySex,3,High,11790,7,1
-2006,TotalPopulationBySex,4,Low,11790,7,1
-2006,TotalPopulationBySex,5,Constant fertility,11790,7,1
-2006,TotalPopulationBySex,6,Instant replacement,11790,7,1
-2006,TotalPopulationBySex,7,Zero migration,11790,7,1
-2006,TotalPopulationBySex,8,Constant mortality,11790,7,1
-2006,TotalPopulationBySex,9,No change,11790,7,1
-2008,Fertility_by_Age,2,Medium,19236,10,1
-2008,Fertility_by_Age,3,High,14427,10,1
-2008,Fertility_by_Age,4,Low,14427,10,1
-2008,Fertility_by_Age,5,Constant fertility,14427,10,1
-2008,Fertility_by_Age,6,Instant replacement,14427,10,1
-2008,Fertility_by_Age,7,Zero migration,14427,10,1
-2008,Fertility_by_Age,8,Constant mortality,14427,10,1
-2008,Fertility_by_Age,9,No change,14427,10,1
-2008,Life_Table,2,Medium,181368,19,1
-2008,Period_Indicators,2,Medium,5260,23,1
-2008,Period_Indicators,3,High,2367,23,1
-2008,Period_Indicators,4,Low,2367,23,1
-2008,Period_Indicators,5,Constant fertility,2367,23,1
-2008,Period_Indicators,6,Instant replacement,2367,23,1
-2008,Period_Indicators,7,Zero migration,2367,23,1
-2008,Period_Indicators,8,Constant mortality,2367,23,1
-2008,Period_Indicators,9,No change,2367,23,1
-2008,PopulationByAgeSex,2,Medium,480900,10,1
-2008,PopulationByAgeSex,3,High,43281,10,1
-2008,PopulationByAgeSex,4,Low,43281,10,1
-2008,PopulationByAgeSex,5,Constant fertility,43281,10,1
-2008,PopulationByAgeSex,6,Instant replacement,43281,10,1
-2008,PopulationByAgeSex,7,Zero migration,43281,10,1
-2008,PopulationByAgeSex,8,Constant mortality,43281,10,1
-2008,PopulationByAgeSex,9,No change,43281,10,1
-2008,PopulationByAgeSex_5x5,2,Medium,96180,10,1
-2008,PopulationBySingleAgeSex,2,Medium,2312900,10,2
-2008,TotalPopulationBySex,2,Medium,26300,7,1
-2008,TotalPopulationBySex,3,High,11835,7,1
-2008,TotalPopulationBySex,4,Low,11835,7,1
-2008,TotalPopulationBySex,5,Constant fertility,11835,7,1
-2008,TotalPopulationBySex,6,Instant replacement,11835,7,1
-2008,TotalPopulationBySex,7,Zero migration,11835,7,1
-2008,TotalPopulationBySex,8,Constant mortality,11835,7,1
-2008,TotalPopulationBySex,9,No change,11835,7,1
-2010,Fertility_by_Age,2,Medium,62370,10,1
-2010,Fertility_by_Age,3,High,29232,10,1
-2010,Fertility_by_Age,4,Low,29232,10,1
-2010,Fertility_by_Age,5,Constant fertility,29232,10,1
-2010,Fertility_by_Age,6,Instant replacement,29232,10,1
-2010,Fertility_by_Age,7,Zero migration,29232,10,1
-2010,Fertility_by_Age,8,Constant mortality,29232,10,1
-2010,Fertility_by_Age,9,No change,29232,10,1
-2010,Life_Table,2,Medium,588060,19,1
-2010,Period_Indicators,2,Medium,13770,23,1
-2010,Period_Indicators,3,High,4770,23,1
-2010,Period_Indicators,4,Low,4770,23,1
-2010,Period_Indicators,5,Constant fertility,4770,23,1
-2010,Period_Indicators,6,Instant replacement,4770,23,1
-2010,Period_Indicators,7,Zero migration,4770,23,1
-2010,Period_Indicators,8,Constant mortality,4770,23,1
-2010,Period_Indicators,9,No change,4770,23,1
-2010,PopulationByAgeSex,2,Medium,1275750,10,1
-2010,PopulationByAgeSex,3,High,87696,10,1
-2010,PopulationByAgeSex,4,Low,87696,10,1
-2010,PopulationByAgeSex,5,Constant fertility,87696,10,1
-2010,PopulationByAgeSex,6,Instant replacement,87696,10,1
-2010,PopulationByAgeSex,7,Zero migration,87696,10,1
-2010,PopulationByAgeSex,8,Constant mortality,87696,10,1
-2010,PopulationByAgeSex,9,No change,87696,10,1
-2010,PopulationByAgeSex_5x5,2,Medium,255150,10,1
-2010,PopulationBySingleAgeSex,2,Medium,3514800,10,2
-2010,TotalPopulationBySex,2,Medium,65700,7,1
-2010,TotalPopulationBySex,3,High,23850,7,1
-2010,TotalPopulationBySex,4,Low,23850,7,1
-2010,TotalPopulationBySex,5,Constant fertility,23850,7,1
-2010,TotalPopulationBySex,6,Instant replacement,23850,7,1
-2010,TotalPopulationBySex,7,Zero migration,23850,7,1
-2010,TotalPopulationBySex,8,Constant mortality,23850,7,1
-2010,TotalPopulationBySex,9,No change,23850,7,1
-2012,Fertility_by_Age,2,Medium,68040,10,1
-2012,Fertility_by_Age,3,High,29736,10,1
-2012,Fertility_by_Age,4,Low,29736,10,1
-2012,Fertility_by_Age,5,Constant fertility,29736,10,1
-2012,Fertility_by_Age,6,Instant replacement,29736,10,1
-2012,Fertility_by_Age,7,Zero migration,29736,10,1
-2012,Fertility_by_Age,8,Constant mortality,29736,10,1
-2012,Fertility_by_Age,9,No change,29736,10,1
-2012,Life_Table,2,Medium,641520,19,1
-2012,Period_Indicators,2,Medium,11130,23,1
-2012,Period_Indicators,3,High,4824,23,1
-2012,Period_Indicators,4,Low,4824,23,1
-2012,Period_Indicators,5,Constant fertility,4824,23,1
-2012,Period_Indicators,6,Instant replacement,4824,23,1
-2012,Period_Indicators,7,Zero migration,4824,23,1
-2012,Period_Indicators,8,Constant mortality,4824,23,1
-2012,Period_Indicators,9,No change,4824,23,1
-2012,PopulationByAgeSex,2,Medium,1027404,10,1
-2012,PopulationByAgeSex,3,High,94164,10,1
-2012,PopulationByAgeSex,4,Low,94164,10,1
-2012,PopulationByAgeSex,5,Constant fertility,94164,10,1
-2012,PopulationByAgeSex,6,Instant replacement,95676,10,1
-2012,PopulationByAgeSex,7,Zero migration,94164,10,1
-2012,PopulationByAgeSex,8,Constant mortality,94164,10,1
-2012,PopulationByAgeSex,9,No change,94164,10,1
-2012,PopulationByAgeSex_5x5,2,Medium,210924,10,1
-2012,PopulationBySingleAgeSex,2,Medium,4941324,10,2
-2012,TotalPopulationBySex,2,Medium,53756,7,1
-2012,TotalPopulationBySex,3,High,24388,7,1
-2012,TotalPopulationBySex,4,Low,24388,7,1
-2012,TotalPopulationBySex,5,Constant fertility,24388,7,1
-2012,TotalPopulationBySex,6,Instant replacement,24388,7,1
-2012,TotalPopulationBySex,7,Zero migration,24388,7,1
-2012,TotalPopulationBySex,8,Constant mortality,24388,7,1
-2012,TotalPopulationBySex,9,No change,24388,7,1
-2015,Fertility_by_Age,2,Medium,68670,10,1
-2015,Fertility_by_Age,3,High,28679,10,1
-2015,Fertility_by_Age,4,Low,28679,10,1
-2015,Fertility_by_Age,5,Constant fertility,28679,10,1
-2015,Fertility_by_Age,6,Instant replacement,28679,10,1
-2015,Fertility_by_Age,7,Zero migration,28679,10,1
-2015,Fertility_by_Age,8,Constant mortality,28679,10,1
-2015,Fertility_by_Age,9,No change,28679,10,1
-2015,Life_Table,2,Medium,647460,19,1
-2015,Period_Indicators,2,Medium,11220,23,1
-2015,Period_Indicators,202,BHM median,3417,7,1
-2015,Period_Indicators,3,High,4641,23,1
-2015,Period_Indicators,4,Low,4641,23,1
-2015,Period_Indicators,5,Constant fertility,4641,23,1
-2015,Period_Indicators,6,Instant replacement,4641,23,1
-2015,Period_Indicators,7,Zero migration,4641,23,1
-2015,Period_Indicators,8,Constant mortality,4641,23,1
-2015,Period_Indicators,9,No change,4641,23,1
-2015,PopulationByAgeSex,2,Medium,1030050,10,1
-2015,PopulationByAgeSex,3,High,86037,10,1
-2015,PopulationByAgeSex,4,Low,86037,10,1
-2015,PopulationByAgeSex,5,Constant fertility,86037,10,1
-2015,PopulationByAgeSex,6,Instant replacement,86037,10,1
-2015,PopulationByAgeSex,7,Zero migration,86037,10,1
-2015,PopulationByAgeSex,8,Constant mortality,86037,10,1
-2015,PopulationByAgeSex,9,No change,86037,10,1
-2015,PopulationByAgeSex_5x5,2,Medium,206010,10,1
-2015,PopulationBySingleAgeSex,2,Medium,4954050,10,2
-2015,TotalPopulationBySex,2,Medium,53850,7,1
-2015,TotalPopulationBySex,3,High,23205,7,1
-2015,TotalPopulationBySex,4,Low,23205,7,1
-2015,TotalPopulationBySex,5,Constant fertility,23205,7,1
-2015,TotalPopulationBySex,6,Instant replacement,23205,7,1
-2015,TotalPopulationBySex,7,Zero migration,23205,7,1
-2015,TotalPopulationBySex,8,Constant mortality,23205,7,1
-2015,TotalPopulationBySex,9,No change,23205,7,1
-2017,Fertility_by_Age,10,Momentum,28679,10,1
-2017,Fertility_by_Age,2,Medium,72660,10,1
-2017,Fertility_by_Age,3,High,28679,10,1
-2017,Fertility_by_Age,4,Low,28679,10,1
-2017,Fertility_by_Age,5,Constant fertility,28679,10,1
-2017,Fertility_by_Age,6,Instant replacement,28679,10,1
-2017,Fertility_by_Age,7,Zero migration,28679,10,1
-2017,Fertility_by_Age,8,Constant mortality,28679,10,1
-2017,Fertility_by_Age,9,No change,28679,10,1
-2017,Life_Table,2,Medium,685080,19,1
-2017,Period_Indicators,10,Momentum,4641,23,1
-2017,Period_Indicators,2,Medium,11640,23,1
-2017,Period_Indicators,202,Median PI,3417,7,1
-2017,Period_Indicators,203,Upper 80 PI,3417,7,1
-2017,Period_Indicators,204,Lower 80 PI,3417,7,1
-2017,Period_Indicators,206,Upper 95 PI,3417,7,1
-2017,Period_Indicators,207,Lower 95 PI,3417,7,1
-2017,Period_Indicators,3,High,4641,23,1
-2017,Period_Indicators,4,Low,4641,23,1
-2017,Period_Indicators,5,Constant fertility,4641,23,1
-2017,Period_Indicators,6,Instant replacement,4641,23,1
-2017,Period_Indicators,7,Zero migration,4641,23,1
-2017,Period_Indicators,8,Constant mortality,4641,23,1
-2017,Period_Indicators,9,No change,4641,23,1
-2017,PopulationByAgeSex,10,Momentum,86037,10,1
-2017,PopulationByAgeSex,2,Medium,1089900,10,1
-2017,PopulationByAgeSex,3,High,86037,10,1
-2017,PopulationByAgeSex,4,Low,86037,10,1
-2017,PopulationByAgeSex,5,Constant fertility,86037,10,1
-2017,PopulationByAgeSex,6,Instant replacement,86037,10,1
-2017,PopulationByAgeSex,7,Zero migration,86037,10,1
-2017,PopulationByAgeSex,8,Constant mortality,86037,10,1
-2017,PopulationByAgeSex,9,No change,86037,10,1
-2017,PopulationByAgeSex_5x5,2,Medium,217980,10,1
-2017,PopulationBySingleAgeSex,2,Medium,5241900,10,2
-2017,TotalPopulationBySex,10,Momentum,23205,7,1
-2017,TotalPopulationBySex,2,Medium,56700,7,1
-2017,TotalPopulationBySex,202,Median PI,4641,5,1
-2017,TotalPopulationBySex,203,Upper 80 PI,4641,5,1
-2017,TotalPopulationBySex,204,Lower 80 PI,4641,5,1
-2017,TotalPopulationBySex,206,Upper 95 PI,4641,5,1
-2017,TotalPopulationBySex,207,Lower 95 PI,4641,5,1
-2017,TotalPopulationBySex,3,High,23205,7,1
-2017,TotalPopulationBySex,4,Low,23205,7,1
-2017,TotalPopulationBySex,5,Constant fertility,23205,7,1
-2017,TotalPopulationBySex,6,Instant replacement,23205,7,1
-2017,TotalPopulationBySex,7,Zero migration,23205,7,1
-2017,TotalPopulationBySex,8,Constant mortality,23205,7,1
-2017,TotalPopulationBySex,9,No change,23205,7,1
-2019,Fertility_by_Age,10,Momentum,28112,10,1
-2019,Fertility_by_Age,2,Medium,93030,10,1
-2019,Fertility_by_Age,202,Median PI,28112,9,1
-2019,Fertility_by_Age,203,Upper 80 PI,28112,9,1
-2019,Fertility_by_Age,204,Lower 80 PI,28112,9,1
-2019,Fertility_by_Age,206,Upper 95 PI,28112,9,1
-2019,Fertility_by_Age,207,Lower 95 PI,28112,9,1
-2019,Fertility_by_Age,3,High,28112,10,1
-2019,Fertility_by_Age,4,Low,28112,10,1
-2019,Fertility_by_Age,5,Constant fertility,28112,10,1
-2019,Fertility_by_Age,6,Instant replacement,28112,10,1
-2019,Fertility_by_Age,7,Zero migration,28112,10,1
-2019,Fertility_by_Age,8,Constant mortality,28112,10,1
-2019,Fertility_by_Age,9,No change,28112,10,1
-2019,Life_Table,2,Medium,877140,19,1
-2019,Life_Table,202,Median PI,265056,19,1
-2019,Life_Table,203,Upper 80 PI,265056,19,1
-2019,Life_Table,204,Lower 80 PI,265056,19,1
-2019,Life_Table,206,Upper 95 PI,265056,19,1
-2019,Life_Table,207,Lower 95 PI,265056,19,1
-2019,Period_Indicators,10,Momentum,4560,23,1
-2019,Period_Indicators,2,Medium,14940,23,1
-2019,Period_Indicators,202,Median PI,4560,17,1
-2019,Period_Indicators,203,Upper 80 PI,4560,17,1
-2019,Period_Indicators,204,Lower 80 PI,4560,17,1
-2019,Period_Indicators,206,Upper 95 PI,4560,17,1
-2019,Period_Indicators,207,Lower 95 PI,4560,17,1
-2019,Period_Indicators,3,High,4560,23,1
-2019,Period_Indicators,4,Low,4560,23,1
-2019,Period_Indicators,5,Constant fertility,4560,23,1
-2019,Period_Indicators,6,Instant replacement,4560,23,1
-2019,Period_Indicators,7,Zero migration,4560,23,1
-2019,Period_Indicators,8,Constant mortality,4560,23,1
-2019,Period_Indicators,9,No change,4560,23,1
-2019,PopulationByAgeSex,10,Momentum,89607,10,1
-2019,PopulationByAgeSex,2,Medium,1404753,10,1
-2019,PopulationByAgeSex,202,Median PI,89607,10,1
-2019,PopulationByAgeSex,203,Upper 80 PI,89607,10,1
-2019,PopulationByAgeSex,204,Lower 80 PI,89607,10,1
-2019,PopulationByAgeSex,206,Upper 95 PI,89607,10,1
-2019,PopulationByAgeSex,207,Lower 95 PI,89607,10,1
-2019,PopulationByAgeSex,3,High,89607,10,1
-2019,PopulationByAgeSex,4,Low,89607,10,1
-2019,PopulationByAgeSex,5,Constant fertility,89607,10,1
-2019,PopulationByAgeSex,6,Instant replacement,89607,10,1
-2019,PopulationByAgeSex,7,Zero migration,89607,10,1
-2019,PopulationByAgeSex,8,Constant mortality,89607,10,1
-2019,PopulationByAgeSex,9,No change,89607,10,1
-2019,PopulationBySingleAgeSex,2,Medium,6756193,10,2
-2019,TotalPopulationBySex,10,Momentum,23085,8,1
-2019,TotalPopulationBySex,2,Medium,72027,8,1
-2019,TotalPopulationBySex,202,Median PI,4845,8,1
-2019,TotalPopulationBySex,203,Upper 80 PI,4845,8,1
-2019,TotalPopulationBySex,204,Lower 80 PI,4845,8,1
-2019,TotalPopulationBySex,206,Upper 95 PI,4845,8,1
-2019,TotalPopulationBySex,207,Lower 95 PI,4845,8,1
-2019,TotalPopulationBySex,3,High,23085,8,1
-2019,TotalPopulationBySex,4,Low,23085,8,1
-2019,TotalPopulationBySex,5,Constant fertility,23085,8,1
-2019,TotalPopulationBySex,6,Instant replacement,23085,8,1
-2019,TotalPopulationBySex,7,Zero migration,23085,8,1
-2019,TotalPopulationBySex,8,Constant mortality,23085,8,1
-2019,TotalPopulationBySex,9,No change,23085,8,1
+﻿"wpp","file_group","VarID","Variant","n_row","n_col","n_original_files"
+"1998","Fertility_by_Age",2,"Medium",17892,10,1
+"1998","Fertility_by_Age",3,"High",16401,10,1
+"1998","Fertility_by_Age",4,"Low",16401,10,1
+"1998","Fertility_by_Age",5,"Constant fertility",16401,10,1
+"1998","Period_Indicators",2,"Medium",5160,23,1
+"1998","Period_Indicators",3,"High",2343,23,1
+"1998","Period_Indicators",4,"Low",2343,23,1
+"1998","Period_Indicators",5,"Constant fertility",2343,23,1
+"1998","PopulationByAgeSex",2,"Medium",447300,10,1
+"1998","PopulationByAgeSex",3,"High",49203,10,1
+"1998","PopulationByAgeSex",4,"Low",49203,10,1
+"1998","PopulationByAgeSex",5,"Constant fertility",49203,10,1
+"1998","PopulationByAgeSex",6,"Instant replacement",4473,10,1
+"1998","PopulationByAgeSex",7,"Zero migration",4473,10,1
+"1998","PopulationByAgeSex",8,"Constant mortality",4473,10,1
+"1998","PopulationByAgeSex",9,"No change",4473,10,1
+"1998","PopulationByAgeSex_5x5",2,"Medium",89460,10,1
+"1998","TotalPopulationBySex",2,"Medium",25700,5,1
+"1998","TotalPopulationBySex",3,"High",14135,5,1
+"1998","TotalPopulationBySex",4,"Low",14135,5,1
+"1998","TotalPopulationBySex",5,"Constant fertility",14135,5,1
+"1998","TotalPopulationBySex",6,"Instant replacement",257,5,1
+"1998","TotalPopulationBySex",7,"Zero migration",257,5,1
+"1998","TotalPopulationBySex",8,"Constant mortality",257,5,1
+"1998","TotalPopulationBySex",9,"No change",257,5,1
+"2000","Fertility_by_Age",2,"Medium",18228,10,1
+"2000","Fertility_by_Age",3,"High",15190,10,1
+"2000","Fertility_by_Age",4,"Low",15190,10,1
+"2000","Fertility_by_Age",5,"Constant fertility",15190,10,1
+"2000","Fertility_by_Age",6,"Instant replacement",15190,10,1
+"2000","Fertility_by_Age",7,"Zero migration",15190,10,1
+"2000","Fertility_by_Age",8,"Constant mortality",15190,10,1
+"2000","Fertility_by_Age",9,"No change",15190,10,1
+"2000","Period_Indicators",2,"Medium",5160,23,1
+"2000","Period_Indicators",3,"High",2580,23,1
+"2000","Period_Indicators",4,"Low",2580,23,1
+"2000","Period_Indicators",5,"Constant fertility",2580,23,1
+"2000","Period_Indicators",6,"Instant replacement",2211,23,1
+"2000","Period_Indicators",7,"Zero migration",2211,23,1
+"2000","Period_Indicators",8,"Constant mortality",2211,23,1
+"2000","Period_Indicators",9,"No change",2211,23,1
+"2000","PopulationByAgeSex",2,"Medium",455700,10,1
+"2000","PopulationByAgeSex",3,"High",45570,10,1
+"2000","PopulationByAgeSex",4,"Low",45570,10,1
+"2000","PopulationByAgeSex",5,"Constant fertility",45570,10,1
+"2000","PopulationByAgeSex",6,"Instant replacement",45570,10,1
+"2000","PopulationByAgeSex",7,"Zero migration",45570,10,1
+"2000","PopulationByAgeSex",8,"Constant mortality",45570,10,1
+"2000","PopulationByAgeSex",9,"No change",45570,10,1
+"2000","PopulationByAgeSex_5x5",2,"Medium",91140,10,1
+"2000","TotalPopulationBySex",2,"Medium",25800,7,1
+"2000","TotalPopulationBySex",3,"High",12900,7,1
+"2000","TotalPopulationBySex",4,"Low",12900,7,1
+"2000","TotalPopulationBySex",5,"Constant fertility",12900,7,1
+"2000","TotalPopulationBySex",6,"Instant replacement",12900,7,1
+"2000","TotalPopulationBySex",7,"Zero migration",12900,7,1
+"2000","TotalPopulationBySex",8,"Constant mortality",12900,7,1
+"2000","TotalPopulationBySex",9,"No change",12900,7,1
+"2002","Fertility_by_Age",2,"Medium",18648,10,1
+"2002","Fertility_by_Age",3,"High",15540,10,1
+"2002","Fertility_by_Age",4,"Low",15540,10,1
+"2002","Fertility_by_Age",5,"Constant fertility",15540,10,1
+"2002","Fertility_by_Age",6,"Instant replacement",15540,10,1
+"2002","Fertility_by_Age",7,"Zero migration",15540,10,1
+"2002","Fertility_by_Age",8,"Constant mortality",15540,10,1
+"2002","Fertility_by_Age",9,"No change",15540,10,1
+"2002","Period_Indicators",2,"Medium",5160,23,1
+"2002","Period_Indicators",3,"High",2580,23,1
+"2002","Period_Indicators",4,"Low",2580,23,1
+"2002","Period_Indicators",5,"Constant fertility",2580,23,1
+"2002","Period_Indicators",6,"Instant replacement",2580,23,1
+"2002","Period_Indicators",7,"Zero migration",2580,23,1
+"2002","Period_Indicators",8,"Constant mortality",2580,23,1
+"2002","Period_Indicators",9,"No change",2580,23,1
+"2002","PopulationByAgeSex",2,"Medium",420690,10,1
+"2002","PopulationByAgeSex",3,"High",46620,10,1
+"2002","PopulationByAgeSex",4,"Low",46620,10,1
+"2002","PopulationByAgeSex",5,"Constant fertility",46620,10,1
+"2002","PopulationByAgeSex",6,"Instant replacement",46620,10,1
+"2002","PopulationByAgeSex",7,"Zero migration",46620,10,1
+"2002","PopulationByAgeSex",8,"Constant mortality",46620,10,1
+"2002","PopulationByAgeSex",9,"No change",46620,10,1
+"2002","PopulationByAgeSex_5x5",2,"Medium",83250,10,1
+"2002","TotalPopulationBySex",2,"Medium",25800,7,1
+"2002","TotalPopulationBySex",3,"High",12900,7,1
+"2002","TotalPopulationBySex",4,"Low",12900,7,1
+"2002","TotalPopulationBySex",5,"Constant fertility",12900,7,1
+"2002","TotalPopulationBySex",6,"Instant replacement",12900,7,1
+"2002","TotalPopulationBySex",7,"Zero migration",12900,7,1
+"2002","TotalPopulationBySex",8,"Constant mortality",12900,7,1
+"2002","TotalPopulationBySex",9,"No change",12900,7,1
+"2004","Fertility_by_Age",2,"Medium",18900,10,1
+"2004","Fertility_by_Age",3,"High",14175,10,1
+"2004","Fertility_by_Age",4,"Low",14175,10,1
+"2004","Fertility_by_Age",5,"Constant fertility",14175,10,1
+"2004","Fertility_by_Age",6,"Instant replacement",14175,10,1
+"2004","Fertility_by_Age",7,"Zero migration",14175,10,1
+"2004","Fertility_by_Age",8,"Constant mortality",14175,10,1
+"2004","Fertility_by_Age",9,"No change",14175,10,1
+"2004","Life_Table",2,"Medium",178200,19,1
+"2004","Period_Indicators",2,"Medium",5220,23,1
+"2004","Period_Indicators",3,"High",2349,23,1
+"2004","Period_Indicators",4,"Low",2349,23,1
+"2004","Period_Indicators",5,"Constant fertility",2349,23,1
+"2004","Period_Indicators",6,"Instant replacement",2349,23,1
+"2004","Period_Indicators",7,"Zero migration",2349,23,1
+"2004","Period_Indicators",8,"Constant mortality",2349,23,1
+"2004","Period_Indicators",9,"No change",2349,23,1
+"2004","PopulationByAgeSex",2,"Medium",472500,10,1
+"2004","PopulationByAgeSex",3,"High",42525,10,1
+"2004","PopulationByAgeSex",4,"Low",42525,10,1
+"2004","PopulationByAgeSex",5,"Constant fertility",42525,10,1
+"2004","PopulationByAgeSex",6,"Instant replacement",42525,10,1
+"2004","PopulationByAgeSex",7,"Zero migration",42525,10,1
+"2004","PopulationByAgeSex",8,"Constant mortality",42525,10,1
+"2004","PopulationByAgeSex",9,"No change",42525,10,1
+"2004","PopulationByAgeSex_5x5",2,"Medium",94500,10,1
+"2004","PopulationBySingleAgeSex",2,"Medium",2272500,10,2
+"2004","TotalPopulationBySex",2,"Medium",26100,7,1
+"2004","TotalPopulationBySex",3,"High",11745,7,1
+"2004","TotalPopulationBySex",4,"Low",11745,7,1
+"2004","TotalPopulationBySex",5,"Constant fertility",11745,7,1
+"2004","TotalPopulationBySex",6,"Instant replacement",11745,7,1
+"2004","TotalPopulationBySex",7,"Zero migration",11745,7,1
+"2004","TotalPopulationBySex",8,"Constant mortality",11745,7,1
+"2004","TotalPopulationBySex",9,"No change",11745,7,1
+"2006","Fertility_by_Age",2,"Medium",19152,10,1
+"2006","Fertility_by_Age",3,"High",14364,10,1
+"2006","Fertility_by_Age",4,"Low",14364,10,1
+"2006","Fertility_by_Age",5,"Constant fertility",14364,10,1
+"2006","Fertility_by_Age",6,"Instant replacement",14364,10,1
+"2006","Fertility_by_Age",7,"Zero migration",14364,10,1
+"2006","Fertility_by_Age",8,"Constant mortality",14364,10,1
+"2006","Fertility_by_Age",9,"No change",14364,10,1
+"2006","Life_Table",2,"Medium",180576,19,1
+"2006","Period_Indicators",2,"Medium",5240,23,1
+"2006","Period_Indicators",3,"High",2358,23,1
+"2006","Period_Indicators",4,"Low",2358,23,1
+"2006","Period_Indicators",5,"Constant fertility",2358,23,1
+"2006","Period_Indicators",6,"Instant replacement",2358,23,1
+"2006","Period_Indicators",7,"Zero migration",2358,23,1
+"2006","Period_Indicators",8,"Constant mortality",2358,23,1
+"2006","Period_Indicators",9,"No change",2358,23,1
+"2006","PopulationByAgeSex",2,"Medium",478800,10,1
+"2006","PopulationByAgeSex",3,"High",43092,10,1
+"2006","PopulationByAgeSex",4,"Low",43092,10,1
+"2006","PopulationByAgeSex",5,"Constant fertility",43092,10,1
+"2006","PopulationByAgeSex",6,"Instant replacement",43092,10,1
+"2006","PopulationByAgeSex",7,"Zero migration",43092,10,1
+"2006","PopulationByAgeSex",8,"Constant mortality",43092,10,1
+"2006","PopulationByAgeSex",9,"No change",43092,10,1
+"2006","PopulationByAgeSex_5x5",2,"Medium",95760,10,1
+"2006","PopulationBySingleAgeSex",2,"Medium",2302800,10,2
+"2006","TotalPopulationBySex",2,"Medium",26200,7,1
+"2006","TotalPopulationBySex",3,"High",11790,7,1
+"2006","TotalPopulationBySex",4,"Low",11790,7,1
+"2006","TotalPopulationBySex",5,"Constant fertility",11790,7,1
+"2006","TotalPopulationBySex",6,"Instant replacement",11790,7,1
+"2006","TotalPopulationBySex",7,"Zero migration",11790,7,1
+"2006","TotalPopulationBySex",8,"Constant mortality",11790,7,1
+"2006","TotalPopulationBySex",9,"No change",11790,7,1
+"2008","Fertility_by_Age",2,"Medium",19236,10,1
+"2008","Fertility_by_Age",3,"High",14427,10,1
+"2008","Fertility_by_Age",4,"Low",14427,10,1
+"2008","Fertility_by_Age",5,"Constant fertility",14427,10,1
+"2008","Fertility_by_Age",6,"Instant replacement",14427,10,1
+"2008","Fertility_by_Age",7,"Zero migration",14427,10,1
+"2008","Fertility_by_Age",8,"Constant mortality",14427,10,1
+"2008","Fertility_by_Age",9,"No change",14427,10,1
+"2008","Life_Table",2,"Medium",181368,19,1
+"2008","Period_Indicators",2,"Medium",5260,23,1
+"2008","Period_Indicators",3,"High",2367,23,1
+"2008","Period_Indicators",4,"Low",2367,23,1
+"2008","Period_Indicators",5,"Constant fertility",2367,23,1
+"2008","Period_Indicators",6,"Instant replacement",2367,23,1
+"2008","Period_Indicators",7,"Zero migration",2367,23,1
+"2008","Period_Indicators",8,"Constant mortality",2367,23,1
+"2008","Period_Indicators",9,"No change",2367,23,1
+"2008","PopulationByAgeSex",2,"Medium",480900,10,1
+"2008","PopulationByAgeSex",3,"High",43281,10,1
+"2008","PopulationByAgeSex",4,"Low",43281,10,1
+"2008","PopulationByAgeSex",5,"Constant fertility",43281,10,1
+"2008","PopulationByAgeSex",6,"Instant replacement",43281,10,1
+"2008","PopulationByAgeSex",7,"Zero migration",43281,10,1
+"2008","PopulationByAgeSex",8,"Constant mortality",43281,10,1
+"2008","PopulationByAgeSex",9,"No change",43281,10,1
+"2008","PopulationByAgeSex_5x5",2,"Medium",96180,10,1
+"2008","PopulationBySingleAgeSex",2,"Medium",2312900,10,2
+"2008","TotalPopulationBySex",2,"Medium",26300,7,1
+"2008","TotalPopulationBySex",3,"High",11835,7,1
+"2008","TotalPopulationBySex",4,"Low",11835,7,1
+"2008","TotalPopulationBySex",5,"Constant fertility",11835,7,1
+"2008","TotalPopulationBySex",6,"Instant replacement",11835,7,1
+"2008","TotalPopulationBySex",7,"Zero migration",11835,7,1
+"2008","TotalPopulationBySex",8,"Constant mortality",11835,7,1
+"2008","TotalPopulationBySex",9,"No change",11835,7,1
+"2010","Fertility_by_Age",2,"Medium",62370,10,1
+"2010","Fertility_by_Age",3,"High",29232,10,1
+"2010","Fertility_by_Age",4,"Low",29232,10,1
+"2010","Fertility_by_Age",5,"Constant fertility",29232,10,1
+"2010","Fertility_by_Age",6,"Instant replacement",29232,10,1
+"2010","Fertility_by_Age",7,"Zero migration",29232,10,1
+"2010","Fertility_by_Age",8,"Constant mortality",29232,10,1
+"2010","Fertility_by_Age",9,"No change",29232,10,1
+"2010","Life_Table",2,"Medium",588060,19,1
+"2010","Period_Indicators",2,"Medium",13770,23,1
+"2010","Period_Indicators",3,"High",4770,23,1
+"2010","Period_Indicators",4,"Low",4770,23,1
+"2010","Period_Indicators",5,"Constant fertility",4770,23,1
+"2010","Period_Indicators",6,"Instant replacement",4770,23,1
+"2010","Period_Indicators",7,"Zero migration",4770,23,1
+"2010","Period_Indicators",8,"Constant mortality",4770,23,1
+"2010","Period_Indicators",9,"No change",4770,23,1
+"2010","PopulationByAgeSex",2,"Medium",1275750,10,1
+"2010","PopulationByAgeSex",3,"High",87696,10,1
+"2010","PopulationByAgeSex",4,"Low",87696,10,1
+"2010","PopulationByAgeSex",5,"Constant fertility",87696,10,1
+"2010","PopulationByAgeSex",6,"Instant replacement",87696,10,1
+"2010","PopulationByAgeSex",7,"Zero migration",87696,10,1
+"2010","PopulationByAgeSex",8,"Constant mortality",87696,10,1
+"2010","PopulationByAgeSex",9,"No change",87696,10,1
+"2010","PopulationByAgeSex_5x5",2,"Medium",255150,10,1
+"2010","PopulationBySingleAgeSex",2,"Medium",3514800,10,2
+"2010","TotalPopulationBySex",2,"Medium",65700,7,1
+"2010","TotalPopulationBySex",3,"High",23850,7,1
+"2010","TotalPopulationBySex",4,"Low",23850,7,1
+"2010","TotalPopulationBySex",5,"Constant fertility",23850,7,1
+"2010","TotalPopulationBySex",6,"Instant replacement",23850,7,1
+"2010","TotalPopulationBySex",7,"Zero migration",23850,7,1
+"2010","TotalPopulationBySex",8,"Constant mortality",23850,7,1
+"2010","TotalPopulationBySex",9,"No change",23850,7,1
+"2012","Fertility_by_Age",2,"Medium",68040,10,1
+"2012","Fertility_by_Age",3,"High",29736,10,1
+"2012","Fertility_by_Age",4,"Low",29736,10,1
+"2012","Fertility_by_Age",5,"Constant fertility",29736,10,1
+"2012","Fertility_by_Age",6,"Instant replacement",29736,10,1
+"2012","Fertility_by_Age",7,"Zero migration",29736,10,1
+"2012","Fertility_by_Age",8,"Constant mortality",29736,10,1
+"2012","Fertility_by_Age",9,"No change",29736,10,1
+"2012","Life_Table",2,"Medium",641520,19,1
+"2012","Period_Indicators",2,"Medium",11130,23,1
+"2012","Period_Indicators",3,"High",4824,23,1
+"2012","Period_Indicators",4,"Low",4824,23,1
+"2012","Period_Indicators",5,"Constant fertility",4824,23,1
+"2012","Period_Indicators",6,"Instant replacement",4824,23,1
+"2012","Period_Indicators",7,"Zero migration",4824,23,1
+"2012","Period_Indicators",8,"Constant mortality",4824,23,1
+"2012","Period_Indicators",9,"No change",4824,23,1
+"2012","PopulationByAgeSex",2,"Medium",1027404,10,1
+"2012","PopulationByAgeSex",3,"High",94164,10,1
+"2012","PopulationByAgeSex",4,"Low",94164,10,1
+"2012","PopulationByAgeSex",5,"Constant fertility",94164,10,1
+"2012","PopulationByAgeSex",6,"Instant replacement",95676,10,1
+"2012","PopulationByAgeSex",7,"Zero migration",94164,10,1
+"2012","PopulationByAgeSex",8,"Constant mortality",94164,10,1
+"2012","PopulationByAgeSex",9,"No change",94164,10,1
+"2012","PopulationByAgeSex_5x5",2,"Medium",210924,10,1
+"2012","PopulationBySingleAgeSex",2,"Medium",4941324,10,2
+"2012","TotalPopulationBySex",2,"Medium",53756,7,1
+"2012","TotalPopulationBySex",3,"High",24388,7,1
+"2012","TotalPopulationBySex",4,"Low",24388,7,1
+"2012","TotalPopulationBySex",5,"Constant fertility",24388,7,1
+"2012","TotalPopulationBySex",6,"Instant replacement",24388,7,1
+"2012","TotalPopulationBySex",7,"Zero migration",24388,7,1
+"2012","TotalPopulationBySex",8,"Constant mortality",24388,7,1
+"2012","TotalPopulationBySex",9,"No change",24388,7,1
+"2015","Fertility_by_Age",2,"Medium",68670,10,1
+"2015","Fertility_by_Age",3,"High",28679,10,1
+"2015","Fertility_by_Age",4,"Low",28679,10,1
+"2015","Fertility_by_Age",5,"Constant fertility",28679,10,1
+"2015","Fertility_by_Age",6,"Instant replacement",28679,10,1
+"2015","Fertility_by_Age",7,"Zero migration",28679,10,1
+"2015","Fertility_by_Age",8,"Constant mortality",28679,10,1
+"2015","Fertility_by_Age",9,"No change",28679,10,1
+"2015","Life_Table",2,"Medium",647460,19,1
+"2015","Period_Indicators",2,"Medium",11220,23,1
+"2015","Period_Indicators",202,"BHM median",3417,7,1
+"2015","Period_Indicators",3,"High",4641,23,1
+"2015","Period_Indicators",4,"Low",4641,23,1
+"2015","Period_Indicators",5,"Constant fertility",4641,23,1
+"2015","Period_Indicators",6,"Instant replacement",4641,23,1
+"2015","Period_Indicators",7,"Zero migration",4641,23,1
+"2015","Period_Indicators",8,"Constant mortality",4641,23,1
+"2015","Period_Indicators",9,"No change",4641,23,1
+"2015","PopulationByAgeSex",2,"Medium",1030050,10,1
+"2015","PopulationByAgeSex",3,"High",86037,10,1
+"2015","PopulationByAgeSex",4,"Low",86037,10,1
+"2015","PopulationByAgeSex",5,"Constant fertility",86037,10,1
+"2015","PopulationByAgeSex",6,"Instant replacement",86037,10,1
+"2015","PopulationByAgeSex",7,"Zero migration",86037,10,1
+"2015","PopulationByAgeSex",8,"Constant mortality",86037,10,1
+"2015","PopulationByAgeSex",9,"No change",86037,10,1
+"2015","PopulationByAgeSex_5x5",2,"Medium",206010,10,1
+"2015","PopulationBySingleAgeSex",2,"Medium",4954050,10,2
+"2015","TotalPopulationBySex",2,"Medium",53850,7,1
+"2015","TotalPopulationBySex",3,"High",23205,7,1
+"2015","TotalPopulationBySex",4,"Low",23205,7,1
+"2015","TotalPopulationBySex",5,"Constant fertility",23205,7,1
+"2015","TotalPopulationBySex",6,"Instant replacement",23205,7,1
+"2015","TotalPopulationBySex",7,"Zero migration",23205,7,1
+"2015","TotalPopulationBySex",8,"Constant mortality",23205,7,1
+"2015","TotalPopulationBySex",9,"No change",23205,7,1
+"2017","Fertility_by_Age",10,"Momentum",28679,10,1
+"2017","Fertility_by_Age",2,"Medium",72660,10,1
+"2017","Fertility_by_Age",3,"High",28679,10,1
+"2017","Fertility_by_Age",4,"Low",28679,10,1
+"2017","Fertility_by_Age",5,"Constant fertility",28679,10,1
+"2017","Fertility_by_Age",6,"Instant replacement",28679,10,1
+"2017","Fertility_by_Age",7,"Zero migration",28679,10,1
+"2017","Fertility_by_Age",8,"Constant mortality",28679,10,1
+"2017","Fertility_by_Age",9,"No change",28679,10,1
+"2017","Life_Table",2,"Medium",685080,19,1
+"2017","Period_Indicators",10,"Momentum",4641,23,1
+"2017","Period_Indicators",2,"Medium",11640,23,1
+"2017","Period_Indicators",202,"Median PI",3417,7,1
+"2017","Period_Indicators",203,"Upper 80 PI",3417,7,1
+"2017","Period_Indicators",204,"Lower 80 PI",3417,7,1
+"2017","Period_Indicators",206,"Upper 95 PI",3417,7,1
+"2017","Period_Indicators",207,"Lower 95 PI",3417,7,1
+"2017","Period_Indicators",3,"High",4641,23,1
+"2017","Period_Indicators",4,"Low",4641,23,1
+"2017","Period_Indicators",5,"Constant fertility",4641,23,1
+"2017","Period_Indicators",6,"Instant replacement",4641,23,1
+"2017","Period_Indicators",7,"Zero migration",4641,23,1
+"2017","Period_Indicators",8,"Constant mortality",4641,23,1
+"2017","Period_Indicators",9,"No change",4641,23,1
+"2017","PopulationByAgeSex",10,"Momentum",86037,10,1
+"2017","PopulationByAgeSex",2,"Medium",1089900,10,1
+"2017","PopulationByAgeSex",3,"High",86037,10,1
+"2017","PopulationByAgeSex",4,"Low",86037,10,1
+"2017","PopulationByAgeSex",5,"Constant fertility",86037,10,1
+"2017","PopulationByAgeSex",6,"Instant replacement",86037,10,1
+"2017","PopulationByAgeSex",7,"Zero migration",86037,10,1
+"2017","PopulationByAgeSex",8,"Constant mortality",86037,10,1
+"2017","PopulationByAgeSex",9,"No change",86037,10,1
+"2017","PopulationByAgeSex_5x5",2,"Medium",217980,10,1
+"2017","PopulationBySingleAgeSex",2,"Medium",5241900,10,2
+"2017","TotalPopulationBySex",10,"Momentum",23205,7,1
+"2017","TotalPopulationBySex",2,"Medium",56700,7,1
+"2017","TotalPopulationBySex",202,"Median PI",4641,5,1
+"2017","TotalPopulationBySex",203,"Upper 80 PI",4641,5,1
+"2017","TotalPopulationBySex",204,"Lower 80 PI",4641,5,1
+"2017","TotalPopulationBySex",206,"Upper 95 PI",4641,5,1
+"2017","TotalPopulationBySex",207,"Lower 95 PI",4641,5,1
+"2017","TotalPopulationBySex",3,"High",23205,7,1
+"2017","TotalPopulationBySex",4,"Low",23205,7,1
+"2017","TotalPopulationBySex",5,"Constant fertility",23205,7,1
+"2017","TotalPopulationBySex",6,"Instant replacement",23205,7,1
+"2017","TotalPopulationBySex",7,"Zero migration",23205,7,1
+"2017","TotalPopulationBySex",8,"Constant mortality",23205,7,1
+"2017","TotalPopulationBySex",9,"No change",23205,7,1
+"2019","Fertility_by_Age",10,"Momentum",28112,10,1
+"2019","Fertility_by_Age",2,"Medium",93030,10,1
+"2019","Fertility_by_Age",202,"Median PI",28112,9,1
+"2019","Fertility_by_Age",203,"Upper 80 PI",28112,9,1
+"2019","Fertility_by_Age",204,"Lower 80 PI",28112,9,1
+"2019","Fertility_by_Age",206,"Upper 95 PI",28112,9,1
+"2019","Fertility_by_Age",207,"Lower 95 PI",28112,9,1
+"2019","Fertility_by_Age",3,"High",28112,10,1
+"2019","Fertility_by_Age",4,"Low",28112,10,1
+"2019","Fertility_by_Age",5,"Constant fertility",28112,10,1
+"2019","Fertility_by_Age",6,"Instant replacement",28112,10,1
+"2019","Fertility_by_Age",7,"Zero migration",28112,10,1
+"2019","Fertility_by_Age",8,"Constant mortality",28112,10,1
+"2019","Fertility_by_Age",9,"No change",28112,10,1
+"2019","Life_Table",2,"Medium",877140,19,1
+"2019","Life_Table",202,"Median PI",265056,19,1
+"2019","Life_Table",203,"Upper 80 PI",265056,19,1
+"2019","Life_Table",204,"Lower 80 PI",265056,19,1
+"2019","Life_Table",206,"Upper 95 PI",265056,19,1
+"2019","Life_Table",207,"Lower 95 PI",265056,19,1
+"2019","Period_Indicators",10,"Momentum",4560,23,1
+"2019","Period_Indicators",2,"Medium",14940,23,1
+"2019","Period_Indicators",202,"Median PI",4560,17,1
+"2019","Period_Indicators",203,"Upper 80 PI",4560,17,1
+"2019","Period_Indicators",204,"Lower 80 PI",4560,17,1
+"2019","Period_Indicators",206,"Upper 95 PI",4560,17,1
+"2019","Period_Indicators",207,"Lower 95 PI",4560,17,1
+"2019","Period_Indicators",3,"High",4560,23,1
+"2019","Period_Indicators",4,"Low",4560,23,1
+"2019","Period_Indicators",5,"Constant fertility",4560,23,1
+"2019","Period_Indicators",6,"Instant replacement",4560,23,1
+"2019","Period_Indicators",7,"Zero migration",4560,23,1
+"2019","Period_Indicators",8,"Constant mortality",4560,23,1
+"2019","Period_Indicators",9,"No change",4560,23,1
+"2019","PopulationByAgeSex",10,"Momentum",89607,10,1
+"2019","PopulationByAgeSex",2,"Medium",1404753,10,1
+"2019","PopulationByAgeSex",202,"Median PI",89607,10,1
+"2019","PopulationByAgeSex",203,"Upper 80 PI",89607,10,1
+"2019","PopulationByAgeSex",204,"Lower 80 PI",89607,10,1
+"2019","PopulationByAgeSex",206,"Upper 95 PI",89607,10,1
+"2019","PopulationByAgeSex",207,"Lower 95 PI",89607,10,1
+"2019","PopulationByAgeSex",3,"High",89607,10,1
+"2019","PopulationByAgeSex",4,"Low",89607,10,1
+"2019","PopulationByAgeSex",5,"Constant fertility",89607,10,1
+"2019","PopulationByAgeSex",6,"Instant replacement",89607,10,1
+"2019","PopulationByAgeSex",7,"Zero migration",89607,10,1
+"2019","PopulationByAgeSex",8,"Constant mortality",89607,10,1
+"2019","PopulationByAgeSex",9,"No change",89607,10,1
+"2019","PopulationBySingleAgeSex",2,"Medium",6756193,10,2
+"2019","TotalPopulationBySex",10,"Momentum",23085,8,1
+"2019","TotalPopulationBySex",2,"Medium",72027,8,1
+"2019","TotalPopulationBySex",202,"Median PI",4845,8,1
+"2019","TotalPopulationBySex",203,"Upper 80 PI",4845,8,1
+"2019","TotalPopulationBySex",204,"Lower 80 PI",4845,8,1
+"2019","TotalPopulationBySex",206,"Upper 95 PI",4845,8,1
+"2019","TotalPopulationBySex",207,"Lower 95 PI",4845,8,1
+"2019","TotalPopulationBySex",3,"High",23085,8,1
+"2019","TotalPopulationBySex",4,"Low",23085,8,1
+"2019","TotalPopulationBySex",5,"Constant fertility",23085,8,1
+"2019","TotalPopulationBySex",6,"Instant replacement",23085,8,1
+"2019","TotalPopulationBySex",7,"Zero migration",23085,8,1
+"2019","TotalPopulationBySex",8,"Constant mortality",23085,8,1
+"2019","TotalPopulationBySex",9,"No change",23085,8,1

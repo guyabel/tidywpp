@@ -301,7 +301,7 @@ get_wpp <- function(indicator = NULL,
 
     if(length(g) > 1){
       g <- g[1]
-      message(paste("Indicator(s) appears in more than one file group.\n\nOnly downloading indicator(s) from:", g, "\n\nNeed multiple get_wpp() calls to get indicators in different files. See ?wpp_indicators and ?find_indicators for more information on files."))
+      message(paste("Indicator(s) appears in more than one file.\n\nOnly downloading indicator(s) from file:", g, "\n\nNeed multiple get_wpp() calls to get indicators in different files. See ?wpp_indicators and ?find_indicators for more information on files."))
     }
   }
 
@@ -336,13 +336,16 @@ get_wpp <- function(indicator = NULL,
     dplyr::mutate(
       name2 = ifelse(name %in% c("Sx", "Tx", "Lx"), paste0(name, name), name),
       u = paste0(location,
-                 wpp_version, "/", file, "/", var_id, "/", name2, ".csv"),
+                 wpp_version, "/", file, "/", var_id, "/", name2,
+                 ".rds"),
+                 # ".csv"),
       i = purrr::map(
         .x = u,
         .f = ~{
           pb$tick()
-          readr::read_csv(file = .x, col_types = readr::cols(),
-                          guess_max = 1e1, progress = FALSE)
+          readr::read_rds(file = .x)
+          # readr::read_csv(file = .x, col_types = readr::cols(),
+          #                 guess_max = 1e1, progress = FALSE)
         })) %>%
     # keep file group for later matching
     dplyr::group_by(var_id, file) %>%

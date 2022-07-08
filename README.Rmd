@@ -262,25 +262,24 @@ library(gganimate)
 g <- d %>%
   filter(Location == "World") %>%
   mutate(pop = ifelse(Sex == "Male", -Pop/1e3, Pop/1e3),
-         sex = fct_rev(Sex)) %>%
-  ggplot(mapping = aes(x = pop, y = AgeGrp))+
+         sex = fct_rev(Sex),
+         age = as.numeric(AgeGrp) - 1) %>%
+  ggplot(mapping = aes(x = pop, y = age))+
   geom_col(orientation = "y") +
   facet_share(facets = "sex", scales = "free_x") +
   scale_x_continuous(labels = abs) +
   theme_bw() +
   transition_time(time = Time) +
   labs(x = "Population (millions)", y = "", 
-       title = 'WPP2019 World Population Medium Variant {round(frame_time)}')
+       title = 'WPP2022 World Population Medium Variant {round(frame_time)}')
 
 animate(g, width = 15, height = 15, units = "cm", res = 200, 
         renderer = gifski_renderer(), nframes = n_distinct(d$Time))
 
-anim_save(filename = "wpp2019_med.gif")
+anim_save(filename = "wpp2022_med.gif")
 ```
 
-<img src='wpp2019_med.gif' height="600"/>
-
-
+<img src='wpp2022_med.gif' height="600"/>
 
 ## Disclaimer
 
