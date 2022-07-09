@@ -20,10 +20,10 @@ A subset of the \link[=wpp_indicators]{wpp_indicators} data frame with one or mo
 Find available indicator code names or file groups for UN DESA World Population Prospects data
 }
 \examples{
-find_indicator("migr")
+find_indicator("migration")
 
-find_indicator("fert")
+find_indicator("sex ratio")
 
 # show variant information
-find_indicator("life expect", simple = FALSE)
+find_indicator("Deaths", simple = FALSE)
 }

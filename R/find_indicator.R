@@ -8,12 +8,12 @@
 #' @export
 #'
 #' @examples
-#' find_indicator("migr")
+#' find_indicator("migration")
 #'
-#' find_indicator("fert")
+#' find_indicator("sex ratio")
 #'
 #' # show variant information
-#' find_indicator("life expect", simple = FALSE)
+#' find_indicator("Deaths", simple = FALSE)
 find_indicator <- function(x, wpp_version = 2022, simple = TRUE){
   wpp <- name <- details <- file <- NULL
   d <- tidywpp::wpp_indicators %>%
