@@ -65,14 +65,17 @@
 #' get_wpp(indicator = "Births")
 #'
 #' # specify indicator_file to get number of births by mothers 5-year age group
-#' get_wpp(indicator = c("Births", "ASFR"), indicator_file = "Fertility_by_Age5", drop_id_cols = TRUE)
+#' get_wpp(indicator = c("Births", "ASFR"),
+#'         indicator_file = "Fertility_by_Age5",
+#'         drop_id_cols = TRUE)
 #'
 #' # PopTotal, PopMale and PopFemale indicators are in many WPP files with
 #' # a wide range granularity. Set indicator = "pop" and use the pop_sex,
 #' # pop_age, pop_freq and pop_date to get desired data from the appropriate
 #' # indicator_file...
 #'
-#' # when using indicator = "pop" get_wpp() defaults to annual total population (summed over age and sex)
+#' # when using indicator = "pop" get_wpp() defaults to annual total population
+#' # (summed over age and sex)
 #' get_wpp(indicator = "pop")
 #'
 #' # use pop_sex to get specific sexes (or both or all)
@@ -92,7 +95,8 @@
 #' get_wpp(indicator = c("PopTotal", "PopMale", "PopFemale"), indicator_file =  "TotalPopulationBySex")
 #'
 #' # clean column names
-#' get_wpp(indicator = c("SRB", "NetMigrations", "PopGrowthRate"), clean_names = TRUE, drop_id_cols = TRUE)
+#' get_wpp(indicator = c("SRB", "NetMigrations", "PopGrowthRate"),
+#'         clean_names = TRUE, drop_id_cols = TRUE)
 #' }
 get_wpp <- function(indicator = NULL,
                     indicator_file = NULL,
@@ -100,10 +104,6 @@ get_wpp <- function(indicator = NULL,
                     pop_sex = c("total", "both", "male", "female", "all"),
                     pop_freq = c("annual", "five"),
                     pop_date = c("jul1", "jan1", "jan1-dec31"),
-                    #' @param fertility_age Character string for age groups if `indicator` is set to `ASFR`, `PASFR` or `Births`. Defaults to `five` year age groups, but can be set to `single` for WPP2022.
-                    #' @param life_table_age Character string for age groups if `indicator` is from life table. Defaults to `abridged` for five year age groups, but can be set to `complete` for single years for WPP2022.
-                    # fertility_age = c("five", "single"),
-                    # life_table_age = c("abridged", "complete"),
                     variant_id = 2,
                     wpp_version = 2022,
                     clean_names = FALSE,
@@ -111,7 +111,7 @@ get_wpp <- function(indicator = NULL,
                     drop_id_cols = FALSE,
                     tidy_pop_sex = FALSE,
                     add_regions = FALSE,
-                    add_iso = FALSE,
+                    add_iso_codes = FALSE,
                     messages = TRUE,
                     server = c("github", "local")
                     ){
@@ -134,7 +134,7 @@ get_wpp <- function(indicator = NULL,
   if(!any(variant_id  %in% vv$VarID))
     stop("variant_id not avialable in wpp_version")
 
-  if(any(indicator == "pop")){
+  if(indicator[1] == "pop"){
     pop_age <- match.arg(pop_age)
     pop_sex <- match.arg(pop_sex)
     pop_freq <- match.arg(pop_freq)
@@ -169,12 +169,12 @@ get_wpp <- function(indicator = NULL,
     indicator <- indicator[!indicator == "pop"]
   }
 
-  ii <- indicator[!indicator %in% wpp_indicators$name]
+  ii <- indicator[!indicator %in% tidywpp::wpp_indicators$name]
   if(length(ii) > 0)
     message(paste0("Ignoring ", ii, ". Indicator name not in wpp_indicators"))
 
   # indicator = "Births"; indicator_file = NULL
-  if(!any(indicator %in% c("PopMale", "PopFemale", "PopTotal"))){
+  if(indicator[1] != "pop"){
     g <- tidywpp::wpp_indicators %>%
       {if(is.null(indicator_file)) . else dplyr::filter(., file == indicator_file)} %>%
       dplyr::filter(name %in% indicator,
@@ -190,7 +190,7 @@ get_wpp <- function(indicator = NULL,
   }
 
 # build url address to download from
-  name <- file <- var_id <- NULL
+  name <- file0 <- var_id <- NULL
   d0 <- tibble::tibble(
     name = "base",
     file0 = g,
@@ -247,7 +247,7 @@ get_wpp <- function(indicator = NULL,
     dplyr::filter(wpp == wpp_version) %>%
     dplyr::select(-wpp) %>%
     {if(!add_regions) dplyr::select(., -area_name, -reg_name) else .} %>%
-    {if(!add_iso) dplyr::select(., -ISO3_code, -ISO2_code) else .}
+    {if(!add_iso_codes) dplyr::select(., -ISO3_code, -ISO2_code) else .}
 
   Time <- MidPeriod <- NULL
   y <- wpp_time %>%

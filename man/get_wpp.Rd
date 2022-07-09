@@ -18,7 +18,7 @@ get_wpp(
   drop_id_cols = FALSE,
   tidy_pop_sex = FALSE,
   add_regions = FALSE,
-  add_iso = FALSE,
+  add_iso_codes = FALSE,
   messages = TRUE,
   server = c("github", "local")
 )
@@ -50,15 +50,11 @@ get_wpp(
 
 \item{add_regions}{Logical to indicate if to add a \code{reg_name} and \code{area_name} columns for countries (where \code{LocID} is less than 900)}
 
+\item{add_iso_codes}{Logical to indicate if to add a \code{iso3} and \code{iso2} columns for ISO 3 and 2 letter country codes (where \code{LocID} is less than 900)}
+
 \item{messages}{Logical to not suppress printing of messages.}
 
 \item{server}{Character string for location to download data from. Default of \code{github}.}
-
-\item{add_iso_codes}{Logical to indicate if to add a \code{iso3} and \code{iso2} columns for ISO 3 and 2 letter country codes (where \code{LocID} is less than 900)}
-
-\item{fertility_age}{Character string for age groups if \code{indicator} is set to \code{ASFR}, \code{PASFR} or \code{Births}. Defaults to \code{five} year age groups, but can be set to \code{single} for WPP2022.}
-
-\item{life_table_age}{Character string for age groups if \code{indicator} is from life table. Defaults to \code{abridged} for five year age groups, but can be set to \code{complete} for single years for WPP2022.}
 }
 \value{
 A \link[tibble:tibble-package]{tibble} with downloaded data in tidy format
@@ -107,14 +103,17 @@ get_wpp(indicator = "TFR", variant_id = c(2, 3, 4))
 get_wpp(indicator = "Births")
 
 # specify indicator_file to get number of births by mothers 5-year age group
-get_wpp(indicator = c("Births", "ASFR"), indicator_file = "Fertility_by_Age5", drop_id_cols = TRUE)
+get_wpp(indicator = c("Births", "ASFR"),
+        indicator_file = "Fertility_by_Age5",
+        drop_id_cols = TRUE)
 
 # PopTotal, PopMale and PopFemale indicators are in many WPP files with
 # a wide range granularity. Set indicator = "pop" and use the pop_sex,
 # pop_age, pop_freq and pop_date to get desired data from the appropriate
 # indicator_file...
 
-# when using indicator = "pop" get_wpp() defaults to annual total population (summed over age and sex)
+# when using indicator = "pop" get_wpp() defaults to annual total population
+# (summed over age and sex)
 get_wpp(indicator = "pop")
 
 # use pop_sex to get specific sexes (or both or all)
@@ -134,6 +133,7 @@ get_wpp(indicator = "pop", pop_sex = "both", pop_age = "five",
 get_wpp(indicator = c("PopTotal", "PopMale", "PopFemale"), indicator_file =  "TotalPopulationBySex")
 
 # clean column names
-get_wpp(indicator = c("SRB", "NetMigrations", "PopGrowthRate"), clean_names = TRUE, drop_id_cols = TRUE)
+get_wpp(indicator = c("SRB", "NetMigrations", "PopGrowthRate"),
+        clean_names = TRUE, drop_id_cols = TRUE)
 }
 }

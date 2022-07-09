@@ -11,9 +11,9 @@
 #'   \item{variant}{Name of available variants for the indicator}
 #'   \item{wpp}{WPP version of the indicator}
 #'   \item{topic}{Broad topic of inidicator}
-#'   \item{file_group}{Harmonised group (over WPP) to which the indicator belongs. Indicators in different groups need to downloaded separately with `get_wpp()`}
-#'   \item{file_group0}{Published group to which the indicator belongs. Indicators in different groups need to downloaded separately with `get_wpp()`}
-#'   \item{file_group_details}{Brief description on the file group}
+#'   \item{file}{Harmonised group (over WPP) to which the indicator belongs. Indicators in different groups need to downloaded separately with `get_wpp()`}
+#'   \item{file0}{Published group to which the indicator belongs. Indicators in different groups need to downloaded separately with `get_wpp()`}
+#'   \item{file_details}{Brief description on the file group}
 #' }
 #' @source \url{https://population.un.org/wpp/Download/Standard/CSV/}
 "wpp_indicators"

@@ -22,13 +22,11 @@ Imports:
     dplyr,
     tidyr,
     progress,
-    stats,
     stringr,
     forcats, 
     janitor, 
     purrr, 
-    readr (>= 2.1.0),
-    rlang (>= 0.1.2)
+    readr (>= 2.1.0)
 Depends: 
     R (>= 2.10)
 Language: en-US
