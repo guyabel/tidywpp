@@ -70,39 +70,36 @@
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">find_indicator</span><span class="op">(</span><span class="st">"migr"</span><span class="op">)</span></span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">find_indicator</span><span class="op">(</span><span class="st">"migration"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 2 × 3</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   name          details                file                  </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> NetMigrations Net Number of Migrants Demographic_Indicators</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span> CNMR          Net Migration Rate     Demographic_Indicators</span>
 <span class="r-in"><span></span></span>
-<span class="r-in"><span><span class="fu">find_indicator</span><span class="op">(</span><span class="st">"fert"</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 5 × 3</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   name  details                                  file                  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                                    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> TFR   <span style="color: #949494;">"</span>Total Fertility Rate<span style="color: #949494;">"</span>                   Demographic_Indicators</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span> ASFR  <span style="color: #949494;">"</span>Age-specific fertility rate <span style="color: #949494;">"</span>           Fertility_by_Age1     </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">3</span> PASFR <span style="color: #949494;">"</span>Percentage age-specific fertility rate<span style="color: #949494;">"</span> Fertility_by_Age1     </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">4</span> ASFR  <span style="color: #949494;">"</span>Age-specific fertility rate <span style="color: #949494;">"</span>           Fertility_by_Age5     </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">5</span> PASFR <span style="color: #949494;">"</span>Percentage age-specific fertility rate<span style="color: #949494;">"</span> Fertility_by_Age5     </span>
+<span class="r-in"><span><span class="fu">find_indicator</span><span class="op">(</span><span class="st">"sex ratio"</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 2 × 3</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   name        details                            file                  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                              <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> PopSexRatio Population Sex Ratio, as of 1 July Demographic_Indicators</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span> SRB         Sex Ratio at Birth                 Demographic_Indicators</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># show variant information</span></span></span>
-<span class="r-in"><span><span class="fu">find_indicator</span><span class="op">(</span><span class="st">"life expect"</span>, simple <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 120 × 10</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    name       details  unit  var_id variant   wpp topic file  file0 file_details</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> LEx        Life Ex… years     10 Moment…  <span style="text-decoration: underline;">2</span>022 Mort… Demo… Demo… Demographic…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> LExMale    Male Li… years     10 Moment…  <span style="text-decoration: underline;">2</span>022 Mort… Demo… Demo… Demographic…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> LExFemale  Female … years     10 Moment…  <span style="text-decoration: underline;">2</span>022 Mort… Demo… Demo… Demographic…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> LE15       Life Ex… years     10 Moment…  <span style="text-decoration: underline;">2</span>022 Mort… Demo… Demo… Demographic…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> LE15Male   Male Li… years     10 Moment…  <span style="text-decoration: underline;">2</span>022 Mort… Demo… Demo… Demographic…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> LE15Female Female … years     10 Moment…  <span style="text-decoration: underline;">2</span>022 Mort… Demo… Demo… Demographic…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> LE65       Life Ex… years     10 Moment…  <span style="text-decoration: underline;">2</span>022 Mort… Demo… Demo… Demographic…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> LE65Male   Male Li… years     10 Moment…  <span style="text-decoration: underline;">2</span>022 Mort… Demo… Demo… Demographic…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> LE65Female Female … years     10 Moment…  <span style="text-decoration: underline;">2</span>022 Mort… Demo… Demo… Demographic…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> LE80       Life Ex… years     10 Moment…  <span style="text-decoration: underline;">2</span>022 Mort… Demo… Demo… Demographic…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 110 more rows</span></span>
+<span class="r-in"><span><span class="fu">find_indicator</span><span class="op">(</span><span class="st">"Deaths"</span>, simple <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 62 × 10</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    name        details unit  var_id variant   wpp topic file  file0 file_details</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> NatChange   Natura… thou…     10 Moment…  <span style="text-decoration: underline;">2</span>022 Popu… Demo… Demo… Demographic…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> Deaths      Total … thou…     10 Moment…  <span style="text-decoration: underline;">2</span>022 Mort… Demo… Demo… Demographic…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> DeathsMale  Male D… thou…     10 Moment…  <span style="text-decoration: underline;">2</span>022 Mort… Demo… Demo… Demographic…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> DeathsFema… Female… thou…     10 Moment…  <span style="text-decoration: underline;">2</span>022 Mort… Demo… Demo… Demographic…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> InfantDeat… Infant… thou…     10 Moment…  <span style="text-decoration: underline;">2</span>022 Mort… Demo… Demo… Demographic…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> Under5Deat… Deaths… thou…     10 Moment…  <span style="text-decoration: underline;">2</span>022 Mort… Demo… Demo… Demographic…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> NatChange   Natura… thou…     16 Instan…  <span style="text-decoration: underline;">2</span>022 Popu… Demo… Demo… Demographic…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> Deaths      Total … thou…     16 Instan…  <span style="text-decoration: underline;">2</span>022 Mort… Demo… Demo… Demographic…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> DeathsMale  Male D… thou…     16 Instan…  <span style="text-decoration: underline;">2</span>022 Mort… Demo… Demo… Demographic…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> DeathsFema… Female… thou…     16 Instan…  <span style="text-decoration: underline;">2</span>022 Mort… Demo… Demo… Demographic…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 52 more rows</span></span>
 </code></pre></div>
     </div>
   </div>
