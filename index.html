@@ -59,7 +59,7 @@
 <div class="page-header"><h1 id="tidywpp">tidywpp<a class="anchor" aria-label="anchor" href="#tidywpp"></a>
 </h1></div>
 <!-- badges: start -->
-<!-- badges: end --><div class="section level2">
+<div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
 <!-- You can install the released version of tidywpp from [CRAN](https://CRAN.R-project.org) with: --><!-- ``` r --><!-- install.packages("tidywpp") --><!-- ``` --><p>Install the developmental version with:</p>
@@ -76,53 +76,53 @@
 <span><span class="co">#&gt; Suggested citation for WPP2022 data: United Nations, Department of Economic and Social Affairs, Population Division (2022). World Population Prospects 2022, Online Edition. Rev. 1</span></span>
 <span></span>
 <span><span class="fu"><a href="reference/get_wpp.html">get_wpp</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"TFR"</span><span class="op">)</span></span>
-<span><span class="co">#&gt; # A tibble: 43,472 × 7</span></span>
-<span><span class="co">#&gt;    LocID Location VarID Variant  Time file0                    TFR</span></span>
-<span><span class="co">#&gt;    &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt;   &lt;dbl&gt; &lt;chr&gt;                  &lt;dbl&gt;</span></span>
-<span><span class="co">#&gt;  1   900 World        2 Medium   1950 Demographic_Indicators  4.86</span></span>
-<span><span class="co">#&gt;  2   900 World        2 Medium   1951 Demographic_Indicators  4.83</span></span>
-<span><span class="co">#&gt;  3   900 World        2 Medium   1952 Demographic_Indicators  5.01</span></span>
-<span><span class="co">#&gt;  4   900 World        2 Medium   1953 Demographic_Indicators  4.94</span></span>
-<span><span class="co">#&gt;  5   900 World        2 Medium   1954 Demographic_Indicators  5.01</span></span>
-<span><span class="co">#&gt;  6   900 World        2 Medium   1955 Demographic_Indicators  5.01</span></span>
-<span><span class="co">#&gt;  7   900 World        2 Medium   1956 Demographic_Indicators  4.94</span></span>
-<span><span class="co">#&gt;  8   900 World        2 Medium   1957 Demographic_Indicators  5.08</span></span>
-<span><span class="co">#&gt;  9   900 World        2 Medium   1958 Demographic_Indicators  4.93</span></span>
-<span><span class="co">#&gt; 10   900 World        2 Medium   1959 Demographic_Indicators  4.74</span></span>
+<span><span class="co">#&gt; # A tibble: 43,472 × 6</span></span>
+<span><span class="co">#&gt;    LocID Location VarID Variant  Time   TFR</span></span>
+<span><span class="co">#&gt;    &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt;   &lt;dbl&gt; &lt;dbl&gt;</span></span>
+<span><span class="co">#&gt;  1   900 World        2 Medium   1950  4.86</span></span>
+<span><span class="co">#&gt;  2   900 World        2 Medium   1951  4.83</span></span>
+<span><span class="co">#&gt;  3   900 World        2 Medium   1952  5.01</span></span>
+<span><span class="co">#&gt;  4   900 World        2 Medium   1953  4.94</span></span>
+<span><span class="co">#&gt;  5   900 World        2 Medium   1954  5.01</span></span>
+<span><span class="co">#&gt;  6   900 World        2 Medium   1955  5.01</span></span>
+<span><span class="co">#&gt;  7   900 World        2 Medium   1956  4.94</span></span>
+<span><span class="co">#&gt;  8   900 World        2 Medium   1957  5.08</span></span>
+<span><span class="co">#&gt;  9   900 World        2 Medium   1958  4.93</span></span>
+<span><span class="co">#&gt; 10   900 World        2 Medium   1959  4.74</span></span>
 <span><span class="co">#&gt; # … with 43,462 more rows</span></span></code></pre></div>
 <p>A single indicator from multiple variants of WPP2008</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/get_wpp.html">get_wpp</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"TFR"</span>, variant_id <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">2</span>, <span class="fl">3</span>, <span class="fl">4</span><span class="op">)</span>, wpp_version <span class="op">=</span> <span class="fl">2008</span><span class="op">)</span></span>
-<span><span class="co">#&gt; # A tibble: 9,994 × 8</span></span>
-<span><span class="co">#&gt;    LocID Location    VarID Variant Time      MidPeriod file0               TFR</span></span>
-<span><span class="co">#&gt;    &lt;dbl&gt; &lt;chr&gt;       &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;         &lt;dbl&gt; &lt;chr&gt;             &lt;dbl&gt;</span></span>
-<span><span class="co">#&gt;  1     4 Afghanistan     2 Medium  1950-1955      1953 Period_Indicators   7.7</span></span>
-<span><span class="co">#&gt;  2     4 Afghanistan     2 Medium  1955-1960      1958 Period_Indicators   7.7</span></span>
-<span><span class="co">#&gt;  3     4 Afghanistan     2 Medium  1960-1965      1963 Period_Indicators   7.7</span></span>
-<span><span class="co">#&gt;  4     4 Afghanistan     2 Medium  1965-1970      1968 Period_Indicators   7.7</span></span>
-<span><span class="co">#&gt;  5     4 Afghanistan     2 Medium  1970-1975      1973 Period_Indicators   7.7</span></span>
-<span><span class="co">#&gt;  6     4 Afghanistan     2 Medium  1975-1980      1978 Period_Indicators   7.7</span></span>
-<span><span class="co">#&gt;  7     4 Afghanistan     2 Medium  1980-1985      1983 Period_Indicators   7.8</span></span>
-<span><span class="co">#&gt;  8     4 Afghanistan     2 Medium  1985-1990      1988 Period_Indicators   7.9</span></span>
-<span><span class="co">#&gt;  9     4 Afghanistan     2 Medium  1990-1995      1993 Period_Indicators   8  </span></span>
-<span><span class="co">#&gt; 10     4 Afghanistan     2 Medium  1995-2000      1998 Period_Indicators   8  </span></span>
+<span><span class="co">#&gt; # A tibble: 9,994 × 7</span></span>
+<span><span class="co">#&gt;    LocID Location    VarID Variant Time      MidPeriod   TFR</span></span>
+<span><span class="co">#&gt;    &lt;dbl&gt; &lt;chr&gt;       &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;         &lt;dbl&gt; &lt;dbl&gt;</span></span>
+<span><span class="co">#&gt;  1     4 Afghanistan     2 Medium  1950-1955      1953   7.7</span></span>
+<span><span class="co">#&gt;  2     4 Afghanistan     2 Medium  1955-1960      1958   7.7</span></span>
+<span><span class="co">#&gt;  3     4 Afghanistan     2 Medium  1960-1965      1963   7.7</span></span>
+<span><span class="co">#&gt;  4     4 Afghanistan     2 Medium  1965-1970      1968   7.7</span></span>
+<span><span class="co">#&gt;  5     4 Afghanistan     2 Medium  1970-1975      1973   7.7</span></span>
+<span><span class="co">#&gt;  6     4 Afghanistan     2 Medium  1975-1980      1978   7.7</span></span>
+<span><span class="co">#&gt;  7     4 Afghanistan     2 Medium  1980-1985      1983   7.8</span></span>
+<span><span class="co">#&gt;  8     4 Afghanistan     2 Medium  1985-1990      1988   7.9</span></span>
+<span><span class="co">#&gt;  9     4 Afghanistan     2 Medium  1990-1995      1993   8  </span></span>
+<span><span class="co">#&gt; 10     4 Afghanistan     2 Medium  1995-2000      1998   8  </span></span>
 <span><span class="co">#&gt; # … with 9,984 more rows</span></span></code></pre></div>
 <p>Multiple population indicators from medium variant of latest WPP</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/get_wpp.html">get_wpp</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"PopGrowthRate"</span>, <span class="st">"IMR"</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="co">#&gt; # A tibble: 43,472 × 8</span></span>
-<span><span class="co">#&gt;    LocID Location VarID Variant  Time file0                  PopGrowthRate   IMR</span></span>
-<span><span class="co">#&gt;    &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt;   &lt;dbl&gt; &lt;chr&gt;                          &lt;dbl&gt; &lt;dbl&gt;</span></span>
-<span><span class="co">#&gt;  1   900 World        2 Medium   1950 Demographic_Indicators          1.73  143.</span></span>
-<span><span class="co">#&gt;  2   900 World        2 Medium   1951 Demographic_Indicators          1.74  141.</span></span>
-<span><span class="co">#&gt;  3   900 World        2 Medium   1952 Demographic_Indicators          1.93  137.</span></span>
-<span><span class="co">#&gt;  4   900 World        2 Medium   1953 Demographic_Indicators          1.90  134.</span></span>
-<span><span class="co">#&gt;  5   900 World        2 Medium   1954 Demographic_Indicators          1.98  132.</span></span>
-<span><span class="co">#&gt;  6   900 World        2 Medium   1955 Demographic_Indicators          2.00  129.</span></span>
-<span><span class="co">#&gt;  7   900 World        2 Medium   1956 Demographic_Indicators          1.96  126.</span></span>
-<span><span class="co">#&gt;  8   900 World        2 Medium   1957 Demographic_Indicators          2.05  124.</span></span>
-<span><span class="co">#&gt;  9   900 World        2 Medium   1958 Demographic_Indicators          1.98  121.</span></span>
-<span><span class="co">#&gt; 10   900 World        2 Medium   1959 Demographic_Indicators          1.70  130.</span></span>
+<span><span class="co">#&gt; # A tibble: 43,472 × 7</span></span>
+<span><span class="co">#&gt;    LocID Location VarID Variant  Time PopGrowthRate   IMR</span></span>
+<span><span class="co">#&gt;    &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt;   &lt;dbl&gt;         &lt;dbl&gt; &lt;dbl&gt;</span></span>
+<span><span class="co">#&gt;  1   900 World        2 Medium   1950          1.73  143.</span></span>
+<span><span class="co">#&gt;  2   900 World        2 Medium   1951          1.74  141.</span></span>
+<span><span class="co">#&gt;  3   900 World        2 Medium   1952          1.93  137.</span></span>
+<span><span class="co">#&gt;  4   900 World        2 Medium   1953          1.90  134.</span></span>
+<span><span class="co">#&gt;  5   900 World        2 Medium   1954          1.98  132.</span></span>
+<span><span class="co">#&gt;  6   900 World        2 Medium   1955          2.00  129.</span></span>
+<span><span class="co">#&gt;  7   900 World        2 Medium   1956          1.96  126.</span></span>
+<span><span class="co">#&gt;  8   900 World        2 Medium   1957          2.05  124.</span></span>
+<span><span class="co">#&gt;  9   900 World        2 Medium   1958          1.98  121.</span></span>
+<span><span class="co">#&gt; 10   900 World        2 Medium   1959          1.70  130.</span></span>
 <span><span class="co">#&gt; # … with 43,462 more rows</span></span></code></pre></div>
 <p>Some indicators appear in multiple file groups, for example <code>Births</code> represents total number of births in the country in the <code>Demographic_Indicators</code> file (chosen by default)</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
@@ -132,36 +132,36 @@
 <span><span class="co">#&gt; Only downloading indicator(s) from file: Demographic_Indicators </span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; Need multiple get_wpp() calls to get indicators in different files. See ?wpp_indicators and ?find_indicators for more information on files.</span></span>
-<span><span class="co">#&gt; # A tibble: 43,472 × 7</span></span>
-<span><span class="co">#&gt;    LocID Location VarID Variant  Time file0                   Births</span></span>
-<span><span class="co">#&gt;    &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt;   &lt;dbl&gt; &lt;chr&gt;                    &lt;dbl&gt;</span></span>
-<span><span class="co">#&gt;  1   900 World        2 Medium   1950 Demographic_Indicators  92083.</span></span>
-<span><span class="co">#&gt;  2   900 World        2 Medium   1951 Demographic_Indicators  92837.</span></span>
-<span><span class="co">#&gt;  3   900 World        2 Medium   1952 Demographic_Indicators  97607.</span></span>
-<span><span class="co">#&gt;  4   900 World        2 Medium   1953 Demographic_Indicators  97556.</span></span>
-<span><span class="co">#&gt;  5   900 World        2 Medium   1954 Demographic_Indicators 100348.</span></span>
-<span><span class="co">#&gt;  6   900 World        2 Medium   1955 Demographic_Indicators 101807.</span></span>
-<span><span class="co">#&gt;  7   900 World        2 Medium   1956 Demographic_Indicators 101827.</span></span>
-<span><span class="co">#&gt;  8   900 World        2 Medium   1957 Demographic_Indicators 105978.</span></span>
-<span><span class="co">#&gt;  9   900 World        2 Medium   1958 Demographic_Indicators 104557.</span></span>
-<span><span class="co">#&gt; 10   900 World        2 Medium   1959 Demographic_Indicators 101922.</span></span>
+<span><span class="co">#&gt; # A tibble: 43,472 × 6</span></span>
+<span><span class="co">#&gt;    LocID Location VarID Variant  Time  Births</span></span>
+<span><span class="co">#&gt;    &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt;   &lt;dbl&gt;   &lt;dbl&gt;</span></span>
+<span><span class="co">#&gt;  1   900 World        2 Medium   1950  92083.</span></span>
+<span><span class="co">#&gt;  2   900 World        2 Medium   1951  92837.</span></span>
+<span><span class="co">#&gt;  3   900 World        2 Medium   1952  97607.</span></span>
+<span><span class="co">#&gt;  4   900 World        2 Medium   1953  97556.</span></span>
+<span><span class="co">#&gt;  5   900 World        2 Medium   1954 100348.</span></span>
+<span><span class="co">#&gt;  6   900 World        2 Medium   1955 101807.</span></span>
+<span><span class="co">#&gt;  7   900 World        2 Medium   1956 101827.</span></span>
+<span><span class="co">#&gt;  8   900 World        2 Medium   1957 105978.</span></span>
+<span><span class="co">#&gt;  9   900 World        2 Medium   1958 104557.</span></span>
+<span><span class="co">#&gt; 10   900 World        2 Medium   1959 101922.</span></span>
 <span><span class="co">#&gt; # … with 43,462 more rows</span></span></code></pre></div>
 <p>Specify indicator_file to get number of births by mothers 5-year age group</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/get_wpp.html">get_wpp</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Births"</span>, <span class="st">"ASFR"</span><span class="op">)</span>, indicator_file <span class="op">=</span> <span class="st">"Fertility_by_Age5"</span>, drop_id_cols <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span><span class="co">#&gt; # A tibble: 387,315 × 7</span></span>
-<span><span class="co">#&gt;    Location Variant  Time AgeGrp file0                ASFR  Births</span></span>
-<span><span class="co">#&gt;    &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt; &lt;fct&gt;  &lt;chr&gt;               &lt;dbl&gt;   &lt;dbl&gt;</span></span>
-<span><span class="co">#&gt;  1 World    Medium   1950 10-14  Fertility_by_Age5   4.54    571. </span></span>
-<span><span class="co">#&gt;  2 World    Medium   1950 15-19  Fertility_by_Age5  91.1   10629. </span></span>
-<span><span class="co">#&gt;  3 World    Medium   1950 20-24  Fertility_by_Age5 229.    24991. </span></span>
-<span><span class="co">#&gt;  4 World    Medium   1950 25-29  Fertility_by_Age5 241.    23498. </span></span>
-<span><span class="co">#&gt;  5 World    Medium   1950 30-34  Fertility_by_Age5 196.    16100. </span></span>
-<span><span class="co">#&gt;  6 World    Medium   1950 35-39  Fertility_by_Age5 132.    10661. </span></span>
-<span><span class="co">#&gt;  7 World    Medium   1950 40-44  Fertility_by_Age5  64.6    4703. </span></span>
-<span><span class="co">#&gt;  8 World    Medium   1950 45-49  Fertility_by_Age5  14.0     888. </span></span>
-<span><span class="co">#&gt;  9 World    Medium   1950 50-54  Fertility_by_Age5   0.755    40.4</span></span>
-<span><span class="co">#&gt; 10 World    Medium   1951 10-14  Fertility_by_Age5   4.64    587. </span></span>
+<span><span class="co">#&gt; # A tibble: 387,315 × 6</span></span>
+<span><span class="co">#&gt;    Location Variant  Time AgeGrp    ASFR  Births</span></span>
+<span><span class="co">#&gt;    &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt; &lt;fct&gt;    &lt;dbl&gt;   &lt;dbl&gt;</span></span>
+<span><span class="co">#&gt;  1 World    Medium   1950 10-14    4.54    571. </span></span>
+<span><span class="co">#&gt;  2 World    Medium   1950 15-19   91.1   10629. </span></span>
+<span><span class="co">#&gt;  3 World    Medium   1950 20-24  229.    24991. </span></span>
+<span><span class="co">#&gt;  4 World    Medium   1950 25-29  241.    23498. </span></span>
+<span><span class="co">#&gt;  5 World    Medium   1950 30-34  196.    16100. </span></span>
+<span><span class="co">#&gt;  6 World    Medium   1950 35-39  132.    10661. </span></span>
+<span><span class="co">#&gt;  7 World    Medium   1950 40-44   64.6    4703. </span></span>
+<span><span class="co">#&gt;  8 World    Medium   1950 45-49   14.0     888. </span></span>
+<span><span class="co">#&gt;  9 World    Medium   1950 50-54    0.755    40.4</span></span>
+<span><span class="co">#&gt; 10 World    Medium   1951 10-14    4.64    587. </span></span>
 <span><span class="co">#&gt; # … with 387,305 more rows</span></span></code></pre></div>
 <div class="section level3">
 <h3 id="population-data">Population data<a class="anchor" aria-label="anchor" href="#population-data"></a>
@@ -170,41 +170,41 @@
 <p>When using <code>indicator = "pop"</code> in <code><a href="reference/get_wpp.html">get_wpp()</a></code>, output defaults to annual total population (summed over age and sex)</p>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/get_wpp.html">get_wpp</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"pop"</span><span class="op">)</span></span>
-<span><span class="co">#&gt; # A tibble: 43,186 × 8</span></span>
-<span><span class="co">#&gt;    LocID Location VarID Variant  Time MidPeriod file0                PopTotal</span></span>
-<span><span class="co">#&gt;    &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt;   &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt;                   &lt;dbl&gt;</span></span>
-<span><span class="co">#&gt;  1   900 World        2 Medium   1950     1950. TotalPopulationBySex 2499322.</span></span>
-<span><span class="co">#&gt;  2   900 World        2 Medium   1951     1952. TotalPopulationBySex 2543130.</span></span>
-<span><span class="co">#&gt;  3   900 World        2 Medium   1952     1952. TotalPopulationBySex 2590271.</span></span>
-<span><span class="co">#&gt;  4   900 World        2 Medium   1953     1954. TotalPopulationBySex 2640279.</span></span>
-<span><span class="co">#&gt;  5   900 World        2 Medium   1954     1954. TotalPopulationBySex 2691979.</span></span>
-<span><span class="co">#&gt;  6   900 World        2 Medium   1955     1956. TotalPopulationBySex 2746072.</span></span>
-<span><span class="co">#&gt;  7   900 World        2 Medium   1956     1956. TotalPopulationBySex 2801003.</span></span>
-<span><span class="co">#&gt;  8   900 World        2 Medium   1957     1958. TotalPopulationBySex 2857867.</span></span>
-<span><span class="co">#&gt;  9   900 World        2 Medium   1958     1958. TotalPopulationBySex 2916108.</span></span>
-<span><span class="co">#&gt; 10   900 World        2 Medium   1959     1960. TotalPopulationBySex 2970292.</span></span>
+<span><span class="co">#&gt; # A tibble: 43,186 × 7</span></span>
+<span><span class="co">#&gt;    LocID Location VarID Variant  Time MidPeriod PopTotal</span></span>
+<span><span class="co">#&gt;    &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt;   &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;</span></span>
+<span><span class="co">#&gt;  1   900 World        2 Medium   1950     1950. 2499322.</span></span>
+<span><span class="co">#&gt;  2   900 World        2 Medium   1951     1952. 2543130.</span></span>
+<span><span class="co">#&gt;  3   900 World        2 Medium   1952     1952. 2590271.</span></span>
+<span><span class="co">#&gt;  4   900 World        2 Medium   1953     1954. 2640279.</span></span>
+<span><span class="co">#&gt;  5   900 World        2 Medium   1954     1954. 2691979.</span></span>
+<span><span class="co">#&gt;  6   900 World        2 Medium   1955     1956. 2746072.</span></span>
+<span><span class="co">#&gt;  7   900 World        2 Medium   1956     1956. 2801003.</span></span>
+<span><span class="co">#&gt;  8   900 World        2 Medium   1957     1958. 2857867.</span></span>
+<span><span class="co">#&gt;  9   900 World        2 Medium   1958     1958. 2916108.</span></span>
+<span><span class="co">#&gt; 10   900 World        2 Medium   1959     1960. 2970292.</span></span>
 <span><span class="co">#&gt; # … with 43,176 more rows</span></span></code></pre></div>
 <p>Use <code>pop_sex</code> to get specific sexes (or both or all)</p>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/get_wpp.html">get_wpp</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"pop"</span>, pop_sex <span class="op">=</span> <span class="st">"male"</span><span class="op">)</span></span>
-<span><span class="co">#&gt; # A tibble: 43,186 × 8</span></span>
-<span><span class="co">#&gt;    LocID Location VarID Variant  Time MidPeriod file0                 PopMale</span></span>
-<span><span class="co">#&gt;    &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt;   &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt;                   &lt;dbl&gt;</span></span>
-<span><span class="co">#&gt;  1   900 World        2 Medium   1950     1950. TotalPopulationBySex 1245363.</span></span>
-<span><span class="co">#&gt;  2   900 World        2 Medium   1951     1952. TotalPopulationBySex 1267473.</span></span>
-<span><span class="co">#&gt;  3   900 World        2 Medium   1952     1952. TotalPopulationBySex 1291400.</span></span>
-<span><span class="co">#&gt;  4   900 World        2 Medium   1953     1954. TotalPopulationBySex 1316659.</span></span>
-<span><span class="co">#&gt;  5   900 World        2 Medium   1954     1954. TotalPopulationBySex 1342923.</span></span>
-<span><span class="co">#&gt;  6   900 World        2 Medium   1955     1956. TotalPopulationBySex 1370392.</span></span>
-<span><span class="co">#&gt;  7   900 World        2 Medium   1956     1956. TotalPopulationBySex 1398205.</span></span>
-<span><span class="co">#&gt;  8   900 World        2 Medium   1957     1958. TotalPopulationBySex 1426956.</span></span>
-<span><span class="co">#&gt;  9   900 World        2 Medium   1958     1958. TotalPopulationBySex 1456539.</span></span>
-<span><span class="co">#&gt; 10   900 World        2 Medium   1959     1960. TotalPopulationBySex 1483989.</span></span>
+<span><span class="co">#&gt; # A tibble: 43,186 × 7</span></span>
+<span><span class="co">#&gt;    LocID Location VarID Variant  Time MidPeriod  PopMale</span></span>
+<span><span class="co">#&gt;    &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt;   &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;</span></span>
+<span><span class="co">#&gt;  1   900 World        2 Medium   1950     1950. 1245363.</span></span>
+<span><span class="co">#&gt;  2   900 World        2 Medium   1951     1952. 1267473.</span></span>
+<span><span class="co">#&gt;  3   900 World        2 Medium   1952     1952. 1291400.</span></span>
+<span><span class="co">#&gt;  4   900 World        2 Medium   1953     1954. 1316659.</span></span>
+<span><span class="co">#&gt;  5   900 World        2 Medium   1954     1954. 1342923.</span></span>
+<span><span class="co">#&gt;  6   900 World        2 Medium   1955     1956. 1370392.</span></span>
+<span><span class="co">#&gt;  7   900 World        2 Medium   1956     1956. 1398205.</span></span>
+<span><span class="co">#&gt;  8   900 World        2 Medium   1957     1958. 1426956.</span></span>
+<span><span class="co">#&gt;  9   900 World        2 Medium   1958     1958. 1456539.</span></span>
+<span><span class="co">#&gt; 10   900 World        2 Medium   1959     1960. 1483989.</span></span>
 <span><span class="co">#&gt; # … with 43,176 more rows</span></span></code></pre></div>
 <p>Use <code>pop_age</code> to specify age groups</p>
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/get_wpp.html">get_wpp</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"pop"</span>, pop_sex <span class="op">=</span> <span class="st">"both"</span>, pop_age <span class="op">=</span> <span class="st">"five"</span><span class="op">)</span></span>
-<span><span class="co">#&gt; # A tibble: 903,735 × 12</span></span>
+<span><span class="co">#&gt; # A tibble: 903,735 × 11</span></span>
 <span><span class="co">#&gt;    LocID Location VarID Variant  Time MidPeriod AgeGrp AgeGrpStart AgeGrpSpan</span></span>
 <span><span class="co">#&gt;    &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt;   &lt;dbl&gt;     &lt;dbl&gt; &lt;fct&gt;        &lt;dbl&gt;      &lt;dbl&gt;</span></span>
 <span><span class="co">#&gt;  1   900 World        2 Medium   1950      1950 0-4              0          5</span></span>
@@ -217,7 +217,7 @@
 <span><span class="co">#&gt;  8   900 World        2 Medium   1950      1950 35-39           35          5</span></span>
 <span><span class="co">#&gt;  9   900 World        2 Medium   1950      1950 40-44           40          5</span></span>
 <span><span class="co">#&gt; 10   900 World        2 Medium   1950      1950 45-49           45          5</span></span>
-<span><span class="co">#&gt; # … with 903,725 more rows, and 3 more variables: file0 &lt;chr&gt;, PopMale &lt;dbl&gt;,</span></span>
+<span><span class="co">#&gt; # … with 903,725 more rows, and 2 more variables: PopMale &lt;dbl&gt;,</span></span>
 <span><span class="co">#&gt; #   PopFemale &lt;dbl&gt;</span></span></code></pre></div>
 </div>
 <div class="section level3">
@@ -226,36 +226,36 @@
 <p>Tidy sex into a single column and drop id columns</p>
 <div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/get_wpp.html">get_wpp</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"pop"</span>, pop_sex <span class="op">=</span> <span class="st">"both"</span>, pop_age <span class="op">=</span> <span class="st">"five"</span>, tidy_pop_sex <span class="op">=</span> <span class="cn">TRUE</span>, drop_id_cols <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span><span class="co">#&gt; # A tibble: 1,807,470 × 7</span></span>
-<span><span class="co">#&gt;    Location Variant  Time AgeGrp file0                    Sex        Pop</span></span>
-<span><span class="co">#&gt;    &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt; &lt;fct&gt;  &lt;chr&gt;                    &lt;chr&gt;    &lt;dbl&gt;</span></span>
-<span><span class="co">#&gt;  1 World    Medium   1950 0-4    PopulationByAge5GroupSex Male   174647.</span></span>
-<span><span class="co">#&gt;  2 World    Medium   1950 0-4    PopulationByAge5GroupSex Female 167229.</span></span>
-<span><span class="co">#&gt;  3 World    Medium   1950 5-9    PopulationByAge5GroupSex Male   136914.</span></span>
-<span><span class="co">#&gt;  4 World    Medium   1950 5-9    PopulationByAge5GroupSex Female 130817.</span></span>
-<span><span class="co">#&gt;  5 World    Medium   1950 10-14  PopulationByAge5GroupSex Male   132113.</span></span>
-<span><span class="co">#&gt;  6 World    Medium   1950 10-14  PopulationByAge5GroupSex Female 125968.</span></span>
-<span><span class="co">#&gt;  7 World    Medium   1950 15-19  PopulationByAge5GroupSex Male   120513.</span></span>
-<span><span class="co">#&gt;  8 World    Medium   1950 15-19  PopulationByAge5GroupSex Female 116661.</span></span>
-<span><span class="co">#&gt;  9 World    Medium   1950 20-24  PopulationByAge5GroupSex Male   111020.</span></span>
-<span><span class="co">#&gt; 10 World    Medium   1950 20-24  PopulationByAge5GroupSex Female 109096.</span></span>
+<span><span class="co">#&gt; # A tibble: 1,807,470 × 6</span></span>
+<span><span class="co">#&gt;    Location Variant  Time AgeGrp Sex        Pop</span></span>
+<span><span class="co">#&gt;    &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt; &lt;fct&gt;  &lt;chr&gt;    &lt;dbl&gt;</span></span>
+<span><span class="co">#&gt;  1 World    Medium   1950 0-4    Male   174647.</span></span>
+<span><span class="co">#&gt;  2 World    Medium   1950 0-4    Female 167229.</span></span>
+<span><span class="co">#&gt;  3 World    Medium   1950 5-9    Male   136914.</span></span>
+<span><span class="co">#&gt;  4 World    Medium   1950 5-9    Female 130817.</span></span>
+<span><span class="co">#&gt;  5 World    Medium   1950 10-14  Male   132113.</span></span>
+<span><span class="co">#&gt;  6 World    Medium   1950 10-14  Female 125968.</span></span>
+<span><span class="co">#&gt;  7 World    Medium   1950 15-19  Male   120513.</span></span>
+<span><span class="co">#&gt;  8 World    Medium   1950 15-19  Female 116661.</span></span>
+<span><span class="co">#&gt;  9 World    Medium   1950 20-24  Male   111020.</span></span>
+<span><span class="co">#&gt; 10 World    Medium   1950 20-24  Female 109096.</span></span>
 <span><span class="co">#&gt; # … with 1,807,460 more rows</span></span></code></pre></div>
 <p>Clean column names with <code>clean_names = TRUE</code></p>
 <div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/get_wpp.html">get_wpp</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"SRB"</span>, <span class="st">"NetMigrations"</span>, <span class="st">"PopGrowthRate"</span><span class="op">)</span>, clean_names <span class="op">=</span> <span class="cn">TRUE</span>, drop_id_cols <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span><span class="co">#&gt; # A tibble: 43,472 × 7</span></span>
-<span><span class="co">#&gt;    location variant  time file0             pop_growth_rate   srb net_migrations</span></span>
-<span><span class="co">#&gt;    &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt; &lt;chr&gt;                       &lt;dbl&gt; &lt;dbl&gt;          &lt;dbl&gt;</span></span>
-<span><span class="co">#&gt;  1 World    Medium   1950 Demographic_Indi…            1.73  105.              0</span></span>
-<span><span class="co">#&gt;  2 World    Medium   1951 Demographic_Indi…            1.74  105.              0</span></span>
-<span><span class="co">#&gt;  3 World    Medium   1952 Demographic_Indi…            1.93  105.              0</span></span>
-<span><span class="co">#&gt;  4 World    Medium   1953 Demographic_Indi…            1.90  105.              0</span></span>
-<span><span class="co">#&gt;  5 World    Medium   1954 Demographic_Indi…            1.98  105.              0</span></span>
-<span><span class="co">#&gt;  6 World    Medium   1955 Demographic_Indi…            2.00  105.              0</span></span>
-<span><span class="co">#&gt;  7 World    Medium   1956 Demographic_Indi…            1.96  105.              0</span></span>
-<span><span class="co">#&gt;  8 World    Medium   1957 Demographic_Indi…            2.05  105.              0</span></span>
-<span><span class="co">#&gt;  9 World    Medium   1958 Demographic_Indi…            1.98  105.              0</span></span>
-<span><span class="co">#&gt; 10 World    Medium   1959 Demographic_Indi…            1.70  105.              0</span></span>
+<span><span class="co">#&gt; # A tibble: 43,472 × 6</span></span>
+<span><span class="co">#&gt;    location variant  time pop_growth_rate   srb net_migrations</span></span>
+<span><span class="co">#&gt;    &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt;           &lt;dbl&gt; &lt;dbl&gt;          &lt;dbl&gt;</span></span>
+<span><span class="co">#&gt;  1 World    Medium   1950            1.73  105.              0</span></span>
+<span><span class="co">#&gt;  2 World    Medium   1951            1.74  105.              0</span></span>
+<span><span class="co">#&gt;  3 World    Medium   1952            1.93  105.              0</span></span>
+<span><span class="co">#&gt;  4 World    Medium   1953            1.90  105.              0</span></span>
+<span><span class="co">#&gt;  5 World    Medium   1954            1.98  105.              0</span></span>
+<span><span class="co">#&gt;  6 World    Medium   1955            2.00  105.              0</span></span>
+<span><span class="co">#&gt;  7 World    Medium   1956            1.96  105.              0</span></span>
+<span><span class="co">#&gt;  8 World    Medium   1957            2.05  105.              0</span></span>
+<span><span class="co">#&gt;  9 World    Medium   1958            1.98  105.              0</span></span>
+<span><span class="co">#&gt; 10 World    Medium   1959            1.70  105.              0</span></span>
 <span><span class="co">#&gt; # … with 43,462 more rows</span></span></code></pre></div>
 </div>
 </div>
@@ -2586,6 +2586,7 @@
 <p>Not all indicators are available in all variants. Use the <code><a href="reference/find_indicator.html">find_indicator()</a></code> function to check availability, setting <code>simple = FALSE</code>; for example</p>
 <div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">tidywpp</span><span class="op">)</span></span>
+<span><span class="co">#&gt; Suggested citation for WPP2022 data: United Nations, Department of Economic and Social Affairs, Population Division (2022). World Population Prospects 2022, Online Edition. Rev. 1</span></span>
 <span><span class="fu"><a href="reference/find_indicator.html">find_indicator</a></span><span class="op">(</span>x <span class="op">=</span> <span class="st">"lx"</span>, simple <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
 <span><span class="co">#&gt; # A tibble: 4 × 10</span></span>
 <span><span class="co">#&gt;   name  details        unit  var_id variant   wpp topic file  file0 file_details</span></span>
@@ -2602,19 +2603,19 @@
 <div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">d</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/get_wpp.html">get_wpp</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"pop"</span>, pop_age <span class="op">=</span> <span class="st">"single"</span>, pop_sex <span class="op">=</span> <span class="st">"both"</span>, tidy_pop_sex <span class="op">=</span> <span class="cn">TRUE</span>, drop_id_cols <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
 <span><span class="va">d</span></span>
-<span><span class="co">#&gt; # A tibble: 8,693,070 × 7</span></span>
-<span><span class="co">#&gt;    Location Variant  Time AgeGrp file0                    Sex       Pop</span></span>
-<span><span class="co">#&gt;    &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt; &lt;fct&gt;  &lt;chr&gt;                    &lt;chr&gt;   &lt;dbl&gt;</span></span>
-<span><span class="co">#&gt;  1 World    Medium   1950 0      PopulationBySingleAgeSex Male   41782.</span></span>
-<span><span class="co">#&gt;  2 World    Medium   1950 0      PopulationBySingleAgeSex Female 39929.</span></span>
-<span><span class="co">#&gt;  3 World    Medium   1950 1      PopulationBySingleAgeSex Male   37134.</span></span>
-<span><span class="co">#&gt;  4 World    Medium   1950 1      PopulationBySingleAgeSex Female 35539.</span></span>
-<span><span class="co">#&gt;  5 World    Medium   1950 2      PopulationBySingleAgeSex Male   34054.</span></span>
-<span><span class="co">#&gt;  6 World    Medium   1950 2      PopulationBySingleAgeSex Female 32655.</span></span>
-<span><span class="co">#&gt;  7 World    Medium   1950 3      PopulationBySingleAgeSex Male   31959.</span></span>
-<span><span class="co">#&gt;  8 World    Medium   1950 3      PopulationBySingleAgeSex Female 30610.</span></span>
-<span><span class="co">#&gt;  9 World    Medium   1950 4      PopulationBySingleAgeSex Male   29718.</span></span>
-<span><span class="co">#&gt; 10 World    Medium   1950 4      PopulationBySingleAgeSex Female 28497.</span></span>
+<span><span class="co">#&gt; # A tibble: 8,693,070 × 6</span></span>
+<span><span class="co">#&gt;    Location Variant  Time AgeGrp Sex       Pop</span></span>
+<span><span class="co">#&gt;    &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt; &lt;fct&gt;  &lt;chr&gt;   &lt;dbl&gt;</span></span>
+<span><span class="co">#&gt;  1 World    Medium   1950 0      Male   41782.</span></span>
+<span><span class="co">#&gt;  2 World    Medium   1950 0      Female 39929.</span></span>
+<span><span class="co">#&gt;  3 World    Medium   1950 1      Male   37134.</span></span>
+<span><span class="co">#&gt;  4 World    Medium   1950 1      Female 35539.</span></span>
+<span><span class="co">#&gt;  5 World    Medium   1950 2      Male   34054.</span></span>
+<span><span class="co">#&gt;  6 World    Medium   1950 2      Female 32655.</span></span>
+<span><span class="co">#&gt;  7 World    Medium   1950 3      Male   31959.</span></span>
+<span><span class="co">#&gt;  8 World    Medium   1950 3      Female 30610.</span></span>
+<span><span class="co">#&gt;  9 World    Medium   1950 4      Male   29718.</span></span>
+<span><span class="co">#&gt; 10 World    Medium   1950 4      Female 28497.</span></span>
 <span><span class="co">#&gt; # … with 8,693,060 more rows</span></span></code></pre></div>
 <div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org" class="external-link">tidyverse</a></span><span class="op">)</span></span>
