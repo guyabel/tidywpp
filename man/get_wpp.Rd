@@ -226,7 +226,7 @@ get_wpp(indicator = "Births")
 get_wpp(indicator = c("Births", "ASFR"), indicator_file = "Fertility_by_Age5", drop_id_cols = TRUE)
 
 # PopTotal, PopMale and PopFemale indicators are in many WPP files with
-# with a wide range granularity. Set indicator = "pop" and use the pop_sex,
+# a wide range granularity. Set indicator = "pop" and use the pop_sex,
 # pop_age, pop_freq and pop_date to get desired data from the appropriate
 # indicator_file...
 

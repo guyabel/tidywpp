@@ -292,7 +292,7 @@ get_wpp <- function(indicator = NULL,
   # indicator = "Births"; indicator_file = NULL
   if(!any(indicator %in% c("PopMale", "PopFemale", "PopTotal"))){
     g <- tidywpp::wpp_indicators %>%
-      {if(is.null(indicator_file)) . else filter(., file == indicator_file)} %>%
+      {if(is.null(indicator_file)) . else dplyr::filter(., file == indicator_file)} %>%
       dplyr::filter(name %in% indicator,
                     var_id %in% variant_id,
                     wpp == wpp_version) %>%
@@ -320,30 +320,33 @@ get_wpp <- function(indicator = NULL,
                   file == g) %>%
     dplyr::select(-dplyr::contains("details"), -variant, -wpp) %>%
     dplyr::bind_rows(d0, .) %>%
-    dplyr::arrange(var_id)
+    dplyr::arrange(var_id) %>%
+    tidyr::fill(file0, .direction = "up")
 
   name2 <- u <- i <- NULL
 
-  pb <- progress::progress_bar$new(total = nrow(d1))
-  pb$tick(0)
-
   location <- "https://raw.githubusercontent.com/guyabel/tidywpp/main/data-host/WPP"
+  # location <- "https://github.com/guyabel/tidywpp/raw/main/data-host/"
+                # https://github.com/guyabel/tidywpp/blob/main/data-host/ ?raw=true
   server <- match.arg(server)
   if(server == "local")
     location <- "./data-host/WPP"
+
+  pb <- progress::progress_bar$new(total = nrow(d1))
+  pb$tick(0)
 
   d1 <- d1 %>%
     dplyr::mutate(
       name2 = ifelse(name %in% c("Sx", "Tx", "Lx"), paste0(name, name), name),
       u = paste0(location,
-                 wpp_version, "/", file, "/", var_id, "/", name2,
+                 wpp_version, "/", file0, "/", var_id, "/", name2,
                  ".rds"),
                  # ".csv"),
       i = purrr::map(
         .x = u,
         .f = ~{
           pb$tick()
-          readr::read_rds(file = .x)
+          readr::read_rds(file = url(description = .x, method="libcurl"))
           # readr::read_csv(file = .x, col_types = readr::cols(),
           #                 guess_max = 1e1, progress = FALSE)
         })) %>%
