@@ -10,7 +10,6 @@ status](https://www.r-pkg.org/badges/version/tidywpp)](https://CRAN.R-project.or
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![R-CMD-check](https://github.com/guyabel/tidywpp/workflows/R-CMD-check/badge.svg)](https://github.com/guyabel/tidywpp/actions)
-
 <!-- badges: end -->
 
 ## Installation
@@ -37,19 +36,19 @@ library(tidywpp)
 #> Suggested citation for WPP2022 data: United Nations, Department of Economic and Social Affairs, Population Division (2022). World Population Prospects 2022, Online Edition. Rev. 1
 
 get_wpp(indicator = "TFR")
-#> # A tibble: 43,472 × 7
-#>    LocID Location VarID Variant  Time file0                    TFR
-#>    <dbl> <chr>    <dbl> <chr>   <dbl> <chr>                  <dbl>
-#>  1   900 World        2 Medium   1950 Demographic_Indicators  4.86
-#>  2   900 World        2 Medium   1951 Demographic_Indicators  4.83
-#>  3   900 World        2 Medium   1952 Demographic_Indicators  5.01
-#>  4   900 World        2 Medium   1953 Demographic_Indicators  4.94
-#>  5   900 World        2 Medium   1954 Demographic_Indicators  5.01
-#>  6   900 World        2 Medium   1955 Demographic_Indicators  5.01
-#>  7   900 World        2 Medium   1956 Demographic_Indicators  4.94
-#>  8   900 World        2 Medium   1957 Demographic_Indicators  5.08
-#>  9   900 World        2 Medium   1958 Demographic_Indicators  4.93
-#> 10   900 World        2 Medium   1959 Demographic_Indicators  4.74
+#> # A tibble: 43,472 × 6
+#>    LocID Location VarID Variant  Time   TFR
+#>    <dbl> <chr>    <dbl> <chr>   <dbl> <dbl>
+#>  1   900 World        2 Medium   1950  4.86
+#>  2   900 World        2 Medium   1951  4.83
+#>  3   900 World        2 Medium   1952  5.01
+#>  4   900 World        2 Medium   1953  4.94
+#>  5   900 World        2 Medium   1954  5.01
+#>  6   900 World        2 Medium   1955  5.01
+#>  7   900 World        2 Medium   1956  4.94
+#>  8   900 World        2 Medium   1957  5.08
+#>  9   900 World        2 Medium   1958  4.93
+#> 10   900 World        2 Medium   1959  4.74
 #> # … with 43,462 more rows
 ```
 
@@ -57,19 +56,19 @@ A single indicator from multiple variants of WPP2008
 
 ``` r
 get_wpp(indicator = "TFR", variant_id = c(2, 3, 4), wpp_version = 2008)
-#> # A tibble: 9,994 × 8
-#>    LocID Location    VarID Variant Time      MidPeriod file0               TFR
-#>    <dbl> <chr>       <dbl> <chr>   <chr>         <dbl> <chr>             <dbl>
-#>  1     4 Afghanistan     2 Medium  1950-1955      1953 Period_Indicators   7.7
-#>  2     4 Afghanistan     2 Medium  1955-1960      1958 Period_Indicators   7.7
-#>  3     4 Afghanistan     2 Medium  1960-1965      1963 Period_Indicators   7.7
-#>  4     4 Afghanistan     2 Medium  1965-1970      1968 Period_Indicators   7.7
-#>  5     4 Afghanistan     2 Medium  1970-1975      1973 Period_Indicators   7.7
-#>  6     4 Afghanistan     2 Medium  1975-1980      1978 Period_Indicators   7.7
-#>  7     4 Afghanistan     2 Medium  1980-1985      1983 Period_Indicators   7.8
-#>  8     4 Afghanistan     2 Medium  1985-1990      1988 Period_Indicators   7.9
-#>  9     4 Afghanistan     2 Medium  1990-1995      1993 Period_Indicators   8  
-#> 10     4 Afghanistan     2 Medium  1995-2000      1998 Period_Indicators   8  
+#> # A tibble: 9,994 × 7
+#>    LocID Location    VarID Variant Time      MidPeriod   TFR
+#>    <dbl> <chr>       <dbl> <chr>   <chr>         <dbl> <dbl>
+#>  1     4 Afghanistan     2 Medium  1950-1955      1953   7.7
+#>  2     4 Afghanistan     2 Medium  1955-1960      1958   7.7
+#>  3     4 Afghanistan     2 Medium  1960-1965      1963   7.7
+#>  4     4 Afghanistan     2 Medium  1965-1970      1968   7.7
+#>  5     4 Afghanistan     2 Medium  1970-1975      1973   7.7
+#>  6     4 Afghanistan     2 Medium  1975-1980      1978   7.7
+#>  7     4 Afghanistan     2 Medium  1980-1985      1983   7.8
+#>  8     4 Afghanistan     2 Medium  1985-1990      1988   7.9
+#>  9     4 Afghanistan     2 Medium  1990-1995      1993   8  
+#> 10     4 Afghanistan     2 Medium  1995-2000      1998   8  
 #> # … with 9,984 more rows
 ```
 
@@ -77,19 +76,19 @@ Multiple population indicators from medium variant of latest WPP
 
 ``` r
 get_wpp(indicator = c("PopGrowthRate", "IMR"))
-#> # A tibble: 43,472 × 8
-#>    LocID Location VarID Variant  Time file0                  PopGrowthRate   IMR
-#>    <dbl> <chr>    <dbl> <chr>   <dbl> <chr>                          <dbl> <dbl>
-#>  1   900 World        2 Medium   1950 Demographic_Indicators          1.73  143.
-#>  2   900 World        2 Medium   1951 Demographic_Indicators          1.74  141.
-#>  3   900 World        2 Medium   1952 Demographic_Indicators          1.93  137.
-#>  4   900 World        2 Medium   1953 Demographic_Indicators          1.90  134.
-#>  5   900 World        2 Medium   1954 Demographic_Indicators          1.98  132.
-#>  6   900 World        2 Medium   1955 Demographic_Indicators          2.00  129.
-#>  7   900 World        2 Medium   1956 Demographic_Indicators          1.96  126.
-#>  8   900 World        2 Medium   1957 Demographic_Indicators          2.05  124.
-#>  9   900 World        2 Medium   1958 Demographic_Indicators          1.98  121.
-#> 10   900 World        2 Medium   1959 Demographic_Indicators          1.70  130.
+#> # A tibble: 43,472 × 7
+#>    LocID Location VarID Variant  Time PopGrowthRate   IMR
+#>    <dbl> <chr>    <dbl> <chr>   <dbl>         <dbl> <dbl>
+#>  1   900 World        2 Medium   1950          1.73  143.
+#>  2   900 World        2 Medium   1951          1.74  141.
+#>  3   900 World        2 Medium   1952          1.93  137.
+#>  4   900 World        2 Medium   1953          1.90  134.
+#>  5   900 World        2 Medium   1954          1.98  132.
+#>  6   900 World        2 Medium   1955          2.00  129.
+#>  7   900 World        2 Medium   1956          1.96  126.
+#>  8   900 World        2 Medium   1957          2.05  124.
+#>  9   900 World        2 Medium   1958          1.98  121.
+#> 10   900 World        2 Medium   1959          1.70  130.
 #> # … with 43,462 more rows
 ```
 
@@ -104,19 +103,19 @@ get_wpp(indicator = "Births")
 #> Only downloading indicator(s) from file: Demographic_Indicators 
 #> 
 #> Need multiple get_wpp() calls to get indicators in different files. See ?wpp_indicators and ?find_indicators for more information on files.
-#> # A tibble: 43,472 × 7
-#>    LocID Location VarID Variant  Time file0                   Births
-#>    <dbl> <chr>    <dbl> <chr>   <dbl> <chr>                    <dbl>
-#>  1   900 World        2 Medium   1950 Demographic_Indicators  92083.
-#>  2   900 World        2 Medium   1951 Demographic_Indicators  92837.
-#>  3   900 World        2 Medium   1952 Demographic_Indicators  97607.
-#>  4   900 World        2 Medium   1953 Demographic_Indicators  97556.
-#>  5   900 World        2 Medium   1954 Demographic_Indicators 100348.
-#>  6   900 World        2 Medium   1955 Demographic_Indicators 101807.
-#>  7   900 World        2 Medium   1956 Demographic_Indicators 101827.
-#>  8   900 World        2 Medium   1957 Demographic_Indicators 105978.
-#>  9   900 World        2 Medium   1958 Demographic_Indicators 104557.
-#> 10   900 World        2 Medium   1959 Demographic_Indicators 101922.
+#> # A tibble: 43,472 × 6
+#>    LocID Location VarID Variant  Time  Births
+#>    <dbl> <chr>    <dbl> <chr>   <dbl>   <dbl>
+#>  1   900 World        2 Medium   1950  92083.
+#>  2   900 World        2 Medium   1951  92837.
+#>  3   900 World        2 Medium   1952  97607.
+#>  4   900 World        2 Medium   1953  97556.
+#>  5   900 World        2 Medium   1954 100348.
+#>  6   900 World        2 Medium   1955 101807.
+#>  7   900 World        2 Medium   1956 101827.
+#>  8   900 World        2 Medium   1957 105978.
+#>  9   900 World        2 Medium   1958 104557.
+#> 10   900 World        2 Medium   1959 101922.
 #> # … with 43,462 more rows
 ```
 
@@ -125,19 +124,19 @@ group
 
 ``` r
 get_wpp(indicator = c("Births", "ASFR"), indicator_file = "Fertility_by_Age5", drop_id_cols = TRUE)
-#> # A tibble: 387,315 × 7
-#>    Location Variant  Time AgeGrp file0                ASFR  Births
-#>    <chr>    <chr>   <dbl> <fct>  <chr>               <dbl>   <dbl>
-#>  1 World    Medium   1950 10-14  Fertility_by_Age5   4.54    571. 
-#>  2 World    Medium   1950 15-19  Fertility_by_Age5  91.1   10629. 
-#>  3 World    Medium   1950 20-24  Fertility_by_Age5 229.    24991. 
-#>  4 World    Medium   1950 25-29  Fertility_by_Age5 241.    23498. 
-#>  5 World    Medium   1950 30-34  Fertility_by_Age5 196.    16100. 
-#>  6 World    Medium   1950 35-39  Fertility_by_Age5 132.    10661. 
-#>  7 World    Medium   1950 40-44  Fertility_by_Age5  64.6    4703. 
-#>  8 World    Medium   1950 45-49  Fertility_by_Age5  14.0     888. 
-#>  9 World    Medium   1950 50-54  Fertility_by_Age5   0.755    40.4
-#> 10 World    Medium   1951 10-14  Fertility_by_Age5   4.64    587. 
+#> # A tibble: 387,315 × 6
+#>    Location Variant  Time AgeGrp    ASFR  Births
+#>    <chr>    <chr>   <dbl> <fct>    <dbl>   <dbl>
+#>  1 World    Medium   1950 10-14    4.54    571. 
+#>  2 World    Medium   1950 15-19   91.1   10629. 
+#>  3 World    Medium   1950 20-24  229.    24991. 
+#>  4 World    Medium   1950 25-29  241.    23498. 
+#>  5 World    Medium   1950 30-34  196.    16100. 
+#>  6 World    Medium   1950 35-39  132.    10661. 
+#>  7 World    Medium   1950 40-44   64.6    4703. 
+#>  8 World    Medium   1950 45-49   14.0     888. 
+#>  9 World    Medium   1950 50-54    0.755    40.4
+#> 10 World    Medium   1951 10-14    4.64    587. 
 #> # … with 387,305 more rows
 ```
 
@@ -153,19 +152,19 @@ total population (summed over age and sex)
 
 ``` r
 get_wpp(indicator = "pop")
-#> # A tibble: 43,186 × 8
-#>    LocID Location VarID Variant  Time MidPeriod file0                PopTotal
-#>    <dbl> <chr>    <dbl> <chr>   <dbl>     <dbl> <chr>                   <dbl>
-#>  1   900 World        2 Medium   1950     1950. TotalPopulationBySex 2499322.
-#>  2   900 World        2 Medium   1951     1952. TotalPopulationBySex 2543130.
-#>  3   900 World        2 Medium   1952     1952. TotalPopulationBySex 2590271.
-#>  4   900 World        2 Medium   1953     1954. TotalPopulationBySex 2640279.
-#>  5   900 World        2 Medium   1954     1954. TotalPopulationBySex 2691979.
-#>  6   900 World        2 Medium   1955     1956. TotalPopulationBySex 2746072.
-#>  7   900 World        2 Medium   1956     1956. TotalPopulationBySex 2801003.
-#>  8   900 World        2 Medium   1957     1958. TotalPopulationBySex 2857867.
-#>  9   900 World        2 Medium   1958     1958. TotalPopulationBySex 2916108.
-#> 10   900 World        2 Medium   1959     1960. TotalPopulationBySex 2970292.
+#> # A tibble: 43,186 × 7
+#>    LocID Location VarID Variant  Time MidPeriod PopTotal
+#>    <dbl> <chr>    <dbl> <chr>   <dbl>     <dbl>    <dbl>
+#>  1   900 World        2 Medium   1950     1950. 2499322.
+#>  2   900 World        2 Medium   1951     1952. 2543130.
+#>  3   900 World        2 Medium   1952     1952. 2590271.
+#>  4   900 World        2 Medium   1953     1954. 2640279.
+#>  5   900 World        2 Medium   1954     1954. 2691979.
+#>  6   900 World        2 Medium   1955     1956. 2746072.
+#>  7   900 World        2 Medium   1956     1956. 2801003.
+#>  8   900 World        2 Medium   1957     1958. 2857867.
+#>  9   900 World        2 Medium   1958     1958. 2916108.
+#> 10   900 World        2 Medium   1959     1960. 2970292.
 #> # … with 43,176 more rows
 ```
 
@@ -173,19 +172,19 @@ Use `pop_sex` to get specific sexes (or both or all)
 
 ``` r
 get_wpp(indicator = "pop", pop_sex = "male")
-#> # A tibble: 43,186 × 8
-#>    LocID Location VarID Variant  Time MidPeriod file0                 PopMale
-#>    <dbl> <chr>    <dbl> <chr>   <dbl>     <dbl> <chr>                   <dbl>
-#>  1   900 World        2 Medium   1950     1950. TotalPopulationBySex 1245363.
-#>  2   900 World        2 Medium   1951     1952. TotalPopulationBySex 1267473.
-#>  3   900 World        2 Medium   1952     1952. TotalPopulationBySex 1291400.
-#>  4   900 World        2 Medium   1953     1954. TotalPopulationBySex 1316659.
-#>  5   900 World        2 Medium   1954     1954. TotalPopulationBySex 1342923.
-#>  6   900 World        2 Medium   1955     1956. TotalPopulationBySex 1370392.
-#>  7   900 World        2 Medium   1956     1956. TotalPopulationBySex 1398205.
-#>  8   900 World        2 Medium   1957     1958. TotalPopulationBySex 1426956.
-#>  9   900 World        2 Medium   1958     1958. TotalPopulationBySex 1456539.
-#> 10   900 World        2 Medium   1959     1960. TotalPopulationBySex 1483989.
+#> # A tibble: 43,186 × 7
+#>    LocID Location VarID Variant  Time MidPeriod  PopMale
+#>    <dbl> <chr>    <dbl> <chr>   <dbl>     <dbl>    <dbl>
+#>  1   900 World        2 Medium   1950     1950. 1245363.
+#>  2   900 World        2 Medium   1951     1952. 1267473.
+#>  3   900 World        2 Medium   1952     1952. 1291400.
+#>  4   900 World        2 Medium   1953     1954. 1316659.
+#>  5   900 World        2 Medium   1954     1954. 1342923.
+#>  6   900 World        2 Medium   1955     1956. 1370392.
+#>  7   900 World        2 Medium   1956     1956. 1398205.
+#>  8   900 World        2 Medium   1957     1958. 1426956.
+#>  9   900 World        2 Medium   1958     1958. 1456539.
+#> 10   900 World        2 Medium   1959     1960. 1483989.
 #> # … with 43,176 more rows
 ```
 
@@ -193,7 +192,7 @@ Use `pop_age` to specify age groups
 
 ``` r
 get_wpp(indicator = "pop", pop_sex = "both", pop_age = "five")
-#> # A tibble: 903,735 × 12
+#> # A tibble: 903,735 × 11
 #>    LocID Location VarID Variant  Time MidPeriod AgeGrp AgeGrpStart AgeGrpSpan
 #>    <dbl> <chr>    <dbl> <chr>   <dbl>     <dbl> <fct>        <dbl>      <dbl>
 #>  1   900 World        2 Medium   1950      1950 0-4              0          5
@@ -206,7 +205,7 @@ get_wpp(indicator = "pop", pop_sex = "both", pop_age = "five")
 #>  8   900 World        2 Medium   1950      1950 35-39           35          5
 #>  9   900 World        2 Medium   1950      1950 40-44           40          5
 #> 10   900 World        2 Medium   1950      1950 45-49           45          5
-#> # … with 903,725 more rows, and 3 more variables: file0 <chr>, PopMale <dbl>,
+#> # … with 903,725 more rows, and 2 more variables: PopMale <dbl>,
 #> #   PopFemale <dbl>
 ```
 
@@ -216,19 +215,19 @@ Tidy sex into a single column and drop id columns
 
 ``` r
 get_wpp(indicator = "pop", pop_sex = "both", pop_age = "five", tidy_pop_sex = TRUE, drop_id_cols = TRUE)
-#> # A tibble: 1,807,470 × 7
-#>    Location Variant  Time AgeGrp file0                    Sex        Pop
-#>    <chr>    <chr>   <dbl> <fct>  <chr>                    <chr>    <dbl>
-#>  1 World    Medium   1950 0-4    PopulationByAge5GroupSex Male   174647.
-#>  2 World    Medium   1950 0-4    PopulationByAge5GroupSex Female 167229.
-#>  3 World    Medium   1950 5-9    PopulationByAge5GroupSex Male   136914.
-#>  4 World    Medium   1950 5-9    PopulationByAge5GroupSex Female 130817.
-#>  5 World    Medium   1950 10-14  PopulationByAge5GroupSex Male   132113.
-#>  6 World    Medium   1950 10-14  PopulationByAge5GroupSex Female 125968.
-#>  7 World    Medium   1950 15-19  PopulationByAge5GroupSex Male   120513.
-#>  8 World    Medium   1950 15-19  PopulationByAge5GroupSex Female 116661.
-#>  9 World    Medium   1950 20-24  PopulationByAge5GroupSex Male   111020.
-#> 10 World    Medium   1950 20-24  PopulationByAge5GroupSex Female 109096.
+#> # A tibble: 1,807,470 × 6
+#>    Location Variant  Time AgeGrp Sex        Pop
+#>    <chr>    <chr>   <dbl> <fct>  <chr>    <dbl>
+#>  1 World    Medium   1950 0-4    Male   174647.
+#>  2 World    Medium   1950 0-4    Female 167229.
+#>  3 World    Medium   1950 5-9    Male   136914.
+#>  4 World    Medium   1950 5-9    Female 130817.
+#>  5 World    Medium   1950 10-14  Male   132113.
+#>  6 World    Medium   1950 10-14  Female 125968.
+#>  7 World    Medium   1950 15-19  Male   120513.
+#>  8 World    Medium   1950 15-19  Female 116661.
+#>  9 World    Medium   1950 20-24  Male   111020.
+#> 10 World    Medium   1950 20-24  Female 109096.
 #> # … with 1,807,460 more rows
 ```
 
@@ -236,19 +235,19 @@ Clean column names with `clean_names = TRUE`
 
 ``` r
 get_wpp(indicator = c("SRB", "NetMigrations", "PopGrowthRate"), clean_names = TRUE, drop_id_cols = TRUE)
-#> # A tibble: 43,472 × 7
-#>    location variant  time file0             pop_growth_rate   srb net_migrations
-#>    <chr>    <chr>   <dbl> <chr>                       <dbl> <dbl>          <dbl>
-#>  1 World    Medium   1950 Demographic_Indi…            1.73  105.              0
-#>  2 World    Medium   1951 Demographic_Indi…            1.74  105.              0
-#>  3 World    Medium   1952 Demographic_Indi…            1.93  105.              0
-#>  4 World    Medium   1953 Demographic_Indi…            1.90  105.              0
-#>  5 World    Medium   1954 Demographic_Indi…            1.98  105.              0
-#>  6 World    Medium   1955 Demographic_Indi…            2.00  105.              0
-#>  7 World    Medium   1956 Demographic_Indi…            1.96  105.              0
-#>  8 World    Medium   1957 Demographic_Indi…            2.05  105.              0
-#>  9 World    Medium   1958 Demographic_Indi…            1.98  105.              0
-#> 10 World    Medium   1959 Demographic_Indi…            1.70  105.              0
+#> # A tibble: 43,472 × 6
+#>    location variant  time pop_growth_rate   srb net_migrations
+#>    <chr>    <chr>   <dbl>           <dbl> <dbl>          <dbl>
+#>  1 World    Medium   1950            1.73  105.              0
+#>  2 World    Medium   1951            1.74  105.              0
+#>  3 World    Medium   1952            1.93  105.              0
+#>  4 World    Medium   1953            1.90  105.              0
+#>  5 World    Medium   1954            1.98  105.              0
+#>  6 World    Medium   1955            2.00  105.              0
+#>  7 World    Medium   1956            1.96  105.              0
+#>  8 World    Medium   1957            2.05  105.              0
+#>  9 World    Medium   1958            1.98  105.              0
+#> 10 World    Medium   1959            1.70  105.              0
 #> # … with 43,462 more rows
 ```
 
@@ -444,6 +443,7 @@ Not all indicators are available in all variants. Use the
 
 ``` r
 library(tidywpp)
+#> Suggested citation for WPP2022 data: United Nations, Department of Economic and Social Affairs, Population Division (2022). World Population Prospects 2022, Online Edition. Rev. 1
 find_indicator(x = "lx", simple = FALSE)
 #> # A tibble: 4 × 10
 #>   name  details        unit  var_id variant   wpp topic file  file0 file_details
@@ -464,19 +464,19 @@ visualisation functions in R.
 ``` r
 d <- get_wpp(indicator = "pop", pop_age = "single", pop_sex = "both", tidy_pop_sex = TRUE, drop_id_cols = TRUE)
 d
-#> # A tibble: 8,693,070 × 7
-#>    Location Variant  Time AgeGrp file0                    Sex       Pop
-#>    <chr>    <chr>   <dbl> <fct>  <chr>                    <chr>   <dbl>
-#>  1 World    Medium   1950 0      PopulationBySingleAgeSex Male   41782.
-#>  2 World    Medium   1950 0      PopulationBySingleAgeSex Female 39929.
-#>  3 World    Medium   1950 1      PopulationBySingleAgeSex Male   37134.
-#>  4 World    Medium   1950 1      PopulationBySingleAgeSex Female 35539.
-#>  5 World    Medium   1950 2      PopulationBySingleAgeSex Male   34054.
-#>  6 World    Medium   1950 2      PopulationBySingleAgeSex Female 32655.
-#>  7 World    Medium   1950 3      PopulationBySingleAgeSex Male   31959.
-#>  8 World    Medium   1950 3      PopulationBySingleAgeSex Female 30610.
-#>  9 World    Medium   1950 4      PopulationBySingleAgeSex Male   29718.
-#> 10 World    Medium   1950 4      PopulationBySingleAgeSex Female 28497.
+#> # A tibble: 8,693,070 × 6
+#>    Location Variant  Time AgeGrp Sex       Pop
+#>    <chr>    <chr>   <dbl> <fct>  <chr>   <dbl>
+#>  1 World    Medium   1950 0      Male   41782.
+#>  2 World    Medium   1950 0      Female 39929.
+#>  3 World    Medium   1950 1      Male   37134.
+#>  4 World    Medium   1950 1      Female 35539.
+#>  5 World    Medium   1950 2      Male   34054.
+#>  6 World    Medium   1950 2      Female 32655.
+#>  7 World    Medium   1950 3      Male   31959.
+#>  8 World    Medium   1950 3      Female 30610.
+#>  9 World    Medium   1950 4      Male   29718.
+#> 10 World    Medium   1950 4      Female 28497.
 #> # … with 8,693,060 more rows
 ```
 

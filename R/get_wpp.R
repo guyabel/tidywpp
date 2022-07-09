@@ -287,7 +287,7 @@ get_wpp <- function(indicator = NULL,
   }
 
   d1 %>%
-    dplyr::select(-file) %>%
+    dplyr::select(-file0) %>%
     dplyr::rename(VarID = var_id) %>%
     dplyr::left_join(v, by = "VarID") %>%
     dplyr::left_join(l, by = "LocID") %>%
