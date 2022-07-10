@@ -15,3 +15,6 @@
 ^wpp2019_med.gif
 ^wpp2022_med.gif
 ^data-host$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$

@@ -127,7 +127,7 @@ get_wpp <- function(indicator = NULL,
   # messages = TRUE
   # add_regions = FALSE; add_iso = FALSE; server = "github"
   # load("./R/sysdata.rda")
-  wpp <- variant <- MidPeriod <- AgeGrp <- NULL
+  wpp <- variant <- MidPeriod <- AgeGrp <- g <- NULL
   vv <- wpp_var %>%
     dplyr::filter(wpp == wpp_version)
 
@@ -174,7 +174,7 @@ get_wpp <- function(indicator = NULL,
     message(paste0("Ignoring ", ii, ". Indicator name not in wpp_indicators"))
 
   # indicator = "Births"; indicator_file = NULL
-  if(indicator[1] != "pop"){
+  if(!any(indicator %in% c("PopMale", "PopFemale", "PopTotal")) & is.null(g)){
     g <- tidywpp::wpp_indicators %>%
       {if(is.null(indicator_file)) . else dplyr::filter(., file == indicator_file)} %>%
       dplyr::filter(name %in% indicator,

@@ -14,7 +14,7 @@ usethis::use_release_issue()
 usethis::use_citation()
 usethis::use_package()
 usethis::use_tidy_thanks()
-
+usethis::use_vignette(name = "tidywpp")
 
 usethis::use_github_action_check_standard()
 usethis::use_github_action("pkgdown")
